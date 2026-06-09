@@ -4,3 +4,4 @@ build
 src/lib/cpp/build/*
 .vscode/settings.json
 server/wrangler.toml
+release-assets/
