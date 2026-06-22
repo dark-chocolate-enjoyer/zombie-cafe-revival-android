@@ -1,27 +1,28 @@
-# Zombie Cafe Revival — 1.0v Balance Change
+# Zombie Cafe Revival — v1.0.0 Balance Change
 
 ## Overview
 
 *Zombie Cafe* was a charming free-to-play café sim — and like most of its era, it was balanced to be grindy. Many recipes were traps, premium dishes were often worse than free ones, and late-game progression crawled.
 
-**1.0v Balance Change** is the first full balance-focused version of Zombie Cafe Revival. It keeps the original game's personality while making recipes, chefs, staff, and premium content feel more rewarding.
+**v1.0.0 — Balance Change** is the first full balance-focused version of Zombie Cafe Revival. It keeps the original game's personality while making recipes, chefs, staff, and premium content feel more rewarding.
 
 <!-- Screenshot placeholder: cookbook before/after -->
 
 ## What changed?
 
-- Food prices, servings, and profits were rebalanced so more recipes are worth cooking.
-- XP pacing was adjusted to stay close to vanilla XP-per-minute, so leveling should not become too fast.
-- DLC and premium cookbook recipes are now stronger and more worthwhile.
-- Special stove-chain recipes now feel more like actual upgrades.
-- Playable chefs were rebalanced with clearer late-game identities.
-- Infectable zombies/staff were rebalanced, including safer Maids, Governor as the top tip specialist, Godfather as the best all-rounder, and Zombie Man as an elite combat monster.
-- Cash-to-toxin exchange prices were raised to match the stronger food economy.
+- This version rebalances food profits, XP pacing, playable chefs, infectable zombies/staff, and toxin exchange.
+- DLC and premium cookbooks now give stronger, more worthwhile recipes.
 - The release includes the existing Android/BlueStacks compatibility repair.
+
+## Releases
+
+Latest release: [v1.0.0 — Balance Change](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.0v-balance-change)
+
+Older compatibility test: [v0.1.0 — Android 16 32-bit Compatibility Test](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/android14-compat-test-v0.1)
 
 ## Premium and DLC dishes now feel worth buying
 
-In the original game, many paid cookbook and special-stove recipes earned *less* than free food at the same level. In 1.0v, premium and stove-chain recipes were redesigned so that investment scales: the **Pirate, Vampire, Mafia, Medieval, Super Hero, Politician, and Day of the Dead** cookbooks now carry real progression value, and the special stove chain rewards committing to it.
+In the original game, many paid cookbook and special-stove recipes earned *less* than free food at the same level. In v1.0.0, premium and stove-chain recipes were redesigned so that investment scales: the **Pirate, Vampire, Mafia, Medieval, Super Hero, Politician, and Day of the Dead** cookbooks now carry real progression value, and the special stove chain rewards committing to it.
 
 <!-- Screenshot placeholder: premium cookbook page -->
 
@@ -47,20 +48,20 @@ Claude and ChatGPT were used as planning and review tools; the balance itself wa
 
 ## Current status
 
-The **1.0v Balance Change** APK is built, signed, repaired with the known BlueStacks-compatible native library, and verified against the current balanced data.
+The **v1.0.0 — Balance Change** APK is built, signed, repaired with the known BlueStacks-compatible native library, and verified against the current balanced data.
 
 ## Download
 
-Download: [1.0v Balance Change APK](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.0v-balance-change)
+Download: [v1.0.0 Balance Change APK](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.0v-balance-change)
 
-The APK is provided as a GitHub Release asset for the **1.0v Balance Change** release. If the asset is not visible yet, it still needs to be attached to the GitHub Release.
+The APK is provided as a GitHub Release asset for the **v1.0.0 — Balance Change** release.
 
 ```text
-File:    zombie_cafe_v1_0_k2_balance_candidate_signed_repaired.apk
+File:    ZombieCafe-v1.0.0-Balance-Change.apk
 SHA-256: bb489e470412c23d9b00db1bd9fbbbbce31a7901196bca8c27dc876bbddefc90
 ```
 
-Android sideloading is required. Tested in BlueStacks; real-device support may vary, especially on modern ARM64-only devices.
+Android sideloading is required. Tested in BlueStacks. Requires 32-bit ARM support. Many newer 64-bit-only devices may not run the game.
 
 ## Future work
 
