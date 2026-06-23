@@ -52,7 +52,7 @@ The **v1.0.0 — Balance Change** APK is built, signed, repaired with the known 
 
 ## Download
 
-Download: [v1.0.0 Balance Change APK](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.0v-balance-change)
+Download: [v1.0.0 Balance Change APK](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/download/v1.0v-balance-change/ZombieCafe-v1.0.0-Balance-Change.apk)
 
 The APK is provided as a GitHub Release asset for the **v1.0.0 — Balance Change** release.
 
