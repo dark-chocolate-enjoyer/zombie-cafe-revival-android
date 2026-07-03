@@ -1,36 +1,37 @@
 ![Zombie Cafe Revival banner](/src/assets/images/banner.png)
 
-# Zombie Cafe Revival — v1.0.0 Balance Change
+# Zombie Cafe Revival — v1.1 Balance + Music Fix
 
 > This is an unofficial fan-made balance mod/revival project. It is not affiliated with, endorsed by, or approved by Capcom or Beeline Interactive. Zombie Cafe and all original game assets belong to their respective rights holders.
 
-A reverse-engineered revival of *Zombie Cafe* (Android) with a full balance-focused update. **v1.0.0 — Balance Change** makes the game feel fresher, less grindy, and more rewarding while keeping the original Zombie Cafe feel.
+A reverse-engineered revival of *Zombie Cafe* (Android) with a full balance-focused update. **v1.1 — Balance + Music Fix** keeps the v1.0 food economy rework and adds a full music-state fix plus a complete character rebalance, making the game feel fresher, less grindy, and more rewarding while keeping the original Zombie Cafe feel.
 
 This work builds on the original [Zombie Cafe Revival](https://airyz.xyz/p/zombie-cafe-revival/) reverse-engineering effort, which restored the game's build pipeline and runtime.
 
-## What v1.0.0 changes
+## What v1.1 changes
 
-- This version rebalances food profits, XP pacing, playable chefs, infectable zombies/staff, and toxin exchange.
-- DLC and premium cookbooks now give stronger, more worthwhile recipes.
+- **Music fix (headline feature)** — the soundtrack no longer dies after the first track. Cafe music rotates through the main cafe tracks and resumes correctly after the map, raids, and cafe reloads; raids get their own music (with the Haunted House theme for the special boss cafe). See the [v1.1.0 release notes](docs/release-notes/v1.1.0.md).
+- **Character rebalance** — playable chefs, infectable zombies, and staff rebalanced across tips, cook speed, energy, attack, regen, cost, and value, so more of the roster is genuinely worth using.
+- **Built on the v1.0 food rework** — food profits, XP pacing, premium/DLC cookbooks, and the toxin exchange keep their v1.0 rebalance. See the [v1.0.0 Balance Change release notes](docs/release-notes/v1.0v-balance-change.md).
 - **Android/BlueStacks compatibility repair included** — the release APK uses the known working native-library repair.
-
-For the full public notes, see the [v1.0.0 Balance Change release notes](docs/release-notes/v1.0v-balance-change.md).
 
 ## Releases
 
-Latest release: [v1.0.0 — Balance Change](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.0v-balance-change)
+Latest release: [v1.1.0 — Balance + Music Fix](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.1.0)
+
+Previous release: [v1.0.0 — Balance Change](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.0v-balance-change)
 
 Older compatibility test: [v0.1.0 — Android 16 32-bit Compatibility Test](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/android14-compat-test-v0.1)
 
 ## Download
 
-Download: [v1.0.0 Balance Change APK](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/download/v1.0v-balance-change/ZombieCafe-v1.0.0-Balance-Change.apk)
+Download: [v1.1.0 Release APK](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/download/v1.1.0/ZombieCafe-v1.1.0-Release.apk)
 
-The APK is provided as a GitHub Release asset for the **v1.0.0 — Balance Change** release.
+The APK is provided as a GitHub Release asset for the **v1.1.0 — Balance + Music Fix** release.
 
 ```text
-File:    ZombieCafe-v1.0.0-Balance-Change.apk
-SHA-256: bb489e470412c23d9b00db1bd9fbbbbce31a7901196bca8c27dc876bbddefc90
+File:    ZombieCafe-v1.1.0-Release.apk
+SHA-256: d51273188c1c62df16869f535b344c8f414847f68032ddd41e40f54d66954cc4
 ```
 
 The APK is not committed to this repository — download it from the Releases page and verify the checksum.
@@ -43,7 +44,7 @@ The APK is not committed to this repository — download it from the Releases pa
 
 ## How it was made
 
-The balance rework was managed through extracted game data, spreadsheets/tables of every dish's economy, staged change proposals, manual accept/hold decisions per dish, and scripted validation checks (value-range safety, anchor dishes, before/after verification) at every step. Claude and ChatGPT were used as planning and review tools throughout; the actual changes were driven by the data, the staged proposals, and manual decisions.
+The balance rework was managed through extracted game data, spreadsheets/tables of every dish's and character's economy, staged change proposals, manual accept/hold decisions per row, and scripted validation checks (value-range safety, anchor dishes, before/after verification) at every step. Claude and ChatGPT were used as planning and review tools throughout; the actual changes were driven by the data, the staged proposals, and manual decisions.
 
 High-level pipeline:
 
