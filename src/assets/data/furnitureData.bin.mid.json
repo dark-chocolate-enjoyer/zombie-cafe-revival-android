@@ -5826,7 +5826,7 @@
     {
         "UnlockLevel": 0,
         "Name": "10 Toxin",
-        "Price": 30000,
+        "Price": 20000,
         "PurchaseWithToxin": false,
         "SizeX": 1,
         "SizeY": 1,
@@ -5858,7 +5858,7 @@
     {
         "UnlockLevel": 0,
         "Name": "30 Toxin",
-        "Price": 75000,
+        "Price": 50000,
         "PurchaseWithToxin": false,
         "SizeX": 1,
         "SizeY": 1,
@@ -5890,7 +5890,7 @@
     {
         "UnlockLevel": 0,
         "Name": "175 Toxin",
-        "Price": 375000,
+        "Price": 250000,
         "PurchaseWithToxin": false,
         "SizeX": 1,
         "SizeY": 1,
@@ -5922,7 +5922,7 @@
     {
         "UnlockLevel": 0,
         "Name": "750 Toxin",
-        "Price": 1500000,
+        "Price": 1000000,
         "PurchaseWithToxin": false,
         "SizeX": 1,
         "SizeY": 1,
