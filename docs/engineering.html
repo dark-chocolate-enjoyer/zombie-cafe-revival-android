@@ -1,600 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zombie Cafe Revival - Implementation Notes</title>
-<meta name="description" content="A guided explanation of the Zombie Cafe Revival music repair and Japanese cash-to-Toxin exchange.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Zombie Cafe Revival - Implementation Notes">
-<meta property="og:description" content="How two contained Android game repairs were investigated and implemented.">
-<meta property="og:url" content="https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/engineering.html">
-<meta property="og:image" content="https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/assets/engineering/zombie-cafe-menu.png">
-<meta name="twitter:card" content="summary_large_image">
-<style>
-  :root{
-    --bg:#101211;
-    --header:#151816;
-    --surface:#191d1a;
-    --surface-2:#1e231f;
-    --line:#343a35;
-    --line-soft:#292e2a;
-    --text:#d8ddd8;
-    --bright:#f1f3f0;
-    --muted:#929a93;
-    --sage:#a7bea0;
-    --sage-dim:#71866c;
-    --amber:#c7a96a;
-    --red:#c98276;
-    --code:#0b0d0c;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    margin:0;
-    color:var(--text);
-    background:var(--bg);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-    font-size:15px;
-    line-height:1.68;
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:var(--sage);text-underline-offset:3px}
-  a:hover{color:#d7e3d3}
-  code,pre,.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
-  code{color:#b7ccb2}
-  p code,td code,.trace code,.aside code{
-    overflow-wrap:anywhere;
-    word-break:break-word;
-  }
-  .wrap{width:min(960px,calc(100% - 36px));margin:0 auto}
-
-  .site-header{
-    min-height:62px;
-    display:flex;
-    align-items:center;
-    background:var(--header);
-    border-bottom:1px solid #252925;
-  }
-  .site-header .wrap{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:24px;
-  }
-  .site-name{
-    color:var(--bright);
-    font-size:15px;
-    font-weight:600;
-    text-decoration:none;
-  }
-  .site-nav{display:flex;gap:20px}
-  .site-nav a{
-    color:#aeb5af;
-    font-size:13px;
-    text-decoration:none;
-  }
-  .site-nav a:hover{color:#fff}
-
-  .page-head{
-    display:grid;
-    grid-template-columns:minmax(0,1fr) 280px;
-    gap:34px;
-    align-items:end;
-    padding:52px 0 34px;
-    border-bottom:1px solid var(--line);
-  }
-  .breadcrumb{
-    margin:0 0 12px;
-    color:var(--sage-dim);
-    font-size:12px;
-  }
-  h1{
-    margin:0;
-    color:var(--bright);
-    font-size:34px;
-    line-height:1.18;
-    font-weight:500;
-    letter-spacing:0;
-  }
-  .page-lead{
-    max-width:610px;
-    margin:14px 0 0;
-    color:#adb4ae;
-    font-size:16px;
-  }
-  .project-meta{
-    margin:22px 0 0;
-    color:var(--muted);
-    font-size:12px;
-  }
-  .project-meta span{
-    display:inline-block;
-    margin:0 12px 5px 0;
-    padding-right:12px;
-    border-right:1px solid var(--line);
-  }
-  .project-meta span:last-child{border-right:0}
-  .page-image img{
-    width:100%;
-    aspect-ratio:16/9;
-    object-fit:cover;
-    border:1px solid var(--line);
-  }
-  .page-image p{
-    margin:7px 0 0;
-    color:#7f8880;
-    font-size:11px;
-  }
-
-  .contents{
-    display:flex;
-    flex-wrap:wrap;
-    gap:18px;
-    padding:16px 0;
-    border-bottom:1px solid var(--line);
-  }
-  .contents span{color:#707871;font-size:12px}
-  .contents a{font-size:12px;text-decoration:none}
-
-  main{padding-bottom:70px}
-  article{
-    padding:54px 0;
-    border-bottom:1px solid var(--line);
-  }
-  .article-head{
-    display:grid;
-    grid-template-columns:130px minmax(0,1fr);
-    gap:30px;
-    margin-bottom:30px;
-  }
-  .article-label{
-    color:var(--sage-dim);
-    font-size:11px;
-    text-transform:uppercase;
-    padding-top:7px;
-  }
-  h2{
-    margin:0;
-    color:var(--bright);
-    font-size:26px;
-    line-height:1.25;
-    font-weight:500;
-    letter-spacing:0;
-  }
-  .article-intro{
-    margin:10px 0 0;
-    color:#aeb5af;
-    font-size:16px;
-  }
-  .prose{
-    margin-left:160px;
-    max-width:800px;
-  }
-  h3{
-    margin:34px 0 10px;
-    color:var(--bright);
-    font-size:17px;
-    font-weight:500;
-    letter-spacing:0;
-  }
-  p{margin:0 0 17px}
-  strong{color:#edf0ec;font-weight:600}
-
-  .code-block{
-    margin:18px 0 24px;
-    background:var(--code);
-    border:1px solid var(--line);
-  }
-  .code-label{
-    padding:9px 13px;
-    color:#818a82;
-    background:#141714;
-    border-bottom:1px solid var(--line-soft);
-    font-size:11px;
-  }
-  pre{
-    margin:0;
-    padding:16px;
-    overflow:auto;
-    color:#ced7cd;
-    font-size:12px;
-    line-height:1.72;
-    tab-size:2;
-  }
-  .addr{color:var(--amber)}
-  .op{color:#a7c5a1}
-  .comment{color:#737d74}
-  .changed{color:#d3bf91}
-  .removed{color:var(--red)}
-
-  .trace{
-    margin:18px 0 28px;
-    padding:0;
-    list-style:none;
-    counter-reset:trace;
-    border-top:1px solid var(--line-soft);
-  }
-  .trace li{
-    counter-increment:trace;
-    display:grid;
-    grid-template-columns:34px minmax(0,1fr);
-    gap:12px;
-    padding:15px 0;
-    border-bottom:1px solid var(--line-soft);
-  }
-  .trace li::before{
-    content:counter(trace,decimal-leading-zero);
-    color:var(--sage-dim);
-    font-family:Consolas,monospace;
-    font-size:11px;
-    padding-top:3px;
-  }
-  .trace strong{display:block;margin-bottom:3px}
-  .trace p{margin:0;color:#a2aaa3;font-size:14px}
-
-  .table-wrap{overflow-x:auto;margin:16px 0 25px}
-  table{
-    width:100%;
-    border-collapse:collapse;
-    background:var(--surface);
-    font-size:13px;
-  }
-  th,td{
-    padding:11px 12px;
-    text-align:left;
-    vertical-align:top;
-    border-bottom:1px solid var(--line-soft);
-  }
-  th{
-    color:#8f9a90;
-    background:var(--surface-2);
-    font-size:10px;
-    font-weight:500;
-    text-transform:uppercase;
-  }
-  td:first-child{white-space:nowrap}
-  .register-table td:first-child,
-  .exchange-table td:last-child{color:var(--amber)}
-
-  .aside{
-    margin:24px 0;
-    padding:16px 18px;
-    color:#b9c0ba;
-    background:var(--surface);
-    border-left:3px solid var(--sage-dim);
-  }
-  .aside strong{display:block;margin-bottom:5px}
-  .aside p:last-child{margin-bottom:0}
-
-  .check{
-    margin-top:28px;
-    padding-top:13px;
-    color:#8f978f;
-    border-top:1px solid var(--line-soft);
-    font-size:13px;
-  }
-  .check strong{color:#b9c4b7;font-weight:500}
-
-  .sources{
-    padding:42px 0 20px;
-  }
-  .sources h2{font-size:20px}
-  .sources p{margin:8px 0 20px;color:var(--muted)}
-  .source-list{
-    margin:0;
-    padding:0;
-    list-style:none;
-    border-top:1px solid var(--line-soft);
-  }
-  .source-list li{border-bottom:1px solid var(--line-soft)}
-  .source-list a{
-    display:grid;
-    grid-template-columns:230px minmax(0,1fr);
-    gap:16px;
-    padding:12px 0;
-  }
-  .source-list span{color:#858e86}
-
-  footer{
-    padding:28px 0 42px;
-    color:#747c75;
-    background:var(--header);
-    border-top:1px solid #252925;
-    font-size:11px;
-  }
-  footer .wrap{
-    display:flex;
-    justify-content:space-between;
-    gap:24px;
-  }
-  footer p{max-width:700px;margin:0}
-
-  @media(max-width:760px){
-    .page-head{grid-template-columns:1fr}
-    .page-image{max-width:420px}
-    .article-head{grid-template-columns:1fr;gap:8px}
-    .article-label{padding-top:0}
-    .prose{margin-left:0}
-    .source-list a{grid-template-columns:1fr;gap:3px}
-  }
-  @media(max-width:520px){
-    .wrap{width:min(100% - 24px,960px)}
-    .site-nav a:first-child{display:none}
-    .page-head{padding-top:36px}
-    h1{font-size:28px}
-    .project-meta span{display:block;border-right:0}
-    article{padding:42px 0}
-    .contents{gap:13px}
-    footer .wrap{display:block}
-    footer a{display:inline-block;margin-top:12px}
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zombie Cafe Revival - Implementation Notes</title>
+  <meta name="description" content="Technical notes for the music repair and Japanese cash-to-Toxin exchange.">
+  <style>
+    :root{
+      color-scheme:dark;
+      --bg:#101311;
+      --panel:#161a17;
+      --text:#e1e5e1;
+      --muted:#9ba39d;
+      --line:#303731;
+      --accent:#8dbb88;
+      --code:#0b0e0c;
+      --width:1040px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;max-width:100%;overflow-x:hidden}
+    body{margin:0;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--text);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:0}
+    a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+    .wrap{width:min(calc(100% - 40px),var(--width));min-width:0;margin:0 auto}
+    .site-header{border-bottom:1px solid var(--line);background:#0d100e}
+    .site-header .wrap{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .site-name{color:var(--text);font-weight:600;text-decoration:none}
+    .site-nav{display:flex;gap:22px}
+    .site-nav a{font-size:13px;text-decoration:none}
+    .generation-note{margin:18px 0 0;color:#7f8881;font-size:11px;text-align:right}
+    .page-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:48px;align-items:center;padding:54px 0 46px}
+    .breadcrumb{margin:0 0 10px;color:var(--accent);font-size:12px;text-transform:uppercase}
+    h1,h2,h3{margin-top:0;line-height:1.25;letter-spacing:0}
+    h1{margin-bottom:14px;font-size:42px;font-weight:600}
+    h2{margin-bottom:10px;font-size:26px;font-weight:600}
+    h3{margin:32px 0 9px;font-size:18px;font-weight:600}
+    p{margin:0 0 15px}
+    .page-lead{max-width:620px;color:#b8c0ba;font-size:18px}
+    .project-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
+    .project-meta span{border:1px solid var(--line);padding:4px 9px;color:var(--muted);font-size:12px}
+    .page-head>*,.page-image,main,article,.prose{min-width:0}
+    .page-image img{display:block;width:100%;max-width:100%;border:1px solid var(--line)}
+    .page-image p{margin:8px 0 0;color:#778079;font-size:11px}
+    .contents{display:flex;flex-wrap:wrap;gap:20px;padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .contents a{font-size:12px;text-decoration:none}
+    article{padding:52px 0;border-bottom:1px solid var(--line)}
+    .article-intro{max-width:760px;color:var(--muted);font-size:16px}
+    .prose{max-width:880px}
+    .prose>p{color:#b6bdb7}
+    code{font-family:"Cascadia Mono",Consolas,monospace;color:#c7d6c8}
+    .code-block{margin:18px 0 24px;border:1px solid var(--line);background:var(--code);overflow:hidden}
+    .code-label{padding:8px 12px;border-bottom:1px solid var(--line);color:#858e87;font-size:11px}
+    pre{max-width:100%;margin:0;padding:16px;overflow:auto;color:#c4cbc5;font:12px/1.65 "Cascadia Mono",Consolas,monospace;tab-size:2}
+    .addr{color:#6f8f72}.op{color:#d1d6d1}.changed{color:#9ed998}.removed{color:#d78f8f}.comment{color:#6f7871}
+    .trace{margin:18px 0 24px;padding-left:22px;color:#b6bdb7}
+    .trace li{margin-bottom:8px;padding-left:4px}
+    .table-wrap{margin:18px 0 24px;overflow-x:auto;border:1px solid var(--line)}
+    table{width:100%;border-collapse:collapse;background:var(--panel);font-size:13px}
+    th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{color:#cbd2cc;font-weight:600;background:#121613}
+    td{color:#aeb6b0}
+    tr:last-child td{border-bottom:0}
+    .result{margin-top:20px;padding:13px 15px;border-left:3px solid #587b57;background:#141a15;color:#b9c3ba}
+    .sources{padding:48px 0 54px}
+    .source-list{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--line)}
+    .source-list a{display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none}
+    .source-list span{color:var(--muted)}
+    footer{border-top:1px solid var(--line);background:#0d100e}
+    footer .wrap{display:flex;justify-content:space-between;gap:24px;padding:22px 0}
+    footer p,footer a{margin:0;color:#737c75;font-size:11px}
+    @media(max-width:720px){
+      .wrap{width:min(calc(100% - 28px),var(--width))}
+      .site-header .wrap{align-items:flex-start;flex-direction:column;padding:15px 0}
+      .site-nav{flex-wrap:wrap}
+      .contents{display:grid;grid-template-columns:1fr;gap:9px}
+      .generation-note{text-align:left}
+      .page-head{grid-template-columns:1fr;gap:28px;padding:38px 0}
+      h1{font-size:34px}
+      .source-list a,footer .wrap{display:block}
+      .source-list span{display:block;margin-top:3px}
+      footer a{display:inline-block;margin-top:10px}
+    }
+  </style>
 </head>
 <body>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="site-name" href="index.html">Zombie Cafe Revival</a>
-    <nav class="site-nav" aria-label="Site navigation">
-      <a href="index.html">Project overview</a>
-      <a href="https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android">GitHub repository</a>
-    </nav>
-  </div>
-</header>
-
-<div class="wrap">
-  <header class="page-head">
-    <div>
-      <p class="breadcrumb">Project documentation / implementation notes</p>
-      <h1>Implementation notes</h1>
-      <p class="page-lead">Music playback repair and an offline cash-to-Toxin exchange for the Android release of Zombie Cafe.</p>
-      <div class="project-meta">
-        <span>Android</span>
-        <span>32-bit ARM</span>
-      </div>
-    </div>
-    <div class="page-image">
-      <img src="assets/engineering/zombie-cafe-menu.png" alt="Zombie Cafe running in an Android test environment">
-      <p>The original game interface in the Android test environment.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="index.html">Zombie Cafe Revival</a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html">Project overview</a>
+        <a href="https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android">GitHub repository</a>
+      </nav>
     </div>
   </header>
 
-  <nav class="contents" aria-label="Page contents">
-    <span>On this page</span>
-    <a href="#music">Music playback repair</a>
-    <a href="#toxin">Japanese cash-to-Toxin exchange</a>
-    <a href="#sources">Supporting notes</a>
-  </nav>
-</div>
-
-<main class="wrap">
-  <article id="music">
-    <header class="article-head">
-      <div class="article-label">Implementation 01</div>
+  <div class="wrap">
+    <p class="generation-note">Documentation HTML produced using Claude.</p>
+    <header class="page-head">
       <div>
-        <h2>Restoring music after game-state changes</h2>
-        <p class="article-intro">Music could play when the cafe first loaded, then stay silent after a map visit, raid, or cafe reload.</p>
+        <p class="breadcrumb">Project documentation / implementation notes</p>
+        <h1>Implementation notes</h1>
+        <p class="page-lead">The code changes behind the music repair and Japanese cash-to-Toxin exchange.</p>
+        <div class="project-meta"><span>Android</span><span>32-bit ARM</span></div>
+      </div>
+      <div class="page-image">
+        <img src="assets/engineering/zombie-cafe-menu.png" alt="Zombie Cafe running in an Android test environment">
+        <p>The game running in the Android test environment.</p>
       </div>
     </header>
 
-    <div class="prose">
-      <h3>Where the failure appeared</h3>
-      <p>The Android bridge was capable of loading and starting an OGG file, so the first successful track made the audio system look healthier than it was. The important pattern only appeared over a longer session: once channel 0 had been used, later requests for cafe, map, or raid music stopped reaching Java playback.</p>
-      <p>Logcat showed the Java <code>MediaPlayer</code> becoming silent while the native game continued to report music as active. That mismatch directed the investigation away from damaged audio files and toward the native channel state.</p>
+    <nav class="contents" aria-label="Page contents">
+      <a href="#music">Music playback repair</a>
+      <a href="#toxin">Japanese cash-to-Toxin exchange</a>
+      <a href="#sources">Supporting notes</a>
+    </nav>
+  </div>
 
-      <h3>Following the request through native code</h3>
-      <p>Every music path eventually reached <code>CCSound::StartMusic</code>. The function stored its current track pointer at <code>CCSound+0x34</code> and returned immediately when the requested pointer matched that value:</p>
+  <main class="wrap">
+    <article id="music">
+      <h2>Music playback repair</h2>
+      <p class="article-intro">Music played on first load but often stayed silent after entering the map, a raid, or another cafe.</p>
 
-      <div class="code-block">
-        <div class="code-label">CCSound::StartMusic at 0x192f0a - original and patched Thumb</div>
-        <pre><span class="comment">; original</span>
+      <div class="prose">
+        <h3>Native playback state</h3>
+        <p>Logcat showed that Java's <code>MediaPlayer</code> had stopped while native code still reported channel 0 as active. Tracing the request led to <code>CCSound::StartMusic</code>, where a stale track pointer caused an early return. Replacing that branch with <code>nop</code> lets explicit start requests reach the normal stop/start path.</p>
+
+        <div class="code-block">
+          <div class="code-label">libZombieCafeAndroid.so - CCSound::StartMusic at 0x192f0a</div>
+          <pre><span class="comment">; original</span>
 <span class="addr">192f0a</span>  <span class="op">cmp</span>  r0, r5          <span class="comment">; current track == requested track?</span>
-<span class="addr">192f0c</span>  <span class="removed">beq  0x192f32</span>     <span class="comment">; yes: return without reaching Java</span>
+<span class="addr">192f0c</span>  <span class="removed">beq  0x192f32</span>     <span class="comment">; return without reaching Java</span>
 
 <span class="comment">; patched</span>
 <span class="addr">192f0a</span>  <span class="op">cmp</span>  r0, r5
-<span class="addr">192f0c</span>  <span class="changed">nop</span>              <span class="comment">; continue through stop/start handling</span></pre>
-      </div>
+<span class="addr">192f0c</span>  <span class="changed">nop</span>              <span class="comment">; continue into stop/start handling</span></pre>
+        </div>
 
-      <p>The comparison itself was reasonable, but the stored pointer was never cleared by the paths this build actually used. Java could finish, pause, or replace its player while native code continued to believe the old track was active. This caused two related failures:</p>
-      <ol class="trace">
-        <li><div><strong>New starts were discarded.</strong><p>A later map, raid, or cafe request used channel 0 again and hit the early return.</p></div></li>
-        <li><div><strong>The cafe restart timer stayed closed.</strong><p><code>GameStateCafe::tick</code> checked the same stale native belief before selecting another cue.</p></div></li>
-      </ol>
+        <p>The cafe restart check also needed real Java state. Its call was redirected to a small Thumb thunk in unused native space. The thunk returns true only when both the native sound system and Java player report playback.</p>
 
-      <h3>Changing the native playback gate</h3>
-      <p>Replacing the early branch with <code>nop</code> allowed every explicit native start request to continue through the normal stop/start path. A second change was still required because <code>GameStateCafe::tick</code> called <code>ZombieCafe::IsMusicPlaying</code> before scheduling another track.</p>
-      <p>The call at <code>0x1235ca</code> was redirected from <code>CCSound::IsMusicPlaying</code> to an 18-byte Thumb thunk placed in the unused <code>javaFiksuRecordEvent</code> body. The thunk first asks the native sound system, then calls <code>javaIsMusicPlaying(0)</code> only when native state is non-zero:</p>
-
-      <div class="code-block">
-        <div class="code-label">Retargeted call and gate thunk in the current native library</div>
-        <pre><span class="addr">1235c8</span>  <span class="op">push</span> {r4, lr}
-<span class="addr">1235ca</span>  <span class="changed">bl   0x17e5c0</span>     <span class="comment">; combined playback-state gate</span>
-<span class="addr">1235ce</span>  <span class="op">subs</span> r3, r0, #1
-<span class="addr">1235d0</span>  <span class="op">sbcs</span> r0, r3
+        <div class="code-block">
+          <div class="code-label">Combined native/Java playback gate</div>
+          <pre><span class="addr">1235ca</span>  <span class="changed">bl   0x17e5c0</span>     <span class="comment">; redirected cafe check</span>
 
 <span class="addr">17e5c0</span>  <span class="op">push</span> {r4, lr}
 <span class="addr">17e5c2</span>  <span class="op">bl</span>   CCSound::IsMusicPlaying
 <span class="addr">17e5c6</span>  <span class="op">cmp</span>  r0, #0
-<span class="addr">17e5c8</span>  <span class="op">beq</span>  0x17e5d0       <span class="comment">; native says stopped: return false</span>
-<span class="addr">17e5ca</span>  <span class="op">movs</span> r0, #0         <span class="comment">; channel 0</span>
+<span class="addr">17e5c8</span>  <span class="op">beq</span>  0x17e5d0
+<span class="addr">17e5ca</span>  <span class="op">movs</span> r0, #0         <span class="comment">; music channel</span>
 <span class="addr">17e5cc</span>  <span class="op">bl</span>   javaIsMusicPlaying
 <span class="addr">17e5d0</span>  <span class="op">pop</span>  {r4, pc}</pre>
-      </div>
+        </div>
 
-      <div class="aside">
-        <strong>Why combine both states?</strong>
-        <p>Using Java state alone would treat the menu track as cafe music during first entry. Using native state alone recreated the original stale-pointer bug. Requiring both keeps the original first-entry behavior while allowing a silent Java player to reopen the cafe timer.</p>
-      </div>
+        <h3>Android bridge changes</h3>
+        <p>Channel 0 carries cafe, map, and raid music, so <code>CC_Android.smali</code> now records the requested context as <code>CAFE</code>, <code>MAP</code>, or <code>RAID</code>. Map starts are suppressed without blocking raids. Cafe completion schedules the next track after 25 seconds.</p>
 
-      <p>The native cafe restart value was also made explicit instead of relying on the positional constants file. The first repair used 2,496 ms; the maintained library now writes 10,000 ms to <code>ZombieCafe+0x2bc</code>, giving the Java player time to finish before native code considers another cafe start:</p>
-
-      <div class="code-block">
-        <div class="code-label">GameStateCafe::tick restart interval in the current library</div>
-        <pre><span class="addr">aef76</span>  <span class="changed">movw r1, #10000</span>   <span class="comment">; restart interval in milliseconds</span>
-<span class="addr">aef7a</span>  <span class="op">ldr</span>  r2, [r4, #12]  <span class="comment">; ZombieCafe object</span>
-<span class="addr">aef7c</span>  <span class="op">movs</span> r3, #175
-<span class="addr">aef7e</span>  <span class="op">lsls</span> r3, r3, #2    <span class="comment">; 175 * 4 = 0x2bc</span>
-<span class="addr">aef82</span>  <span class="op">str</span>  r1, [r2, r3]   <span class="comment">; cafe music timer = 10,000</span></pre>
-      </div>
-
-      <h3>Adding context to the Android bridge</h3>
-      <p>Native code uses channel 0 for cafe, map, and raid music, so channel number alone cannot identify the screen. The Smali bridge adds <code>mMusicMode</code> with values <code>0=CAFE</code>, <code>1=MAP</code>, and <code>2=RAID</code>. <code>fromNative_loadMusic</code> sets it from the filename requested by the native state machine. The normal raid cue is marked as raid and may be replaced with its alternate theme:</p>
-
-      <div class="code-block">
-        <div class="code-label">CC_Android.smali - mode classification inside fromNative_loadMusic</div>
-        <pre><span class="op">const-string</span> v0, "Zombie Mini Cue 1g"
+        <div class="code-block">
+          <div class="code-label">CC_Android.smali - context and cafe rotation</div>
+          <pre><span class="comment"># classify the normal raid cue</span>
+<span class="op">const-string</span> v0, "Zombie Mini Cue 1g"
 <span class="op">invoke-virtual</span> {p1, v0}, Ljava/lang/String;-&gt;contains(...)Z
-<span class="op">move-result</span> v0
-<span class="op">if-eqz</span> v0, :mode_check_boss
-
 <span class="op">const/4</span> v0, 0x2
 <span class="changed">sput v0, CC_Android;-&gt;mMusicMode:I</span>  <span class="comment"># RAID</span>
-<span class="op">invoke-static</span> {}, Ljava/lang/Math;-&gt;random()D
-<span class="comment"># values below 0.5 replace p1 with "Zombie Mini Cue 1V2.ogg"</span>
 
-<span class="comment"># "Haunted House" also sets RAID</span>
-<span class="comment"># "Zombie Mini Cue 1V2" sets MAP when requested directly</span>
-<span class="comment"># every other channel-0 filename sets CAFE</span></pre>
-      </div>
-
-      <p><code>fromNative_startMusic</code> then suppresses only a channel-0 start classified as map. This keeps map browsing silent without blocking raid music or channel-1 stings:</p>
-
-      <div class="code-block">
-        <div class="code-label">CC_Android.smali - map-only start suppression</div>
-        <pre><span class="op">if-nez</span> p0, :map_ok
-<span class="op">sget</span> v2, CC_Android;-&gt;mMusicMode:I
-<span class="op">const/4</span> v3, 0x1                     <span class="comment"># MAP</span>
-<span class="op">if-ne</span> v2, v3, :map_ok
-
-<span class="op">const-string</span> v3, "startMusic suppressed: map mode"
-<span class="op">invoke-virtual</span> {v2, v3}, PrintStream;-&gt;println(...)V
-<span class="op">move</span> v0, v1                         <span class="comment"># report handled</span>
-<span class="op">goto</span> :goto_0                        <span class="comment"># do not start MediaPlayer</span></pre>
-      </div>
-
-      <p>Finally, <code>onCompletion</code> was implemented for cafe mode. It rotates <code>Zombie Theme V1</code> to <code>Zombie Mini Cue 2g</code>, then <code>3g</code>, then back to <code>V1</code>. The next filename is held in <code>mPendingCafeTrack</code> and posted through a <code>Handler</code> after <code>0x61a8</code> milliseconds (25 seconds). <code>run()</code> rechecks that channel 0 is silent, loads the pending file, disables looping, and calls <code>fromNative_startMusic(0)</code>.</p>
-
-      <div class="code-block">
-        <div class="code-label">CC_Android.smali - cafe completion scheduling and restart</div>
-        <pre><span class="op">const-string</span> v2, "Zombie Mini Cue 2g.ogg"  <span class="comment"># V1 -> 2g</span>
-<span class="comment"># 2g -> "Zombie Mini Cue 3g.ogg"</span>
-<span class="comment"># 3g -> "Zombie Theme V1.ogg"</span>
+<span class="comment"># on cafe completion: V1 -> 2g -> 3g -> V1</span>
 <span class="changed">sput-object v2, CC_Android;-&gt;mPendingCafeTrack:Ljava/lang/String;</span>
-<span class="op">const-wide/16</span> v2, 0x61a8                <span class="comment"># 25,000 ms</span>
-<span class="op">invoke-virtual</span> {v0, v1, v2, v3}, Handler;-&gt;postDelayed(...)Z
+<span class="op">const-wide/16</span> v2, 0x61a8       <span class="comment"># 25,000 ms</span>
+<span class="op">invoke-virtual</span> {v0, v1, v2, v3}, Handler;-&gt;postDelayed(...)Z</pre>
+        </div>
 
-<span class="comment"># Runnable.run(), after confirming cafe mode and silence</span>
-<span class="op">invoke-static</span> {v2, v1}, CC_Android;-&gt;fromNative_loadMusic(...)Z
-<span class="op">invoke-virtual</span> {v1, v2}, MediaPlayer;-&gt;setLooping(Z)V
-<span class="op">invoke-static</span> {v2}, CC_Android;-&gt;fromNative_startMusic(I)Z</pre>
+        <p class="result"><strong>Result:</strong> cafe music rotates again, raid themes play in raids, map browsing remains silent, and ten missing OGG files are supplied from the later Japanese build.</p>
       </div>
+    </article>
 
-      <p>Ten OGG assets from the later Japanese build were added under <code>assets/Music</code>, including the three cafe cues, two normal raid cues, the Haunted House theme, and four stings. The existing <code>.mp3</code>-to-<code>.ogg</code> filename conversion in <code>fromNative_loadMusic</code> lets the recovered files satisfy the old native requests.</p>
+    <article id="toxin">
+      <h2>Japanese cash-to-Toxin exchange</h2>
+      <p class="article-intro">The Japanese client lost access to premium currency when its purchase servers closed. Four old cash-pack entries were converted into local cash-to-Toxin exchanges.</p>
 
-      <p class="check"><strong>Checked by:</strong> repeated cafe-map-raid transitions, native call-site review, Android playback logs, post-patch disassembly, and APK rebuild/signature checks.</p>
-    </div>
-  </article>
+      <div class="prose">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>JP row</th><th>Cash cost</th><th>Toxin granted</th></tr></thead>
+            <tbody>
+              <tr><td>182</td><td>$20,000</td><td>10</td></tr>
+              <tr><td>183</td><td>$50,000</td><td>30</td></tr>
+              <tr><td>184</td><td>$250,000</td><td>175</td></tr>
+              <tr><td>185</td><td>$1,000,000</td><td>750</td></tr>
+            </tbody>
+          </table>
+        </div>
 
-  <article id="toxin">
-    <header class="article-head">
-      <div class="article-label">Implementation 02</div>
-      <div>
-        <h2>Adding an offline cash-to-Toxin exchange to the Japanese build</h2>
-        <p class="article-intro">The Japanese release no longer had a working route to its premium currency after the supporting services were retired.</p>
-      </div>
-    </header>
+        <h3>Finding the purchase handler</h3>
+        <ol class="trace">
+          <li>Matching Type-10 furniture rows identified the same four store packs used by the English exchange.</li>
+          <li>The symbol <code>GameStateCafe::completeStorePurchase</code> led to the JP purchase switch at <code>0x113710</code>.</li>
+          <li>Jump-table case 10 led to <code>0x113b88</code>, where the selected amount was added to the cash wallet.</li>
+        </ol>
 
-    <div class="prose">
-      <h3>Starting from the English implementation</h3>
-      <p>Airyzz's earlier English patch repurposed four store entries that originally sold cash for Toxin. The item data was changed so cash became the purchase cost and the old “cash amount” field became the amount of Toxin to grant.</p>
-      <p>The Japanese furniture data supplied the first useful cross-build anchor. Rows 182 through 185 had the same Type-10 role and the same original pack values as the English build. That established what the store records represented, but not where the Japanese executable handled them.</p>
-
-      <div class="table-wrap">
-        <table class="exchange-table">
-          <thead><tr><th>JP row</th><th>Original pack</th><th>Offline exchange</th></tr></thead>
-          <tbody>
-            <tr><td>182</td><td>10 Toxin buys $10,000 cash</td><td>$20,000 cash grants 10 Toxin</td></tr>
-            <tr><td>183</td><td>25 Toxin buys $50,000 cash</td><td>$50,000 cash grants 30 Toxin</td></tr>
-            <tr><td>184</td><td>100 Toxin buys $250,000 cash</td><td>$250,000 cash grants 175 Toxin</td></tr>
-            <tr><td>185</td><td>350 Toxin buys $1,000,000 cash</td><td>$1,000,000 cash grants 750 Toxin</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>Locating the Japanese purchase case</h3>
-      <p>The Japanese native library retains dynamic C++ symbols. That made it possible to begin at <code>GameStateCafe::completeStorePurchase(GameStateCafe*)</code>, whose Thumb function starts at <code>0x113710</code>, instead of searching the entire library for a guessed byte pattern.</p>
-
-      <ol class="trace">
-        <li><div><strong>Disassemble <code>completeStorePurchase</code>.</strong><p>The function selects purchase behavior through a jump table using the furniture record's Type value.</p></div></li>
-        <li><div><strong>Follow jump-table case 10.</strong><p>Type 10 resolves to the block beginning at <code>0x113b88</code>, matching the four store records identified in the data.</p></div></li>
-        <li><div><strong>Trace the loaded fields.</strong><p>The block reads the Type-10 amount, loads the current cash wallet, adds the two values, and stores the result back to the same wallet field.</p></div></li>
-        <li><div><strong>Resolve the Toxin API separately.</strong><p>The exported symbol <code>ZombieCafe::addToxin(int, bool)</code> starts at <code>0x229fa0</code>; <code>getToxin</code> and <code>addToxin</code> confirm the JP Toxin fields around offset <code>0x494</code>.</p></div></li>
-      </ol>
-
-      <h3>Reading the original block</h3>
-      <div class="code-block">
-        <div class="code-label">JP Type-10 case at 0x113b88</div>
-        <pre><span class="addr">113b88</span>  <span class="op">ldr</span>  r2, [r4, #12]  <span class="comment">; ZombieCafe object</span>
-<span class="addr">113b8a</span>  <span class="op">ldr</span>  r3, [r3, #88]  <span class="comment">; Type-10 amount</span>
+        <div class="code-block">
+          <div class="code-label">Original JP Type-10 case</div>
+          <pre><span class="addr">113b88</span>  <span class="op">ldr</span>  r2, [r4, #12]  <span class="comment">; ZombieCafe object</span>
+<span class="addr">113b8a</span>  <span class="op">ldr</span>  r3, [r3, #88]  <span class="comment">; selected pack amount</span>
 <span class="addr">113b8c</span>  <span class="op">ldr</span>  r1, [r2, r6]   <span class="comment">; current cash</span>
-<span class="addr">113b8e</span>  <span class="op">adds</span> r3, r1, r3     <span class="comment">; cash + amount</span>
-<span class="addr">113b90</span>  <span class="op">str</span>  r3, [r2, r6]   <span class="comment">; store new cash</span>
-<span class="addr">113b92</span>  <span class="op">b</span>    0x114126      <span class="comment">; common purchase exit</span></pre>
+<span class="addr">113b8e</span>  <span class="op">adds</span> r3, r1, r3
+<span class="addr">113b90</span>  <span class="op">str</span>  r3, [r2, r6]   <span class="comment">; write cash</span>
+<span class="addr">113b92</span>  <span class="op">b</span>    0x114126</pre>
+        </div>
+
+        <p>The register meanings came from data flow, not guessed names:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Register</th><th>Meaning</th><th>Evidence</th></tr></thead>
+            <tbody>
+              <tr><td><code>r4</code></td><td><code>GameStateCafe</code></td><td><code>[r4,#12]</code> repeatedly loads the owning game object.</td></tr>
+              <tr><td><code>r3</code></td><td>Selected store row</td><td>The same pointer supplied Type 10 to the switch; offset 88 supplies its amount.</td></tr>
+              <tr><td><code>r6</code></td><td>Cash offset <code>0x67c</code></td><td>The surrounding deduction and accounting paths use the same field.</td></tr>
+              <tr><td><code>r1</code></td><td>Current cash</td><td>Loaded from, added to, and written back to <code>ZombieCafe+0x67c</code>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Applying the Japanese patch</h3>
+        <p>The English instruction bytes could not be copied because its object offsets differ. The JP patch instead calls the exported <code>ZombieCafe::addToxin(int, bool)</code> at <code>0x229fa0</code>, using the selected store amount already available in the case.</p>
+
+        <div class="code-block">
+          <div class="code-label">Patched JP Type-10 case - same 12-byte footprint</div>
+          <pre><span class="addr">113b88</span>  <span class="op">ldr</span>  r0, [r4, #12]  <span class="comment">; this = ZombieCafe</span>
+<span class="addr">113b8a</span>  <span class="op">ldr</span>  r1, [r3, #88]  <span class="comment">; Toxin reward</span>
+<span class="addr">113b8c</span>  <span class="op">movs</span> r2, #0         <span class="comment">; direct local credit</span>
+<span class="addr">113b8e</span>  <span class="changed">bl   0x229fa0</span>     <span class="comment">; addToxin(int, bool)</span>
+<span class="addr">113b92</span>  <span class="op">b</span>    0x114126      <span class="comment">; original common exit</span></pre>
+        </div>
+
+        <p class="result"><strong>Result:</strong> the four shop entries deduct their configured cash prices and grant 10, 30, 175, or 750 Toxin entirely within the offline client.</p>
       </div>
+    </article>
 
-      <p>The register meanings were not inferred from names alone. They were established by following where each value came from and where it was reused:</p>
+    <section class="sources" id="sources">
+      <h2>Supporting notes</h2>
+      <ul class="source-list">
+        <li><a href="reverse/music-debug/FABLE_music_state_fix_v5.html"><strong>Music state repair report</strong><span>Call sites and runtime observations</span></a></li>
+        <li><a href="reverse/android_music_recovery_fix.html"><strong>Android music recovery</strong><span>Recovered assets and playback bridge</span></a></li>
+        <li><a href="jp-revival/toxin-exchange.html"><strong>Japanese Toxin exchange report</strong><span>Patch bytes and artifact notes</span></a></li>
+      </ul>
+    </section>
+  </main>
 
-      <div class="table-wrap">
-        <table class="register-table">
-          <thead><tr><th>Value</th><th>Meaning</th><th>Evidence</th></tr></thead>
-          <tbody>
-            <tr><td>r4</td><td>Current <code>GameStateCafe</code> object</td><td>The containing member function keeps its state pointer in <code>r4</code>; field <code>[r4,#12]</code> is repeatedly used to obtain the owning <code>ZombieCafe</code> instance.</td></tr>
-            <tr><td>r3 before 0x113b8a</td><td>Selected furniture/store record</td><td>The same record supplied the Type value used by the preceding switch. Offset <code>#88</code> is the runtime amount consumed only by the Type-10 cash-pack case.</td></tr>
-            <tr><td>r6</td><td>Cash-wallet field offset <code>0x67c</code></td><td><code>r6</code> is loaded earlier from a literal containing <code>0x67c</code>. The same field is used by nearby cash deduction and accounting paths.</td></tr>
-            <tr><td>r1 at 0x113b8c</td><td>Current cash balance</td><td>It is loaded from <code>ZombieCafe + 0x67c</code>, added to the pack amount, then written back to that exact field.</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>Why the English instruction patch could not be copied</h3>
-      <p>The English implementation changed a direct wallet-field write from cash to Toxin. Its cash field is at offset <code>0x1ac</code>. In the Japanese object layout, cash is at <code>0x67c</code> and the main Toxin field is at <code>0x494</code>. Copying the English bytes would therefore address unrelated Japanese state.</p>
-      <p>The safer JP patch calls the game's own Toxin function. Under the ARM calling convention, <code>r0</code> holds the object pointer, <code>r1</code> the integer amount, and <code>r2</code> the boolean argument. The original block already provides the first two source values, so it can be replaced without adding a trampoline:</p>
-
-      <div class="code-block">
-        <div class="code-label">Patched JP Type-10 case - same 12-byte footprint</div>
-        <pre><span class="addr">113b88</span>  <span class="op">ldr</span>  r0, [r4, #12]  <span class="comment">; this = ZombieCafe object</span>
-<span class="addr">113b8a</span>  <span class="op">ldr</span>  r1, [r3, #88]  <span class="comment">; amount = BuyMoneyAmount</span>
-<span class="addr">113b8c</span>  <span class="op">movs</span> r2, #0         <span class="comment">; direct offline credit</span>
-<span class="addr">113b8e</span>  <span class="changed">bl   0x229fa0</span>     <span class="comment">; ZombieCafe::addToxin(int, bool)</span>
-<span class="addr">113b92</span>  <span class="op">b</span>    0x114126      <span class="comment">; preserve common exit</span></pre>
-      </div>
-
-      <p>Calling <code>addToxin</code> also preserves the Japanese game's own wallet update and clamping logic. The boolean is set to false to match the direct-credit behavior of the earlier offline exchange rather than pretending a server-backed Toxin purchase occurred.</p>
-
-      <p class="check"><strong>Checked by:</strong> exact source-byte guards, post-patch disassembly confirming the branch target, all 835 furniture records reaching exact EOF, a byte-identical pack/unpack/repack cycle, and APK archive/alignment/signature inspection.</p>
+  <footer>
+    <div class="wrap">
+      <p>Zombie Cafe Revival documentation.</p>
+      <a href="index.html">Project overview</a>
     </div>
-  </article>
-
-  <section class="sources" id="sources">
-    <h2>Supporting notes</h2>
-    <p>The longer investigation reports and reproducible patcher remain available separately.</p>
-    <ul class="source-list">
-      <li><a href="reverse/music-debug/FABLE_music_state_fix_v5.html"><strong>Music state repair report</strong><span>Call sites, patch addresses, and runtime observations</span></a></li>
-      <li><a href="reverse/android_music_recovery_fix.html"><strong>Android music recovery</strong><span>Recovered assets and playback bridge behavior</span></a></li>
-      <li><a href="jp-revival/toxin-exchange.html"><strong>Japanese Toxin exchange report</strong><span>Patch bytes, hashes, artifact notes, and install constraints</span></a></li>
-      <li><a href="https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/blob/main/tool/jp_revival/apply_toxin_exchange.py"><strong>Japanese patcher source</strong><span>Source-hash and original-byte checks</span></a></li>
-    </ul>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <p>Unofficial fan maintenance project. Not affiliated with Capcom or Beeline Interactive. Original game assets belong to their respective rights holders.</p>
-    <a href="index.html">Project overview</a>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>
