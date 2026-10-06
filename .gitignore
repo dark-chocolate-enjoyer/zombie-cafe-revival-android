@@ -23,7 +23,14 @@ logs/
 # Local runtime test/scratch builds
 maid_u10_runtime_builds/
 fable5_runtime_test_package/
-jp/research/
+jp/research/*
+# ...except the inputs the JP build and balance export read
+!jp/research/pass3_translation/
+jp/research/pass3_translation/*
+!jp/research/pass3_translation/crosswalks/
+!jp/research/pass4_systems_curation/
+jp/research/pass4_systems_curation/*
+!jp/research/pass4_systems_curation/roster_curation_candidates.csv
 en_archive/
 
 # Internal working notes — kept local, not part of the public docs site

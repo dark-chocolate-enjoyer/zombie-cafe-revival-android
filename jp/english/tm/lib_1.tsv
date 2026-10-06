@@ -1,0 +1,262 @@
+# Native-lib strings (index into work/lib_strings.json) -> English.  \n = newline.
+0	None
+1	Energy: +200
+2	Raises a zombie's Energy by 200.
+3	Energy: +400
+4	Raises a zombie's Energy by 400.
+5	Energy: +600
+6	Raises a zombie's Energy by 600.
+7	Energy: +800
+8	Raises a zombie's Energy by 800.
+9	Energy: +1000
+10	Raises a zombie's Energy by 1000.
+11	Attack: +10
+12	Raises a zombie's Attack by 10.
+13	Attack: +20
+14	Raises a zombie's Attack by 20.
+15	Speed: +10
+16	Raises a zombie's Speed by 10.
+17	Speed: +20
+18	Raises a zombie's Speed by 20.
+19	Tips: +10
+20	Raises a zombie's Tips by 10.
+21	Tips: +20
+22	Raises a zombie's Tips by 20.
+23	Tips: +30
+24	Raises a zombie's Tips by 30.
+25	Diligence: +10
+26	Makes a zombie 10 less likely to slack off.
+27	Diligence: +20
+28	Makes a zombie 20 less likely to slack off.
+29	Diligence: +30
+30	Makes a zombie 30 less likely to slack off.
+31	Energy: +1200
+32	Raises a zombie's Energy by 1200.
+33	Energy: +1400
+34	Raises a zombie's Energy by 1400.
+35	Energy: +1600
+36	Raises a zombie's Energy by 1600.
+37	Energy: +1800
+38	Raises a zombie's Energy by 1800.
+39	Energy: +2000
+40	Raises a zombie's Energy by 2000.
+41	Attack: +10 Speed: +10
+42	Raises a zombie's Attack by 10 and Speed by 10.
+43	Attack: +5
+44	Raises a zombie's Attack by 5.
+45	Speed: +5
+46	Raises a zombie's Speed by 5.
+47	Attack: +5 Speed: +5
+48	Raises a zombie's Attack by 5 and Speed by 5.
+49	Recovery: UP (Lv1)
+50	A zombie's Energy recovers a little faster.
+51	Recovery: UP (Lv2)
+52	A zombie's Energy recovers faster.
+53	Recovery: UP (Lv3)
+54	A zombie's Energy recovers much faster.
+55	Attack: +15 Speed: +15
+56	Raises a zombie's Attack by 15 and Speed by 15.
+57	Attack: +20 Speed: +20
+58	Raises a zombie's Attack by 20 and Speed by 20.
+59	Attack: +30
+60	Raises a zombie's Attack by 30.
+61	Speed: +30
+62	Raises a zombie's Speed by 30.
+63	Energy: +2500
+64	Raises a zombie's Energy by 2500.
+65	Energy: +300 Attack: +5
+66	Raises a zombie's Energy by 300 and Attack by 5.
+67	Energy: +600 Attack: +10
+68	Raises a zombie's Energy by 600 and Attack by 10.
+69	Energy: +1000 Attack: +15
+70	Raises a zombie's Energy by 1000 and Attack by 15.
+71	Energy: +600 Speed: +5
+72	Raises a zombie's Energy by 600 and Speed by 5.
+73	Energy: +1200 Speed: +10
+74	Raises a zombie's Energy by 1200 and Speed by 10.
+75	Energy: +1800 Speed: +15
+76	Raises a zombie's Energy by 1800 and Speed by 15.
+77	Energy: +1000 Attack: +10 Speed: +10
+78	Raises a zombie's Energy by 1000, and Attack and Speed by 10.
+79	Head Smash
+80	Rips off its own head and clubs the enemy for huge damage. Attack: High
+81	Rotten Golden Right
+82	Clobbers the enemy with a monstrous swollen arm for huge damage. Attack: High
+83	Zombie Jet Upper
+84	A leaping uppercut. Attack: High
+85	Zombie Karate Chop
+86	A two-handed chop aimed at the enemy's neck. Attack: High
+87	Zombie Windmill
+88	Whirls both arms around to pummel the enemy. Attack: High
+89	Rapid Zombie Punch
+90	A flurry of lightning-fast punches for huge damage. Attack: High
+91	Zombie Axe Kick
+92	Brings a heel crashing down on the enemy. Attack: Medium
+93	Zombie Chop
+94	A heavy chop. Stronger than a normal attack. Attack: Low
+95	Zombie Body Blow
+96	A sneaky shot to the gut. Attack: Low
+97	Front Kick
+98	Basically, a kick to the front. Attack: Medium
+99	Zombie Uppercut
+100	A fist driven straight into the enemy's jaw. Attack: Medium
+101	Zombie Elbow
+102	Slams an elbow into the enemy. Attack: Low
+103	Ampoule Cafe
+104	Level
+105	 cleared!
+106	Reward
+107	Updating...
+108	In-app purchases are not available on this account/device.
+109	Purchase
+110	Error number = %d
+111	Captain Bana
+112	Rekka
+113	Sango
+114	Captain Bana (Armed)
+115	Rekka (Gold)
+116	Mikuma
+117	Kohaku
+118	Hisui
+119	Revive this zombie?
+120	You got materials!
+121	Really fire
+122	?
+123	Zombie Move
+124	Devastating against event boss cafes!
+125	Ampoule:
+126	You won a zombie!
+127	Your zombie powered up!
+128	Energy:
+129	Rarity:
+130	You got power-up materials!
+131	Zombie Survival
+132	Survival Score
+133	Defeated:
+134	Time:
+135	Not enough Toxin.
+136	 delivery
+137	 made this
+138	Your fridge is full. Time to clear some space.
+139	Throw away this dish?
+140	Throw away ALL stored recipes?
+141	Use ALL stored recipes?
+142	Toss
+143	Toss All
+144	Use All
+145	A surprise bonus from HQ!
+146	Warning: switching will destroy the ampoule currently equipped.
+147	Castle of Thorns
+148	Elephant Manor
+149	Dr. Wily's Lab
+150	Vampire
+151	Monster
+152	Snow White
+153	Ogre Island
+154	Hot Spring Inn
+155	Hippie Land
+156	Fake Hatorush
+157	Halloween
+158	Idol Cafe
+159	Eight-Headed Serpent
+160	Ninja
+161	Four Beasts Northeast
+162	Robo Cafe
+163	Black & White Room
+164	Mega Man X
+165	Ultra Zombie Seven
+166	Crafts Hall
+167	GOD Festival
+168	Butler Cafe
+169	Capcom Cafe
+170	5th Anniversary Cafe
+171	Robo Cafe 2
+172	 Toxin
+173	Roulette Ticket
+174
+175	Battle Results
+176	Defeated:
+177	Defeat Points:
+178	Total Points:
+179	Survival Bonus:
+180
+181	Assault Bonus:
+182	*You can't buy this: it would put you over the Toxin limit.* You can hold up to 5000 Toxin.
+183	*Purchase limit reached.* You can make up to 5 purchases every 15 minutes.\nPlease try again in 15 minutes.
+184	Not enough Toxin to recover.
+185	This zombie's energy is over
+186	%.
+187	So you admit defeat?
+188	Ampoule
+189	Ampoule (Random)
+190	Right now,
+191	 Toxin revives your whole crew!\nContinue?
+192	Not enough Toxin to resume.
+193	Resume in
+194	 hr
+195	 min
+196	0 min
+197	 sec
+198	Basic
+199	Expert
+200	Boss Energy
+201	------- Victory Reward -------
+202	Use 10 Toxin to resume?
+203	Yes
+204	No
+205	Event Details
+206	Start Battle
+207	Resume
+208	Penalty active: the device clock was changed.
+209	GameStateCafe::RankingGetGiftFailed::connection failed
+210	GameStateCafe::RankingGetGiftSuccess::connected
+211	Change
+212	GameStateCafe::EventGetGiftSuccess::connected
+213	GameStateCafe::EventGetGiftSuccess::connection failed
+214	*Waiting for Google Play* \n \nThis can take around 5 minutes.\nPlease wait.
+215	*Purchase in progress* \nPlease try again in a moment.
+216	*You can't buy this: it would put you over the Toxin limit.* \nYou can hold up to 5000 Toxin.
+217	FREE the first time only!
+218	Not enough Toxin.
+219	 Toxin: buy this Zombie Plant seed?
+220	: buy this Zombie Plant seed?
+221	Quest button pressed
+222	Your connection may be unstable. Please check it.
+223	You have plants ready to harvest. \nHarvest them first!
+224	You aren't growing any plants. \nPlant some seeds first!
+225	Uh oh... that flower looks like it hates the food. \n
+226	Zombie Plant growth is now
+227	%.
+228	Furniture storage pressed
+229	Zombie roulette button pressed
+230	Thanks for updating!\nHere's some cash!
+231	Thanks for updating!\nHere's some Toxin!
+232	To start you off, I'll help you out once a day.\nHere's $1000.\nPlay every day in a row and you'll get a special bonus on day 7!
+233	Here's your Beginner Bonus!\nHave $1000.\nPlay again tomorrow for another Beginner Bonus!
+234	You're a real zombie chef now!\nThis is your last Beginner Bonus.\nHave $2000!
+235	You're a real zombie chef now!\nThis is your last Beginner Bonus.\nFor playing 7 days in a row, here's some Toxin!
+236	Zombie harvested.
+237	Zombie sent to the Meat Locker.
+238	No room to take this zombie. Fire a zombie or clear out the Meat Locker to make space!
+239	"
+240	"
+241	 gifts can't be received.\nYou can't hold more than 9.\nEquip or sell some first.
+242	Can't receive the zombie gift.\nFire a zombie or clear out the Meat Locker.
+243	Zombie gift received.
+244	Zombie received in the Meat Locker.
+245	Your Toxin purchase didn't arrive,\nso we've made it up to you.
+246	" - you have 9 of this ampoule!\nYou can't carry more than 9,\nso equip it on a zombie!
+247	Sell
+248	Equip
+249	For the Magic Fridge
+250	Get your cafe to level 4!
+251	Free Toxin!\n \nYou received %d Toxin\n \n%s
+252	sendResultFailed::connection failed
+253	sendResultSuccess::connected
+254	Couldn't send your record. Try sending it again?
+255	Sending record...
+256	Tap a zombie to switch your selection.
+257	This is a special recipe and can't be ordered.
+258	This is a special recipe and can't be given as a gift.
+259	Loading data. Please wait. \n(This can take about 20 seconds depending on your connection.)
+260	*Purchase limit reached.* You can make up to 5 purchases every 15 minutes. Please try again in 15 minutes.

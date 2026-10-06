@@ -1,0 +1,421 @@
+# Character names, JP -> EN (EN-game name copied where the character exists in EN)
+メイド	Maid
+執事	Butler
+メイドロボ	Maid Robot
+メイドカフェの敵メイド	Maid Cafe Rival Maid
+メイドカフェの敵オタク	Maid Cafe Rival Otaku
+大臣	Minister
+ボーイ	Bellboy
+指揮者	Conductor
+ヨガの大先生	Yoga Grandmaster
+ヨガの達人	Yoga Master
+ヒッピーオタク	Hippie Nerd
+元伍長	Ex-Corporal
+女兵士	Female Soldier
+超女兵士	Super Female Soldier
+元帥	Field Marshal
+教頭	Vice Principal
+ネゴシエイター	Negotiator
+ネゴシエイター＋１	Negotiator +1
+魔女っ娘	Magical Girl
+フランケンボクサー	Franken Boxer
+フランケンビジネス	Franken Businessman
+フランケンアーミー	Franken Army
+マッドサイエンティスト	Mad Scientist
+海賊	Pirate
+東洋のゾンビ	Jiangshi
+東洋のゾンビショップの東洋のゾンビチャイルド	Jiangshi Shop Child
+東洋のゾンビショップの東洋のゾンビウーマン	Jiangshi Shop Woman
+アジアンゾンビスター	Asian Zombie Star
+メイドロボＭｋ－２	Maid Robot Mk-2
+エイリアン	Alien
+ラーメン屋店員	Ramen Shop Worker
+ラーメン屋店長	Ramen Shop Manager
+非業のレーサー	Doomed Racer
+非業のレースクイーン	Doomed Race Queen
+親方	Stablemaster
+モヒカン	Mohawk
+土管工	Pipe Fitter
+大道芸人	Street Performer
+消KAレッド	Fire Ranger Red
+HAKA士ブルー	Grave Ranger Blue
+ドスKOIイエロー	Tough Ranger Yellow
+軍SOグリーン	Army Ranger Green
+コスPlayX2000ピンク	Cosplay X2000 Pink
+？？？	???
+下忍	Genin
+中忍	Chunin
+上忍	Jonin
+特忍	Elite Ninja
+お頭	Ninja Boss
+火星人ブレイン	Martian Brain
+金星人	Venusian
+金星人シェフ	Venusian Chef
+豪力の滅兎	Mighty Hare
+疾風の卑妃	Swift Vixen
+勤勉の龍	Diligent Dragon
+チップの独	Lone Tipper
+エイリアン忍者	Alien Ninja
+スケルトン	Skeleton
+ブロンズナイト	Bronze Knight
+ゴールドナイト	Gold Knight
+ダイヤモンドナイト	Diamond Knight
+スケルトンナイト銅	Bronze Skeleton Knight
+スケルトンナイト銀	Silver Skeleton Knight
+スケルトンナイト金	Gold Skeleton Knight
+ダイヤモンドスケルトン	Diamond Skeleton
+ホッケーマスクＦＲＩ	Hockey Mask FRI
+ホッケーマスクＳＡＴ	Hockey Mask SAT
+ホッケーマスクＳＵＮ	Hockey Mask SUN
+死のセールスマン	Death of a Salesman
+死の宅配業者	Death's Courier
+死の職員	Death's Clerk
+空手師範・柔	Karate Master: Soft
+空手師範・剛	Karate Master: Hard
+空手師範・空	Karate Master: Void
+ホッケーマスクＭＯＮ	Hockey Mask MON
+ホッケーマスクＴＵＥ	Hockey Mask TUE
+ホッケーマスクＷＥＤ	Hockey Mask WED
+ホッケーマスクＴＨＵ	Hockey Mask THU
+相撲格闘家	Sumo Fighter
+愚霊死柔術格闘家	Ghoulie Jiu-Jitsu Fighter
+路上ファイター	Street Fighter
+サンジェルマン伯爵	Count St. Germain III
+ヨンジェルマン伯爵	Count St. Germain IV
+ゴジェルマン伯爵	Count St. Germain V
+フランケン甲型	Franken Type A
+フランケン乙型	Franken Type B
+フランケン丙型	Franken Type C
+一狼	Ichiro Wolf
+次狼	Jiro Wolf
+中年隊ＮＯＲＴＨ	Middle-Age Squad NORTH
+中年隊ＷＥＳＴ	Middle-Age Squad WEST
+中年隊ＳＯＵＴＨ	Middle-Age Squad SOUTH
+サイコラビット	Psycho Rabbit
+サイコタイガー	Psycho Tiger
+サイコパンダ	Psycho Panda
+ラムズヘッド	Ram's Head
+シープヘッド	Sheep's Head
+ゴートヘッド	Goat's Head
+シープヘッドシェフ	Sheep's Head Chef
+人狼騎士	Werewolf Knight
+フルアーマーロボ	Full Armor Robo
+デーモン忍者	Demon Ninja
+サイコウルフ	Psycho Wolf
+サイコチキン	Psycho Chicken
+サイコマウス	Psycho Mouse
+ドラキュラレディ	Lady Dracula
+ナイトシェフ	Knight Chef
+ナイト店員Ａ	Knight Staff A
+吸血シェフ	Vampire Chef
+吸血店員Ａ	Vampire Staff A
+吸血店員Ｂ	Vampire Staff B
+ホッケーマスクシェフ	Hockey Mask Chef
+ホッケーマスク店員Ａ	Hockey Mask Staff A
+ホッケーマスク店員Ｂ	Hockey Mask Staff B
+死神シェフ	Reaper Chef
+死神店員Ａ	Reaper Staff A
+死神店員Ｂ	Reaper Staff B
+メイドシェフ	Maid Chef
+メイド店員Ａ	Maid Staff A
+メイド店員Ｂ	Maid Staff B
+着ぐるみシェフ	Mascot Chef
+着ぐるみ店員Ａ	Mascot Staff A
+着ぐるみ店員Ｂ	Mascot Staff B
+宇宙人シェフ	Alien Chef
+格闘家シェフ	Fighter Chef
+格闘家店員Ａ	Fighter Staff A
+格闘家店員Ｂ	Fighter Staff B
+合金ゴールドナイト	Alloy Gold Knight
+超合金ゴールドナイト	Super Alloy Gold Knight
+ジュウサンジェルマン伯爵	Count St. Germain XIII
+ニジュウサンジェルマン伯爵	Count St. Germain XXIII
+ゴーリーマスクＴＨＵ	Gory Mask THU
+ゴーリーマスクＷＥＤ	Gory Mask WED
+死長	Death Director
+死科医	Death Dentist
+凶メイド	Wicked Maid
+最凶メイド	Wickedest Maid
+悪サイコラビット	Evil Psycho Rabbit
+極悪サイコラビット	Vile Psycho Rabbit
+凶格闘家	Wicked Fighter
+最凶格闘家	Wickedest Fighter
+消KAレッドＲＸ	Fire Ranger Red RX
+HAKA士ブルーＧ	Grave Ranger Blue G
+ドスKOIイエローマッスル	Tough Ranger Yellow Muscle
+軍SOグリーンＪ	Army Ranger Green J
+コスPlayX4000ピンク	Cosplay X4000 Pink
+サイコライオン	Psycho Lion
+サファイアナイト	Sapphire Knight
+オパールナイト	Opal Knight
+トパーズナイト	Topaz Knight
+サファイアスケルトン	Sapphire Skeleton
+オパールスケルトン	Opal Skeleton
+トパーズスケルトン	Topaz Skeleton
+デビルシェフ	Devil Chef
+デビル店員Ａ	Devil Staff A
+デビル店員Ｂ	Devil Staff B
+スモーシェフ	Sumo Chef
+スモー店員Ａ	Sumo Staff A
+スモー店員Ｂ	Sumo Staff B
+飲茶シェフ	Dim Sum Chef
+飲茶店員Ａ	Dim Sum Staff A
+飲茶店員Ｂ	Dim Sum Staff B
+忍者シェフ	Ninja Chef
+忍者店員Ａ	Ninja Staff A
+忍者店員Ｂ	Ninja Staff B
+フランケンシェフ	Franken Chef
+フランケン店員Ａ	Franken Staff A
+フランケン店員Ｂ	Franken Staff B
+ミリタリーシェフ	Military Chef
+ミリタリー店員Ａ	Military Staff A
+ミリタリー店員Ｂ	Military Staff B
+スケルトンシェフ	Skeleton Chef
+スケルトン店員Ａ	Skeleton Staff A
+スケルトン店員Ｂ	Skeleton Staff B
+人狼シェフ	Werewolf Chef
+人狼店員Ａ	Werewolf Staff A
+人狼店員Ｂ	Werewolf Staff B
+邪悪なシープヘッド	Evil Sheep's Head
+邪悪なゴートヘッド	Evil Goat's Head
+邪悪なホースヘッド	Evil Horse's Head
+邪悪なラムズヘッド	Evil Ram's Head
+北の横綱	Yokozuna of the North
+南の横綱	Yokozuna of the South
+東の横綱	Yokozuna of the East
+西の横綱	Yokozuna of the West
+餃子王のゾンビ	Zombie Dumpling King
+チャーハン王のゾンビ	Zombie Fried Rice King
+ラーメン王のゾンビ	Zombie Ramen King
+肉まん王のゾンビ	Zombie Pork Bun King
+乱破衆・哀	Rappa Clan: Sorrow
+乱破衆・怖	Rappa Clan: Fear
+乱破衆・怒	Rappa Clan: Rage
+乱破頭	Rappa Clan Chief
+フランケン丁型	Franken Type D
+フランケン戊型	Franken Type E
+フランケン己型	Franken Type F
+フランケン庚型	Franken Type G
+特殊部隊アルファ	Special Forces Alpha
+特殊部隊ブラボー	Special Forces Bravo
+特殊部隊チャーリー	Special Forces Charlie
+特殊部隊デルタ	Special Forces Delta
+海賊スケルトン	Pirate Skeleton
+琥珀スケルトン	Amber Skeleton
+クリスタルスケルトン	Crystal Skeleton
+カルシウムキング	Calcium King
+極上の人狼	Premium Werewolf
+至高の人狼	Supreme Werewolf
+典雅な人狼王	Graceful Werewolf King
+優雅な人狼王	Elegant Werewolf King
+ゴーリーマスクＳＵＮ	Gory Mask SUN
+ゴーリーマスクＳＡＴ	Gory Mask SAT
+ゴーリーマスクＦＲＩ	Gory Mask FRI
+死験官	Death Examiner
+死圧師	Death Masseur
+弁護死	Death Attorney
+ロクジェルマン伯爵	Count St. Germain VI
+ナナジェルマン伯爵	Count St. Germain VII
+ハチジェルマン伯爵	Count St. Germain VIII
+三女メイド	Youngest Maid Sister
+次女メイド	Middle Maid Sister
+長女メイド	Eldest Maid Sister
+イエローヒーロー	Yellow Hero
+ファイター	Fighter
+グリーンヒーロー	Green Hero
+空手家	Karateka
+ピンクヒーロー	Pink Hero
+家庭警備員	Home Security Guard
+ブルーヒーロー	Blue Hero
+金星人Ⅱ	Venusian II
+レッドヒーロー	Red Hero
+お頭代理	Acting Ninja Boss
+家庭警備スペシャリスト	Home Security Specialist
+横綱見習い	Yokozuna Trainee
+サイコラット	Psycho Rat
+死の宣伝マン	Death's Promoter
+アイアンボクサー	Iron Boxer
+アウトボクサー	Out-Boxer
+インボクサー	In-Fighter
+スモーキンボクサー	Smokin' Boxer
+ボクサー店員Ａ	Boxer Staff A
+ボクサー店員Ｂ	Boxer Staff B
+悪の人形	Evil Doll
+魔の人形	Demon Doll
+死の人形	Death Doll
+ジャックの人形	Jack's Doll
+人形シェフ	Doll Chef
+人形店員Ａ	Doll Staff A
+人形店員Ｂ	Doll Staff B
+流星の保安官	Shooting Star Sheriff
+新星の保安官	Nova Sheriff
+凶星の保安官	Doom Star Sheriff
+超新星の保安官	Supernova Sheriff
+保安官シェフ	Sheriff Chef
+保安官店員Ａ	Sheriff Staff A
+保安官店員Ｂ	Sheriff Staff B
+ニコラオス	Nikolaos
+ニコライ	Nikolai
+ニコラス	Nicholas
+サイコルドルフ	Psycho Rudolph
+サンタシェフ	Santa Chef
+サンタ店員Ａ	Santa Staff A
+サンタ店員Ｂ	Santa Staff B
+ホース・デモンズ	Horse Demons
+シープ・デモンズ	Sheep Demons
+ゴート・デモンズ	Goat Demons
+FRY・ハーミット	FRI Hermit
+SAT・ハーミット	SAT Hermit
+SUN・ハーミット	SUN Hermit
+スカル・デス	Skull Death
+ヒカル・デス	Shining Death
+マバユイ・デス	Dazzling Death
+シュリンプ・レッド	Shrimp Red
+シュリンプ・ブルー	Shrimp Blue
+シュリンプ・パープル	Shrimp Purple
+ピストル・シュリンプ	Pistol Shrimp
+シュリンプシェフ	Shrimp Chef
+シュリンプ店員Ａ	Shrimp Staff A
+シュリンプ店員B	Shrimp Staff B
+サイキッカー	Psychic
+サイコメトラー	Psychometrist
+サイキックハンド	Psychic Hand
+サイキック中年	Middle-Aged Psychic
+ペーパーバッグ	Paper Bag
+バケツ	Bucket
+ダンボール	Cardboard Box
+プラスチックダンボール	Plastic Box
+レッドドラゴノイド	Red Dragonoid
+グリーンドラゴノイド	Green Dragonoid
+ブルードラゴノイド	Blue Dragonoid
+ドラゴノイド	Dragonoid
+熱血マスクレスラー	Hot-Blooded Luchador
+悪のマスクレスラー	Evil Luchador
+正義のマスクレスラー	Heroic Luchador
+毒霧レスラー	Poison Mist Wrestler
+灼熱の人狼ナイト	Blazing Werewolf Knight
+鋼鉄の人狼ナイト	Steel Werewolf Knight
+咆哮の人狼ナイト	Howling Werewolf Knight
+人狼ナイト	Werewolf Knight
+森のゴブリン	Forest Goblin
+岩場のゴブリン	Rock Goblin
+鉱山のゴブリン	Mine Goblin
+荒野のゴブリン	Wasteland Goblin
+インビジブル芸人	Invisible Comedian
+インビジブルリーマン	Invisible Salaryman
+インビジブルレディ	Invisible Lady
+ミスターインビジブル	Mister Invisible
+サイキックシェフ	Psychic Chef
+サイキック店員Ａ	Psychic Staff A
+サイキック店員B	Psychic Staff B
+容器なシェフ	Container Chef
+容器な店員Ａ	Container Staff A
+容器な店員B	Container Staff B
+ドラゴンシェフ	Dragon Chef
+ドラゴン店員Ａ	Dragon Staff A
+ドラゴン店員B	Dragon Staff B
+プロテインシェフ	Protein Chef
+プロテイン店員Ａ	Protein Staff A
+プロテイン店員B	Protein Staff B
+根城のシェフ	Lair Chef
+根城の店員Ａ	Lair Staff A
+根城の店員B	Lair Staff B
+ゴブリンシェフ	Goblin Chef
+ゴブリン店員Ａ	Goblin Staff A
+ゴブリン店員B	Goblin Staff B
+透明シェフ	Invisible Chef
+透明店員Ａ	Invisible Staff A
+透明店員B	Invisible Staff B
+サイキックファイター	Psychic Fighter
+紙袋	Paper Sack
+ハーフドラゴン	Half-Dragon
+マスクレスラー	Luchador
+ナイトウルフ	Knight Wolf
+砂のゴブリン	Sand Goblin
+インビジブル	Invisible
+ミカエル	Michael
+ミハエル	Mikhail
+ミッシェル	Michelle
+マイケル	Mike
+特殊部隊エコー	Special Forces Echo
+特殊部隊フォックス	Special Forces Foxtrot
+特殊部隊ゴルフ	Special Forces Golf
+特殊部隊ホテル	Special Forces Hotel
+ユニコーンヘッド	Unicorn Head
+コカトリスヘッド	Cockatrice Head
+グリフォンヘッド	Griffin Head
+ホークヘッド	Hawk Head
+サバリーマン	Mackerel Salaryman
+マンボウ中年	Middle-Aged Sunfish
+アンコウジェントル	Anglerfish Gentleman
+フィッシュスケルトン	Fish Skeleton
+ブリキロボット朱	Tin Robot Vermilion
+ブリキロボット藍	Tin Robot Indigo
+ブリキロボット萌木	Tin Robot Spring Green
+ゼンマイ式ロボット	Wind-Up Robot
+天使シェフ	Angel Chef
+天使店員Ａ	Angel Staff A
+天使店員Ｂ	Angel Staff B
+特殊部隊シェフ	Special Forces Chef
+特殊部隊店員Ａ	Special Forces Staff A
+特殊部隊店員Ｂ	Special Forces Staff B
+悪魔シェフ	Demon Chef
+悪魔店員Ａ	Demon Staff A
+悪魔店員Ｂ	Demon Staff B
+魚シェフ	Fish Chef
+魚店員Ａ	Fish Staff A
+魚店員Ｂ	Fish Staff B
+ブリキシェフ	Tin Chef
+ブリキ店員Ａ	Tin Staff A
+ブリキ店員Ｂ	Tin Staff B
+一丁目の幽霊	Block 1 Ghost
+二丁目の幽霊	Block 2 Ghost
+三丁目の幽霊	Block 3 Ghost
+幽太郎	Ghostaro
+ダイヤのトランプ	Card Soldier Diamonds
+クラブのトランプ	Card Soldier Clubs
+ハートのトランプ	Card Soldier Hearts
+スペードのトランプ	Card Soldier Spades
+トランプスケルトン	Card Skeleton
+よく刺す看護師	Stabby Nurse
+よく踏む看護師	Stompy Nurse
+よく切る看護師	Slashy Nurse
+よく噛む看護師	Bitey Nurse
+赤ずきん	Red Riding Hood
+白ずきん	White Riding Hood
+黒ずきん	Black Riding Hood
+おばあさん	Grandma
+メイドずきん	Maid Riding Hood
+ゆうれいシェフ	Ghost Chef
+ゆうれい店員Ａ	Ghost Staff A
+ゆうれい店員Ｂ	Ghost Staff B
+トランプシェフ	Card Chef
+トランプ店員Ａ	Card Staff A
+トランプ店員Ｂ	Card Staff B
+看護師シェフ	Nurse Chef
+看護師店員Ａ	Nurse Staff A
+看護師店員Ｂ	Nurse Staff B
+あかずきんシェフ	Riding Hood Chef
+あかずきん店員Ａ	Riding Hood Staff A
+あかずきん店員Ｂ	Riding Hood Staff B
+赤龍騎士	Red Dragon Knight
+緑龍騎士	Green Dragon Knight
+青龍騎士	Blue Dragon Knight
+龍戦士	Dragon Warrior
+婦人突撃部隊	Ladies' Assault Squad
+婦人守備部隊	Ladies' Defense Squad
+婦人ゲリラ部隊	Ladies' Guerrilla Squad
+婦人特殊部隊	Ladies' Special Forces
+機械警察部長	Robo Cop Chief
+機械警察課長	Robo Cop Captain
+機械警察署長	Robo Cop Commissioner
+機械警察巡査	Robo Cop Officer
+怠惰な女騎士	Lazy Lady Knight
+憂鬱な女騎士	Gloomy Lady Knight
+自堕落な女騎士	Slovenly Lady Knight
+女騎士	Lady Knight
+極光の女神	Goddess of the Aurora
+勝利の女神	Goddess of Victory
+愛の女神	Goddess of Love
+運命の女神	Goddess of Fate
+鎌倉の武者	Kamakura Warrior

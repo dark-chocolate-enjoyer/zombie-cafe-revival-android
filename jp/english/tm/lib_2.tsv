@@ -1,0 +1,501 @@
+# Native-lib strings 261-760 -> English.  \n = newline.
+261	ABCDE
+262	Level
+263	Connection failed.
+264	Couldn't load the image.
+265	You can't hire any more zombies. Power up or fire zombies to make room.
+266	Not enough Toxin. Buy more Toxin to get zombies.
+267	A connection error occurred. Returning to your cafe.
+268	Do a free roulette spin?
+269	You can't hire this many zombies. Power up or fire zombies to make room.
+270	You don't have any Reward Roulette Tickets. Earn them in special events.
+271	Use 1 Reward Roulette Ticket?
+272	Support
+273	Change Name
+274	Zombie ID: %s
+275	Google Play pressed!!
+276	Later
+277	Ranked Survival
+278	Not enough Toxin to resume.
+279	PT Hero Cafe
+280	No room to take your reward. Fire a zombie or clear out the Meat Locker to make space!
+281	Play Part-Time Hero to get gifts! Install it now!!
+282	Event Cafe
+283	Survival Arena
+284	Monster House
+285	Queen's Castle
+286	Halloween Cafe
+287	Zombie Survival
+288	Resume
+289	Back to Cafe
+290	+5 Locker Slots
+291	Power Up
+292	Fire
+293	Zombie Move:
+294	As a special favor, your locker got 10 more slots.
+295	Your cafe is full, so it can't go back.
+296	It's already plenty big. It can't be expanded any further.
+297	Not enough Toxin. Buy more Toxin to expand your locker.
+298	Favorite zombies can't be fired.
+299	?
+300	/10\nXP gained:
+301	\nCannibal Lv Up:
+302	 XP gained!
+303	 Cannibal level up!
+304	Choose zombies to sacrifice! (Up to 10)
+305	0/10\nXP gained: 0
+306	Skip
+307	 is fully grown and can't be powered up.
+308	Warning: you selected a zombie with Cannibal Lv1 or higher.
+309	Warning: you selected an edible frog, but it won't raise Cannibal Lv.
+310	Warning: you selected an edible frog. Continue?
+311	Sacrifice the selected zombies?\nSacrificed zombies are gone for good. Are you sure?
+312	Choose zombies to sacrifice
+313	sendPresentFailed::send failed
+314	sendPresentSuccess::sent
+315	Sending gift...
+316	Looks like they were too strong.\nWant to drop down a level?
+317	Gift sent to Part-Time Hero.\n-- NOTE -- \nYou can send one gift per day.
+318	Connection failed. Try again?
+319	 is yours!\nIt's in your furniture storage - go check it out!
+320	 is yours!
+321	10% OFF!
+322	20% OFF!
+323	30% OFF!
+324	40% OFF!
+325	50% OFF!
+326	You could win any one of these!
+327	GameStateSurvivalMenu::SurvivalGiftInfoSuccess::connection failed
+328	GameStateSurvivalMenu::SurvivalGotGiftSuccess::connection failed
+329	GameStateSurvivalMenu::SurvivalGotGiftSuccess::connected
+330	GameStateSurvivalMenu::SurvivalGetGiftSuccess::connection failed
+331	GameStateSurvivalMenu::connection failed
+332	GameStateSurvivalMenu::SurvivalGetGiftSuccess::connected
+333	GameStateSurvivalMenu::connected
+334	GameStateSurvivalMenu::SurvivalGiftInfoSuccess::connected
+335	Getting info from the server...
+336	Not enough $ to resume.
+337	Survival isn't running right now.
+338	Rankings are being tallied.
+339	High Score
+340	Total
+341	Rank
+342
+343	Rankings
+344	Details
+345	Collect
+346	Current Rankings
+347	No room to take your reward. Fire a zombie or clear out the Meat Locker to make space!
+348	 obtained!
+349	Got a zombie!
+350	Got a zombie and $!
+351	Couldn't receive the info.
+352	-- NOTICE --\nYou have rewards to collect
+353	Zombie received.
+354	Use $5000 to resume?
+355	Less than 2 hours left. (*) Results won't count if the event ends while you're in Survival.
+356	\nIts current move will be forgotten.
+357	\nload EarlyBird called
+358	\nload EarlyBirdBuy called
+359	\nload EarlyBirdBuy:Success called
+360	Chef:
+361	Zombie:
+362	 (Lv.
+363	)
+364	 \n or Power-Up Gem
+365	Limited Recipe
+366	Reward Roulette Ticket
+367	1 Soul revives your whole crew!\nContinue?
+368	Not enough Toxin to recover.
+369	5th Anniv.
+370	Left:
+371	No room to take your reward. Fire a zombie or clear out the Meat Locker to make space.
+372	You have no zombies to raid with!
+373	Your fridge is full. You can't get any new dishes!
+374	Start the battle using 1 Soul.
+375	Recover Souls?
+376	Recover 1: 10 Toxin
+377	Recover All: 25 Toxin
+378	Recover Souls
+379	Start using Souls.\n(Using 3 gives 3.05x points)
+380	x1
+381	x3
+382	Start the battle using 1 Soul.
+383	Recover all Souls?
+384	Recover All: 25 Toxin
+385	Recover All: 18 Toxin
+386	Recover All: 10 Toxin
+387	Points held:
+388	[Points this run:
+389	------- Next Reward -------
+390	None left!
+391	The event has ended.
+392	Point Exchange
+393	 obtained!
+394	 Toxin obtained!
+395	Your fridge is full!
+396	No room to take your reward. Fire a zombie or clear out the Meat Locker to make space!
+397	Clear the Basic course to unlock this!
+398	Clear the Intermediate course to unlock this!
+399	Clear the Expert course to unlock this!
+400	Clear the Master course to unlock this!
+401	The event is ending soon.
+402	The event had already ended, so your results didn't count.
+403	GameStateEventRaid3Menu::connected
+404	GameStateEventRaid3Menu::connection failed
+405	Current rank:
+406	Current rank: --
+407	Points:
+408	No event is running right now.
+409	Current points:
+410	 dollars
+411	 dollars obtained!
+412	Clear the Minor Misfortune course to unlock this!
+413	Clear the Moderate Misfortune course to unlock this!
+414	Clear the Major Misfortune course to unlock this!
+415	The event has already ended.
+416	Not enough Stamina. Use 10 Toxin to fully recover?
+417	Start the battle using 1 Stamina.
+418	Start the battle using 2 Stamina.
+419	Start the battle using 3 Stamina.
+420	Exchanged for points
+421	You already unlocked this chef, so you can't exchange for it.
+422	Invalid chef
+423	Invalid zombie
+424	An error occurred. The item couldn't be received.
+425	You can't hold more than 9 of the same ampoule.
+426	Data error
+427	You can't receive any more.
+428	GameStateChangeHard::logTransferInfoFaild = connection failed
+429	GameStateChangeHard::logTransferInfoSuccess = connected
+430	GameStateChangeHard::cleaerTransferInfoFaild = connection failed
+431	GameStateChangeHard::clearTransferInfoSuccess = connected
+432	gotTransferInfo::connection failed
+433	Failed
+434	gotTransferInfo::connected
+435	setTransferInfoSuccess::connection failed
+436	Success
+437	setTransferInfoSuccess::connected
+438	Data Transfer
+439	To move your data to a new device, tap "Issue ID" to get a transfer ID. \nTo bring data onto this device, tap "Transfer".
+440	To bring data onto this device, tap "Transfer".
+441	To use data transfer, tap PLAY on the title screen, reach cafe level 2, and open your cafe.
+442	Issuing your transfer ID. \nPlease wait somewhere with a good connection.
+443	Preparing your transfer password.
+444	(Note) Once the transfer starts,\nthe old device's data can never be transferred again.
+445	Processing the transfer. \nPlease wait somewhere with a good connection.
+446	Upload failed
+447	Couldn't upload your game data.
+448	Couldn't issue a transfer ID. (A1000)
+449	An unexpected error occurred. (A1001)
+450	*** Your transfer password *** \n \n
+451	 \nValid until:
+452	An unexpected error occurred. Please try again.
+453	(Make sure you have the latest version.)
+454	Start the transfer?
+455	Please update the app to do a transfer. \n(Tap the Cancel button.)
+456	Cafe Level:
+457	Cash:
+458	Toxin:
+459	 \n
+460	Transfer canceled
+461	No valid save data
+462	Issue Transfer ID
+463	Issue ID
+464	Transfer From Another Device
+465	Transfer
+466	OK
+467	Cancel
+468	$
+469	Learned a zombie move!
+470	Zombie Store
+471	Pick a store to enter!
+472	Pricier roulettes give better zombies.\nSome zombies can only be won here!
+473	Pick a dojo!\nPricier dojos teach stronger moves!
+474	Build a cafe with a matching theme\nusing the Furniture Roulette!
+475	On Sale!
+476	Bargain!
+477	Featured!
+478	Rares Inside!
+479	Limited!
+480	Paused
+481	Down
+482	Now Only!
+483	Bonus Size!
+484	pressed zombie Lottery zombie\n
+485	pressed zombie Lottery dojo\n
+486	pressed zombie Lottery furniture\n
+487	pressed zombie Lottery minor\n
+488	pressed zombie Lottery moderate\n
+489	pressed zombie Lottery major\n
+490	pressed zombie Lottery dire\n
+491	pressed zombie Lottery early bird\n
+492	pressed zombie Lottery basic move\n
+493	pressed zombie Lottery mid move\n
+494	pressed zombie Lottery big move\n
+495	pressed zombie Lottery small furniture\n
+496	pressed zombie Lottery mid furniture\n
+497	pressed zombie Lottery big furniture\n
+498	You can't hire any more zombies. Fire some you don't need, then try again.
+499	Not enough Toxin. Buy more Toxin, then try the roulette.
+500	$
+501	1 Toxin
+502	5 Toxin
+503	10 Toxin
+504	25 Toxin
+505	100 Toxin
+506	 Toxin
+507	Roulette Ticket x
+508	Gift received
+509	Items Received
+510	Chef unlocked
+511	Points held:
+512	Trade
+513	's
+514	:
+515	 (ends)
+516	Left
+517
+518	The exchange period has ended.
+519	Sold Out
+520	Roulette Ticket
+521	 \nTrade for these?
+522	A gift from the Modern Magic Fridge
+523	Bonus
+524	 ->\n
+525	Friends
+526	Nothing's planted. Pick some Seeds.
+527	Planter: Growing
+528	Planter: Done!
+529	Level:
+530	Cannibal Level
+531	, for the good of all, beat
+532	 and seized "
+533	"! Now teamed up with
+534	's cafe - work together to rule the zombie restaurant world!
+535	First Clear Bonus +2 Toxin
+536	Hatorush
+537	By Cook Time
+538	By Dishes Cooked
+539	By Total Sales
+540	By Total XP
+541	By Level
+542	You can't cook 3 or more plant feeds at once.
+543	\n( Req. Lv.
+544	Choose what\nto make.
+545	Dish
+546	Fertilizer
+547	Human
+548	Zombie
+549	Done
+550	No good zombies?\nTry a spin of the Zombie Roulette.
+551	Upload a photo of your cafe to Facebook for an XP bonus. Gather your zombie friends!
+552	Give an ampoule to a zombie to boost its stats!\nHere's one on the house - equip it from the zombie info screen.
+553	Looks like you can hire more zombies now. I brought you a top-notch zombie as a treat - work it hard!
+554	You're working hard. I brought you a present today! There's some handy furniture in your storage - try it out!
+555	You can power up zombies now!\nTry pressing the Power Up button.
+556	The Meat Locker is handy for storing zombies.\nMaster it and you'll be a real pro!
+557	You're now a VIP!
+558	You are a VIP!
+559	- Zombie Roulette is 10% OFF.
+560	You're now a Gold VIP!
+561	You are a Gold VIP!
+562	- Zombie Roulette is 20% OFF.
+563	You're now a Platinum VIP!
+564	You are a Platinum VIP!
+565	- Zombie Roulette is 30% OFF.
+566	You're now a Black VIP!
+567	You are a Black VIP!
+568	- Zombie Roulette is 40% OFF.
+569	You're now a Titanium VIP!
+570	You are a Titanium VIP!
+571	- Zombie Roulette is 50% OFF.
+572	Normal
+573	- Normal
+574	Screen change
+575	sendToxinCheatSuccess::sent
+576	Zombie Maid Cafe
+577	Zombie Dim Sum
+578	Leprechaun Pub
+579	Ninja Tea House
+580	Spaceship Cafe
+581	Devil Cafe
+582	Knight Cafe
+583	Vampire Tea House
+584	Friday the 13th Cafe
+585	Reaper Cafe
+586	Little Devil Maid Cafe
+587	Mascot Cafe
+588	Dire Spaceship Cafe
+589	Fight Club Cafe
+590	Hero Cafe
+591	Nightmare Devil Cafe
+592	Sumo Tea House
+593	Zombie Tavern
+594	Shadow Ninja Tea House
+595	Frankenstein Tea House
+596	Military Cafe
+597	Skeleton Cafe
+598	Werewolf Cafe
+599	RE6 Cafe
+600	Boxer Cafe
+601	Doll Cafe
+602	Sheriff Cafe
+603	Santa's Hut
+604	Ebi's Ship
+605	Psychic Cafe
+606	Obligation Cafe
+607	Dragon Cafe
+608	Cafe Mexico
+609	Death Knight Lair
+610	Goblin Cafe
+611	Invisible Cafe
+612	Angel Cafe
+613	Angry Military Cafe
+614	Purgatory Devil Cafe
+615	Fishmonger Cafe
+616	Tin Cafe
+617	Haunted House
+618	Wonderland Cafe
+619	Nurse Tea House
+620	Red Hat Tea House
+621	Samurai Helmet Cafe
+622	Barracks Cafe
+623	Witch Cafe
+624	ZR Loop Line Station
+625	Bamboo Bear Cafe
+626	West Ghost Tea House
+627	Asura Tea House
+628	Open Sesame Cafe
+629	Performing Arts Hall
+630	Pirates of the Cafe
+631	Still Invisible Cafe
+632	Kabuki Cafe
+633	Wizard Cafe
+634	Pharaoh's Curse Cafe
+635	Yukata Girls Cafe
+636	Transforming Robo Cafe
+637	World-Saving Cafe
+638	Happy Bird Cafe
+639	Valhalla Cafe
+640	Noble Salon
+641	Animal Baseball Club
+642	Space Defense League
+643	Monster School
+644	Clay Pot Cafe
+645	Ramen Shop
+646	Trident Cafe
+647	Undying Baseball Club
+648	Dino Center Red
+649	Dino Center Blue
+650	Monster Academy
+651	Ghoulish Ski Lodge
+652	Animal Circus
+653	Cursed Zombie Abbey
+654	Zombie Zoo
+655	Fishman Club
+656	White Lodge
+657	Shrine Maiden Cafe
+658	Snake Tea House
+659	Space Defense League 2
+660	Sweets Heaven
+661	Swordmaster Teahouse
+662	Eucalyptian Shop
+663	Spiritual Cafe
+664	Black Angel Cafe
+665	Ghost Cafe
+666	Combining Robo Cafe
+667	Cat Cafe
+668	Geist Tea House
+669	Curry House
+670	Monster Club
+671	Frog Kingdom
+672	Fairy Forest Cafe
+673	Forest Cafe
+674	Carnival Cafe
+675	Crane Cafe
+676	School Club Cafe
+677	Plant Cafe
+678	Tengu Cafe
+679	Heavy Metal Teahouse
+680	Doggy Cafe
+681	Shaman's Hall
+682	Doctor's Tea House
+683	Wind & Thunder Cafe
+684	Headphone Tea House
+685	Robo Restaurant
+686	Aviation Cafe
+687	Kinta Cafe
+688	Dora Dragon Cafe
+689	Super Transform Cafe
+690	Cafe Rocinante
+691	Ghosts 'n Goblins
+692	Geist Collab
+693	Santa Fe
+694	Niece Detective Cafe
+695	Cafe Pinocchio
+696	Black Sheep Manor
+697	Dwarf Workshop
+698	Kimono Cafe
+699	President's Cafe
+700	Tanuki Manor
+701	Mobile Cafe
+702	Crafts Exhibition Hall
+703	Cafe Hako
+704	Lucky Cat Teahouse
+705	Millet Dumpling Shop
+706	Reaper's Manor
+707	Cafe GO-YO
+708	Swan Cafe
+709	Jester Cafe
+710	Z Soccer Cafe
+711	Clear Cafe
+712	Hyottoko Tea House
+713	Mad Manor
+714	Monkey & Crab Cafe
+715	Apprentice Cafe
+716	Water Spirit Cafe
+717	Christmas Tea House
+718	Vampire Collab
+719	Deer Cafe
+720	Monkey Tea House
+721	Hot Spring Tea House
+722	Troublesome Cafe
+723	Demon Summoning Cafe
+724	Green Fairy Cafe
+725	Gothic Manor
+726	Corpse Tea House
+727	Sanada Teahouse
+728	Ebisu Tea House
+729	Masked Cafe
+730	Fish Market Diner
+731	Centaur Tea House
+732	Pigeon Ranch
+733	Beach House
+734	Invisible Cafe
+735	Bunny Cafe
+736	Alien Cafe
+737	Moai Tea House
+738	Mummy Cafe
+739	Frankenstein's Shop
+740	's Cafe
+741	:
+742	 order arrived.
+743	 \nYour fridge is full, so it couldn't be received.
+744	You don't have any ampoules.
+745	Owned:
+746	Special Offer zombies come pre-boosted with levels, moves, and ampoules -\nready to work from day one.
+747	Special Offer zombies are rare finds you can't easily get.
+748	Special Offer zombies come pre-boosted with levels, moves, and ampoules -\nready to work from day one.\nThis time, special furniture is included too.
+749	Special Offer zombies are rare finds you can't easily get.\nThis time, special furniture is included too.
+750	Get Special Offer furniture to deck out your cafe,\nand the customers are sure to come flocking.
+751	This special offer is only available for a limited time! \nDon't miss your chance!
+752	Buy the whole set at once!
+753	Toxin included!
+754	A special offer from HQ! \nBuy everything shown here in one go.
+755	No room to take the zombie! Clear out your locker first, then buy.
+756	Buy this item?
+757	Left:
+758	Not enough Toxin to buy this.
+759	 days
+760	 yr

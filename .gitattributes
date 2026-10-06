@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# JP build inputs: keep their exact bytes (no line-ending normalisation)
+jp/english/html_en/** -text
+jp/research/pass3_translation/crosswalks/** -text
