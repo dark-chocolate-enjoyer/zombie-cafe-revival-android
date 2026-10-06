@@ -1,7 +1,42 @@
 src/build
 out/*
 build
+build/
 src/lib/cpp/build/*
 .vscode/settings.json
 server/wrangler.toml
 release-assets/
+
+# Logs and runtime debug captures
+logs/
+
+# Release binaries — APKs are published as GitHub Release assets, never committed
+*.apk
+*.apks
+
+# Archives and bundles
+*.zip
+
+# Signing keys
+*.keystore
+
+# Local runtime test/scratch builds
+maid_u10_runtime_builds/
+fable5_runtime_test_package/
+jp/research/
+en_archive/
+
+# Internal working notes — kept local, not part of the public docs site
+docs/context/
+docs/reverse/
+docs/balance/rebalance_*/
+docs/balance/cookbook_mapping_v1/
+docs/balance/fable5_full_balance_context_bundle/
+docs/release-notes/v1.0.0-balance-candidate.md
+
+# Extracted original game audio — not distributed via the repository
+src/assets/Music/*.ogg
+
+# Python caches
+__pycache__/
+*.pyc
