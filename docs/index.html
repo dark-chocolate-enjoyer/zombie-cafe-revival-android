@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zombie Cafe Revival - Project Documentation</title>
+<meta name="description" content="Release information and technical documentation for the Zombie Cafe Revival Android project.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zombie Cafe Revival">
+<meta property="og:description" content="Release information and implementation notes for an unofficial Android maintenance and balance project.">
+<meta property="og:url" content="https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/">
+<meta property="og:image" content="https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/assets/engineering/zombie-cafe-menu.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --bg:#101211;
+    --header:#151816;
+    --surface:#191d1a;
+    --surface-2:#1e231f;
+    --line:#343a35;
+    --line-soft:#292e2a;
+    --text:#d8ddd8;
+    --bright:#f1f3f0;
+    --muted:#929a93;
+    --sage:#a7bea0;
+    --sage-dim:#71866c;
+    --amber:#c7a96a;
+    --code:#0b0d0c;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    color:var(--text);
+    background:var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    font-size:15px;
+    line-height:1.68;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--sage);text-underline-offset:3px}
+  a:hover{color:#d7e3d3}
+  code,.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+  code{color:#b7ccb2;overflow-wrap:anywhere;word-break:break-word}
+  .wrap{width:min(960px,calc(100% - 36px));margin:0 auto}
+
+  .site-header{
+    min-height:62px;
+    display:flex;
+    align-items:center;
+    background:var(--header);
+    border-bottom:1px solid #252925;
+  }
+  .site-header .wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+  }
+  .site-name{
+    color:var(--bright);
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+  }
+  .site-nav{display:flex;gap:20px}
+  .site-nav a{
+    color:#aeb5af;
+    font-size:13px;
+    text-decoration:none;
+  }
+  .site-nav a:hover{color:#fff}
+
+  .page-head{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 280px;
+    gap:34px;
+    align-items:end;
+    padding:52px 0 34px;
+    border-bottom:1px solid var(--line);
+  }
+  .breadcrumb{
+    margin:0 0 12px;
+    color:var(--sage-dim);
+    font-size:12px;
+  }
+  h1{
+    margin:0;
+    color:var(--bright);
+    font-size:34px;
+    line-height:1.18;
+    font-weight:500;
+    letter-spacing:0;
+  }
+  .page-lead{
+    max-width:610px;
+    margin:14px 0 0;
+    color:#adb4ae;
+    font-size:16px;
+  }
+  .project-meta{
+    margin:22px 0 0;
+    color:var(--muted);
+    font-size:12px;
+  }
+  .project-meta span{
+    display:inline-block;
+    margin:0 12px 5px 0;
+    padding-right:12px;
+    border-right:1px solid var(--line);
+  }
+  .project-meta span:last-child{border-right:0}
+  .page-image img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border:1px solid var(--line);
+  }
+  .page-image p{
+    margin:7px 0 0;
+    color:#7f8880;
+    font-size:11px;
+  }
+
+  .contents{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .contents span{color:#707871;font-size:12px}
+  .contents a{font-size:12px;text-decoration:none}
+
+  main{padding-bottom:64px}
+  section{
+    padding:48px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .section-head{
+    display:grid;
+    grid-template-columns:130px minmax(0,1fr);
+    gap:30px;
+    margin-bottom:26px;
+  }
+  .section-label{
+    color:var(--sage-dim);
+    font-size:11px;
+    text-transform:uppercase;
+    padding-top:6px;
+  }
+  h2{
+    margin:0;
+    color:var(--bright);
+    font-size:24px;
+    line-height:1.25;
+    font-weight:500;
+    letter-spacing:0;
+  }
+  .section-intro{
+    margin:9px 0 0;
+    color:#aeb5af;
+    font-size:15px;
+  }
+  .section-body{margin-left:160px;max-width:800px}
+  p{margin:0 0 16px}
+  strong{color:#edf0ec;font-weight:600}
+
+  .release-file{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:20px;
+    align-items:center;
+    padding:16px;
+    background:var(--surface);
+    border:1px solid var(--line);
+  }
+  .release-file h3{
+    margin:0 0 2px;
+    color:var(--bright);
+    font-size:15px;
+    font-weight:500;
+  }
+  .release-file p{margin:0;color:var(--muted);font-size:12px}
+  .download{
+    display:inline-block;
+    padding:7px 12px;
+    color:#dce8d9;
+    background:#293128;
+    border:1px solid #465244;
+    font-size:12px;
+    text-decoration:none;
+  }
+  .download:hover{color:#fff;background:#303b2f}
+  .hash{
+    margin:12px 0 0;
+    padding:11px 13px;
+    color:#9aa29b;
+    background:var(--code);
+    border:1px solid var(--line-soft);
+    font-size:11px;
+  }
+  .hash code{color:#c8d0c7}
+
+  .change-list,
+  .doc-list{
+    margin:0;
+    padding:0;
+    list-style:none;
+    border-top:1px solid var(--line-soft);
+  }
+  .change-list li{
+    display:grid;
+    grid-template-columns:190px minmax(0,1fr);
+    gap:20px;
+    padding:15px 0;
+    border-bottom:1px solid var(--line-soft);
+  }
+  .change-list strong{font-size:14px;font-weight:500}
+  .change-list p{margin:0;color:#a0a8a1;font-size:14px}
+  .change-list a{white-space:nowrap}
+
+  .doc-list li{border-bottom:1px solid var(--line-soft)}
+  .doc-list a{
+    display:grid;
+    grid-template-columns:230px minmax(0,1fr);
+    gap:16px;
+    padding:13px 0;
+    text-decoration:none;
+  }
+  .doc-list strong{color:var(--sage);font-weight:500}
+  .doc-list span{color:#858e86}
+
+  .notes{
+    margin:0;
+    padding-left:20px;
+  }
+  .notes li{margin:0 0 9px;padding-left:4px;color:#a8afa9}
+
+  footer{
+    padding:28px 0 42px;
+    color:#747c75;
+    background:var(--header);
+    border-top:1px solid #252925;
+    font-size:11px;
+  }
+  footer .wrap{
+    display:flex;
+    justify-content:space-between;
+    gap:24px;
+  }
+  footer p{max-width:700px;margin:0}
+
+  @media(max-width:760px){
+    .page-head{grid-template-columns:1fr}
+    .page-image{max-width:420px}
+    .section-head{grid-template-columns:1fr;gap:8px}
+    .section-label{padding-top:0}
+    .section-body{margin-left:0}
+    .change-list li,.doc-list a{grid-template-columns:1fr;gap:3px}
+  }
+  @media(max-width:520px){
+    .wrap{width:min(100% - 24px,960px)}
+    .site-nav a:first-child{display:none}
+    .page-head{padding-top:36px}
+    h1{font-size:28px}
+    .project-meta span{display:block;border-right:0}
+    section{padding:40px 0}
+    .contents{gap:13px}
+    .release-file{grid-template-columns:1fr}
+    .download{justify-self:start}
+    footer .wrap{display:block}
+    footer a{display:inline-block;margin-top:12px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="index.html">Zombie Cafe Revival</a>
+    <nav class="site-nav" aria-label="Site navigation">
+      <a href="engineering.html">Implementation notes</a>
+      <a href="https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android">GitHub repository</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <header class="page-head">
+    <div>
+      <p class="breadcrumb">Project documentation</p>
+      <h1>Zombie Cafe Revival</h1>
+      <p class="page-lead">An unofficial maintenance and balance project for the discontinued Android release of Zombie Cafe.</p>
+      <div class="project-meta">
+        <span>Release v1.1.0</span>
+        <span>Android</span>
+        <span>32-bit ARM</span>
+      </div>
+    </div>
+    <div class="page-image">
+      <img src="assets/engineering/zombie-cafe-menu.png" alt="Zombie Cafe running in an Android test environment">
+      <p>The maintained English build in the Android test environment.</p>
+    </div>
+  </header>
+
+  <nav class="contents" aria-label="Page contents">
+    <span>Contents</span>
+    <a href="#release">Current release</a>
+    <a href="#changes">Project changes</a>
+    <a href="#documentation">Documentation</a>
+    <a href="#limitations">Limitations</a>
+  </nav>
+</div>
+
+<main class="wrap">
+  <section id="release">
+    <header class="section-head">
+      <div class="section-label">Release</div>
+      <div>
+        <h2>Current Android build</h2>
+        <p class="section-intro">Version 1.1.0 combines the food and character balance passes with the Android music playback repair.</p>
+      </div>
+    </header>
+    <div class="section-body">
+      <div class="release-file">
+        <div>
+          <h3>ZombieCafe-v1.1.0-Release.apk</h3>
+          <p>Signed APK, approximately 48 MB. Manual sideloading is required.</p>
+        </div>
+        <a class="download" href="https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/download/v1.1.0/ZombieCafe-v1.1.0-Release.apk">Download APK</a>
+      </div>
+      <p class="hash"><strong>SHA-256</strong><br><code>d51273188c1c62df16869f535b344c8f414847f68032ddd41e40f54d66954cc4</code></p>
+    </div>
+  </section>
+
+  <section id="changes">
+    <header class="section-head">
+      <div class="section-label">Scope</div>
+      <div>
+        <h2>Project changes</h2>
+        <p class="section-intro">The work is divided between runtime maintenance and data balancing, with investigation notes retained alongside the source.</p>
+      </div>
+    </header>
+    <div class="section-body">
+      <ul class="change-list">
+        <li>
+          <strong>Music playback</strong>
+          <p>Repairs stale native playback state, restores cafe rotation and raid themes, keeps the map silent, and recovers ten OGG assets from the later Japanese build. <a href="engineering.html#music">Implementation details</a></p>
+        </li>
+        <li>
+          <strong>Character balance</strong>
+          <p>Reworks playable chefs and infectable staff across cost, energy, regeneration, combat, speed, and tip value so more of the roster remains useful.</p>
+        </li>
+        <li>
+          <strong>Food economy</strong>
+          <p>Retains the v1.0 progression pass for recipe timing, earnings, experience, premium dishes, and special-stove chains.</p>
+        </li>
+        <li>
+          <strong>Japanese build</strong>
+          <p>Ongoing work covers English localization, Android compatibility, balance transfer, and a local cash-to-Toxin exchange that replaces the retired server purchase path. <a href="engineering.html#toxin">Implementation details</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="documentation">
+    <header class="section-head">
+      <div class="section-label">Reference</div>
+      <div>
+        <h2>Documentation</h2>
+        <p class="section-intro">Project summaries are kept short here; the linked notes contain the code-level and data-level detail.</p>
+      </div>
+    </header>
+    <div class="section-body">
+      <ul class="doc-list">
+        <li><a href="engineering.html"><strong>Implementation notes</strong><span>Native music state repair and Japanese cash-to-Toxin exchange</span></a></li>
+        <li><a href="v1.0.0.html"><strong>Version 1.0 overview</strong><span>Food progression and economy changes</span></a></li>
+        <li><a href="release-notes/v1.0v-balance-change.html"><strong>Version 1.0 release notes</strong><span>Player-facing balance change record</span></a></li>
+        <li><a href="balance/v1.0_balance_summary.html"><strong>Balance summary</strong><span>Technical rationale and before-and-after values</span></a></li>
+        <li><a href="https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android"><strong>Source repository</strong><span>Android source tree, tools, reports, and release history</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="limitations">
+    <header class="section-head">
+      <div class="section-label">Runtime</div>
+      <div>
+        <h2>Installation and limitations</h2>
+        <p class="section-intro">This remains a legacy 32-bit Android game and carries some constraints from the original application.</p>
+      </div>
+    </header>
+    <div class="section-body">
+      <ul class="notes">
+        <li>The APK requires a device or emulator with 32-bit ARM application support.</li>
+        <li>Installation is by sideloading; the package is not distributed through Google Play.</li>
+        <li>The English build has been exercised in BlueStacks. Hardware and newer Android versions may behave differently.</li>
+        <li>Some original instability may remain around map and raid transitions. The music repair does not claim to resolve every legacy crash.</li>
+        <li>The Japanese translation and compatibility build is a separate workstream and is not part of the v1.1.0 English APK above.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Unofficial fan maintenance project. Not affiliated with Capcom or Beeline Interactive. Original game assets belong to their respective rights holders.</p>
+    <a href="engineering.html">Implementation notes</a>
+  </div>
+</footer>
+
+</body>
+</html>
