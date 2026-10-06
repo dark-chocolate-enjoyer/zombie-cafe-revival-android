@@ -1,6 +1,7 @@
 package serialization
 
 import (
+	"bytes"
 	"cctpacker/cct_file"
 	"encoding/json"
 	"file_types"
@@ -57,6 +58,66 @@ func DeserializeCharacters(file *os.File, out_path string) {
 
 func DeserializeCharactersJP(file *os.File, out_path string) {
 	data := file_types.ReadCharactersJP(file)
+	b, err := json.MarshalIndent(data, "", "    ")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	writeJson(b, out_path)
+}
+
+func DeserializeFoodJP(file *os.File, out_path string) {
+	data := file_types.ReadFoodsJP(file)
+	b, err := json.MarshalIndent(data, "", "    ")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	writeJson(b, out_path)
+}
+
+func DeserializeFurnitureJP(file *os.File, out_path string) {
+	data := file_types.ReadFurnitureDataJP(file)
+	b, err := json.MarshalIndent(data, "", "    ")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	writeJson(b, out_path)
+}
+
+func DeserializeQuestsJP(file *os.File, out_path string) {
+	data := file_types.ReadQuestsJP(file)
+	b, err := json.MarshalIndent(data, "", "    ")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	writeJson(b, out_path)
+}
+
+func DeserializeItemSets(file *os.File, out_path string) {
+	data := file_types.ReadItemSets(file)
+	b, err := json.MarshalIndent(data, "", "    ")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	writeJson(b, out_path)
+}
+
+func DeserializePlacementLayouts(file *os.File, out_path string) {
+	data := file_types.ReadPlacementLayouts(file)
+	b, err := json.MarshalIndent(data, "", "    ")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	writeJson(b, out_path)
+}
+
+func DeserializeEnemyItemData(file *os.File, out_path string) {
+	data := file_types.ReadEnemyItemData(file)
 	b, err := json.MarshalIndent(data, "", "    ")
 	if err != nil {
 		fmt.Println(err)
@@ -135,6 +196,142 @@ func SerializeCharacters(file *os.File, jsonData string) {
 	}
 
 	file_types.WriteCharacters(file, data)
+}
+
+// The JP serializers fail closed: they encode fully in memory and return an
+// error on malformed JSON (or an empty record list, which is never legitimate
+// for these files), so a bad input can never create or truncate an output
+// binary. SerializeFiles only opens the output file after one succeeds.
+
+func SerializeCharactersJP(jsonData string) ([]byte, error) {
+	var data []file_types.CharacterJP
+	if err := json.Unmarshal([]byte(jsonData), &data); err != nil {
+		return nil, fmt.Errorf("characterData.bin.mid.json: %w", err)
+	}
+	if len(data) == 0 {
+		return nil, fmt.Errorf("characterData.bin.mid.json: refusing to write an empty record list")
+	}
+	var buf bytes.Buffer
+	file_types.WriteCharactersJP(&buf, data)
+	return buf.Bytes(), nil
+}
+
+func SerializeFoodJP(jsonData string) ([]byte, error) {
+	var data []file_types.FoodJP
+	if err := json.Unmarshal([]byte(jsonData), &data); err != nil {
+		return nil, fmt.Errorf("foodData.bin.mid.json: %w", err)
+	}
+	if len(data) == 0 {
+		return nil, fmt.Errorf("foodData.bin.mid.json: refusing to write an empty record list")
+	}
+	var buf bytes.Buffer
+	file_types.WriteFoodsJP(&buf, data)
+	return buf.Bytes(), nil
+}
+
+func SerializeFurnitureJP(jsonData string) ([]byte, error) {
+	var data []file_types.FurnitureJP
+	if err := json.Unmarshal([]byte(jsonData), &data); err != nil {
+		return nil, fmt.Errorf("furnitureData.bin.mid.json: %w", err)
+	}
+	if len(data) == 0 {
+		return nil, fmt.Errorf("furnitureData.bin.mid.json: refusing to write an empty record list")
+	}
+	for i, record := range data {
+		if len(record.Color) != 4 {
+			return nil, fmt.Errorf(
+				"furnitureData.bin.mid.json: record %d has %d color values, want 4",
+				i, len(record.Color),
+			)
+		}
+		for _, value := range record.Color {
+			if value < 0 || value > 255 {
+				return nil, fmt.Errorf(
+					"furnitureData.bin.mid.json: record %d has color value %d outside byte range",
+					i, value,
+				)
+			}
+		}
+	}
+	var buf bytes.Buffer
+	file_types.WriteFurnitureDataJP(&buf, data)
+	return buf.Bytes(), nil
+}
+
+func SerializeQuestsJP(jsonData string) ([]byte, error) {
+	var data []file_types.QuestJP
+	if err := json.Unmarshal([]byte(jsonData), &data); err != nil {
+		return nil, fmt.Errorf("quest.bin.mid.json: %w", err)
+	}
+	if len(data) == 0 {
+		return nil, fmt.Errorf("quest.bin.mid.json: refusing to write an empty record list")
+	}
+	var buf bytes.Buffer
+	file_types.WriteQuestsJP(&buf, data)
+	return buf.Bytes(), nil
+}
+
+func SerializeItemSets(jsonData string) ([]byte, error) {
+	var raw []struct {
+		Name  string
+		Slots []string
+	}
+	if err := json.Unmarshal([]byte(jsonData), &raw); err != nil {
+		return nil, fmt.Errorf("item-set json: %w", err)
+	}
+	if len(raw) == 0 {
+		return nil, fmt.Errorf("item-set json: refusing to write an empty record list")
+	}
+	data := make([]file_types.ItemSet, len(raw))
+	for i, record := range raw {
+		if len(record.Slots) != len(data[i].Slots) {
+			return nil, fmt.Errorf(
+				"item-set json: record %d has %d slots, want %d",
+				i, len(record.Slots), len(data[i].Slots),
+			)
+		}
+		data[i].Name = record.Name
+		copy(data[i].Slots[:], record.Slots)
+	}
+	var buf bytes.Buffer
+	file_types.WriteItemSets(&buf, data)
+	return buf.Bytes(), nil
+}
+
+func SerializePlacementLayouts(jsonData string) ([]byte, error) {
+	var data []file_types.PlacementRecord
+	if err := json.Unmarshal([]byte(jsonData), &data); err != nil {
+		return nil, fmt.Errorf("placement-layout json: %w", err)
+	}
+	if len(data) == 0 {
+		return nil, fmt.Errorf("placement-layout json: refusing to write an empty record list")
+	}
+	var buf bytes.Buffer
+	file_types.WritePlacementLayouts(&buf, data)
+	return buf.Bytes(), nil
+}
+
+func SerializeEnemyItemData(jsonData string) ([]byte, error) {
+	var raw [][]byte
+	if err := json.Unmarshal([]byte(jsonData), &raw); err != nil {
+		return nil, fmt.Errorf("enemyItemData.bin.mid.json: %w", err)
+	}
+	if len(raw) == 0 {
+		return nil, fmt.Errorf("enemyItemData.bin.mid.json: refusing to write an empty record list")
+	}
+	data := make([]file_types.EnemyItemDataRow, len(raw))
+	for i, row := range raw {
+		if len(row) != len(data[i]) {
+			return nil, fmt.Errorf(
+				"enemyItemData.bin.mid.json: row %d has %d values, want %d",
+				i, len(row), len(data[i]),
+			)
+		}
+		copy(data[i][:], row)
+	}
+	var buf bytes.Buffer
+	file_types.WriteEnemyItemData(&buf, data)
+	return buf.Bytes(), nil
 }
 
 func SerializeCharacterArt(file *os.File, jsonData string) {
@@ -481,14 +678,26 @@ func DeserializeFiles(in_directory string, out_directory string, is_jp bool) {
 		"animationData.bin.mid":          DeserializeAnimationData,
 	}
 
+	deserialize_map["enemyItems.bin.mid"] = DeserializeItemSets
+	deserialize_map["enemyLayouts.bin.mid"] = DeserializePlacementLayouts
+	deserialize_map["enemyItemData.bin.mid"] = DeserializeEnemyItemData
+
 	if is_jp {
 		deserialize_map = map[string]func(*os.File, string){
-			"characterData.bin.mid":   DeserializeCharactersJP,
-			"characterParts.cct.mid":  DeserializeCCTexture,
-			"characterParts2.cct.mid": DeserializeCCTexture,
-			"characterParts3.cct.mid": DeserializeCCTexture,
-			"characterParts4.cct.mid": DeserializeCCTexture,
-			"characterParts5.cct.mid": DeserializeCCTexture,
+			"characterData.bin.mid":    DeserializeCharactersJP,
+			"foodData.bin.mid":         DeserializeFoodJP,
+			"furnitureData.bin.mid":    DeserializeFurnitureJP,
+			"quest.bin.mid":            DeserializeQuestsJP,
+			"enemyItems.bin.mid":       DeserializeItemSets,
+			"enemyLayouts.bin.mid":     DeserializePlacementLayouts,
+			"enemyItemData.bin.mid":    DeserializeEnemyItemData,
+			"colosseumItems.bin.mid":   DeserializeItemSets,
+			"colosseumLayouts.bin.mid": DeserializePlacementLayouts,
+			"characterParts.cct.mid":   DeserializeCCTexture,
+			"characterParts2.cct.mid":  DeserializeCCTexture,
+			"characterParts3.cct.mid":  DeserializeCCTexture,
+			"characterParts4.cct.mid":  DeserializeCCTexture,
+			"characterParts5.cct.mid":  DeserializeCCTexture,
 		}
 	}
 
@@ -508,7 +717,7 @@ func DeserializeFiles(in_directory string, out_directory string, is_jp bool) {
 	}
 }
 
-func SerializeFiles(in_directory string, out_directory string) {
+func SerializeFiles(in_directory string, out_directory string, is_jp bool) int {
 
 	log.Println("Serializing data files: " + in_directory)
 
@@ -530,6 +739,10 @@ func SerializeFiles(in_directory string, out_directory string) {
 		"recipeOffsets.bin.mid":          SerializeOffsets,
 		"recipeOffsets2.bin.mid":         SerializeOffsets,
 		"zcOffsets.bin.mid":              SerializeOffsets,
+	}
+
+	if is_jp {
+		return SerializeFilesJP(in_directory, out_directory)
 	}
 
 	for key, value := range deserialize_map {
@@ -554,4 +767,50 @@ func SerializeFiles(in_directory string, out_directory string) {
 
 		value(f, string(b))
 	}
+	return 0
+}
+
+// SerializeFilesJP packs the JP JSON files. Unlike the EN path, each file is
+// fully serialized in memory first; the output binary is only created once
+// serialization has succeeded, so malformed JSON can neither create nor
+// truncate an output file. Returns the number of files that failed.
+func SerializeFilesJP(in_directory string, out_directory string) int {
+	serializers := map[string]func(string) ([]byte, error){
+		"characterData.bin.mid":    SerializeCharactersJP,
+		"foodData.bin.mid":         SerializeFoodJP,
+		"furnitureData.bin.mid":    SerializeFurnitureJP,
+		"quest.bin.mid":            SerializeQuestsJP,
+		"enemyItems.bin.mid":       SerializeItemSets,
+		"enemyLayouts.bin.mid":     SerializePlacementLayouts,
+		"enemyItemData.bin.mid":    SerializeEnemyItemData,
+		"colosseumItems.bin.mid":   SerializeItemSets,
+		"colosseumLayouts.bin.mid": SerializePlacementLayouts,
+	}
+
+	failed := 0
+	for key, serialize := range serializers {
+		path := filepath.Join(in_directory, key+".json")
+
+		b, err := os.ReadFile(path)
+		if err != nil {
+			continue
+		}
+
+		encoded, err := serialize(string(b))
+		if err != nil {
+			log.Println("NOT writing "+key+":", err)
+			failed++
+			continue
+		}
+
+		outpath := filepath.Join(out_directory, key)
+		os.MkdirAll(filepath.Dir(outpath), os.ModePerm)
+
+		log.Println("Writing to " + outpath)
+
+		if err := os.WriteFile(outpath, encoded, 0644); err != nil {
+			log.Fatal(err)
+		}
+	}
+	return failed
 }
