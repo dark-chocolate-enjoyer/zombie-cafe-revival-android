@@ -412,7 +412,7 @@ func ReadCafe(file io.Reader) Cafe {
 
 	c.U7 = ReadBool(file)
 
-	fmt.Printf("U7: %d\n", c.U7)
+	fmt.Printf("U7: %v\n", c.U7)
 
 	numTiles := int(c.MapSizeX * c.MapSizeY)
 
