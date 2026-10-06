@@ -1,0 +1,836 @@
+﻿index,name,jp_name,unlock_level,price,currency,in_store,type,category,size,money_per_hour,max_money,rating_bonus,stove_speed_mult,xp,buy_money_amount,UMid,UTailFloat1,UTailInt,UTailFloat2,description
+0,Dirty fridge,汚れた冷蔵庫,0,50,cash,True,8,255,1x1,0,0,-0.005,1,0,0,0,1,0,1,
+1,Dirty stove,汚れたコンロ,0,50,cash,True,1,255,1x1,0,0,-0.005,1,0,0,0,1,0,1,
+2,Dirty Sink,汚れたシンク,0,50,cash,True,11,255,1x1,0,0,-0.005,1,0,0,0,1,0,1,
+3,Plain table,普通のテーブル,0,150,cash,True,3,4,1x1,0,0,0,1,2,0,0,1,0,1,Just a regular ol' table.
+4,Plain Chair,普通のイス,0,75,cash,True,4,4,1x1,0,0,0,1,1,0,0,1,0,1,Just a regular ol' chair.
+5,Boarded window,板張りされた窓,1,50,cash,True,6,2,1x1,0,0,0,1,1,0,0,1,0,1,"For that essential ""zombipocalypse"" look."
+6,Dead plant,枯れた植物,0,5,cash,True,0,255,1x1,0,0,-0.005,1,0,0,0,1,0,1,
+7,Toxic barrel,毒のタル,1,50,toxin,True,13,6,1x1,0,0,0,1,2000,0,0,1,0,1,This barrel of toxic slime regenerates all of your zombies 10% faster.
+8,Vending machine,自動販売機,1,16000,cash,True,0,6,1x1,25,250,0,1,240,0,0,1,0,1,This vending machine accumulates money over time and must be emptied when it's full.
+9,Vending machine,自動販売機,1,8,toxin,True,0,6,1x1,25,250,0,1,320,0,0,1,0,1,This vending machine accumulates money over time and must be emptied when it's full.
+10,Flatscreen TV,薄型TV,1,16000,cash,True,0,6,1x1,0,0,0.015,1,240,0,0,1,0,1,Entertain your customers with this flatscreen TV. Also gives a rating bonus.
+11,Flatscreen TV,薄型TV,1,8,toxin,True,0,6,1x1,0,0,0.015,1,320,0,0,1,0,1,Entertain your customers with this flatscreen TV. Also gives a rating bonus.
+12,Arcade Cabinet,アーケードゲーム,1,50000,cash,True,0,6,1x1,75,1000,0,1,750,0,0,1,0,1,"When the ""$"" icon appears, tap it to collect the earnings."
+13,Arcade Cabinet 2,アーケードゲーム 2,1,25,toxin,True,0,6,1x1,100,1200,0,1,1000,0,0,1,0,1,"When the ""$"" icon appears, tap it to collect the earnings."
+14,ATM,ATM,1,60,toxin,True,0,6,1x1,200,5000,0,1,2400,0,0,1,0,1,This ATM accumulates money over time and must be emptied when it's full.
+15,Plain Stove,普通のコンロ,1,500,cash,True,1,3,1x1,0,0,0,1,8,0,0,1,0,1,Just a regular ol' stove.
+16,Plain serving counter,普通のカウンター,1,500,cash,True,2,3,1x1,0,0,0,1,8,0,0,1,0,1,Just a regular ol' serving counter.
+17,Plain Sink,普通のシンク,1,500,cash,True,11,3,1x1,0,0,0,1,8,0,0,1,0,1,Just a regular ol' sink.
+18,Plain Fridge,普通の冷蔵庫,1,500,cash,True,8,3,1x1,0,0,0,1,8,0,0,1,0,1,Just a regular ol' fridge.
+19,Plain table,普通のテーブル,1,200,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Just a regular ol' table.
+20,Plain table,普通のテーブル,1,200,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Just a regular ol' table.
+21,Plain table,普通のテーブル,1,200,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Just a regular ol' table.
+22,Plain table,普通のテーブル,1,200,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Just a regular ol' table.
+23,Plain Chair,普通のイス,1,100,cash,True,4,4,1x1,0,0,0,1,2,0,0,1,0,1,Just a regular ol' chair.
+24,Plain Chair,普通のイス,1,100,cash,True,4,4,1x1,0,0,0,1,2,0,0,1,0,1,Just a regular ol' chair.
+25,Plain Chair,普通のイス,1,100,cash,True,4,4,1x1,0,0,0,1,2,0,0,1,0,1,Just a regular ol' chair.
+26,Plain Chair,普通のイス,1,100,cash,True,4,4,1x1,0,0,0,1,2,0,0,1,0,1,Just a regular ol' chair.
+27,Plain Wall,普通の壁,1,30,cash,True,5,5,1x1,0,0,0,1,0,0,0,2,0,1,Just a plain ol' wall.
+28,Plain Wall,普通の壁,1,40,cash,True,5,5,1x1,0,0,0,1,0,0,0,2,0,1,Just a plain ol' wall.
+29,Plain Wall,普通の壁,1,40,cash,True,5,5,1x1,0,0,0,1,0,0,0,2,0,1,Just a plain ol' wall.
+30,Plain Wall,普通の壁,1,40,cash,True,5,5,1x1,0,0,0,1,0,0,0,2,0,1,Just a plain ol' wall.
+31,Plain Wall,普通の壁,1,40,cash,True,5,5,1x1,0,0,0,1,0,0,0,2,0,1,Just a plain ol' wall.
+32,Plain Wall,普通の壁,1,75,cash,True,5,5,1x1,0,0,0,1,1,0,0,2,0,1,Just a plain ol' wall.
+33,Small window,小さな窓,1,200,cash,True,6,2,1x1,0,0,0,1,3,0,0,1,0,1,Windows help you spot the incoming hoards of ravenous customers.
+34,Plain Tile Floor,普通のタイル床,1,10,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Just a regular ol' tile floor.
+35,Plain Tile Floor,普通のタイル床,1,15,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Just a regular ol' tile floor.
+36,Plain Tile Floor,普通のタイル床,1,15,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Just a regular ol' tile floor.
+37,Plain Tile Floor,普通のタイル床,1,15,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Just a regular ol' tile floor.
+38,Plain Tile Floor,普通のタイル床,1,15,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Just a regular ol' tile floor.
+39,Plain Tile Floor,普通のタイル床,1,25,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Just a regular ol' tile floor.
+40,Small potted plant 2,小さな鉢植え,1,100,cash,True,0,1,1x1,0,0,0.001,1,2,0,0,1,0,1,A little greenery will spruce up any restaurant.
+41,Plain table,普通のテーブル,1,1,toxin,True,3,4,1x1,0,0,0.003,1,40,0,0,1,0,1,Just a regular ol' table.
+42,Plain Chair,普通のイス,1,1,toxin,True,4,4,1x1,0,0,0.003,1,40,0,0,1,0,1,"Just a regular ol' chair, but it comes with a rating bonus."
+43,Plain Round Table,普通の丸テーブル,2,225,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Don't be a square! Get a round table.
+44,Plain Round Table,普通の丸テーブル,2,225,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Don't be a square! Get a round table.
+45,Plain Round Table,普通の丸テーブル,2,225,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Don't be a square! Get a round table.
+46,Plain Round Table,普通の丸テーブル,2,225,cash,True,3,4,1x1,0,0,0,1,3,0,0,1,0,1,Don't be a square! Get a round table.
+47,Plain Round Table,普通の丸テーブル,3,1,toxin,True,3,4,1x1,0,0,0.003,1,40,0,0,1,0,1,Don't be a square! Get a round table.
+48,Small window w/plain curtains,普通のカーテンが付いた小さな窓,2,200,cash,True,6,2,1x1,0,0,0,1,3,0,0,1,0,1,A window with curtains you can peek through.
+49,Small potted plant,小さな鉢植え 2,2,100,cash,True,0,1,1x1,0,0,0.001,1,2,0,0,1,0,1,Plants are immune to the appetites of zombies.
+50,Standing lamp,スタンドランプ,2,300,cash,True,0,1,1x1,0,0,0,1,5,0,0,1,0,1,This lamp sheds light.
+51,Standing lamp,スタンドランプ,3,350,cash,True,0,1,1x1,0,0,0,1,5,0,0,1,0,1,This lamp sheds light.
+52,Standing lamp,スタンドランプ,4,350,cash,True,0,1,1x1,0,0,0,1,5,0,0,1,0,1,This lamp sheds light.
+53,Standing lamp,スタンドランプ,5,1,toxin,True,0,1,1x1,0,0,0.005,1,40,0,0,1,0,1,This lamp sheds light.
+54,Diner chair,ダイナー風のイス,3,150,cash,True,4,4,1x1,0,0,0,1,2,0,0,1,0,1,"This chair is cool, daddy-o."
+55,Diner stool,ダイナー風のスツール,3,130,cash,True,4,4,1x1,0,0,0,1,2,0,0,1,0,1,This stool is really boss.
+56,Diner table,ダイナー風のテーブル,3,350,cash,True,3,4,1x1,0,0,0,1,5,0,0,1,0,1,You're going to dig this happening table.
+57,Large potted plant/tree,大きな鉢植え,4,500,cash,True,0,1,1x1,0,0,0.002,1,8,0,0,1,0,1,Add some vegetation to your cafe with this topiary.
+58,Plain Divider,普通のパーテーション,4,200,cash,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Use this room divider to organize your restaurant.
+59,Plain Divider,普通のパーテーション,5,250,cash,True,9,1,1x1,0,0,0,1,4,0,0,1,0,1,Use this room divider to organize your restaurant.
+60,Plain Divider,普通のパーテーション,5,250,cash,True,9,1,1x1,0,0,0,1,4,0,0,1,0,1,Use this room divider to organize your restaurant.
+61,Plain Divider,普通のパーテーション,5,250,cash,True,9,1,1x1,0,0,0,1,4,0,0,1,0,1,Use this room divider to organize your restaurant.
+62,Plain Divider,普通のパーテーション,5,250,cash,True,9,1,1x1,0,0,0,1,4,0,0,1,0,1,Use this room divider to organize your restaurant.
+63,Plain Divider,普通のパーテーション,6,1,toxin,True,9,1,1x1,0,0,0.003,1,40,0,0,1,0,1,Use this room divider to organize your restaurant.
+64,Diner Chair 2,ダイナー風のイス 2,4,200,cash,True,4,4,1x1,0,0,0,1,3,0,0,1,0,1,"This chair is cool, daddy-o."
+65,Diner Stool 2,ダイナー風のスツール 2,4,175,cash,True,4,4,1x1,0,0,0,1,3,0,0,1,0,1,This stool is really boss.
+66,Diner Table 2,ダイナー風のテーブル 2,4,400,cash,True,3,4,1x1,0,0,0,1,6,0,0,1,0,1,You're going to dig this happening table.
+67,Rounded-corner/steel window,スチール製の丸い窓,4,750,cash,True,6,2,1x1,0,0,0,1,11,0,0,1,0,1,This steel window is just what your restaurant needs in the midst of this zombipocalypse.
+68,Hat/coat rack,帽子・コート掛け,4,200,cash,True,0,1,1x1,0,0,0,1,3,0,0,1,0,1,Somewhere for your customers to hang their hats.
+69,Checkered Tile,チェックのタイル,4,40,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Dig this retro-looking floor.
+70,Checkered Tile,チェックのタイル,5,50,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Dig this retro-looking floor.
+71,Checkered Tile,チェックのタイル,5,50,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Dig this retro-looking floor.
+72,Checkered Tile,チェックのタイル,6,50,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Dig this retro-looking floor.
+73,Checkered Tile,チェックのタイル,6,50,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Dig this retro-looking floor.
+74,Stainless steel stove,ピカピカのスチール製コンロ,5,25000,cash,True,1,3,1x1,0,0,0.02,1,375,0,0,1,0,1,This attractive new stove will give your cafe a rating bonus.
+75,Stainless steel serving counter,ピカピカのスチール製カウンター,5,15000,cash,True,2,3,1x1,0,0,0.01,1,225,0,0,1,0,1,This shiny new counter will give your cafe a rating bonus.
+76,Stainless steel sink,ピカピカのスチール製シンク,5,25000,cash,True,11,3,1x1,0,0,0.02,1,375,0,0,1,0,1,This spotless sink will give your cafe a rating bonus.
+77,Stainless steel fridge,ピカピカのスチール製冷蔵庫,5,25000,cash,True,8,3,1x1,0,0,0.02,1,375,0,0,1,0,1,This new fridge will give your cafe a rating bonus.
+78,Neon sign,ネオン,5,20000,cash,True,6,2,1x1,0,0,0.02,1,300,0,0,1,0,1,This classy-looking neon sign comes with a rating bonus.
+79,Neon sign,ネオン,5,10,toxin,True,6,2,1x1,0,0,0.02,1,400,0,0,1,0,1,This classy-looking neon sign comes with a rating bonus.
+80,Diner wall lamp,ダイナー風壁掛けランプ,5,250,cash,True,6,2,1x1,0,0,0,1,4,0,0,1,0,1,A hip-looking lamp.
+81,Jukebox,ジュークボックス,5,40000,cash,True,0,6,1x1,55,1500,0,1,600,0,0,1,0,1,This happening jukebox will give your cafe extra cash. Just make sure you empty it when it's full.
+82,Jukebox,ジュークボックス 2,5,20,toxin,True,0,6,1x1,75,1800,0,1,800,0,0,1,0,1,This happening jukebox will give your cafe extra cash. Just make sure you empty it when it's full.
+83,Checkered Tile,チェックのタイル,5,60,cash,True,7,5,1x1,0,0,0,1,1,0,0,1,0,1,Dig this retro-looking floor.
+84,Large window w/plain curtains,普通のカーテンが付いた大きな窓,6,1000,cash,True,6,2,1x1,0,0,0,1,15,0,0,1,0,1,A large window with plain curtains.
+85,Large window w/blinds,ブラインド付きの大きな窓,6,1100,cash,True,6,2,1x1,0,0,0,1,17,0,0,1,0,1,A large window with blinds.
+86,Classic wooden chair,シンプルなウッドチェア,6,500,cash,True,4,4,1x1,0,0,0,1,8,0,0,1,0,1,It's functional. It's wooden. It's a chair.
+87,Red Checkered Table,赤いチェック柄テーブルクロス付きテーブル,6,1000,cash,True,3,4,1x1,0,0,0,1,15,0,0,1,0,1,A table straight from Italy.
+88,Grapevine Divider,ブドウのパーテーション,6,1500,cash,True,9,1,1x1,0,0,0,1,23,0,0,1,0,1,Spruce up your restaurant with this lattice divider.
+89,Wine rack,ワインラック,6,2500,cash,True,6,2,1x1,0,0,0.005,1,38,0,0,1,0,1,This wine rack will give your cafe some class and a rating bonus.
+90,Wall Lamp,壁掛けランプ,6,500,cash,True,6,2,1x1,0,0,0,1,8,0,0,1,0,1,A handy wall lamp.
+91,Hardwood floor,堅木張りの床,6,125,cash,True,7,5,1x1,0,0,0,1,2,0,0,1,0,1,This flooring is made from the corpses of many trees.
+92,Hardwood floor,堅木張りの床,7,150,cash,True,7,5,1x1,0,0,0,1,2,0,0,1,0,1,This flooring is made from the corpses of many trees.
+93,Hardwood floor,堅木張りの床,7,150,cash,True,7,5,1x1,0,0,0,1,2,0,0,1,0,1,This flooring is made from the corpses of many trees.
+94,Large potted plant/tree,大きな鉢植え,7,500,cash,True,0,1,1x1,0,0,0.002,1,8,0,0,1,0,1,Add some vegetation to your cafe with this topiary.
+95,Classic wooden chair,シンプルなウッドチェア,7,600,cash,True,4,4,1x1,0,0,0,1,9,0,0,1,0,1,It's functional. It's wooden. It's a chair.
+96,Classic wooden chair,シンプルなウッドチェア,8,600,cash,True,4,4,1x1,0,0,0,1,9,0,0,1,0,1,It's functional. It's wooden. It's a chair.
+97,Classic wooden chair,シンプルなウッドチェア,8,600,cash,True,4,4,1x1,0,0,0,1,9,0,0,1,0,1,It's functional. It's wooden. It's a chair.
+98,Classic wooden chair,シンプルなウッドチェア,8,600,cash,True,4,4,1x1,0,0,0,1,9,0,0,1,0,1,It's functional. It's wooden. It's a chair.
+99,Classic wooden chair,シンプルなウッドチェア,8,600,cash,True,4,4,1x1,0,0,0,1,9,0,0,1,0,1,It's functional. It's wooden. It's a chair.
+100,Classic wooden chair,シンプルなウッドチェア,9,1,toxin,True,4,4,1x1,0,0,0.005,1,40,0,0,1,0,1,It's functional. It's wooden. It's a chair.
+101,Brick wall,レンガの壁,7,250,cash,True,5,5,1x1,0,0,0,1,4,0,0,1,0,1,"All in all, they're just bricks in a wall."
+102,Brick wall,レンガの壁,7,300,cash,True,5,5,1x1,0,0,0,1,5,0,0,1,0,1,"All in all, they're just bricks in a wall."
+103,Brick wall,レンガの壁,7,300,cash,True,5,5,1x1,0,0,0,1,5,0,0,1,0,1,"All in all, they're just bricks in a wall."
+104,Brick wall,レンガの壁,8,300,cash,True,5,5,1x1,0,0,0,1,5,0,0,1,0,1,"All in all, they're just bricks in a wall."
+105,Brick wall,レンガの壁,8,300,cash,True,5,5,1x1,0,0,0,1,5,0,0,1,0,1,"All in all, they're just bricks in a wall."
+106,Brick-lined window,レンガの窓,7,1500,cash,True,6,2,1x1,0,0,0,1,23,0,0,1,0,1,Use it to see if there's anybody out there.
+107,Hardwood floor,堅木張りの床,7,175,cash,True,7,5,1x1,0,0,0,1,3,0,0,1,0,1,This flooring is made from the corpses of many trees.
+108,Brick wall,レンガの壁,9,500,cash,True,5,5,1x1,0,0,0,1,8,0,0,1,0,1,"All in all, they're just bricks in a wall."
+109,Stylish Table,しゃれたテーブル,9,1200,cash,True,3,4,1x1,0,0,0,1,18,0,0,1,0,1,A table too stylish to get food on.
+110,Stylish Table,しゃれたテーブル,9,1400,cash,True,3,4,1x1,0,0,0,1,21,0,0,1,0,1,A table too stylish to get food on.
+111,Stylish Table,しゃれたテーブル,9,1400,cash,True,3,4,1x1,0,0,0,1,21,0,0,1,0,1,A table too stylish to get food on.
+112,Stylish Table,しゃれたテーブル,9,1400,cash,True,3,4,1x1,0,0,0,1,21,0,0,1,0,1,A table too stylish to get food on.
+113,Stylish Table,しゃれたテーブル,9,1400,cash,True,3,4,1x1,0,0,0,1,21,0,0,1,0,1,A table too stylish to get food on.
+114,Stylish Chair,しゃれたイス,9,1000,cash,True,4,4,1x1,0,0,0,1,15,0,0,1,0,1,A model chair built on zombie ergonomics.
+115,Stylish Chair,しゃれたイス,9,1200,cash,True,4,4,1x1,0,0,0,1,18,0,0,1,0,1,A model chair built on zombie ergonomics.
+116,Stylish Chair,しゃれたイス,9,1200,cash,True,4,4,1x1,0,0,0,1,18,0,0,1,0,1,A model chair built on zombie ergonomics.
+117,Stylish Chair,しゃれたイス,9,1200,cash,True,4,4,1x1,0,0,0,1,18,0,0,1,0,1,A model chair built on zombie ergonomics.
+118,Stylish Chair,しゃれたイス,9,1200,cash,True,4,4,1x1,0,0,0,1,18,0,0,1,0,1,A model chair built on zombie ergonomics.
+119,Paper Wall Lamp,紙製の照明,9,750,cash,True,6,2,1x1,0,0,0,1,11,0,0,1,0,1,"A paper lamp. Surprisingly enough, it never catches fire."
+120,Fish Tank,水槽,9,8000,cash,True,0,1,1x1,0,0,0.008,1,120,0,0,1,0,1,"These fish are for watching, not for eating. But they give a rating bonus."
+121,Stylish Table,しゃれたテーブル,9,2,toxin,True,3,4,1x1,0,0,0.005,1,80,0,0,1,0,1,This stylish table will give your cafe a rating bonus.
+122,Stylish Chair,しゃれたイス,9,2,toxin,True,4,4,1x1,0,0,0.005,1,80,0,0,1,0,1,A model chair built on zombie ergonomics. Gives a small rating bonus.
+123,Potted bamboo,鉢植えの竹,10,1000,cash,True,0,1,1x1,0,0,0.002,1,15,0,0,1,0,1,This beautiful bamboo will give your cafe some Zen appeal.
+124,Exotic fish tank,エキゾチックな水槽,10,15,toxin,True,0,1,1x1,0,0,0.05,1,600,0,0,1,0,1,"Why have a regular fish tank, when you can go exotic? Also gives a rating bonus."
+125,Chopsticks Poster,ハシのポスター,10,30000,cash,True,6,2,1x1,0,0,0.04,1,450,0,0,1,0,1,Hang this cool poster for a rating bonus.
+126,Chopsticks Poster,ハシのポスター,9,15,toxin,True,6,2,1x1,0,0,0.04,1,600,0,0,1,0,1,Hang this cool poster for a rating bonus.
+127,Bonsai Tree,ボンサイ,10,1500,cash,True,0,1,1x1,0,0,0.003,1,23,0,0,1,0,1,"The time-honored art of bonsai, now in a zombie cafe."
+128,Country Table,テーブル（一般／シンプル／カントリー）,12,1500,cash,True,3,4,1x1,0,0,0,1,23,0,0,1,0,1,Stylish and functional.
+129,Country Table,テーブル（一般／シンプル／カントリー）,13,1800,cash,True,3,4,1x1,0,0,0,1,27,0,0,1,0,1,Stylish and functional.
+130,Country Table,テーブル（一般／シンプル／カントリー）,13,1800,cash,True,3,4,1x1,0,0,0,1,27,0,0,1,0,1,Stylish and functional.
+131,Country Table,テーブル（一般／シンプル／カントリー）,13,1800,cash,True,3,4,1x1,0,0,0,1,27,0,0,1,0,1,Stylish and functional.
+132,Country Chair,イス（一般／シンプル／カントリー）,12,1200,cash,True,4,4,1x1,0,0,0,1,18,0,0,1,0,1,"Stylish, and comfy too."
+133,Country Chair,イス（一般／シンプル／カントリー）,13,1500,cash,True,4,4,1x1,0,0,0,1,23,0,0,1,0,1,Give your cafe some cool with this sharp-looking chair.
+134,Country Chair,イス（一般／シンプル／カントリー）,13,1500,cash,True,4,4,1x1,0,0,0,1,23,0,0,1,0,1,Give your cafe some cool with this sharp-looking chair.
+135,Country Chair,イス（一般／シンプル／カントリー）,13,1500,cash,True,4,4,1x1,0,0,0,1,23,0,0,1,0,1,Give your cafe some cool with this sharp-looking chair.
+136,Country Chair,イス（一般／シンプル／カントリー）,13,1500,cash,True,4,4,1x1,0,0,0,1,23,0,0,1,0,1,Give your cafe some cool with this sharp-looking chair.
+137,Wood panel wall,木製パネル壁,12,500,cash,True,5,5,1x1,0,0,0,1,8,0,0,1,0,1,This wood paneling will give your restaurant some rustic appeal.
+138,Slot machine,スロットマシン,12,100000,cash,True,0,6,1x1,150,1800,0,1,1500,0,0,1,0,1,Earn cash from this slot machine. Empty it when it's full. (Limit: 1)
+139,Slot machine,スロットマシン,11,50,toxin,True,0,6,1x1,150,1800,0,1,2000,0,0,1,0,1,"Earn some cold, hard cash from this slot machine. Just make sure you empty it when it's full."
+140,Country Table,テーブル（一般／シンプル／カントリー）,13,2,toxin,True,3,4,1x1,0,0,0.005,1,80,0,0,1,0,1,This stylish table will give your cafe a small rating bonus.
+141,Country Chair,イス（一般／シンプル／カントリー）,13,2,toxin,True,4,4,1x1,0,0,0.005,1,80,0,0,1,0,1,This stylish chair will give your cafe a small rating bonus.
+142,Wagon wheel,馬車の車輪,13,1000,cash,True,6,2,1x1,0,0,0,1,15,0,0,1,0,1,From a real wagon.
+143,Large window w/fiesta curtains,赤／緑／白のカーテンが付いた大きな窓,13,2000,cash,True,6,2,1x1,0,0,0,1,30,0,0,1,0,1,A large window with colorful curtains.
+144,Potted cactus,鉢植えのサボテン,13,2500,cash,True,0,1,1x1,0,0,0.003,1,38,0,0,1,0,1,Add a little bit of desert flora in your restaurant with this cactus.
+145,Two-tone brown tile,ツートンブラウンのタイル,13,200,cash,True,7,5,1x1,0,0,0,1,3,0,0,1,0,1,Use this simple brown tile to decorate your floor.
+146,Wood panel wall,木製パネル壁,14,600,cash,True,5,5,1x1,0,0,0,1,9,0,0,1,0,1,This wood paneling will give your restaurant some rustic appeal.
+147,Steer skull,牛の頭骨,14,1500,cash,True,6,2,1x1,0,0,0,1,23,0,0,1,0,1,Give your cafe some rustic appeal with this steer skull.
+148,dartboard,ダーツ盤,15,2000,cash,True,6,2,1x1,0,0,0.003,1,30,0,0,1,0,1,"Throwing sharp, pointy objects is an amusing recreational activity."
+149,Bar Counter,バーカウンター,15,2000,cash,True,2,3,1x1,0,0,0,1,30,0,0,1,0,1,A stylish and functional bar counter.
+150,Foosball table,テーブルサッカー台,15,60000,cash,True,0,6,1x1,90,1000,0,1,900,0,0,1,0,1,Earn some extra cash with this Foosball table. Just make sure you empty it when it's full.
+151,Foosball table,テーブルサッカー台,15,30,toxin,True,0,6,1x1,100,1200,0,1,1200,0,0,1,0,1,Earn some extra cash with this Foosball table. Just make sure you empty it when it's full.
+152,carpet,カーペット,15,500,cash,True,7,5,1x1,0,0,0,1,8,0,0,1,0,1,Carpeting is both classy and blood-absorbent.
+153,carpet,カーペット,16,600,cash,True,7,5,1x1,0,0,0,1,9,0,0,1,0,1,Carpeting is both classy and blood-absorbent.
+154,carpet,カーペット,16,600,cash,True,7,5,1x1,0,0,0,1,9,0,0,1,0,1,Carpeting is both classy and blood-absorbent.
+155,carpet,カーペット,16,600,cash,True,7,5,1x1,0,0,0,1,9,0,0,1,0,1,Carpeting is both classy and blood-absorbent.
+156,carpet,カーペット,16,600,cash,True,7,5,1x1,0,0,0,1,9,0,0,1,0,1,Carpeting is both classy and blood-absorbent.
+157,Booze rack/shelf,酒用ラック／棚,16,12000,cash,True,0,1,1x1,0,0,0.01,1,180,0,0,1,0,1,"Customers enjoy the sight of alcohol, so this item yields a rating bonus."
+158,carpet,カーペット,16,800,cash,True,7,5,1x1,0,0,0,1,12,0,0,1,0,1,Carpeting is both classy and blood-absorbent.
+159,Zombeer Poster,ゾンビールの広告／ポスター,17,30,toxin,True,6,2,1x1,0,0,0.07,1,1200,0,0,1,0,1,Advertise the regulars' No.1 zombie lager. Gives a rating bonus.
+160,White tablecloth,白いテーブルクロス,18,3000,cash,True,3,4,1x1,0,0,0,1,45,0,0,1,0,1,The most basic form of tablecloth.
+161,Podium,教壇／演壇,18,12000,cash,True,0,1,1x1,0,0,0,1,180,0,0,1,0,1,No fine restaurant is complete without a podium.
+162,Marble tile,大理石のタイル,18,700,cash,True,7,5,1x1,0,0,0,1,11,0,0,1,0,1,A shiny marble floor.
+163,Marble tile,大理石のタイル,18,850,cash,True,7,5,1x1,0,0,0,1,13,0,0,1,0,1,A shiny marble floor.
+164,Marble tile,大理石のタイル,19,850,cash,True,7,5,1x1,0,0,0,1,13,0,0,1,0,1,A shiny marble floor.
+165,Marble tile,大理石のタイル,19,850,cash,True,7,5,1x1,0,0,0,1,13,0,0,1,0,1,A shiny marble floor.
+166,Marble tile,大理石のタイル,19,850,cash,True,7,5,1x1,0,0,0,1,13,0,0,1,0,1,A shiny marble floor.
+167,Wallpaper wall,壁紙が貼られた壁,19,1000,cash,True,5,5,1x1,0,0,0,1,15,0,0,1,0,1,A wallpapered wall.
+168,Wallpaper wall,壁紙が貼られた壁,20,1200,cash,True,5,5,1x1,0,0,0,1,18,0,0,1,0,1,A wallpapered wall.
+169,Wallpaper wall,壁紙が貼られた壁,20,1200,cash,True,5,5,1x1,0,0,0,1,18,0,0,1,0,1,A wallpapered wall.
+170,Wallpaper wall,壁紙が貼られた壁,20,1200,cash,True,5,5,1x1,0,0,0,1,18,0,0,1,0,1,A wallpapered wall.
+171,Wallpaper wall,壁紙が貼られた壁,20,1200,cash,True,5,5,1x1,0,0,0,1,18,0,0,1,0,1,A wallpapered wall.
+172,Wallpaper wall,壁紙が貼られた壁,20,1200,cash,True,5,5,1x1,0,0,0,1,18,0,0,1,0,1,A wallpapered wall.
+173,Candelabra,燭台,19,3000,cash,True,6,2,1x1,0,0,0.004,1,45,0,0,1,0,1,A sophisticated way to light up your restaurant.
+174,Fountain,噴水,19,50000,cash,True,0,1,1x1,0,0,0.03,1,750,0,0,1,0,1,This decorative fountain will give your cafe a rating bonus.
+175,Velvet rope divider,ベルベットの縄すだれ,19,3000,cash,True,9,1,1x1,0,0,0,1,45,0,0,1,0,1,A stylish way to organize your restaurant.
+176,Zombie Van Gogh Self-Portrait,ゴッホのゾンビ風自画像,20,610100,cash,True,6,2,1x1,0,0,0.12,1,9152,0,0,1,0,1,A painting so pricey your eyes will pop out. Big rating boost.
+177,Zombie Van Gogh Self-Portrait,ゴッホのゾンビ風自画像,20,75,toxin,True,6,2,1x1,0,0,0.12,1,9152,0,0,1,0,1,A painting so pricey your eyes will pop out. Big rating boost.
+178,Marble tile,大理石のタイル,20,1000,cash,True,7,5,1x1,0,0,0,1,15,0,0,1,0,1,A shiny marble floor.
+179,Wall Crack,壁のひび,255,50,cash,True,6,255,1x1,0,0,-0.01,1,0,0,0,1,0,1,
+180,Floor stain,床のシミ,255,5,cash,True,7,255,1x1,0,0,-0.01,1,0,0,0,1,0,1,
+181,Loose tile,取れかけたタイル,255,5,cash,True,7,255,1x1,0,0,-0.01,1,0,0,0,1,0,1,
+182,10 Toxin,10 Toxin,0,20000,cash,True,10,6,1x1,0,0,0,1,0,10,0,1,0,1,"Exchange $20,000 cash for 10 Toxin."
+183,30 Toxin,30 Toxin,0,50000,cash,True,10,6,1x1,0,0,0,1,0,30,0,1,0,1,"Exchange $50,000 cash for 30 Toxin."
+184,175 Toxin,175 Toxin,0,250000,cash,True,10,6,1x1,0,0,0,1,0,175,0,1,0,1,"Exchange $250,000 cash for 175 Toxin."
+185,750 Toxin,750 Toxin,0,1000000,cash,True,10,6,1x1,0,0,0,1,0,750,0,1,0,1,"Exchange $1,000,000 cash for 750 Toxin."
+186,A hot pot.,ポット,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+187,Plate,皿,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+188,Glass Tile 1,ガラスのタイル 1,255,0,cash,True,7,255,1x1,0,0,0,1,0,0,0,1,0,1,
+189,Glass Tile 2,ガラスのタイル 2,255,0,cash,True,7,255,1x1,0,0,0,1,0,0,0,1,0,1,
+190,Sidewalk tile,歩道のタイル,255,0,cash,True,7,255,1x1,0,0,0,1,0,0,0,1,0,1,
+191,Road Tile,道路のタイル,255,0,cash,True,7,255,1x1,0,0,0,1,0,0,0,1,0,1,
+192,Road stripe tile,道路ヒョウシキのタイル,255,0,cash,True,7,255,1x1,0,0,0,1,0,0,0,1,0,1,
+193,Dirty plate,汚れた皿,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+194,Tile cover,タイルカバー,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+195,Closed Door,閉じたドア,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+196,Open Door,開いたドア,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+197,Burnt Pot,焦げ付いたポット,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+198,Expand to 8x7,8x7に拡張,0,3500,cash,True,12,6,8x7,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 8x7.
+199,Expand to 9x8,9x8に拡張,0,25000,cash,True,12,6,9x8,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 9x8.
+200,Expand to 9x8,9x8に拡張,0,10,toxin,True,12,6,9x8,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 9x8.
+201,Expand to 10x9,10x9に拡張,0,75000,cash,True,12,6,10x9,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 10x9.
+202,Expand to 10x9,10x9に拡張,0,30,toxin,True,12,6,10x9,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 10x9.
+203,Expand to 11x10,11x10に拡張,0,100000,cash,True,12,6,11x10,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 11x10.
+204,Expand to 11x10,11x10に拡張,0,40,toxin,True,12,6,11x10,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 11x10.
+205,Red Trash Bin,赤いゴミ箱,1,1500,cash,True,11,3,1x1,0,0,0,1,23,0,0,1,0,1,Trash goes in the trash can.
+206,Diner clock,ダイナー風の時計,5,1500,cash,True,6,2,1x1,0,0,0.003,1,23,0,0,1,0,1,Tell time the old-fashioned way.
+207,Today's Specials Board,スペシャルメニュー板,6,12000,cash,True,6,2,1x1,0,0,0.01,1,180,0,0,1,0,1,Put up a specials board for a big rating boost.
+208,Today's Specials Board,スペシャルメニュー板,6,6,toxin,True,6,2,1x1,0,0,0.01,1,240,0,0,1,0,1,Put up a specials board for a big rating boost.
+209,Diner Wall,ダイナー風の壁,6,250,cash,True,5,5,1x1,0,0,0,1,4,0,0,1,0,1,A hip-looking wall.
+210,Marble Serving Counter,大理石のカウンター,18,50000,cash,True,2,3,1x1,0,0,0.02,1,750,0,0,1,0,1,This shiny marble counter will give you a rating bonus.
+211,Mad Scientist Control Panel 1,マッドサイエンティストの操作板 1,10,1000,cash,True,6,2,1x1,0,0,0.01,1,15,0,0,1,0,1,This MAD control panel will give you a rating bonus.
+212,Mad Scientist Control Panel 3,マッドサイエンティストの操作板 3,10,1000,cash,True,6,2,1x1,0,0,0.01,1,15,0,0,1,0,1,This MAD control panel will give you a rating bonus.
+213,Mad Scientist Control Panel 2,マッドサイエンティストの操作板 2,10,5,toxin,True,6,2,1x1,0,0,0.02,1,200,0,0,1,0,1,This MAD control panel will give you a rating bonus.
+214,Mad Scientist Floor,マッドサイエンティストの床,10,185,cash,True,7,5,1x1,0,0,0,1,3,0,0,1,0,1,Tile your floor. The evil way.
+215,Mad Scientist Cabinet 1,マッドサイエンティストのキャビネット 1,11,4500,cash,True,0,1,1x1,0,0,0.006,1,68,0,0,1,0,1,Improve your cafe rating with this stylishly evil cabinet.
+216,Mad Scientist Cabinet 2,マッドサイエンティストのキャビネット 2,11,4500,cash,True,0,1,1x1,0,0,0.006,1,68,0,0,1,0,1,Improve your cafe rating with this stylishly evil cabinet.
+217,Mad Scientist Chair,マッドサイエンティストのイス,10,1000,cash,True,4,4,1x1,0,0,0,1,15,0,0,1,0,1,This chair isn't just for sitting...it's for plotting. BWAHAHAHA!!
+218,Mad Scientist Serving Counter,マッドサイエンティストのカウンター,10,7000,cash,True,2,3,1x1,0,0,0,1,105,0,0,1,0,1,Serve up some world domination with this counter.
+219,Mad Scientist Table,マッドサイエンティストのテーブル,10,1700,cash,True,3,4,1x1,0,0,0,1,26,0,0,1,0,1,Unsuspecting customers can sample your evil concoctions at this table.
+220,Mad Scientist Wall,マッドサイエンティストの壁,10,600,cash,True,5,5,1x1,0,0,0,1,9,0,0,1,0,1,The must-have wall decor for every evil lair.
+221,Spindle Chair,スピンドルチェア,15,2000,cash,True,4,4,1x1,0,0,0,1,30,0,0,1,0,1,This spindle chair is both ornate and functional.
+222,Booth Seat,ボックス席,15,2,toxin,True,4,4,1x1,0,0,0.005,1,80,0,0,1,0,1,It's not a real diner without booths. Small rating bonus.
+223,Bookshelf,本棚,15,3000,cash,True,6,2,1x1,0,0,0,1,45,0,0,1,0,1,Give your cafe a touch of intellectualism with a bookcase.
+224,Pub Wood Floor,パブ風木製床,15,500,cash,True,7,5,1x1,0,0,0,1,8,0,0,1,0,1,An old-fashioned pub floor.
+225,Pool Table,ビリヤード台,15,40,toxin,True,0,6,1x1,125,2000,0,1,1600,0,0,1,0,1,This billiard table earns a little extra cash if you empty it periodically.
+226,Pub Serving Counter,パブ風のカウンター,15,2,toxin,True,2,3,1x1,0,0,0.005,1,80,0,0,1,0,1,This traditional-looking counter will give your cafe a rating bonus.
+227,Pub Table,パブ風のテーブル,15,3000,cash,True,3,4,1x1,0,0,0,1,45,0,0,1,0,1,A good place to have a pint with your mates.
+228,Pub Window,パブ風の窓,15,5000,cash,True,6,2,1x1,0,0,0,1,75,0,0,1,0,1,Don't be a tosser! Get this window.
+229,Stone Window,石の窓,15,4000,cash,True,6,2,1x1,0,0,0,1,60,0,0,1,0,1,For that classic castle look.
+230,Tiffany Lamp 1,ティファニーランプ 1,15,10000,cash,True,0,1,1x1,0,0,0,1,150,0,0,1,0,1,Tiffany lamps are the height of undead interior design.
+231,Tiffany Lamp 2,ティファニーランプ 2,15,10000,cash,True,0,1,1x1,0,0,0,1,150,0,0,1,0,1,Tiffany lamps are the height of undead interior design.
+232,Tiffany Lamp 3,ティファニーランプ 3,15,10000,cash,True,0,1,1x1,0,0,0,1,150,0,0,1,0,1,Tiffany lamps are the height of undead interior design.
+233,Green Trash Bin,緑のゴミ箱,15,3000,cash,True,11,3,1x1,0,0,0,1,45,0,0,1,0,1,Go green with your trash.
+234,Pub Wall,パブ風の壁,15,600,cash,True,5,5,1x1,0,0,0,1,9,0,0,1,0,1,A limey way to decorate your walls.
+235,Stone Wall,石の壁,15,600,cash,True,5,5,1x1,0,0,0,1,9,0,0,1,0,1,For that classic castle look.
+236,Expand to 12x11,12x11に拡張,0,120000,cash,True,12,6,12x11,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 12x11.
+237,Expand to 12x11,12x11に拡張,0,50,toxin,True,12,6,12x11,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 12x11.
+238,Hippie Poster 1,ヒッピーのポスター,6,500,cash,True,6,2,1x1,0,0,0,1,8,0,0,1,0,1,Cheer up your customers with some classic '60s art.
+239,Hippie Poster 2,ヒッピーのポスター,8,1000,cash,True,6,2,1x1,0,0,0,1,15,0,0,1,0,1,Cheer up your customers with some classic '60s art.
+240,Guitar,ギター,6,1200,cash,True,0,1,1x1,0,0,0,1,18,0,0,1,0,1,"Give your cafe that distinctly ""folk music"" appeal with this guitar."
+241,Hanging Plant,ハンギングプラント,6,500,cash,True,6,2,1x1,0,0,0,1,8,0,0,1,0,1,This plant is wisely staying out of reach of danger.
+242,Long Planter,プランター,6,500,cash,True,9,1,1x1,0,0,0,1,8,0,0,1,0,1,Plants provide the oxygen your customers crave.
+243,Barbed Wire,有刺鉄線,6,250,cash,True,9,1,1x1,0,0,0,1,4,0,0,1,0,1,Protect your undead resources with this handy barbed wire.
+244,Sand Bags 1,土のう,6,250,cash,True,9,1,1x1,0,0,0,1,4,0,0,1,0,1,Fortify your cafe trenches with these sandbags.
+245,Sand Bags 2,土のう,6,250,cash,True,9,1,1x1,0,0,0,1,4,0,0,1,0,1,Fortify your cafe trenches with these sandbags.
+246,Wall Sconce,突き出し燭台,6,500,cash,True,6,2,1x1,0,0,0,1,8,0,0,1,0,1,A stylish way to light up your cafe.
+247,Fancy Window,豪華な窓,6,1000,cash,True,6,2,1x1,0,0,0,1,15,0,0,1,0,1,View the outside world in style.
+248,Magic Fridge,魔法の冷蔵庫,1,30,toxin,True,8,3,1x1,0,0,0.01,1,1200,0,0,1,0,1,"This groovy fridge will give you one random, FREE dish a day and a rating bonus."
+249,Suped Up Fridge,アップグレード済み冷蔵庫,7,25000,cash,True,8,3,1x1,0,0,0.01,1,375,0,0,1,0,1,This state-of-the-art appliance will give your cafe a rating bonus.
+250,Hippie Table,ヒッピーのテーブル,6,1000,cash,True,3,4,1x1,0,0,0.005,1,15,0,0,1,0,1,Earn a small rating bonus with this groovy-looking table.
+251,Fancy Table,豪華なテーブル,6,2,toxin,True,3,4,1x1,0,0,0.005,1,80,0,0,1,0,1,Earn a small rating bonus with this fancy-looking table.
+252,Suped Up Stove,アップグレード済みコンロ,7,20,toxin,True,1,3,1x1,0,0,0.01,1.111,800,0,0,1,0,1,Recipes cooked on this stove will take 10% less time.
+253,Fancy Chair,豪華なイス,6,2,toxin,True,4,4,1x1,0,0,0.005,1,80,0,0,1,0,1,This fancy chair will give your cafe a small rating bonus.
+254,BBQ Stove,BBQコンロ,8,2,toxin,True,1,3,1x1,0,0,0.005,1,80,0,0,1,0,1,Fire up the grill and get a small rating bonus.
+255,Beach Ball,ビーチボール,7,500,cash,True,0,1,1x1,0,0,0,1,8,0,0,1,0,1,For those times when you just want to play beach volleyball on your lunch break.
+256,Beach Towel,ビーチタオル,7,500,cash,True,7,5,1x1,0,0,0,1,8,0,0,1,0,1,Shocking fact: zombies don't tan. They just mummify.
+257,Folding Chair,折りたたみ式イス,7,600,cash,True,4,4,1x1,0,0,0,1,9,0,0,1,0,1,Bring the patio inside with this folding chair.
+258,Folding Table,折りたたみ式テーブル,7,1400,cash,True,3,4,1x1,0,0,0,1,21,0,0,1,0,1,Bring the patio inside with this folding table.
+259,Surfboard,サーフボード,8,1400,cash,True,6,2,1x1,0,0,0,1,21,0,0,1,0,1,Surf's up! Decorate your cafe with this tubular board.
+260,Ice Box,冷凍庫,7,10,toxin,True,0,6,1x1,30,400,0.075,1,400,0,0,1,0,1,Sell some ice cream and raise your rating.
+261,Ice Cream Machine,アイスクリーム機,7,20,toxin,True,0,6,1x1,75,900,0.01,1,800,0,0,1,0,1,"You scream, I scream...we all scream for extra coins and a rating bonus."
+262,Slushy Machine,スムージー機,8,20,toxin,True,0,6,1x1,75,900,0.01,1,800,0,0,1,0,1,"Collect extra coins and get a rating bonus, while giving your customers a brain freeze. Mmm, frozen brains."
+263,Expand to 13x12,13x12に拡張,0,150000,cash,True,12,6,13x12,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 13x12.
+264,The Persistence of Brains,脳のコシツ,0,10000,cash,False,6,2,1x1,0,0,0,1,150,0,0,1,0,1,Melting brains? Scattered limbs? What could it all mean?
+265,Ghoul with a Pearl Earring,真珠の耳飾りのグール,0,5,toxin,False,6,2,1x1,0,0,0,1,200,0,0,1,0,1,Lure in customers with Vermeer's most mysterious work.
+266,Van Gogh's Starry Night,ゴッホの星月夜,0,75,toxin,False,6,2,1x1,0,0,0.12,1,3000,0,0,1,0,1,"A new take on Van Gogh's masterpiece, with a handy rating bonus."
+267,Jack-o-Lantern,ジャックランタン,10,5,toxin,True,0,1,1x1,0,0,0.01,1,200,0,0,1,0,1,"For zombies, it's a trick. For humans, it's a treat."
+268,Orange & Black Tile,オレンジと黒のタイル,1,30,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Lay down these tiles and it's instantly a party!
+269,Cobweb Wall,クモの巣がはった壁,10,2500,cash,True,6,2,1x1,0,0,0,1,38,0,0,1,0,1,"Creepy AND it catches flies. Two birds, one wall."
+270,Orange Table,オレンジ色のテーブル,10,2000,cash,True,3,4,1x1,0,0,0,1,30,0,0,1,0,1,Add a touch of Gothic to your cafe.
+271,Orange Chair,オレンジ色の椅子,10,1000,cash,True,4,4,1x1,0,0,0,1,15,0,0,1,0,1,Add a touch of Gothic to your cafe.
+272,Orange Serving Counter,オレンジ色のカウンター,10,6000,cash,True,2,3,1x1,0,0,0,1,90,0,0,1,0,1,A festive way to prepare your food.
+273,Autumn Leaf Table,枯葉の木製テーブル,11,2500,cash,False,3,4,1x1,0,0,0,1,38,0,0,1,0,1,A table that reminds customers just how scary a Thanksgiving feast can be.
+274,Thanksgiving Wreath,感謝祭のリース,11,4000,cash,False,6,2,1x1,0,0,0,1,60,0,0,1,0,1,"This wreath screams ""up until Christmas.""!"
+275,Large Pumpkin,大きなカボチャ,11,1500,cash,True,0,1,1x1,0,0,0,1,15,0,0,1,0,1,A creepy jack-o'-lantern with no face.
+276,Small Pumpkin,小さなカボチャ,11,1500,cash,True,0,1,1x1,0,0,0,1,15,0,0,1,0,1,3.14 small pumpkins.
+277,Leaf Pattern Tile,葉っぱ模様のタイル,11,40,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Might make you feel like you're taking a forest bath.
+278,Little Wagon,小さなワゴン,12,5,toxin,True,0,1,1x1,0,0,0.01,1,200,0,0,1,0,1,Why do pumpkins look so darn cute piled in a wagon?
+279,Home Sweet Home sign,「懐かしのわが家」の看板,0,50,toxin,False,6,2,1x1,0,0,0.12,1,3000,0,0,1,0,1,Home Sweet Home for a limited time.
+280,Candle Sconce,壁のロウソク,12,700,cash,True,6,2,1x1,0,0,0,1,11,0,0,1,0,1,"When you dine by candlelight, it's hard to notice danger creeping up."
+281,Expand to 13x12,13x12に拡張,0,50,toxin,True,12,6,13x12,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 13x12.
+282,Expand to 14x13,14x13に拡張,0,150000,cash,True,12,6,14x13,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 14x13.
+283,Expand to 14x13,14x13に拡張,0,50,toxin,True,12,6,14x13,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 14x13.
+284,Cauldron,大釜,0,70,toxin,True,0,6,1x1,150,6000,0,1,2800,0,0,1,0,1,This monstrously stylish cauldron will use its dark powers to award you extra cash.
+285,Strength Tombstone,力の墓石,5,50,toxin,True,14,6,1x1,0,0,0,1,3000,0,0,1,0,1,"Your zombie's attacks deal extra damage for 5 seconds. Usable 5 times, then recharges in 24 hours."
+286,Health Tombstone,体力の墓石,5,50,toxin,True,14,6,1x1,0,0,0,1,3000,0,0,1,0,1,"Refills your zombie's health. Usable 5 times, then recharges in 24 hours."
+287,Christmas Wreath,クリスマスのリース,0,55,toxin,True,6,2,1x1,0,0,0.05,1,3000,0,0,1,0,1,"It's like a bull's-eye, but more festive."
+288,Christmas Table,クリスマスのテーブル,11,2500,cash,True,3,4,1x1,0,0,0,1,40,0,0,1,0,1,This festive table will lull your patrons into a false sense of security.
+289,Christmas Chair,クリスマスの椅子,11,1500,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,Make zombies feel like their victims are gift-wrapped.
+290,Christmas Tree,クリスマスツリー,0,55,toxin,True,0,1,1x1,200,4000,0,1,2500,0,0,1,0,1,Slaughtering trees and decorating their corpses has been a tradition since the 16th century.
+291,Christmas Arcade Cabinet,クリスマスのアーケードゲーム,10,30,toxin,True,0,6,1x1,150,2000,0,1,900,0,0,1,0,1,Celebrate the spirit of giving by making a 25 cent donation to this mysterious box.
+292,Crimson Wall,真紅の壁,15,1000,cash,True,5,5,1x1,0,0,0,1,11,0,0,1,0,1,A wall as red as blood.
+293,Gilded Floor,金メッキの床,17,2000,cash,True,7,5,1x1,0,0,0,1,11,0,0,1,0,1,Look closely: it's cheap gold plating.
+294,Kotatsu Chair,コタツ用椅子,11,1500,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A chair that goes with the kotatsu.
+295,Kotatsu Chair,コタツ用椅子,11,1500,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A chair that goes with the kotatsu.
+296,Kotatsu,コタツ,11,3000,cash,True,3,4,1x1,0,0,0,1,40,0,0,1,0,1,The Eastern table that turns people into slugs.
+297,Kotatsu,コタツ,11,3000,cash,True,3,4,1x1,0,0,0,1,40,0,0,1,0,1,It just looks right with a mandarin orange on top.
+298,Arcade Table Cabinet,テーブル式アーケードゲーム,13,5,toxin,True,3,4,1x1,0,0,0.02,1,200,0,0,1,0,1,A table AND a video game. The dream machine.
+299,Arcade Table Cabinet,テーブル式アーケードゲーム,13,5,toxin,True,3,4,1x1,0,0,0.02,1,200,0,0,1,0,1,A retro gem that'll bring collectors to tears.
+300,Gilded Wall,金メッキの壁,17,2000,cash,True,5,5,1x1,0,0,0,1,11,0,0,1,0,1,Look closely: it's a cheap gold-plated wall.
+301,Maid Cafe Table,メイドカフェのテーブル,15,4000,cash,True,3,4,1x1,0,0,0,1,60,0,0,1,0,1,Gothic AND Lolita.
+302,Maid Cafe Chair,メイドカフェのイス,15,2000,cash,True,4,4,1x1,0,0,0,1,30,0,0,1,0,1,"Welcome home, master."
+303,Anime Poster,アニメのポスター,15,60000,cash,True,6,2,1x1,0,0,0.08,1,900,0,0,1,0,1,An anime poster certain people get very excited about.
+304,Anime Poster,アニメのポスター,15,20,toxin,True,6,2,1x1,0,0,0.08,1,1200,0,0,1,0,1,An anime poster certain people get very excited about.
+305,Heart Table,ハートのテーブル,8,5,toxin,True,3,4,1x1,0,0,0.02,1,80,0,0,1,0,1,"Use this beautiful heart-shaped table to attract your victims, err, I mean CUSTOMERS."
+306,Heart Chair,ハートのイス,8,2,toxin,True,4,4,1x1,0,0,0.01,1,80,0,0,1,0,1,A chair for the stubborn romantic who wears his heart (and his brain) on his sleeve.
+307,Heart Wall Decoration,ハートの壁飾り,10,3000,cash,True,6,2,1x1,0,0,0.01,1,55,0,0,1,0,1,A stand-in for a real heart.
+308,Heart Shaped Lights,ハートの電飾,10,800,cash,True,6,2,1x1,0,0,0.02,1,13,0,0,1,0,1,Why wear rose-colored glasses when you can use rose-colored lights?
+309,Paper Lantern,チョーチン,13,888,cash,True,6,2,1x1,0,0,0.02,1,15,0,0,1,0,1,Paper lanterns ooze Eastern charm.
+310,Firecrackers,バクチク,13,10,toxin,True,6,2,1x1,0,0,0.02,1,500,0,0,1,0,1,"A dangerous, explosive decoration. Also wards off evil."
+311,Foo Dog,コマイヌ,2,70,toxin,True,0,6,1x1,200,5000,0,1,2800,0,0,1,0,1,Protect your cafe with this guardian lion. Customers may leave offerings.
+312,Dragon Painting,竜の絵,5,25,toxin,True,6,2,1x1,0,0,0.08,1,1200,0,0,1,0,1,Celebrate the Year of the Dragon by scaring your customers with a picture of one.
+313,Oriental Table,オリエンタルテーブル,15,2450,cash,True,3,4,1x1,0,0,0,1,40,0,0,1,0,1,An Oriental-style table. Pairs well with the matching chair.
+314,Oriental Chair,オリエンタル椅子,15,1450,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,An Oriental-style chair. Pairs well with the matching table.
+315,Laughing Buddha Statue,ありがたい石像,2,30,toxin,True,0,6,1x1,100,3000,0,1,1000,0,0,1,0,1,A fine statue. Just looking at it makes you happy!
+316,Punching Machine,パンチングマシン,9,60,toxin,True,0,6,1x1,0,0,0,1,1000,0,131122,1,0,1,A cool punching machine. Tap the XP icon when it appears for up to 50 XP.
+317,Treadmill,ルームランナー,9,30,toxin,True,0,6,1x1,0,0,0,1,500,0,65556,1,0,1,Every zombie needs a treadmill. Tap the XP icon when it appears for up to 20 XP.
+318,Strength Tombstone Lv. 2,力の墓石　レベル２,5,55,toxin,True,14,6,1x1,0,0,0,1,5000,0,0,1,0,1,Strength Tombstone can be used 7 more times.
+319,Health Tombstone Lv. 2,体力の墓石　レベル２,5,55,toxin,True,14,6,1x1,0,0,0,1,5000,0,0,1,0,1,Health Tombstone can be used 7 more times.
+320,Green Pub Counter,緑のパブカウンター,8,1500,cash,True,2,3,1x1,0,0,0.03,1,20,0,0,1,0,1,This traditional-looking counter will give your cafe a rating bonus.
+321,Green Pub Stool,緑のパブスツール,8,1000,cash,True,4,4,1x1,0,0,0.03,1,20,0,0,1,0,1,"Its green, hard and round. At least you're not sitting on the floor."
+322,Pot of Gold,金のポット,10,35,toxin,True,0,6,1x1,100,2500,0,1,2000,0,0,1,0,1,"You've found the end of the rainbow, turns out there really is gold there!"
+323,Green Pub Divider,緑のパブ風仕切り,10,3000,cash,True,9,1,1x1,0,0,0.03,1,30,0,0,1,0,1,A fancy way of making sure your customers can't see what's really going on in the kitchen
+324,Green Pub Table,緑のパブ風テーブル,8,2000,cash,True,3,4,1x1,0,0,0.03,1,25,0,0,1,0,1,The luck of the Irish will be with you if you sit at this table
+325,Pub Coat of Arms,パブの看板,11,40,toxin,True,6,2,1x1,0,0,0.1,1,3000,0,0,1,0,1,A distinguished crest for that Irish atmosphere.
+326,Lucky Horseshoe,馬の蹄鉄,11,10,toxin,True,6,2,1x1,0,0,0.05,1,800,0,0,1,0,1,Did you know horseshoes are lucky? Neither did we!
+327,Pub Poster,パブのポスター,12,15,toxin,True,6,2,1x1,0,0,0.05,1,900,0,0,1,0,1,A classic poster from a turn of the century purveyor of zombie beverages
+328,Pub Sign,パブのサイン,12,20,toxin,True,6,2,1x1,0,0,0.08,1,1000,0,0,1,0,1,"Just in-case your customers forgot where they were, put up this sign to remind them"
+329,Pub Cabinet,パブのキャビネット,8,6000,cash,True,0,1,1x1,0,0,0.04,1,30,0,0,1,0,1,It's not a pub without one of these.
+330,Folding Screen,びょうぶ,13,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,A folding screen fit for a samurai.
+331,Ninja Scroll,忍びの掛け軸,13,20,toxin,True,6,2,1x1,0,0,0.08,1,1000,0,0,1,0,1,"Ninja's don't normally advertise, but this is an exception."
+332,Space Divider (Gray),宇宙パーテーション・グレー,7,4000,cash,True,9,1,1x1,0,0,0.04,1,50,0,0,1,0,1,Martians keep their privacy behind this divider.
+333,Space Divider (White),宇宙パーテーション・白,8,4500,cash,True,9,1,1x1,0,0,0.04,1,60,0,0,1,0,1,Martians keep their privacy behind this divider.
+334,Freeze Dried Fridge,フリーズドライ冷蔵庫,7,10,toxin,True,8,3,1x1,0,0,0.01,1,500,0,0,1,0,1,"Store mass quantities of food for years at a time in cube form, just like mom made (on mars)."
+335,Holographic Table,ホログラムテーブル,7,3,toxin,True,3,4,1x1,0,0,0.02,1,300,0,0,1,0,1,"A table with a touch screen, who needs menus?"
+336,Holographic Table,ホログラム丸テーブル,8,5000,cash,True,3,4,1x1,0,0,0.05,1,70,0,0,1,0,1,"A table with a touch screen, who needs menus?"
+337,Laser Oven,レーザーオーブン,7,25,toxin,True,1,3,1x1,0,0,0.02,1.25,1000,0,0,1,0,1,Super heat food with a class 4 laser (cooking times are reduced by 20%).
+338,Nebula Painting,星雲の風景画,7,5500,cash,True,6,2,1x1,0,0,0.05,1,80,0,0,1,0,1,"Behold the wonders of the cosmos, with this painting of superheated gases."
+339,Port Window 1,宇宙船の窓,7,2500,cash,True,6,2,1x1,0,0,0.03,1,1,0,0,1,0,1,"Everyone likes a view, why not give them a good one."
+340,Port Window 2,宇宙船の窓,8,2500,cash,True,6,2,1x1,0,0,0.03,1,20,0,0,1,0,1,"Everyone likes a view, why not give them a good one."
+341,Space Counter,宇宙カウンター,7,3,toxin,True,2,3,1x1,0,0,0.02,1,300,0,0,1,0,1,Store your dishes here until you're ready to serve them.
+342,Space Sink,宇宙シンク,7,3500,cash,True,11,3,1x1,0,0,0.04,1,40,0,0,1,0,1,"Dishes still get dirty in space, here is a place to clean them."
+343,LED Light,LEDライト,7,1000,cash,True,6,2,1x1,0,0,0.02,1,30,0,0,1,0,1,Light the way with these energy efficient LED lights.
+344,LED Light,LEDライト,8,2000,cash,True,6,2,1x1,0,0,0.01,1,15,0,0,1,0,1,Light the way with these energy efficient LED lights.
+345,Glass Tile,ガラスタイル,7,500,cash,True,7,5,1x1,0,0,0.01,1,5,0,0,1,0,1,Glass tiles make cleaning a breeze.
+346,Glass Tile,ガラスタイル,8,600,cash,True,7,5,1x1,0,0,0.01,1,8,0,0,1,0,1,Glass tiles make cleaning a breeze.
+347,Glass Tile,ガラスタイル,8,700,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,Glass tiles make cleaning a breeze.
+348,UFO Fighter Arcade,UFOファイターゲーム機,7,45,toxin,True,0,6,1x1,300,4500,0,1,1200,0,0,1,0,1,Get a high score and you might get recruited by aliens.
+349,Captain's Chair,キャプテンの椅子,7,3,toxin,True,4,4,1x1,0,0,0.02,1,100,0,0,1,0,1,"Every order will be followed with the phrase ""make it so""!"
+350,Air Hockey Table,エアホッケー台,8,30,toxin,True,0,6,1x1,100,1200,0,1,1200,0,0,1,0,1,"Challenge someone to a quick game of hockey, without having to move for cars (zombie attacks are still likely)."
+351,Deep Fryer,フライヤー,8,20,toxin,True,0,6,1x1,75,900,0.01,1,800,0,0,1,0,1,You can flash fry small animals in 3 seconds with the Fry-O-Matic 3000.
+352,Pinball Machine,ピンボール台 ? ?,8,25,toxin,True,0,6,1x1,100,1200,0,1,1000,0,0,1,0,1,Bring some classic arcade action to your cafe with this pinball machine
+353,Pizza Display Warmer,ピザ陳列台,9,50000,cash,True,0,6,1x1,75,900,0.01,1,800,0,0,1,0,1,"Show off the goods, to get your customers in the mood to eat."
+354,Pool Table,ビリヤード台（小）,9,40,toxin,True,0,6,1x1,125,2000,0,1,1600,0,0,1,0,1,This billiard table earns a little extra cash if you empty it periodically.
+355,Wall Menu Board,壁掛けメニュー,8,12000,cash,True,6,2,1x1,0,0,0.01,1,200,0,0,1,0,1,Let customers know what's good today!
+356,Graffiti Poster,グラフィティポスター,9,25000,cash,True,6,2,1x1,0,0,0.03,1,400,0,0,1,0,1,Add some street art to the inside of your cafe with this graffiti poster.
+357,Arcade Neon Sign,ゲームセンターの看板,9,10,toxin,True,6,2,1x1,0,0,0.03,1,400,0,0,1,0,1,Dress up your cafe with a retro neon sign.
+358,Wood Fire Pizza Oven,ピザ釜,9,20,toxin,True,0,6,1x1,75,900,0.03,1,800,0,0,1,0,1,Fire up some pies in this classic wood burning oven.
+359,Zombie Fighter Arcade Machine,ゾンビファイターゲーム筐体,8,45,toxin,True,0,6,1x1,300,4500,0,1,1200,0,0,1,0,1,Let your customers settle their scores the old fashioned way; with a stand up fighting game.
+360,Rococo Fridge (White),豪華な冷蔵庫・白,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+361,Rococo Fridge (Yellow),豪華な冷蔵庫・黄,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+362,Rococo Fridge (Green),豪華な冷蔵庫・緑,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+363,Rococo Fridge (Blue),豪華な冷蔵庫・青,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+364,Rococo Fridge (Red),豪華な冷蔵庫・赤,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+365,Rococo Fridge (Black),豪華な冷蔵庫・黒,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+366,Rococo Fridge (Pink),豪華な冷蔵庫・ピンク,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+367,Rococo Fridge (Vivid Pink),豪華な冷蔵庫・ビビットピンク,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+368,Rococo Fridge (Purple),豪華な冷蔵庫・紫,8,30,toxin,False,8,3,1x1,0,0,0.04,1,10,0,0,1,0,1,"A lavishly decorated fridge. Feels a little fancy, and gives a rating bonus."
+369,Rococo Stove (White),豪華なコンロ・白,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+370,Rococo Stove (Yellow),豪華なコンロ・黄,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+371,Rococo Stove (Green),豪華なコンロ・緑,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+372,Rococo Stove (Blue),豪華なコンロ・青,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+373,Rococo Stove (Red),豪華なコンロ・赤,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+374,Rococo Stove (Black),豪華なコンロ・黒,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+375,Rococo Stove (Pink),豪華なコンロ・ピンク,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+376,Rococo Stove (Vivid Pink),豪華なコンロ・ビビットピンク,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+377,Rococo Stove (Purple),豪華なコンロ・紫,8,30,toxin,False,1,3,1x1,0,0,0,1.25,10,0,0,1,0,1,Cook like a French chef. Cooking time -20%.
+378,Rococo Sink (White),豪華なシンク・白,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+379,Rococo Sink (Yellow),豪華なシンク・黄,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+380,Rococo Sink (Green),豪華なシンク・緑,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+381,Rococo Sink (Blue),豪華なシンク・青,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+382,Rococo Sink (Red),豪華なシンク・赤,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+383,Rococo Sink (Black),豪華なシンク・黒,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+384,Rococo Sink (Pink),豪華なシンク・ピンク,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+385,Rococo Sink (Vivid Pink),豪華なシンク・ビビットピンク,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+386,Rococo Sink (Purple),豪華なシンク・紫,8,30,toxin,False,11,3,1x1,0,0,0.02,1,10,0,0,1,0,1,A sink almost too nice to get dirty.
+387,Rococo Counter (White),豪華なカウンター・白,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+388,Rococo Counter (Yellow),豪華なカウンター・黄,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+389,Rococo Counter (Green),豪華なカウンター・緑,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+390,Rococo Counter (Blue),豪華なカウンター・青,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+391,Rococo Counter (Red),豪華なカウンター・赤,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+392,Rococo Counter (Black),豪華なカウンター・黒,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+393,Rococo Counter (Pink),豪華なカウンター・ピンク,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+394,Rococo Counter (Vivid Pink),豪華なカウンター・ビビットピンク,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+395,Rococo Counter (Purple),豪華なカウンター・紫,8,30,toxin,False,2,3,1x1,0,0,0.02,1,10,0,0,1,0,1,The perfect counter for delicate zombie cuisine.
+396,Rococo Table (White),豪華なテーブル・白,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+397,Rococo Table (Yellow),豪華なテーブル・黄,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+398,Rococo Table (Green),豪華なテーブル・緑,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+399,Rococo Table (Blue),豪華なテーブル・青,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+400,Rococo Table (Red),豪華なテーブル・赤,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+401,Rococo Table (Black),豪華なテーブル・黒,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+402,Rococo Table (Pink),豪華なテーブル・ピンク,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+403,Rococo Table (Vivid Pink),豪華なテーブル・ビビットピンク,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+404,Rococo Table (Purple),豪華なテーブル・紫,8,5,toxin,False,3,4,1x1,0,0,0,1,10,0,0,1,20,1,Dine like nobility. Feeling rich makes customers tip more often.
+405,Rococo Chair (White),豪華なイス・白,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+406,Rococo Chair (Yellow),豪華なイス・黄,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+407,Rococo Chair (Green),豪華なイス・緑,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+408,Rococo Chair (Blue),豪華なイス・青,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+409,Rococo Chair (Red),豪華なイス・赤,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+410,Rococo Chair (Black),豪華なイス・黒,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+411,Rococo Chair (Pink),豪華なイス・ピンク,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+412,Rococo Chair (Vivid Pink),豪華なイス・ビビットピンク,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+413,Rococo Chair (Purple),豪華なイス・紫,8,5,toxin,False,4,4,1x1,0,0,0.02,1,10,0,0,1,0,1,Plush and luxurious. Rumor says medieval nobles used them.
+414,Rococo Floor (White),豪華な床・白,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+415,Rococo Floor (Yellow),豪華な床・黄,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+416,Rococo Floor (Green),豪華な床・緑,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+417,Rococo Floor (Blue),豪華な床・青,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+418,Rococo Floor (Red),豪華な床・赤,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+419,Rococo Floor (Black),豪華な床・黒,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+420,Rococo Floor (Pink),豪華な床・ピンク,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+421,Rococo Floor (Vivid Pink),豪華な床・ビビットピンク,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+422,Rococo Floor (Purple),豪華な床・紫,8,900,cash,True,7,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated floor.
+423,Rococo Wall (White),豪華な壁・白,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+424,Rococo Wall (Yellow),豪華な壁・黄,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+425,Rococo Wall (Green),豪華な壁・緑,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+426,Rococo Wall (Blue),豪華な壁・青,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+427,Rococo Wall (Red),豪華な壁・赤,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+428,Rococo Wall (Black),豪華な壁・黒,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+429,Rococo Wall (Pink),豪華な壁・ピンク,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+430,Rococo Wall (Vivid Pink),豪華な壁・ビビットピンク,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+431,Rococo Wall (Purple),豪華な壁・紫,8,2500,cash,True,5,5,1x1,0,0,0.01,1,10,0,0,1,0,1,A lavishly decorated wall.
+432,Decorative Tombstone 1,飾りの墓石1,5,800,cash,True,14,6,1x1,0,0,0.02,1,20,0,0,1,0,1,A place where your customers can rest in pieces.
+433,Decorative Tombstone 2,飾りの墓石2,5,1000,cash,True,14,6,1x1,0,0,0.04,1,25,0,0,1,0,1,These decorative tombstones are a scream.
+434,Decorative Tombstone 3,飾りの墓石3,5,1200,cash,True,14,6,1x1,0,0,0.06,1,30,0,0,1,0,1,These decorative tombstones are a scream.
+435,Decorative Tombstone 4,飾りの墓石4,5,1400,cash,True,14,6,1x1,0,0,0.08,1,35,0,0,1,0,1,A place where your customers can rest in pieces.
+436,MAX LEVEL,MAX LEVEL,0,1,cash,False,4,4,1x1,0,0,0,1,2371975,0,0,1,0,1,MAX LEVEL
+437,Apache Blanket,サンタフェブランケット,10,11000,cash,True,6,2,1x1,0,0,0.01,1,200,0,0,1,0,1,"Show your warrior spirit, and keep the customers warm with this traditional Apache blanket."
+438,Banjo,バンジョー,11,7000,cash,True,0,1,1x1,0,0,0.01,1,100,0,0,1,0,1,"Break out the finger picks, and start plucking."
+439,Gas Lamp,ガスランプ,10,1000,cash,True,6,2,1x1,0,0,0.02,1,30,0,0,1,0,1,Let your customers dine under the warm glow of 19th century technology.
+440,Grill,グリル,11,25,toxin,True,1,3,1x1,0,0,0.02,1.25,1000,0,0,1,0,1,"Fire up the grill, make sure you get the perfect 45 degree grill marks for you customers (cooking times reduced by 20%)."
+441,Gun Rack,ガンラック,11,10,toxin,True,6,2,1x1,0,0,0.03,1,400,0,0,1,0,1,"A staple of the old west, a lever action repeating rifle. Plus who doesn't want a gun rack?"
+442,Meat Smoker,薫製機,10,15,toxin,True,0,6,1x1,50,600,0.01,1,500,0,0,1,0,1,Show your customers who the real pit master is with this traditional smoker.
+443,Moonshine Shelf,密造酒,10,12000,cash,True,6,2,1x1,0,0,0.05,1,200,0,0,1,0,1,"It's probably not safe to drink this stuff, that's why it's kept as decoration on the shelf."
+444,Road Worn Guitar,おんぼろギター,10,5000,cash,True,0,1,1x1,0,0,0,1,70,0,0,1,0,1,"This guitar has seen better days, but its days on the trail have made it a classic."
+445,Rotisserie,串焼き機,10,20,toxin,True,0,6,1x1,75,900,0.03,1,800,0,0,1,0,1,Is there anything better than sticks of meat cooking on a fire? Your customers definitely can't think of anything.
+446,Zombie Cowboy Painting,哀愁のカウボーイポスター,11,20,toxin,True,6,2,1x1,0,0,0.05,1,800,0,0,1,0,1,"Can't really tell if he is good or bad, but he is definitely ugly!"
+447,Resident Evil 6 Poster,バイオハザード６ポスター,3,1,cash,False,6,2,1x1,0,0,0.01,1,1,0,0,1,0,1,"Resident Evil 6 is out October 2, 2012!"
+448,BSAA Emblem,BSAAエンブレム,3,100,cash,False,6,2,1x1,0,0,0.03,1,1,0,0,1,0,1,The BSAA is the enemy of zombies!
+449,DSO Emblem,DSOエンブレム,3,100,cash,False,6,2,1x1,0,0,0.03,1,1,0,0,1,0,1,"With this emblem, maybe you'll get to eat the President's brain."
+450,Edonian Rebel Emblem,イドニア反政府軍エンブレム,3,100,cash,False,6,2,1x1,0,0,0.03,1,1,0,0,1,0,1,The rebel army is hiring mercenaries!
+451,Typewriter,タイプライター,3,100,cash,False,0,6,1x1,0,0,0.03,1,1,0,0,1,0,1,"No ink ribbon, so you can't save."
+452,Stuffed Stocking,中身の詰まった靴下,3,15,toxin,True,0,1,1x1,100,3000,0.01,1,1,0,0,1,0,1,A stocking with no room left for presents.
+453,Present-Packed Sled,プレゼントをのせたソリ,3,18,toxin,True,0,1,1x1,100,3100,0.01,1,1,0,0,1,0,1,A sled built to haul blood-soaked sacks with ease.
+454,Christmas Poster,クリスマスポスター,3,800000,cash,True,6,2,1x1,0,0,0.1,1,1,0,0,1,0,1,Notice: Christmas is canceled due to Santa's absence.
+455,Nightmare Folding Screen,悪夢のびょうぶ,3,28,toxin,True,9,1,1x1,0,0,0.01,1,850,0,0,1,0,1,Set this up to kick off a whole new year of nightmares.
+456,Cursed Kadomatsu,下土魔通,3,14,toxin,True,14,6,1x1,0,0,0.12,1,800,0,0,1,0,1,Set this out so New Year's visitors can find your cafe.
+457,Cursed New Year's Gift,汚吐死玉,3,888888,cash,True,0,1,1x1,150,2400,0.01,1,700,0,0,1,0,1,Zombies love it when you drop this on New Year's.
+458,Strength Tombstone Lv. 3,力の墓石　レベル３,5,50,toxin,True,14,6,1x1,0,0,0,1,5000,0,0,1,0,1,Boosts the Strength Tombstone's effect.
+459,Health Tombstone Lv. 3,体力の墓石　レベル３,5,50,toxin,True,14,6,1x1,0,0,0,1,5000,0,0,1,0,1,Boosts the Health Tombstone's effect.
+460,Bomb,爆弾,5,8,toxin,True,14,6,1x1,0,0,0,1,100,0,0,1,0,1,A bomb that damages enemy zombies in raids. Huge damage to event bosses! Disappears once used up.
+461,Plain Pillar,普通の柱,14,5000,cash,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a pillar.
+462,Plain Pillar,普通の柱,14,5000,cash,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a pillar.
+463,Plain Pillar,普通の柱,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a pillar.
+464,Plain Pillar,普通の柱,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a pillar.
+465,Plain Pillar,普通の柱,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a pillar.
+466,Plain Pillar,普通の柱,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a pillar.
+467,Golden Piggy Bank,金の回収ブタ,5,29,toxin,True,15,6,1x1,0,0,0,1,1000,0,0,1,0,1,Collects all your $ and XP in one go.
+468,Expand to 15x14,15x14に拡張,0,500000,cash,True,12,6,15x14,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 15x14.
+469,Expand to 15x14,15x14に拡張,0,50,toxin,True,12,6,15x14,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 15x14.
+470,Expand to 16x15,16x15に拡張,0,1000000,cash,True,12,6,16x15,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 16x15.
+471,Expand to 16x15,16x15に拡張,0,50,toxin,True,12,6,16x15,0,0,0,1,0,0,0,1,0,1,This expands the size of your cafe to 16x15.
+472,Plain Wall,普通の壁,14,5000,cash,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a wall.
+473,Plain Wall,普通の壁,14,5000,cash,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a wall.
+474,Plain Wall,普通の壁,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a wall.
+475,Plain Wall,普通の壁,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a wall.
+476,Plain Wall,普通の壁,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a wall.
+477,Plain Wall,普通の壁,14,1,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a wall.
+478,Lattice Wall,格子の壁,12,2,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a unique wall.
+479,Lattice Wall,格子の壁,12,2,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a unique wall.
+480,Lattice Wall,格子の壁,12,2,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a unique wall.
+481,Lattice Wall,格子の壁,12,2,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a unique wall.
+482,Lattice Wall,格子の壁,12,2,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a unique wall.
+483,Lattice Wall,格子の壁,12,2,toxin,True,9,1,1x1,0,0,0,1,3,0,0,1,0,1,Redecorate your cafe with a unique wall.
+484,Revival Tombstone,復活の墓石,5,25000,cash,True,14,6,1x1,0,0,0,1,10,0,0,1,0,1,"Revive one zombie in your cafe, once per day."
+485,Crate Table,木箱のテーブル,8,5000,cash,True,3,4,1x1,0,0,0,1,50,0,0,1,0,1,It's all about the tablecloth.
+486,Crate Chair,木箱のイス,8,2000,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A chair with the warmth of real wood.
+487,Crate Stove,木箱なコンロ,8,32,toxin,True,1,3,1x1,0,0,0,1,1000,0,0,1,0,1.5,Feels like cooking outdoors. Food takes 1.5x longer to burn.
+488,Target Poster,ターゲットのポスター,8,15,toxin,True,6,2,1x1,0,0,0.07,1,900,0,0,1,0,1,A poster that's been shot full of holes for stress relief.
+489,Mushroom Table,キノコのテーブル,8,5500,cash,True,3,4,1x1,0,0,0,1,50,0,0,1,0,1,A fairy-tale table. Food looks gross on it.
+490,Mushroom Chair,キノコのイス,8,1200,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A fairy-tale chair. Sitting on it makes you feel sick.
+491,Ampoule: Energy +200,アンプル：体力+200,1,200,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +200.
+492,Ampoule: Energy +400,アンプル：体力+400,1,400,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +400.
+493,Ampoule: Energy +600,アンプル：体力+600,1,600,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +600.
+494,Ampoule: Energy +800,アンプル：体力+800,1,800,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +800.
+495,Ampoule: Energy +1000,アンプル：体力+1000,1,1000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +1000.
+496,Ampoule: Attack +10,アンプル：攻撃力+10,1,1000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Attack +10.
+497,Ampoule: Attack +20,アンプル：攻撃力+20,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Attack +20.
+498,Ampoule: Speed +10,アンプル：スピード+10,1,1000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Speed +10.
+499,Ampoule: Speed +20,アンプル：スピード+20,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Speed +20.
+500,Ampoule: Tip +10,アンプル：チップ+10,1,200,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Tips +10.
+501,Ampoule: Tip +20,アンプル：チップ+20,1,400,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Tips +20.
+502,Ampoule: Tip +30,アンプル：チップ+30,1,600,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Tips +30.
+503,Ampoule: Diligence +10,アンプル：さぼりにくさ+10,1,200,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Diligence +10 (less slacking off).
+504,Ampoule: Diligence +20,アンプル：さぼりにくさ+20,1,400,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Diligence +20 (less slacking off).
+505,Ampoule: Diligence +30,アンプル：さぼりにくさ+30,1,600,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Diligence +30 (less slacking off).
+506,Modern Magic Fridge,モダンな魔法の冷蔵庫,1,35,toxin,True,8,3,1x1,0,0,0.01,1,1250,0,0,1,0,1,"This modern fridge gives you one unusual dish FREE each day, plus a rating bonus."
+507,Speed-Eating Table,早食いのテーブル,8,30,toxin,False,3,4,1x1,0,0,0,0.8,600,0,0,1,0,1,A mysterious table that speeds up eating. (Only while your cafe is on screen.)
+508,Graveyard Cobblestones,墓場の石畳,21,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Cobblestones hauled in from the graveyard.
+509,Graveyard Dirt,墓場の土,21,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Dirt hauled in from the graveyard.
+510,Graveyard Dirt,墓場の土,21,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Dirt hauled in from the graveyard.
+511,Graveyard Cobblestones,墓場の石畳,21,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Cobblestones hauled in from the graveyard.
+512,Graveyard Cobblestones,墓場の石畳,21,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Cobblestones hauled in from the graveyard.
+513,Graveyard Cobblestones,墓場の石畳,21,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Cobblestones hauled in from the graveyard.
+514,Graveyard Wall,墓場の壁,255,10,toxin,False,5,5,1x1,0,0,0,1,10,0,0,1,0,1,A wall hauled in from the graveyard.
+515,Graveyard Wall,墓場の壁,255,10,toxin,False,5,5,1x1,0,0,0,1,10,0,0,1,0,1,A wall hauled in from the graveyard.
+516,Tombstone Ornament,墓石の置物,255,10,toxin,False,0,6,1x1,0,0,0.03,1,10,0,0,1,0,1,A fine tombstone. Just looking at it makes you happy!
+517,Hero Statue 1,ヒーローの置物１,255,10,toxin,False,0,6,1x1,0,0,0,1,10,0,0,1,0,1,A souvenir from Hero Town.
+518,Hero Statue 2,ヒーローの置物２,255,10,toxin,False,0,6,1x1,0,0,0,1,10,0,0,1,0,1,A souvenir from Hero Town.
+519,Hero Statue 3,ヒーローの置物３,255,10,toxin,False,0,6,1x1,0,0,0,1,10,0,0,1,0,1,A souvenir from Hero Town.
+520,Hero Statue 4,ヒーローの置物４,255,10,toxin,False,0,6,1x1,0,0,0,1,10,0,0,1,0,1,A souvenir from Hero Town.
+521,Dummy,ダミー,255,9999,toxin,False,1,6,1x1,0,0,0,1,10,0,0,1,0,1,Makes a dish that helps flowers grow faster. Tastes normal to customers.
+522,Planter,新イベントの鉢植え,4,1,cash,False,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+523,Planter,新イベントの鉢植え２(小),4,1,cash,False,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+524,Planter,新イベントの鉢植え２(大),4,1,cash,False,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+525,Planter,新イベントの鉢植え３(小),4,1,cash,False,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+526,Planter,新イベントの鉢植え３(大),4,1,cash,False,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+527,Compost Pot,肥料のポット,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+528,Burnt Compost Pot,焦げた肥料のポット,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,
+529,Horror Floor,ホラーな床,14,444,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,The perfect floor for a horror vibe.
+530,Horror Wall,ホラーな壁,14,1444,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,The perfect wainscoting for a horror vibe.
+531,Victorian Counter,ビクトリア調カウンター,13,5000,cash,True,2,3,1x1,0,0,0,1,70,0,0,1,0,1,An ornate and sophisticated way to prepare brains.
+532,Victorian Sink,ビクトリア調シンク,13,4,toxin,True,11,3,1x1,0,0,0.01,1,80,0,0,1,0,1,Kitchen sink not included.
+533,Skeleton Table,骨のテーブル,10,4,toxin,True,3,4,1x1,0,0,0.01,1,160,0,0,1,0,1,Show off with this morbid design Table made of real bones.
+534,Skeleton Chair,骨のイス,10,2,toxin,True,4,4,1x1,0,0,0,1,80,0,0,1,0,1,Show off with these morbid design chairs made of real bones.
+535,Gargoyle,ガーゴイルの壁掛け,12,20,toxin,True,6,2,1x1,0,0,0.03,1,800,0,0,1,0,1,Ward off evil spirits and illuminate your Gothic cafe.
+536,Wall Candle,ろうそく照明,12,3000,cash,True,6,2,1x1,0,0,0,1,20,0,0,1,0,1,Nothing is more frighting than broken glass.
+537,Cuthulhu Painting,ホラーな絵画,14,30000,cash,True,6,2,1x1,0,0,0.01,1,400,0,0,1,0,1,Self-Portrait of an Ancient God.
+538,Glowing Bear,輝くベア,10,66666,cash,True,0,6,1x1,0,0,0,1,66,0,65541,1,0,1,A teddy bear the President fitted with LEDs. Tap the XP icon for up to 5 XP.
+539,Stitched Bear,つなぎ目ベア,10,15,toxin,True,0,6,1x1,0,0,0.02,1,600,0,0,1,0,1,A replica of the only bear to ever wound the President. Gives a rating bonus.
+540,Broken Bear,半壊ベア,10,35,toxin,True,0,6,1x1,100,700,0,1,1400,0,0,1,0,1,A replica of a bear the President half-killed. Pitying customers leave money.
+541,Skull Bear,スカルベア,10,60,toxin,True,0,6,1x1,0,0,0,1,3000,0,196678,1,0,1,The legendary bear the President wiped out. Tap the XP icon for up to 70 XP.
+542,Haunted Steel Fridge,鋼鉄霊蔵庫,13,8000,cash,True,8,3,1x1,0,0,0,1,100,0,0,1,0,1,"The perfect fridge for ""handling"" noisy customers."
+543,Victorian Induction Stove,ビクトリア調IH,13,25,toxin,True,1,3,1x1,0,0,0,1.25,1000,0,0,1,0,1,An antique induction stove loved by the upper class. Cooking time -20%.
+544,Bloody Window,ホラーの窓,14,4000,cash,True,6,2,1x1,0,0,0,1,45,0,0,1,0,1,"A sash window, decorated by departing customers."
+545,Glass Wall,ガラスの壁,15,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,"A luxury wall for keeping an eye outside, 24/7."
+546,Glass Wall (Pink),ガラスの壁・ピンク,15,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,"A luxury wall for keeping an eye outside, 24/7."
+547,Water Floor,水の床,15,500,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Want to feel like you're always underwater? Lay these down.
+548,Grass tile 2,草の床,15,500,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Want the outdoors indoors? Lay these down!
+549,Embossed Floor,エンボス床,15,500,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,An unremarkable embossed floor. Dust collects in the dents.
+550,Underground Stairs,地下に続く階段,18,5000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Looks like stairs down. It isn't. Trick art!
+551,Snow Floor,雪の床,18,600,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor that makes you want to build a snowman.
+552,Planter,雪プラントの鉢植え２(小),4,1,toxin,True,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+553,Planter,雪プラントの鉢植え２(大),4,1,toxin,True,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+554,Planter,雪プラントの鉢植え３(小),4,1,toxin,True,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+555,Planter,雪プラントの鉢植え３(大),4,1,toxin,True,17,8,1x1,0,0,0,1,0,0,0,1,0,1,Plants bring much-needed oxygen to your customers.
+556,Grassy Thicket,くさむら,11,8000,cash,True,0,1,1x1,0,0,0,1,100,0,0,1,0,1,"Zombies don't care about greenery, but I find it soothing."
+557,Purple Flower,紫の花,11,5000,cash,True,0,1,1x1,0,0,0,1,70,0,0,1,0,1,"Grows anywhere, cement or sheet metal."
+558,Rose Tree,ローズツリー,11,30,toxin,True,0,1,1x1,0,0,0,1,3000,0,196628,1,0,1,A mystery tree that exhales more than oxygen. Tap the XP icon for up to 20 XP.
+559,Stump Stove,切り株のコンロ,11,45,toxin,True,1,3,1x1,0,0,0,1,1800,0,0,1,0,2,A fairy-tale stump stove. Food takes 2x longer to burn.
+560,Stump Counter,切り株カウンター,11,5000,cash,True,2,3,1x1,0,0,0,1,70,0,0,1,0,1,A hefty counter made from a whole tree stump.
+561,Stump Sink,切り株のシンク,11,10,toxin,True,11,3,1x1,0,0,0.01,1,400,0,0,1,0,1,A bold sink plumbed right into a tree stump.
+562,Garden Table,ガーデンテーブル,11,5,toxin,True,3,4,1x1,0,0,0.01,1,200,0,0,1,0,1,A top-quality garden table with beautiful curves.
+563,Garden Chair,ガーデンチェア,11,3,toxin,True,4,4,1x1,0,0,0,1,120,0,0,1,0,1,A top-quality garden chair made for tea time.
+564,Flower Bed Fence,花壇の柵,11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A stylish border for flower beds and walkways.
+565,Flower Bed Fence (Yellow),花壇の柵(黄),11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A stylish border for flower beds and walkways.
+566,Flower Bed Fence (Green),花壇の柵（緑）,11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A stylish border for flower beds and walkways.
+567,Flower Bed Fence (Pink),花壇の柵（ピンク）,11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A stylish border for flower beds and walkways.
+568,Flower Bed Corner Fence,花壇のコーナー柵,11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A flower bed fence for corners.
+569,Flower Bed Corner Fence (Yellow),花壇のコーナー柵（黄）,11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A flower bed fence for corners.
+570,Flower Bed Corner Fence (Green),花壇のコーナー柵（緑）,11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A flower bed fence for corners.
+571,Flower Bed Corner Fence (Pink),花壇のコーナー柵（ピンク）,11,4000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A flower bed fence for corners.
+572,Flower Bed Wall,花壇の壁,11,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Redecorate your cafe with a unique wall.
+573,Flower Bed Wall (Yellow),花壇の壁（黄）,11,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Redecorate your cafe with a unique wall.
+574,Flower Bed Wall (Green),花壇の壁（緑）,11,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Redecorate your cafe with a unique wall.
+575,Flower Bed Wall (Pink),花壇の壁（ピンク）,11,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Redecorate your cafe with a unique wall.
+576,Revival Tombstone (Right),復活の墓石(右手),18,500000,cash,True,14,6,1x1,0,0,0,1,5000,0,0,1,0,1,"Revive one zombie in your cafe, once per day."
+577,Grass Ornament,草のオブジェ,5,2000,cash,True,14,6,1x1,0,0,0,1,20,0,0,1,0,1,A hedge to beautify the outside of your cafe.
+578,Flowering Grass Ornament,草のオブジェ花つき,5,2000,cash,True,14,6,1x1,0,0,0,1,20,0,0,1,0,1,A hedge to beautify the outside of your cafe.
+579,Downtown Block 1 Model,商業区１丁目の模型,10,50000,cash,True,0,1,1x1,0,0,0,1,400,0,0,1,0,1,A model lined with miniature buildings.
+580,Downtown Block 2 Model,商業区２丁目の模型,10,50000,cash,True,0,1,1x1,0,0,0,1,400,0,0,1,0,1,A model lined with miniature buildings.
+581,Radio Tower Model,電波塔の模型,10,40,toxin,True,0,1,1x1,125,2000,0,1,1500,0,0,1,0,1,This radio tower mind-controls customers into paying up automatically.
+582,Skyscraper Model,超高層ビルの模型,10,30,toxin,True,0,1,1x1,0,0,0,1,1500,0,131112,1,0,1,A miniature skyscraper. Tap the XP icon for up to 40 XP.
+583,City Skyline,都会の風景,10,4000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,For anyone who wants a little big-city feel.
+584,L-Road Floor,L字道路な床,10,4000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A terrifying road floor with a 90-degree turn.
+585,Intersection Floor,交差点の床,10,4000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,An intersection floor.
+586,Straight Road Floor,直線道路の床,10,2500,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A straight road floor.
+587,Straight Road Floor,直線道路の床,10,2500,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A straight road floor.
+588,L-Road Floor,L字道路な床,10,4000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A terrifying road floor with a 90-degree turn.
+589,L-Road Floor,L字道路な床,10,4000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A terrifying road floor with a 90-degree turn.
+590,L-Road Floor,L字道路な床,10,4000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A terrifying road floor with a 90-degree turn.
+591,Model Base Floor,模型台の床,10,100,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor for placing models. Pairs well with road floors.
+592,Power Plant Stove,発電所型コンロ,10,20,toxin,True,1,3,1x1,0,0,0,1.11,700,0,0,1,0,2,A stove modeled on a power plant. Cooking time -10%.
+593,Apartment Block Sink,マンション型シンク,10,4,toxin,True,11,3,1x1,0,0,0,1,80,0,0,1,0,1,A sink modeled on an apartment block. Matches the model furniture.
+594,Department Store Counter,デパート型カウンター,10,100000,cash,True,2,3,1x1,0,0,0.01,1,800,0,0,1,0,1,A counter modeled on a department store. Matches the model furniture.
+595,Chinese Lamp,中華ランプ,12,9999,toxin,False,6,2,1x1,0,0,0,1,0,0,0,1,0,1,Nothing is more frighting than broken glass.
+596,Cannon,大砲,11,9999,toxin,False,0,1,1x1,0,0,0,1,0,0,0,1,0,1,"Grows anywhere, cement or sheet metal."
+597,Medieval Tile,神々しい床,16,4000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Walk on this tile and remember the past.
+598,Stone Wall,神々しい壁,16,4000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,For that classic castle look.
+599,Divine Column,神々しい柱,16,10000,cash,True,9,1,1x1,0,0,0,1,150,0,0,1,0,1,Give your cafe a divine makeover with temple columns.
+600,Divine Counter,神々しいカウンター,16,10000,cash,True,2,3,1x1,0,0,0,1,150,0,0,1,0,1,"A heavenly counter created by Gaia, goddess of the earth."
+601,Divine Stove,神々しいコンロ,16,100000,cash,True,1,3,1x1,0,0,0,1,300,0,0,1,0,1,"A heavenly stove lit by Prometheus, god of fire."
+602,Divine Table,神々しいテーブル,16,10000,cash,True,3,4,1x1,0,0,0,1,150,0,0,1,0,1,A table crafted by the master Daedalus.
+603,Divine Chair,神々しいイス,16,10000,cash,True,4,4,1x1,0,0,0,1,150,0,0,1,0,1,A chair crafted by the master Daedalus.
+604,Ampoule: Energy +1200,アンプル：体力+1200,1,1200,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +1200.
+605,Ampoule: Energy +1400,アンプル：体力+1400,1,1400,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +1400.
+606,Ampoule: Energy +1600,アンプル：体力+1600,1,1600,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +1600.
+607,Ampoule: Energy +1800,アンプル：体力+1800,1,1800,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +1800.
+608,Ampoule: Energy +2000,アンプル：体力+2000,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +2000.
+609,"Ampoule: Attack +10, Speed +10",アンプル：攻撃力+10 スピード+10,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Attack +10, Speed +10."
+610,Ampoule: Attack +5,アンプル：攻撃力+5,1,500,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Attack +5.
+611,Ampoule: Speed +5,アンプル：スピード+5,1,500,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Speed +5.
+612,"Ampoule: Attack +5, Speed +5",アンプル：攻撃力+5 スピード+5,1,1000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Attack +5, Speed +5."
+613,Tatami Floor,和室の床,12,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Redecorate with the most Japanese floor there is.
+614,Tatami Floor,和室の床,12,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Redecorate with the most Japanese floor there is.
+615,Tatami Room Wall,和室の壁,12,3000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall made of fine clay and wood.
+616,Shoji Screen,和室の障子,12,5000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A shoji screen of fine washi paper. Do NOT poke holes in it.
+617,Bamboo Decoration,和室の竹,12,5000,cash,True,9,1,1x1,0,0,0,1,50,0,0,1,0,1,Add a Japanese touch with this bamboo decoration.
+618,Irori Hearth,和室のコンロ,12,10,toxin,True,1,3,1x1,0,0,0,1,400,0,0,1,0,1,A hearth lovingly crafted by artisans. Gives your pots a special look.
+619,Tatami Room Counter,和室のカウンター,12,5000,cash,True,2,3,1x1,0,0,0,1,50,0,0,1,0,1,The perfect counter for a tatami room.
+620,Tatami Room Trash Bin,和室のごみ箱,12,5000,cash,True,11,3,1x1,0,0,0,1,50,0,0,1,0,1,A wooden trash bin that fights odors.
+621,Donabe Hot Pot,和室のポット,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,A hot pot.
+622,Burnt Donabe Hot Pot,焦げた和室のポット,255,0,cash,True,0,255,1x1,0,0,0,1,0,0,0,1,0,1,A hot pot.
+623,Low Wooden Table,和室のテーブル,12,2000,cash,True,3,4,1x1,0,0,0,1,20,0,0,1,0,1,The perfect table for a banquet.
+624,Zabuton Cushion,和室のイス,12,2000,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A stack of floor cushions. Don't stack them too high!
+625,Paper Lamp,和室のライト,12,2000,cash,True,9,1,1x1,0,0,0,1,20,0,0,1,0,1,"A lamp with a soft, hazy glow."
+626,Stone Lantern,和室の灯篭,12,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,For looking at only. It doesn't light up.
+627,Tatami Room Wall Light,和室の壁掛け,12,2000,cash,True,6,2,1x1,0,0,0,1,20,0,0,1,0,1,A wall light perfect for a tatami room.
+628,Red Wall,赤い壁,13,3000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A red wall with a big window.
+629,Green Wall,緑の壁,13,3000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A green wall with a big window.
+630,Pink Floor,ピンクの床,13,1500,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Redecorate with a retro floor.
+631,Motorcycle,バイク,13,10000,cash,True,14,6,1x1,0,0,0.02,1,20,0,0,1,0,1,Decorate with a wild motorcycle.
+632,Bike Rack,駐輪場,13,1000,cash,True,14,6,1x1,0,0,0,1,20,0,0,1,0,1,This bike rack is NOT for customers.
+633,Car Stove,車のコンロ,13,10,toxin,True,1,3,1x1,0,0,0,1,400,0,0,1,0,1,A stove powered by a mighty engine.
+634,Car Chair,車のイス,13,2500,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A chair kids love.
+635,Car Counter,車のカウンター,13,5000,cash,True,2,3,1x1,0,0,0,1,50,0,0,1,0,1,"Shaped like a car, but it's just a counter."
+636,Car Sink,車のシンク,13,5000,cash,True,11,3,1x1,0,0,0,1,50,0,0,1,0,1,"Shaped like a car, but it's just a sink."
+637,Car Table,車のテーブル,13,2500,cash,True,3,4,1x1,0,0,0,1,20,0,0,1,0,1,A table for your car collection.
+638,Jukebox,ジュークボックス,13,5000,cash,True,9,1,1x1,0,0,0.01,1,50,0,0,1,0,1,This happening jukebox will give your cafe extra cash. Just make sure you empty it when it's full.
+639,Beach Sand Floor,海辺の床,15,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor that brings the beach inside.
+640,Beach Sand Floor,海辺の床,15,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor that brings the beach inside.
+641,Beach Sand Floor,海辺の床,15,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor that brings the beach inside.
+642,Swim Ring,浮き輪の置物,15,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,Hang up this swim ring for a resort feel.
+643,Parasol,パラソル,15,8000,cash,True,9,1,1x1,0,0,0,1,80,0,0,1,0,1,Put up this parasol for a resort feel.
+644,Palm Tree,ヤシの木,15,15000,cash,True,9,1,1x1,0,0,0,1,150,0,0,1,0,1,Plant this palm tree for a resort feel.
+645,Red Hibiscus,ハイビスカス赤,15,2500,cash,True,14,6,1x1,0,0,0,1,25,0,0,1,0,1,Display this flower for a tropical feel.
+646,Purple Hibiscus,ハイビスカス紫,15,2500,cash,True,14,6,1x1,0,0,0,1,25,0,0,1,0,1,Display this flower for a tropical feel.
+647,Ampoule: Regen Up (Lv. 1),アンプル：回復速度UP(Lv1),1,1200,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Energy recovers a little faster.
+648,Ampoule: Regen Up (Lv. 2),アンプル：回復速度UP(Lv2),1,1200,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Energy recovers faster.
+649,Ampoule: Regen Up (Lv. 3),アンプル：回復速度UP(Lv3),1,1200,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Energy recovers much faster.
+650,"Ampoule: Attack +15, Speed +15",アンプル：攻撃力+15 スピード+15,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Attack +15, Speed +15."
+651,"Ampoule: Attack +20, Speed +20",アンプル：攻撃力+20 スピード+20,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Attack +20, Speed +20."
+652,Demon Realm Floor,魔界の床,14,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor straight out of the Demon Realm.
+653,Demon Realm Floor,魔界の床,14,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor straight out of the Demon Realm.
+654,Demon Realm Floor,魔界の床,14,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor straight out of the Demon Realm.
+655,Demon Realm Floor,魔界の床,14,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor straight out of the Demon Realm.
+656,Demon Realm Wall,魔界の壁,14,5000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall straight out of the Demon Realm.
+657,Demon Realm Chair,魔界のイス,14,1,toxin,True,4,4,1x1,0,0,0,1,40,0,0,1,0,1,A chair made from recycled Demon Realm rocks.
+658,Demon Realm Table,魔界のテーブル,14,2,toxin,True,3,4,1x1,0,0,0,1,80,0,0,1,0,1,A table made from recycled Demon Realm rocks.
+659,Demon Realm Sink,魔界のシンク,14,5000,cash,True,11,3,1x1,0,0,0,1,50,0,0,1,0,1,The trendiest sink in the Demon Realm.
+660,Demon Realm Counter,魔界のカウンター,14,5000,cash,True,2,3,1x1,0,0,0,1,50,0,0,1,0,1,The trendiest counter in the Demon Realm.
+661,Demon Realm Stove,魔界のコンロ,14,25,toxin,True,1,3,1x1,0,0,0,1.25,1000,0,0,1,0,1,The stove of Demon Realm nobility. Cooking time -20%.
+662,Demon Realm Fridge,魔界の冷蔵庫,14,10000,cash,True,8,3,1x1,0,0,0,1,100,0,0,1,0,1,The trendiest fridge in the Demon Realm. Store your prey!
+663,Demon Realm Tree,魔界の木,14,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,A tree found only in the Demon Realm.
+664,Demon Realm Grave,魔界の墓,14,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,A slightly pricey grave in the Demon Realm.
+665,Demon Realm Grave,魔界の墓,14,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,An affordable grave in the Demon Realm.
+666,Cobra Statue,コブラの置物,30,200000,cash,True,9,1,1x1,0,0,0,1,200,0,65546,1,0,1,You'll want to play a snake-charmer's tune. Up to 10 XP.
+667,Mega Man Floor,ロック床,2,500,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor from the Mega Man collab stage.
+668,Mega Man Floor,ロック床,2,500,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor from the Mega Man collab stage.
+669,Mega Man Floor,ロック床,2,500,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor from the Mega Man collab stage.
+670,Mega Man Wall,ロック壁,2,500,cash,False,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall from the Mega Man collab stage.
+671,Mega Man Wall,ロック壁,2,500,cash,False,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall from the Mega Man collab stage.
+672,Mega Man Wall,ロック壁,2,500,cash,False,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall from the Mega Man collab stage.
+673,Mega Man Table (Brick),ロックテーブル煉瓦,2,5000,cash,False,3,4,1x1,0,0,0,1,50,0,0,1,0,1,A table from the Mega Man collab stage.
+674,Mega Man Table (Oni),ロックテーブル鬼,2,5000,cash,False,3,4,1x1,0,0,0,1,50,0,0,1,0,1,A table from the Mega Man collab stage.
+675,Mega Man Table (Cyber),ロックテーブルサイバー,2,5000,cash,False,3,4,1x1,0,0,0,1,50,0,0,1,0,1,A table from the Mega Man collab stage.
+676,Mega Man Scrap Pile,ロック廃棄物,2,15000,cash,False,9,1,1x1,0,0,0,1,150,0,0,1,0,1,Scrap from the Mega Man collab stage.
+677,Mega Man Scrap Pile,ロック廃棄物,2,15000,cash,False,9,1,1x1,0,0,0,1,150,0,0,1,0,1,Scrap from the Mega Man collab stage.
+678,Rush,ラッシュ,2,30,toxin,False,9,6,1x1,0,0,0,1,1200,0,0,1,0,1,Mega Man's robot dog sidekick.
+679,Mega Man Pillar,ロックオブジェ355,2,1,cash,False,9,1,1x1,0,0,0,1,0,0,0,1,0,1,A Mega Man display piece.
+680,Mega Man Chair (Robot),ロックイスロボ,2,5000,cash,False,4,4,1x1,0,0,0,1,50,0,0,1,0,1,A chair from the Mega Man collab stage.
+681,Mega Man Chair (Cloud),ロックイス雲,2,5000,cash,False,4,4,1x1,0,0,0,1,50,0,0,1,0,1,A chair from the Mega Man collab stage.
+682,Mega Man Chair (Cyber),ロックイスサイバー,2,5000,cash,False,4,4,1x1,0,0,0,1,50,0,0,1,0,1,A chair from the Mega Man collab stage.
+683,Cyber Floor,サイバーな床,17,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor for your own cyberspace.
+684,Cyber Wall,サイバーな壁,17,5000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall for your own cyberspace.
+685,Cyber Chair,サイバーなイス,17,2500,cash,True,4,4,1x1,0,0,0,1,25,0,0,1,0,1,The most popular chair in cyberspace.
+686,Cyber Table,サイバーなテーブル,17,2500,cash,True,3,4,1x1,0,0,0,1,25,0,0,1,0,1,The most popular table in cyberspace.
+687,Cyber Sink,サイバーなシンク,17,5000,cash,True,11,3,1x1,0,0,0,1,50,0,0,1,0,1,A cyber sink. Processes 256 bytes per second.
+688,Cyber Counter,サイバーなカウンター,17,5000,cash,True,2,3,1x1,0,0,0,1,50,0,0,1,0,1,A cyber counter. Makes food look tasty.
+689,Cyber Stove,サイバーなコンロ,17,10000,cash,True,1,3,1x1,0,0,0,1,100,0,0,1,0,1,A cyber stove. Cooks without fire.
+690,Cyber Fridge,サイバーな冷蔵庫,17,10000,cash,True,8,3,1x1,0,0,0,1,100,0,0,1,0,1,"A cyber fridge. Apart from the looks, just a regular fridge."
+691,Blue Picnic Tarp 1,ブルーシート1,18,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A picnic tarp for cherry blossom viewing.
+692,Blue Picnic Tarp 2,ブルーシート2,18,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A picnic tarp for cherry blossom viewing.
+693,Blue Picnic Tarp 3,ブルーシート3,18,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A picnic tarp for cherry blossom viewing.
+694,Blue Picnic Tarp 4,ブルーシート4,18,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A picnic tarp for cherry blossom viewing.
+695,Blue Picnic Tarp 5,ブルーシート5,18,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A picnic tarp for cherry blossom viewing.
+696,Red Picnic Tarp,レッドシート,18,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,Roll out the red carpet for celebrities.
+697,Cherry Blossom Tree,桜の木,18,50000,cash,True,9,1,1x1,0,0,0.01,1,500,0,0,1,0,1,A cherry tree that never wilts! Small rating bonus.
+698,Cherry Blossom Folding Screen,桜のびょうぶ,18,25000,cash,True,9,1,1x1,0,0,0,1,250,0,0,1,0,1,A cherry blossom folding screen.
+699,Bonbori Lantern,桜のぼんぼり,18,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,A cherry blossom paper lantern.
+700,Sake Bottle,桜の酒瓶,18,5000,cash,True,9,1,1x1,0,0,0,1,50,0,0,1,0,1,Something you often see in parks in cherry blossom season.
+701,Winter Tree,冬の木,14,5000,cash,True,9,1,1x1,0,0,0,1,50,0,0,1,0,1,A tree shipped in from snow country.
+702,Potted Plant,鉢植え,7,1000,cash,True,9,1,1x1,0,0,0,1,10,0,0,1,0,1,A potted plant that might be relaxing.
+703,Potted Plant,鉢植え,7,1500,cash,True,9,1,1x1,0,0,0,1,15,0,0,1,0,1,A potted plant that should be relaxing.
+704,Potted Plant,鉢植え,7,2000,cash,True,9,1,1x1,0,0,0,1,20,0,0,1,0,1,A potted plant rumored to be relaxing.
+705,Round Table,丸テーブル,7,1500,cash,True,3,4,1x1,0,0,0,1,15,0,0,1,0,1,A round table with no corners.
+706,Round Table,丸テーブル,7,2000,cash,True,3,4,1x1,0,0,0,1,20,0,0,1,0,1,A round table with no corners.
+707,Colorful Table,カラフルテーブル,8,5000,cash,True,3,4,1x1,0,0,0,1,50,0,0,1,0,1,A table with a poppy design.
+708,Colorful Table,カラフルテーブル,8,5000,cash,True,3,4,1x1,0,0,0,1,50,0,0,1,0,1,A table with a poppy design.
+709,Chair,イス,7,1500,cash,True,4,4,1x1,0,0,0,1,15,0,0,1,0,1,A brown chair.
+710,Chair,イス,7,2000,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A white chair.
+711,Chair,イス,8,5000,cash,True,4,4,1x1,0,0,0,1,50,0,0,1,0,1,A colorful chair.
+712,Rock Wall,岩壁,16,6000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall carved from a natural cliff face.
+713,Colorful Wall,カラフルな壁,6,1500,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A colorful wall popular with the ladies.
+714,Colorful Wall,カラフルな壁,6,1500,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A colorful wall popular with the ladies.
+715,Colorful Wall,カラフルな壁,6,1500,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A colorful wall popular with the ladies.
+716,Colorful Wall,カラフルな壁,7,2000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A colorful wall popular with the ladies.
+717,Wooden Wall,木製の壁,8,3000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,"A wooden wall, like you'd see in a lodge."
+718,Wooden Floor,木製の床,8,1200,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A wooden floor. Relax to the scent of wood.
+719,Wooden Floor,木製の床,8,1200,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A wooden floor. Relax to the scent of wood.
+720,Wooden Floor,木製の床,6,800,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A wooden floor. Relax to the scent of wood.
+721,Wooden Floor,木製の床,6,800,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A wooden floor. Relax to the scent of wood.
+722,Wooden Floor,木製の床,7,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A wooden floor. Relax to the scent of wood.
+723,Wooden Floor,木製の床,7,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A wooden floor. Relax to the scent of wood.
+724,Magma Chair,マグマなイス,16,5000,cash,True,4,4,1x1,0,0,0,1,50,0,0,1,0,1,Filled with magma. Too hot to sit on for long.
+725,Magma Table,マグマなテーブル,16,5000,cash,True,3,4,1x1,0,0,0,1,50,0,0,1,0,1,Filled with magma. The plates get too hot to touch.
+726,Magma Stove,マグマなコンロ,16,12000,cash,True,1,3,1x1,0,0,0,1,120,0,0,1,0,1,Magma-powered for super-strong heat.
+727,Magma Floor,マグマの床,16,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor melted by magma.
+728,Hot Spring Wall,温泉の壁,12,5000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A Japanese-style wall of fine bamboo.
+729,Hot Spring Floor,温泉の床,12,3000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor that looks like water.
+730,Hot Spring Section,温泉のパーツ,12,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A piece to combine with the water floor.
+731,Hot Spring Section,温泉のパーツ,12,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A piece to combine with the water floor.
+732,Hot Spring Section,温泉のパーツ,12,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A piece to combine with the water floor.
+733,Hot Spring Section,温泉のパーツ,12,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A piece to combine with the water floor.
+734,Hot Spring Section,温泉のパーツ,12,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A piece to combine with the water floor.
+735,Ryokan Futon,旅館の布団,12,8000,cash,True,9,1,1x1,0,0,0,1,80,0,0,1,0,1,The futon went flyin'...
+736,Bath Bucket,風呂桶,12,5000,cash,True,9,1,1x1,0,0,0,1,50,0,0,1,0,1,This is not a cup. It is a bath bucket.
+737,Ryokan Wall,旅館の壁,12,5,toxin,True,9,1,1x1,0,0,0.01,1,200,0,0,1,0,1,A shoji made by a master. Small rating bonus.
+738,Ryokan Shelf,旅館の家具,12,12000,cash,True,9,1,1x1,0,0,0,1,120,0,0,1,0,1,Furniture for storing valuables.
+739,Paper Umbrella,旅館の傘,12,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,A big umbrella. Too big to carry around.
+740,Corrugated Iron Wall,トタンの壁,21,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A fake corrugated iron wall. It's all dented.
+741,BENKI,BENKI,21,10000,cash,True,9,1,1x1,0,0,0,1,80,0,0,1,0,1,Flushes anything with incredible power.
+742,Locker,ロッカー,21,5000,cash,True,9,1,1x1,0,0,0,1,80,0,0,1,0,1,What's inside is a secret.
+743,Christmas Tree 2015,クリスマスツリー2015,14,5,toxin,True,9,1,1x1,0,0,0.02,1,200,0,0,1,0,1,This is what happens when zombies decorate for Christmas. Small rating bonus.
+744,Air Duct,ダクト,21,8000,cash,True,9,1,1x1,0,0,0,1,80,0,0,1,0,1,A duct that vents something outside.
+745,4th Anniversary Statue,４周年の銅像,1,10000,cash,False,9,6,1x1,200,1000,0,1,80,0,0,1,0,1,A statue celebrating the 4th anniversary.
+746,Panda Chair,パンダのイス,15,100000,cash,True,4,4,1x1,0,0,0,1,200,0,0,1,0,1,A stuffed panda. You can use it as a chair.
+747,Elephant Chair,ゾウのイス,15,100000,cash,True,4,4,1x1,0,0,0,1,200,0,0,1,0,1,A stuffed elephant. You can use it as a chair.
+748,Tiger Chair,トラのイス,15,100000,cash,True,4,4,1x1,0,0,0,1,200,0,0,1,0,1,A stuffed tiger. You can use it as a chair.
+749,Sheep Chair,ヒツジのイス,15,100000,cash,True,4,4,1x1,0,0,0,1,200,0,0,1,0,1,A stuffed sheep. You can use it as a chair.
+750,Ranch Fence,牧場の柵,15,4000,cash,True,9,1,1x1,0,0,0,1,40,0,0,1,0,1,A ranch fence. Use it to build your own ranch.
+751,Ranch Fence,牧場の柵,15,4000,cash,True,9,1,1x1,0,0,0,1,40,0,0,1,0,1,A ranch fence. Use it to build your own ranch.
+752,Ranch Fence,牧場の柵,15,4000,cash,True,9,1,1x1,0,0,0,1,40,0,0,1,0,1,A ranch fence. Use it to build your own ranch.
+753,Ranch Fence (Corner),牧場の柵(カド),15,4000,cash,True,9,1,1x1,0,0,0,1,40,0,0,1,0,1,A ranch fence. Use it to build your own ranch.
+754,Ranch Fence (Corner),牧場の柵(カド),15,4000,cash,True,9,1,1x1,0,0,0,1,40,0,0,1,0,1,A ranch fence. Use it to build your own ranch.
+755,Chicken,にわとり,15,70000,cash,True,9,1,1x1,0,0,0,1,100,0,65541,1,0,1,A stuffed chicken. It doesn't crow at dawn. Up to 5 XP.
+756,Bear Cub Table,こぐまのテーブル,15,15,toxin,False,3,4,1x1,0,0,0,0.8,300,0,0,1,0,1,A bear cub table. A woodcarver's masterpiece?
+757,Halloween Wall,ハロウィンの壁,8,1000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall made for Halloween.
+758,Halloween Floor,ハロウィンの床,8,500,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor made for Halloween.
+759,Coral,サンゴ,22,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,Rare coral from the seabed. Even zombies are charmed.
+760,Seabed Rock,海底の石,22,500,cash,True,9,1,1x1,0,0,0,1,5,0,0,1,0,1,An ordinary rock from the seabed.
+761,Seabed Table,海底のテーブル,22,10000,cash,True,3,4,1x1,0,0,0,1,100,0,0,1,0,1,A table borrowed from an undersea castle.
+762,Seabed Chair,海底のイス,22,5000,cash,True,4,4,1x1,0,0,0,1,50,0,0,1,0,1,A chair borrowed from an undersea castle.
+763,Snowman,ゆきだるま,14,50,toxin,True,13,6,1x1,0,0,0,1,2000,0,0,1,0,1,Place this snowman to make all zombies recover 10% faster.
+764,Snow Floor 1,雪の床1,14,1000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,This snow floor never melts.
+765,Snow Floor 2,雪の床2,1,1,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,dummy
+766,Snow Floor 3,雪の床3,1,1,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,dummy
+767,Snow Floor 4,雪の床4,1,1,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,dummy
+768,Snow Floor 5,雪の床5,1,1,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,dummy
+769,Snow Fence,雪の柵,14,2000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A snow-covered fence.
+770,Seabed Floor,海底の床,22,2000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor covered in seabed sand.
+771,Seabed Wall,海底の壁,22,5000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall with seabed-style wallpaper.
+772,Cursed Shimenawa Rope,死目縄,1,10,toxin,False,6,2,1x1,0,0,0.02,1,400,0,0,1,0,1,Put this up for celebrations. Small rating bonus.
+773,Fish 1,さかな1,22,1000,cash,True,9,1,1x1,0,0,0,1,10,0,0,1,0,1,A mysterious fish floating in midair.
+774,Fish 2,さかな2,22,1000,cash,True,9,1,1x1,0,0,0,1,10,0,0,1,0,1,A mysterious fish floating in midair.
+775,Octopus,タコ,22,2000,cash,True,9,1,1x1,0,0,0,1,20,0,0,1,0,1,An octopus that lived in a pot on the seabed.
+776,Crab,カニ,22,2000,cash,True,9,1,1x1,0,0,0,1,20,0,0,1,0,1,A crab from the seabed.
+777,Olympian Stove,神々のコンロ,16,45,toxin,True,1,3,1x1,0,0,0,1.35,1800,0,0,1,0,1,The stove of the gods. Cooking time -30%.
+778,Globe Statue,地球儀の置物,16,100,cash,False,9,1,1x1,0,0,0,1,0,0,0,1,0,1,A globe.
+779,Trojan Horse,トロイの木馬,16,1000000,cash,True,13,6,1x1,0,0,0,1,1000,0,0,1,0,1,The gods' wooden horse. All zombies recover 10% faster. (Limit: 1)
+780,Olympian Floor,神々の床,16,4000,cash,True,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor with a temple feel.
+781,Olympian Wall,神々の壁,16,4000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall with a face that looks awfully familiar.
+782,Tablecloth Table,テーブル,1,1,cash,False,3,4,1x1,0,0,0,1,100,0,0,1,0,1,A table borrowed from an undersea castle.
+783,Trash Bin,ごみばこ,1,1,cash,False,11,3,1x1,0,0,0,1,50,0,0,1,0,1,A cyber sink. Processes 256 bytes per second.
+784,Book Rack,ラック,12,5000,cash,True,9,1,1x1,0,0,0,1,50,0,0,1,0,1,Get organized with this stylish rack.
+785,TV,テレビ,1,1,cash,False,9,1,1x1,0,0,0,1,20,0,0,1,0,1,An octopus that lived in a pot on the seabed.
+786,Mega Man Counter,ロックカウンター,2,5000,cash,False,2,3,1x1,0,0,0,1,50,0,0,1,0,1,A counter from the Mega Man collab stage.
+787,Mega Man Spikes,ロックトゲ,2,5000,cash,False,9,1,1x1,0,0,0,1,50,0,0,1,0,1,Spikes from the Mega Man collab stage.
+788,Mega Man Floor,ロック床,2,500,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor from the Mega Man collab stage.
+789,Mega Man Floor,ロック床,2,500,cash,False,7,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor from the Mega Man collab stage.
+790,Mega Man Wall,ロック壁,2,500,cash,False,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall from the Mega Man collab stage.
+791,Castle Wall,追加壁,1,1,cash,False,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A floor covered in seabed sand.
+792,Castle Wall,追加壁,1,1,cash,False,5,5,1x1,0,0,0,1,0,0,0,1,0,1,A wall with seabed-style wallpaper.
+793,Castle Wall Ornament,城壁オブジェ,30,4000,cash,True,9,1,1x1,0,0,0,1,40,0,0,1,0,1,"A stacked-stone wall, like the ones on castles."
+794,War Camp Table,戦のテーブル,30,2000,cash,True,3,4,1x1,0,0,0,1,20,0,0,1,0,1,A Warring States-style table.
+795,War Camp Fence 1,戦の柵1,30,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A Warring States-style wall.
+796,War Camp Fence 2,戦の柵2,30,3000,cash,True,9,1,1x1,0,0,0,1,30,0,0,1,0,1,A Warring States-style wall.
+797,War Banner,戦の旗,30,4000,cash,True,9,1,1x1,0,0,0,1,40,0,0,1,0,1,A Warring States-style banner.
+798,Katana Display,戦の刀,30,5000,cash,True,9,1,1x1,0,0,0,1,50,0,0,1,0,1,"Some zombies do use swords, now and then."
+799,War Camp Stool,戦のイス,30,2000,cash,True,4,4,1x1,0,0,0,1,20,0,0,1,0,1,A Warring States-style stool.
+800,Warlord Statue,武将の銅像,30,100,cash,False,9,1,1x1,0,0,0,1,0,0,0,1,0,1,A statue of a zombie hero of the Warring States era.
+801,Ampoule: Attack +30,アンプル：攻撃力+30,1,5000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Attack +30.
+802,Ampoule: Speed +30,アンプル：スピード+30,1,5000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Speed +30.
+803,Ampoule: Energy +2500,アンプル：体力+2500,1,5000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,Max Energy +2500.
+804,"Ampoule: Energy +300, Attack +5",アンプル：体力+300 攻撃力+5,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Energy +300, Attack +5."
+805,"Ampoule: Energy +600, Attack +10",アンプル：体力+600 攻撃力+10,1,5000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Energy +600, Attack +10."
+806,"Ampoule: Energy +1000, Attack +15",アンプル：体力+1000 攻撃力+15,1,8000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Energy +1000, Attack +15."
+807,"Ampoule: Energy +600, Speed +5",アンプル：体力+600 スピード+5,1,2000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Energy +600, Speed +5."
+808,"Ampoule: Energy +1200, Speed +10",アンプル：体力+1200 スピード+10,1,5000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Energy +1200, Speed +10."
+809,"Ampoule: Energy +1800, Speed +15",アンプル：体力+1800 スピード+15,1,8000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Energy +1800, Speed +15."
+810,"Ampoule: Energy +1000, Attack +10, Speed +10",アンプル：体力+1000 攻撃力+10 スピード+10,1,10000,cash,False,16,7,1x1,0,0,0,1,0,0,0,1,0,1,"Energy +1000, Attack +10, Speed +10."
+811,Balloon,バルーン,23,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,A fancy balloon.
+812,Balloon Table,テーブル（バルーン）,23,10000,cash,True,3,4,1x1,0,0,0,1,100,0,0,1,0,1,A table that makes everything fancy.
+813,Balloon (Blue),バルーン(青),23,6000,cash,True,9,1,1x1,0,0,0,1,60,0,0,1,0,1,A fancy balloon.
+814,Balloon (Yellow),バルーン（黄）,23,6000,cash,True,9,1,1x1,0,0,0,1,60,0,0,1,0,1,A fancy balloon.
+815,Balloon (Red),バルーン（赤）,23,6000,cash,True,9,1,1x1,0,0,0,1,60,0,0,1,0,1,A fancy balloon.
+816,Balloon (White),バルーン（白）,23,6000,cash,True,9,1,1x1,0,0,0,1,60,0,0,1,0,1,A fancy balloon.
+817,Balloon (White Flower),バルーン（白花）,23,6000,cash,True,9,1,1x1,0,0,0,1,60,0,0,1,0,1,A fancy balloon.
+818,Balloon (Yellow Flower),バルーン（黄華）,23,6000,cash,True,9,1,1x1,0,0,0,1,60,0,0,1,0,1,A fancy balloon.
+819,Brick Wall 1,レンガ壁1,24,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Get stylish with brick-look wallpaper.
+820,Brick Wall 2,レンガ壁2,24,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Get stylish with brick-look wallpaper.
+821,Brick Wall 3,レンガ壁3,24,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Get stylish with brick-look wallpaper.
+822,Brick Wall 4,レンガ壁4,24,10000,cash,True,5,5,1x1,0,0,0,1,0,0,0,1,0,1,Get stylish with brick-look wallpaper.
+823,Dragon Stove,ドラゴンのコンロ,19,100,toxin,True,1,3,1x1,0,0,0,1.45,4000,0,0,1,0,1,Dragon-mouth magma cooks anything in a flash. Cooking time -40%.
+824,Wall-Mounted Sword,剣の壁掛け,19,50000,cash,True,6,2,1x1,0,0,0.02,1,500,0,0,1,0,1,A first-rate piece for a medieval feel. Small rating bonus.
+825,Treasure Chest,宝箱,19,50000,cash,True,9,1,1x1,0,0,0.02,1,500,0,0,1,0,1,Leave a treasure chest in your cafe for passing heroes. Small rating bonus.
+826,Royal Table,王家のテーブル,19,5000,cash,True,3,4,1x1,0,0,0,1,50,0,0,1,0,1,A table only those of royal blood may use.
+827,Royal Chair,王家のイス,19,3000,cash,True,4,4,1x1,0,0,0,1,30,0,0,1,0,1,A chair only those of royal blood may use.
+828,Royal Column,王家の柱,19,10000,cash,True,9,1,1x1,0,0,0,1,100,0,0,1,0,1,A grand pillar that has upheld the royal line for generations.
+829,Royal Stained Glass,王家のステンドグラス,19,8000,cash,True,6,2,1x1,0,0,0,1,80,0,0,1,0,1,Lavish stained glass that bathed the royal family in light.
+830,Treasure Map,宝の地図,19,10000,cash,True,6,2,1x1,0,0,0,1,100,0,0,1,0,1,A treasure map said to lead to the royal family's secret.
+831,Demon King's Throne,魔王のイス,19,300000,cash,True,4,4,1x1,0,0,0,1,600,0,0,1,0,1,A throne said to be taken as a trophy after defeating the Demon King.
+832,Halloween Tower,HWビル,10,10,cash,False,9,1,1x1,0,0,0,1,1,0,0,1,0,1,For Halloween.
+833,Halloween Grave,HWはか,10,10,cash,False,9,1,1x1,0,0,0,1,1,0,0,1,0,1,For Halloween.
+834,Halloween Pumpkin,HWかぼちゃ,10,10,cash,False,9,1,1x1,0,0,0,1,1,0,0,1,0,1,For Halloween.
