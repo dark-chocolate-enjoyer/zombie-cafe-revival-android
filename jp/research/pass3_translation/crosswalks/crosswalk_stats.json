@@ -1,0 +1,41 @@
+{
+ "tm_entries": 3002,
+ "food": {
+  "jp": 234,
+  "en": 216,
+  "matched": 139,
+  "tm_filled": 95
+ },
+ "characters": {
+  "jp": 1724,
+  "en": 219,
+  "direct": 35,
+  "variant": 187,
+  "jp_only": 1502,
+  "tm_filled": 255
+ },
+ "furniture": {
+  "jp": 835,
+  "en": 484,
+  "exact": 128,
+  "fuzzy": 177,
+  "jp_only": 530,
+  "tm_filled": 710
+ },
+ "strings": {
+  "jp": 741,
+  "en": 662,
+  "paired": 645,
+  "jp_added": 17,
+  "jp_tail": 79,
+  "contract_downgraded": 22,
+  "tm_filled": 131,
+  "placeholder_mismatches": 0
+ },
+ "quests": {
+  "records": 1020,
+  "templates": 56,
+  "tm_filled": 56,
+  "placeholder_mismatches": 0
+ }
+}

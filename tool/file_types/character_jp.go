@@ -1,11 +1,13 @@
 package file_types
 
 import (
-	"encoding/json"
-	"fmt"
 	"io"
 )
 
+// CharacterJP is the JP 1.7.0 characterData.bin.mid record. The record count
+// is an int16 (EN uses a byte) and the stat fields are wider than EN
+// (Energy int32, Speed/Attack/TipRating int16). Category corresponds to the
+// EN CharacterArtStringHead field.
 type CharacterJP struct {
 	CafeLevelRequired  byte
 	U2                 byte
@@ -24,17 +26,19 @@ type CharacterJP struct {
 	U12                int16
 	IsFemale           bool
 	Cost               int32
-	U15                byte
-	U16                byte
-	CookSpeedBonus     float32
-	TipMultiplier      int32
-	U19                float32
-	U20                float32
-	U21                byte
-	U22                int16
-	U23                float32
-	HumanDescription   string
-	ZombieDescription  string
+	// PurchaseWithToxin is a bool in the EN schema, but must stay a raw byte
+	// here: JP record 148 carries the out-of-range value 10.
+	PurchaseWithToxin byte
+	PlayableFlag      byte
+	CookSpeedBonus    float32
+	TipMultiplier     int32
+	U19               float32
+	U20               float32
+	U21               byte
+	U22               int16
+	U23               float32
+	HumanDescription  string
+	ZombieDescription string
 }
 
 func readSingleCharacterJP(file io.Reader) CharacterJP {
@@ -50,7 +54,6 @@ func readSingleCharacterJP(file io.Reader) CharacterJP {
 
 	c.U4 = ReadByte(file)
 
-	fmt.Println("---")
 	c.Energy = ReadInt32(file)
 
 	c.Speed = ReadInt16(file)
@@ -67,8 +70,8 @@ func readSingleCharacterJP(file io.Reader) CharacterJP {
 
 	c.Cost = ReadInt32(file)
 
-	c.U15 = ReadByte(file)
-	c.U16 = ReadByte(file)
+	c.PurchaseWithToxin = ReadByte(file)
+	c.PlayableFlag = ReadByte(file)
 
 	c.CookSpeedBonus = ReadFloat(file)
 	c.TipMultiplier = ReadInt32(file)
@@ -86,16 +89,62 @@ func readSingleCharacterJP(file io.Reader) CharacterJP {
 	return c
 }
 
+func writeSingleCharacterJP(file io.Writer, c CharacterJP) {
+	WriteByte(file, c.CafeLevelRequired)
+	WriteByte(file, c.U2)
+	WriteByte(file, c.U3)
+
+	WriteString(file, c.Name)
+	WriteString(file, c.Category)
+	WriteString(file, c.CharacterArtString)
+
+	WriteByte(file, c.U4)
+
+	WriteInt32(file, c.Energy)
+
+	WriteInt16(file, c.Speed)
+	WriteInt16(file, c.AttackStrength)
+
+	WriteInt16(file, c.TipRating)
+	WriteInt16(file, c.U9)
+	WriteInt16(file, c.U10)
+	WriteInt16(file, c.U11)
+
+	WriteInt16(file, c.U12)
+
+	WriteBool(file, c.IsFemale)
+
+	WriteInt32(file, c.Cost)
+
+	WriteByte(file, c.PurchaseWithToxin)
+	WriteByte(file, c.PlayableFlag)
+
+	WriteFloat(file, c.CookSpeedBonus)
+	WriteInt32(file, c.TipMultiplier)
+
+	WriteFloat(file, c.U19)
+	WriteFloat(file, c.U20)
+
+	WriteByte(file, c.U21)
+	WriteInt16(file, c.U22)
+	WriteFloat(file, c.U23)
+
+	WriteString(file, c.HumanDescription)
+	WriteString(file, c.ZombieDescription)
+}
+
 func ReadCharactersJP(file io.Reader) []CharacterJP {
 	data := []CharacterJP{}
 	n := ReadInt16(file)
 	for i := 0; i < int(n); i++ {
-
-		fmt.Printf("Reading character: %d\n", i)
-		character := readSingleCharacterJP(file)
-		data = append(data, character)
-		js, _ := json.MarshalIndent(character, "", "    ")
-		fmt.Println(string(js))
+		data = append(data, readSingleCharacterJP(file))
 	}
 	return data
+}
+
+func WriteCharactersJP(file io.Writer, characters []CharacterJP) {
+	WriteInt16(file, int16(len(characters)))
+	for i := 0; i < len(characters); i++ {
+		writeSingleCharacterJP(file, characters[i])
+	}
 }

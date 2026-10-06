@@ -96,7 +96,11 @@ func ReadDate(file io.Reader) Date {
 func ReadNextBytes(file io.Reader, number int) []byte {
 	bytes := make([]byte, number)
 
-	_, err := file.Read(bytes)
+	// io.ReadFull instead of a bare Read: a single Read may legally return
+	// fewer bytes than requested, and a zero-length request at exact
+	// end-of-input (e.g. an empty string as a file's final field, as in
+	// colosseumItems.bin.mid) must not report EOF.
+	_, err := io.ReadFull(file, bytes)
 	if err != nil {
 		log.Fatal(err)
 	}

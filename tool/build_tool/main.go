@@ -32,8 +32,8 @@ func main() {
 	os.RemoveAll(out_directory)
 	copyFiles(in_directory, out_directory)
 
-	serialization.SerializeFiles(filepath.Join(in_directory, "assets", "data"), filepath.Join(out_directory, "assets", "data"))
-	serialization.SerializeFiles(filepath.Join(in_directory, "assets", "images"), filepath.Join(out_directory, "assets", "images"))
+	serialization.SerializeFiles(filepath.Join(in_directory, "assets", "data"), filepath.Join(out_directory, "assets", "data"), false)
+	serialization.SerializeFiles(filepath.Join(in_directory, "assets", "images"), filepath.Join(out_directory, "assets", "images"), false)
 	serialization.PackCharacters(filepath.Join(in_directory, "assets", "images", "characterParts"), filepath.Join(out_directory, "assets", "images"), filepath.Join(out_directory, "assets", "data"))
 	serialization.PackCharacters(filepath.Join(in_directory, "assets", "images", "characterParts2"), filepath.Join(out_directory, "assets", "images"), filepath.Join(out_directory, "assets", "data"))
 	serialization.PackTextures(filepath.Join(in_directory, "assets", "images", "recipeImages"), filepath.Join(out_directory, "assets", "images"))

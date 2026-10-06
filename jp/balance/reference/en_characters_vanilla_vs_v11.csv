@@ -1,0 +1,220 @@
+﻿index,name,class,art,currency,origin,changed,Cost_vanilla,Cost_v11,Energy_vanilla,Energy_v11,Speed_vanilla,Speed_v11,AttackStrength_vanilla,AttackStrength_v11,TipRating_vanilla,TipRating_v11,TipMultiplier_vanilla,TipMultiplier_v11,CookSpeedBonus_vanilla,CookSpeedBonus_v11,RegenBoost_vanilla,RegenBoost_v11,CookXPBonus_vanilla,CookXPBonus_v11,CafeLevelRequired_vanilla,CafeLevelRequired_v11,U10_vanilla,U10_v11
+0,Man,free_or_enemy,generic/,cash,vanilla,False,0,0,100,100,4,4,4,4,3,3,1,1,1,1,1,1,1,1,0,0,5,5
+1,Senior,free_or_enemy,oldman/faris,cash,vanilla,False,0,0,100,100,4,4,4,4,3,3,1,1,1,1,1,1,1,1,0,0,5,5
+2,Woman,free_or_enemy,genericfemale/,cash,vanilla,False,0,0,100,100,4,4,4,4,3,3,1,1,1,1,1,1,1,1,0,0,5,5
+3,Hipster,free_or_enemy,generic/omar,cash,vanilla,False,0,0,100,100,4,4,4,4,3,3,1,1,1,1,1,1,1,1,0,0,5,5
+4,Cashier,free_or_enemy,genericfemale/cutegirl,cash,vanilla,False,0,0,100,100,4,4,4,4,3,3,1,1,1,1,1,1,1,1,0,0,5,5
+5,Couch Potato,free_or_enemy,nerd/faris,cash,vanilla,False,0,0,100,100,4,4,4,4,3,3,1,1,1,1,1,1,1,1,0,0,4,4
+6,Couch Potato,free_or_enemy,genericfemale/,cash,vanilla,False,0,0,100,100,4,4,4,4,3,3,1,1,1,1,1,1,1,1,0,0,4,4
+7,Telemarketer,free_or_enemy,generic/,cash,vanilla,False,0,0,100,100,3,3,4,4,5,5,1,1,1,1,1,1,1,1,0,0,5,5
+8,Telemarketer,free_or_enemy,generic/businesswoman,cash,vanilla,False,0,0,100,100,3,3,4,4,5,5,1,1,1,1,1,1,1,1,0,0,5,5
+9,Teacher,free_or_enemy,nerd/generic,cash,vanilla,False,0,0,100,100,4,4,3,3,3,3,1,1,1,1,1,1,1,1,0,0,6,6
+10,Teacher,free_or_enemy,nerd/oldlady,cash,vanilla,False,0,0,100,100,4,4,3,3,3,3,1,1,1,1,1,1,1,1,0,0,6,6
+11,Accountant,free_or_enemy,businessman/oldman,cash,vanilla,False,0,0,100,100,4,4,4,4,2,2,1,1,1,1,1,1,1,1,0,0,6,6
+12,Yoga Instructor,free_or_enemy,firefighter/cutegirl,cash,vanilla,False,0,0,100,100,4,4,5,5,3,3,1,1,1,1,1,1,1,1,0,0,4,4
+13,Businessman,free_or_enemy,businessman/faris,cash,vanilla,False,0,0,100,100,4,4,3,3,4,4,1,1,1,1,1,1,1,1,0,0,6,6
+14,Businessman,free_or_enemy,businessman/,cash,vanilla,False,0,0,90,90,4,4,3,3,4,4,1,1,1,1,1,1,1,1,0,0,6,6
+15,Businesswoman,free_or_enemy,businesswoman/,cash,vanilla,False,0,0,90,90,4,4,3,3,4,4,1,1,1,1,1,1,1,1,0,0,6,6
+16,Politician,worker_cash,businessman/,cash,vanilla,True,100,100,90,100,4,4,3,3,5,6,1,1,1,1,1,1,1,1,6,6,6,6
+17,Politician,worker_cash,businesswoman/,cash,vanilla,True,100,100,90,100,4,4,3,3,5,6,1,1,1,1,1,1,1,1,2,2,6,6
+18,Executive,worker_cash,businessman/,cash,vanilla,True,750,750,90,100,4,3,3,4,7,7,1,1,1,1,1,1,1,1,9,9,8,8
+19,Executive,worker_cash,businesswoman/,cash,vanilla,True,750,750,90,100,4,4,3,3,7,7,1,1,1,1,1,1,1,1,9,9,8,8
+20,CEO,worker_cash,businessman/,cash,vanilla,True,1500,1600,90,100,4,4,3,3,10,9,1,1,1,1,1,1,1,1,12,12,6,6
+21,CEO,worker_cash,businesswoman/,cash,vanilla,True,1500,1600,90,100,4,4,3,3,10,9,1,1,1,1,1,1,1,1,12,12,6,6
+22,Retiree,free_or_enemy,oldman/,cash,vanilla,False,0,0,70,70,1,1,2,2,6,6,1,1,1,1,1,1,1,1,0,0,10,10
+23,Retiree,free_or_enemy,genericfemale/oldlady,cash,vanilla,False,0,0,70,70,1,1,2,2,6,6,1,1,1,1,1,1,1,1,0,0,10,10
+24,Veteran,worker_cash,firefighter/oldman,cash,vanilla,True,100,50,100,90,2,2,6,6,6,7,1,1,1,1,1,1,1,1,0,0,6,6
+25,Centenarian,free_or_enemy,oldman/,cash,vanilla,False,0,0,50,50,1,1,2,2,6,6,1,1,1,1,1,1,1,1,6,6,10,10
+26,Teenager,free_or_enemy,teen/,cash,vanilla,False,0,0,85,85,7,7,4,4,1,1,1,1,1,1,1,1,1,1,0,0,2,2
+27,Punk,worker_cash,teen/,cash,vanilla,True,500,400,85,100,8,8,5,5,1,1,1,1,1,1,1,1,1,1,7,7,2,2
+28,Underachiever,free_or_enemy,teen/omar,cash,vanilla,False,0,0,80,80,5,5,4,4,1,1,1,1,1,1,1,1,1,1,0,0,2,2
+29,Class Clown,worker_cash,teen/,cash,vanilla,True,750,900,90,100,7,7,4,4,6,7,1,1,1,1,1,1,1,1,11,11,2,2
+30,Nerd,worker_cash,nerd/,cash,vanilla,True,200,300,65,90,7,7,2,2,4,5,1,1,1,1,1,1,1,1,2,2,9,9
+31,Mathlete,worker_cash,businessman/nerd,cash,vanilla,True,750,850,65,100,9,9,4,2,3,4,1,1,1,1,1,1,1,1,2,2,6,6
+32,CIO,worker_cash,oldman/nerd,cash,vanilla,True,1500,1650,75,100,8,7,3,3,8,7,1,1,1,1,1,1,1,1,10,10,1,1
+33,Construction Worker,worker_cash,teen/constructionworker,cash,vanilla,True,250,250,140,100,3,3,9,9,1,1,1,1,1,1,1,1,1,1,3,3,2,2
+34,Engineer,worker_cash,constructionworker/,cash,vanilla,True,500,500,140,100,3,3,7,7,2,3,1,1,1,1,1,1,1,1,4,4,2,2
+35,Foreman,worker_cash,businessman/constructionworker,cash,vanilla,True,1500,1500,150,100,4,4,8,8,3,3,1,1,1,1,1,1,1,1,7,7,3,3
+36,Cop,worker_toxin,officer/,toxin,vanilla,True,1,1,140,150,6,6,7,7,2,2,1,1,1,1,1,1,1,1,5,5,9,9
+37,Traffic Cop,worker_toxin,constructionworker/officer,toxin,vanilla,True,1,1,140,150,5,5,6,6,3,3,1,1,1,1,1,1,1,1,10,10,10,10
+38,Sergeant,worker_toxin,businessman/officer,toxin,vanilla,True,10,10,150,175,5,8,8,9,7,7,1,1,1,1,1,1,1,1,7,7,10,10
+39,Local Hero,worker_toxin,officer/omar,toxin,vanilla,True,10,10,160,175,6,8,7,9,6,6,1,1,1,1,1,1,1,1,8,8,10,10
+40,Boxer,worker_toxin,boxer/,toxin,vanilla,True,15,12,225,175,7,8,9,10,1,2,1,1,1,1,1,1,1,1,7,7,1,1
+41,Has-been,worker_toxin,boxer/,toxin,vanilla,False,1,1,150,150,5,5,7,7,2,2,1,1,1,1,1,1,1,1,15,15,1,1
+42,The Champ,worker_toxin,boxer/,toxin,vanilla,True,20,20,250,250,8,9,10,11,6,7,1,1,1,1,1,1,1,1,7,7,1,1
+43,Football Player,worker_toxin,footballplayer/,toxin,vanilla,True,10,2,160,150,7,7,7,7,1,1,1,1,1,1,1,1,1,1,3,3,1,1
+44,Benchwarmer,worker_toxin,generic/footballplayer,toxin,vanilla,True,1,1,130,150,5,5,5,5,1,1,1,1,1,1,1,1,1,1,15,15,1,1
+45,Star Player,worker_toxin,footballplayer/generic,toxin,vanilla,True,15,12,180,175,9,10,8,9,3,4,1,1,1,1,1,1,1,1,7,7,3,3
+46,Clown,worker_toxin,clown/,toxin,vanilla,True,8,12,110,175,5,8,5,6,10,12,1,1,1,1,1,1,1,1,8,8,5,5
+47,Stoogey the Clown,worker_toxin,teen/clown,toxin,vanilla,True,12,15,130,250,9,12,5,7,10,12,1,1,1,1,1,1,1,1,8,8,1,1
+48,Fire Fighter,worker_cash,firefighter/,cash,vanilla,True,750,880,120,100,6,6,7,7,4,2,1,1,1,1,1,1,1,1,9,9,2,2
+49,Fire Chief,worker_cash,businessman/firefighter,cash,vanilla,True,1800,1800,140,105,5,5,8,8,6,6,1,1,1,1,1,1,1,1,10,10,3,3
+50,Sumo Wrestler,worker_toxin,sumowrestler/,toxin,vanilla,True,30,25,400,475,5,9,10,11,1,3,1,1,1,1,1,1.3,1,1,8,8,10,10
+51,Celebrity,worker_toxin,model/,toxin,vanilla,True,5,10,80,175,7,9,4,6,9,12,1,1,1,1,1,1,1,1,10,10,3,3
+52,Supermodel,worker_toxin,model/,toxin,vanilla,True,10,12,80,200,10,12,4,6,8,12,1,1,1,1,1,1,1,1,12,12,3,3
+53,Movie Star,worker_toxin,model/,toxin,vanilla,True,15,10,100,175,8,7,5,2,10,12,1,1,1,1,1,1,1,1,12,12,5,5
+54,Enemy Chef,free_or_enemy,enemyChef/,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+55,Chef,playable_chef,enemyChef/generic,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+56,Chef,playable_chef,enemyChef/genericfemale,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+57,Chef,playable_chef,enemyChef/businessman,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+58,Chef,playable_chef,enemyChef/businesswoman,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+59,Chef,playable_chef,enemyChef/cutegirl,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+60,Chef,playable_chef,enemyChef/teen,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+61,Chef,playable_chef,enemyChef/faris,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+62,Chef,playable_chef,enemyChef/nerd,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+63,Chef,playable_chef,enemyChef/omar,cash,vanilla,True,0,0,90,90,5,5,4,4,3,6,1,1,1,1,1,1,1,1,0,0,5,5
+64,Enemy Chef,free_or_enemy,enemyChef/enemychefgeneric,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+65,Enemy Chef,free_or_enemy,enemyChef/enemychefdiner,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+66,Enemy Chef,free_or_enemy,enemyChef/enemychefitalian,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+67,Enemy Chef,free_or_enemy,enemyChef/enemychefasian,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+68,Enemy Chef,free_or_enemy,enemyChef/enemycheftexmex,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+69,Enemy Chef,free_or_enemy,enemyChef/enemychefpub,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+70,Enemy Chef,free_or_enemy,enemyChef/enemycheffrench,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+71,Mad Scientist Chef,free_or_enemy,enemyChef/enemychefscientist,cash,vanilla,False,0,0,100,100,5,5,5,5,5,5,1,1,1,1,1,1,1,1,255,255,5,5
+72,Chef,playable_chef,enemyChef/generic,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1,1,1,1,1.2,3,3,5,5
+73,Chef,playable_chef,enemyChef/genericfemale,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1,1,1.2,1,1,3,3,5,5
+74,Chef,playable_chef,enemyChef/businessman,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1.1,1,1,1,1,3,3,5,5
+75,Chef,playable_chef,enemyChef/businesswoman,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1,1,1,1,1.2,3,3,5,5
+76,Chef,playable_chef,enemyChef/cutegirl,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1,1,1.2,1,1,3,3,5,5
+77,Chef,playable_chef,enemyChef/teen,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1.1,1,1,1,1,3,3,5,5
+78,Chef,playable_chef,enemyChef/faris,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1,1,1,1,1.2,3,3,5,5
+79,Chef,playable_chef,enemyChef/nerd,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1,1,1.2,1,1,3,3,5,5
+80,Reality Star,worker_toxin,model/,toxin,vanilla,True,1,1,80,150,6,5,4,3,8,8,1,1,1,1,1,1,1,1,15,15,1,1
+81,Mikazuna,worker_toxin,sumowrestler/,toxin,vanilla,True,50,35,625,555,6,10,10,12,6,7,1,1,1,1,1,1,1,1,12,12,10,10
+82,Yokozuna,worker_toxin,sumowrestler/,toxin,vanilla,True,50,35,625,555,6,10,10,12,6,7,1,1,1,1,1,1,1,1,12,12,10,10
+83,Retro-Boxer,worker_toxin,boxer/,toxin,vanilla,True,12,5,180,145,8,7,8,8,1,1,1,1,1,1,1,1,1,1,15,15,1,1
+84,Middleweight,worker_toxin,boxer/,toxin,vanilla,True,12,5,180,140,8,7,8,6,1,1,1,1,1,1,1,1,1,1,15,15,1,1
+85,Chef,playable_chef,enemyChef/omar,toxin,vanilla,True,5,5,120,300,5,5,5,6,6,6,1,1,1,1.1,1,1,1,1,3,3,5,5
+86,Veteran Cop,worker_toxin,officer/oldman,toxin,vanilla,True,1,1,125,150,6,5,7,7,6,6,1,1,1,1,1,1,1,1,15,15,9,9
+87,Football Player,playable_chef,enemyChef/footballplayer,cash,vanilla,True,100,20,160,160,7,7,7,7,1,5,1,1,1,1,1,1,1,1,3,3,1,1
+88,Engineer,playable_chef,enemyChef/constructionworker,cash,vanilla,True,200,200,140,140,3,5,7,7,2,6,1,1,1,1,1,1,1,1,4,4,2,2
+89,Retiree,playable_chef,enemyChef/oldlady,cash,vanilla,True,500,500,70,70,1,4,2,2,6,7,1,1,1,1,1,1,1,1,5,5,10,10
+90,Veteran,playable_chef,enemyChef/oldman,cash,vanilla,True,800,800,100,100,2,5,6,6,6,6,1,1,1,1,1,1,1,1,6,6,6,6
+91,The Champ,playable_chef,enemyChef/boxer,cash,vanilla,True,1200,1200,250,250,8,8,10,10,6,7,1,1,1,1,1,1,1,1,7,7,5,5
+92,Local Hero,playable_chef,enemyChef/officer,cash,vanilla,True,1400,1400,260,260,10,10,7,7,6,7,1,1,1,1,1,1,1,1,8,8,10,10
+93,Stoogey the Clown,playable_chef,enemyChef/clown,cash,vanilla,False,2400,2400,150,150,9,9,5,5,10,10,1,1,1,1,1,1,1,1,9,9,1,1
+94,Fire Chief,playable_chef,enemyChef/firefighter,cash,vanilla,True,3200,3200,160,160,5,6,8,8,6,7,1,1,1,1,1,1,1,1,10,10,3,3
+95,Yokozuna,playable_chef,enemyChef/sumowrestler,cash,vanilla,True,5000,5000,525,525,6,7,10,10,6,8,1,1,1,1,1,1,1,1,12,12,10,10
+96,Movie Star,playable_chef,enemyChef/model,cash,vanilla,True,5000,12000,100,100,8,8,5,2,10,10,1,2,1,1,1,1,1,1,12,12,5,5
+97,Football Player,playable_chef,enemyChef/footballplayer,toxin,vanilla,True,10,2,320,400,7,7,7,12,1,5,1,1,1,1,1,1.1,1,1,3,3,1,1
+98,Engineer,playable_chef,enemyChef/constructionworker,toxin,vanilla,True,10,8,280,450,3,5,7,10,2,6,1,1,1,1.1,1,1.1,1,1.15,4,4,2,2
+99,Retiree,playable_chef,enemyChef/oldlady,toxin,vanilla,True,5,6,140,300,1,4,2,4,6,7,1,1,1,1,1,1.1,1,1.2,5,5,10,10
+100,Veteran,playable_chef,enemyChef/oldman,toxin,vanilla,True,5,7,200,450,2,5,6,10,6,6,1,1,1,1,1,1.4,1,1,6,6,6,6
+101,The Champ,playable_chef,enemyChef/boxer,toxin,vanilla,True,20,25,500,850,8,8,10,20,6,7,3,2,1,1,1,1.1,1,1,7,7,5,5
+102,Local Hero,playable_chef,enemyChef/officer,toxin,vanilla,True,10,15,520,700,10,10,7,10,6,7,1,2,1,1,1,1.1,1,1,8,8,10,10
+103,Stoogey the Clown,playable_chef,enemyChef/clown,toxin,vanilla,True,12,15,300,500,9,9,5,6,10,10,2,2,1,1,1,1.1,1,1,9,9,1,1
+104,Fire Chief,playable_chef,enemyChef/firefighter,toxin,vanilla,True,10,12,320,550,5,6,8,12,6,7,1,2,1,1.1,1,1.5,1,1,10,10,3,3
+105,Yokozuna,playable_chef,enemyChef/sumowrestler,toxin,vanilla,True,50,35,1050,1100,6,7,10,18,6,8,1,2,1,1,1.1,2,1,1,12,12,10,10
+106,Movie Star,playable_chef,enemyChef/model,toxin,vanilla,True,15,25,200,600,8,8,5,8,10,10,5,3,1,1,1,1.1,1,1,12,12,5,5
+107,Robo,playable_chef,robot/,toxin,vanilla,True,50,40,500,1200,8,10,10,16,10,12,1,2,1.11,1.35,1,1.2,1,1.15,8,8,8,8
+108,Captain Jack,playable_chef,pirate/,toxin,vanilla,True,50,125,500,1400,8,11,10,18,10,16,1,4,1,1.1,1,1.25,1.2,1.4,10,10,8,8
+109,Cafe Chef,playable_chef,enemyChef/enemychefgeneric,toxin,vanilla,True,50,40,500,800,5,7,5,7,5,9,2,3,1,1.25,1,1.2,1,1.25,255,255,5,5
+110,Diner Chef,playable_chef,enemyChef/enemychefdiner,toxin,vanilla,True,50,40,500,800,5,7,5,7,5,9,2,3,1,1.15,1,1.9,1,1,255,255,5,5
+111,Italian Chef,playable_chef,enemyChef/enemychefitalian,toxin,vanilla,True,50,60,500,850,5,8,5,8,5,12,2,4,1,1,1,1.2,1,1.15,255,255,5,5
+112,Asian Chef,playable_chef,enemyChef/enemychefasian,toxin,vanilla,True,50,50,500,800,5,7,5,7,5,9,2,3,1,1.4,1,1.2,1,1.15,255,255,5,5
+113,Tex Mex Chef,playable_chef,enemyChef/enemycheftexmex,toxin,vanilla,True,50,50,500,800,5,7,5,8,5,9,2,3,1,1,1,2.4,1,1.2,255,255,5,5
+114,Pub Chef,playable_chef,enemyChef/enemychefpub,toxin,vanilla,True,50,50,500,850,5,7,5,9,5,10,2,4,1,1,1,2.2,1,1.3,255,255,5,5
+115,French Chef,playable_chef,enemyChef/enemycheffrench,toxin,vanilla,True,50,55,500,800,5,7,5,7,5,10,2,4,1,1.1,1,1.2,1,1,255,255,5,5
+116,Mad Scientist Chef,playable_chef,enemyChef/enemychefscientist,toxin,vanilla,True,50,112,500,1500,5,9,5,14,5,14,3,4,1,1,1,1.6,1,1.35,255,255,5,5
+117,Private,worker_cash,military/teen,cash,vanilla,True,600,600,100,100,5,6,5,6,2,1,1,1,1,1,1,1,1,1,0,0,7,7
+118,Colonel,worker_cash,military/businessman,cash,vanilla,True,1000,1000,120,100,6,6,6,7,2,2,1,1,1,1,1,1,1,1,7,7,7,7
+119,Corporal,worker_cash,military/military,cash,vanilla,True,2000,1600,150,100,6,6,8,8,2,2,1,1,1,1,1,1,1,1,9,9,7,7
+120,Old Hippie,worker_cash,hippie/oldman,cash,vanilla,True,400,350,80,90,2,2,4,4,5,7,1,1,1,1,1,1,1,1,4,4,7,7
+121,Young Male Hippie,worker_cash,hippie/teen,cash,vanilla,True,800,800,100,100,3,4,4,4,5,5,1,1,1,1,1,1,1,1,6,6,7,7
+122,Young Female Hippie,worker_cash,hippie/hippie,cash,vanilla,True,1500,950,100,100,3,4,4,3,5,7,1,1,1,1,1,1,1,1,8,8,7,7
+123,Corporal Chef,playable_chef,enemyChef/military,cash,vanilla,True,2000,2000,150,150,6,6,8,8,2,6,1,1,1,1,1,1,1,1,9,9,7,7
+124,Hippie Chef,playable_chef,enemyChef/hippie,cash,vanilla,True,400,400,80,80,2,5,4,4,5,6,1,1,1,1,1,1,1,1,4,4,7,7
+125,Corporal Chef,playable_chef,enemyChef/military,toxin,vanilla,True,40,14,500,650,6,6,8,12,2,6,1,2,1,1,1,1.6,1,1.2,9,9,7,7
+126,Hippie Chef,playable_chef,enemyChef/hippie,toxin,vanilla,True,5,6,160,350,2,5,4,6,5,6,1,1,1,1,1,1.2,1,1.25,4,4,7,7
+127,Frankenstein,playable_chef,enemyChef/Frankenstein,toxin,vanilla,True,100,175,1200,2200,9,11,10,25,7,17,5,6,1,1,1,1.95,1,1,255,255,7,7
+128,Mummy Chef,playable_chef,FrankieFemaleMummy/femaleMummy,toxin,vanilla,True,5,8,240,400,2,4,4,8,5,6,1,1,1,1.1,1,1.1,1,1.2,5,5,7,7
+129,Male Mummy Chef,playable_chef,FrankieMaleMummy/maleMummy,toxin,vanilla,True,5,8,240,400,2,4,4,8,5,6,1,1,1,1.1,1,1.1,1,1.2,6,6,7,7
+130,Witch Chef,playable_chef,FrankieWitch/witch,toxin,vanilla,True,20,13,360,550,6,6,8,12,2,6,1,2,1,1,1,1.3,1,1.35,7,7,7,7
+131,Wolfman Chef,playable_chef,FrankieWolfman/wolfman,toxin,vanilla,True,40,30,500,900,8,8,5,14,10,10,1,2,1,1,1,2,1,1,8,8,5,5
+132,Mummy,worker_cash,femaleMummy/femaleMummy,cash,vanilla,True,1000,1000,120,100,2,2,4,4,5,6,1,1,1,1,1,1,1,1,5,5,7,7
+133,Mummy,worker_cash,maleMummy/maleMummy,cash,vanilla,True,1000,1000,120,100,2,2,4,4,5,6,1,1,1,1,1,1,1,1,6,6,7,7
+134,Witch,worker_toxin,witch/witch,toxin,vanilla,True,10,5,180,150,6,3,8,7,2,7,1,1,1,1,1,1,1,1,7,7,7,7
+135,Werewolf,worker_toxin,wolfman/wolfman,toxin,vanilla,True,20,50,250,790,8,11,5,14,10,8,1,1,1,1,1,1.3,1,1,8,8,5,5
+136,Bride of Frankenstein,playable_chef,femaleMummy/BrideOfFrankenstein,toxin,vanilla,True,80,80,1000,1600,8,10,9,18,9,14,2,4,1,1,1,2.2,1,1.2,10,10,8,8
+137,Alien,playable_chef,robot/Martian,toxin,vanilla,True,50,88,500,1050,9,13,8,16,5,12,1,3,1,1.1,1.5,2.2,1,1,15,15,10,10
+138,Evil Leprechaun,playable_chef,enemyChef/Leprechaun,toxin,vanilla,True,75,105,1200,1450,9,11,5,9,10,15,1,4,1.11,1.25,1,1.25,1,1.3,255,255,6,6
+139,Martian Scientist,worker_cash,martian1/martian1,cash,vanilla,True,99000,79000,250,475,8,10,5,11,5,6,1,1,1,1,1,1,1.2,1.2,7,7,7,7
+140,Martian Soldier,worker_toxin,martian2/martian2,toxin,vanilla,True,30,25,650,475,8,9,10,12,6,7,1,1,1,1,1,1,1,1,7,7,5,5
+141,Martian Commander,worker_toxin,martian3/martian3,toxin,vanilla,True,30,40,700,610,7,10,6,10,10,13,2,2,1,1,1,1,1,1,7,7,7,7
+142,Martian Doctor,worker_cash,martian4/martian4,cash,vanilla,True,95000,95000,250,500,5,9,5,8,7,12,1,1,1,1,1.2,1.56,1,1,8,8,10,10
+143,Italian Chef (Red),playable_chef,chefitalian1/chefitalian1,toxin,vanilla,True,25,25,500,800,5,6,7,8,7,7,2,2,1,1,1,1.1,1,1,6,6,5,5
+144,Italian Chef (Green),playable_chef,chefitalian2/chefitalian2,toxin,vanilla,True,25,25,500,800,7,7,5,7,7,7,1,2,1.11,1.15,1,1.1,1,1,7,7,5,5
+145,Italian Chef (Yellow),playable_chef,chefitalian3/chefitalian3,toxin,vanilla,True,25,25,500,800,5,6,7,7,5,7,1,2,1,1,1.3,1.3,1,1,8,8,5,5
+146,Betty Sue,playable_chef,enemyChef/chefwesternBettySue,toxin,vanilla,True,25,25,500,800,7,7,5,6,9,9,2,2,1,1,1.2,1.2,1,1,10,10,6,6
+147,Billy Bob,playable_chef,enemyChef/chefwesternBillyBob,toxin,vanilla,True,25,25,500,800,6,6,9,12,6,7,1,2,1.11,1.11,1,1.1,1,1,10,10,5,5
+148,Bobby Billy,playable_chef,enemyChef/chefwesternBobbyBill,toxin,vanilla,True,25,25,500,800,9,9,8,10,5,7,1,2,1,1,1,1.1,1.2,1.2,10,10,7,7
+149,Cowboy,worker_toxin,cowboy/cowboy,toxin,vanilla,True,30,30,500,500,7,10,6,10,8,12,1,1,1,1,1.1,1.43,1,1,11,11,5,5
+150,Steam Punk Professor,worker_toxin,steampukHarold/steampukHarold,toxin,vanilla,True,30,35,600,555,7,10,6,10,8,13,2,2,1,1,1.1,1.43,1,1,11,11,6,6
+151,Steam Punk Lord,worker_cash,steampukHarold/steampukJeoffry,cash,vanilla,True,97500,97500,500,500,6,9,5,11,6,7,1,1,1,1,1,1,1.2,1.2,11,11,8,8
+152,Steam Punk Chef,playable_chef,steampukChef/steampukChef,toxin,vanilla,True,25,25,500,800,9,9,8,12,5,7,1,2,1,1,1,1.1,1.2,1.2,11,11,7,7
+153,Black Ninja,worker_cash,ninjaBlack/ninjaBlack,cash,vanilla,True,99000,70000,250,310,8,9,5,11,5,5,1,1,1,1,1,1,1.2,1.35,15,15,7,7
+154,Blue Ninja,worker_toxin,ninjaBlue/ninjaBlue,toxin,vanilla,True,25,25,650,475,8,9,10,12,6,7,1,1,1,1,1,1,1,1,15,15,5,5
+155,Brown Ninja,worker_toxin,ninjaBrown/ninjaBrown,toxin,vanilla,True,30,40,700,610,7,12,6,12,10,9,2,2,1,1,1,1.3,1,1,14,14,7,7
+156,Green Ninja,worker_cash,ninjaGreen/ninjaGreen,cash,vanilla,True,85000,70000,250,250,5,9,5,11,7,4,1,1,1,1,1.2,1.56,1,1,7,7,10,10
+157,Red Ninja,worker_toxin,ninjaRed/ninjaRed,toxin,vanilla,True,30,45,700,720,7,12,6,13,10,10,2,2,1,1,1,1.3,1,1,15,15,7,7
+158,White Ninja,playable_chef,ninjaWhite/ninjaWhite,toxin,vanilla,True,30,30,800,850,7,9,7,12,7,8,1,2,1,1,1,1.2,1.2,1.2,15,15,10,10
+159,East Coast Rap Artist,worker_toxin,eastRapper1/eastRapper1,toxin,vanilla,True,20,20,250,250,8,9,10,11,6,7,1,1,1,1,1,1,1,1,7,7,1,1
+160,East Coast DJ,worker_toxin,eastRapper2/eastRapper2,toxin,vanilla,True,15,12,180,175,9,10,8,9,3,4,1,1,1,1,1,1,1,1,7,7,3,3
+161,West Coast DJ,worker_toxin,westRapper1/westRapper1,toxin,vanilla,True,30,25,400,475,5,9,10,11,1,4,1,1,1,1,1,1,1,1,8,8,10,10
+162,West Coast Rap Artist,worker_toxin,westRapper2/westRapper2,toxin,vanilla,True,20,20,250,250,8,9,10,11,6,7,1,1,1,1,1,1,1,1,7,7,1,1
+163,Chef Cousin Jimmy,playable_chef,enemyChef/chefmafia4,toxin,vanilla,True,50,90,500,1100,5,9,5,12,5,13,3,4,1.2,1.2,1.5,1.7,1.3,1.3,15,15,5,5
+164,a` Papa Joe,playable_chef,enemyChef/chefmafia3,toxin,vanilla,True,50,60,500,850,5,7,5,8,5,9,2,3,1.15,1.15,1.3,1.5,1.2,1.2,15,15,5,5
+165,Chef Don Tony,playable_chef,enemyChef/chefmafia2,toxin,vanilla,True,50,45,500,800,5,7,5,8,5,9,2,3,1.1,1.1,1.2,1.4,1.1,1.1,15,15,5,5
+166,a` Chef Maurizio,playable_chef,enemyChef/chefmafia1,toxin,vanilla,True,50,30,500,800,5,6,5,8,5,8,2,2,1,1,1.1,1.2,1,1,15,15,5,5
+167,Mafia Goon,worker_toxin,mafiaCronies/mafiaCronies,toxin,vanilla,True,50,40,800,610,9,10,10,13,1,3,2,2,1,1,1.5,1.95,1,1,15,15,1,1
+168,NY Sports Fan,worker_toxin,yankeeFan/yankeeFan,toxin,vanilla,True,20,15,250,250,7,8,7,10,3,6,2,2,1,1,1.3,1.69,1,1,6,6,5,5
+169,Godfather,worker_toxin,godFather/godFather,toxin,vanilla,True,50,125,500,1500,5,10,6,13,10,15,3,3,1,1,1.2,2.3,1,1,15,15,8,8
+170,Ditzy Mafia Girl,worker_toxin,dumbMafiaGirl/dumbMafiaGirl,toxin,vanilla,True,15,12,250,175,6,8,5,7,8,10,3,3,1,1,1.1,1.43,1,1,14,14,8,8
+171,Chef Elephant,playable_chef,enemyChef/chefElephant,toxin,vanilla,True,50,50,500,1800,5,6,5,14,5,9,2,3,1.15,1.25,1.1,1.5,1.15,1.25,16,16,5,5
+172,Chef Donkey,playable_chef,enemyChef/chefDonkey,toxin,vanilla,True,50,50,500,900,5,11,5,9,5,9,2,3,1.15,1.25,1.1,1.4,1.15,1.25,16,16,5,5
+173,Politician,worker_toxin,politican/politican,toxin,vanilla,True,50,15,800,250,6,9,7,9,4,8,2,2,1,1,1.3,1.69,1,1,16,16,4,4
+174,Candidate,worker_toxin,candidate/candidate,toxin,vanilla,True,50,14,250,230,7,9,7,9,3,8,2,2,1,1,1.3,1.69,1,1,16,16,5,5
+175,Governor,worker_toxin,governor/governor,toxin,vanilla,True,15,100,500,1450,5,13,3,5,9,25,3,3,1,1,1.2,2,1,1,16,16,1,50
+176,Ex-Governor,worker_toxin,exGovernor/exGovernor,toxin,vanilla,True,20,35,250,555,4,10,9,12,9,10,3,3,1,1,1.5,1.95,1,1,16,16,9,9
+177,Skeletal Bandito Chef,playable_chef,enemyChef/chefBandito,toxin,vanilla,True,50,75,500,950,5,10,5,16,5,11,2,3,1.15,1.25,1.1,1.45,1.15,1.25,5,5,5,5
+178,Skeleton Bride,worker_toxin,skeletonBride/skeletonBride,toxin,vanilla,True,40,30,700,500,7,9,8,11,4,7,2,2,1,1,1.3,1.69,1,1,5,5,3,3
+179,Skeleton Groom,worker_toxin,skeletonGroom/skeletonGroom,toxin,vanilla,True,40,30,700,500,6,9,9,11,3,6,2,2,1,1,1.3,1.69,1,1,5,5,5,5
+180,Calavera de Catrina,worker_cash,cavalera/cavalera,cash,vanilla,True,50000,40000,200,220,5,8,3,7,9,13,3,3,1,1,1.2,1.56,1,1,5,5,1,1
+181,Zombie Claus,playable_chef,enemyChef/chefSanta,toxin,vanilla,True,25,30,650,800,5,6,8,12,7,8,1,2,1,1,1.2,1.2,1,1.2,10,10,3,3
+182,Stir Fly Head Chef,playable_chef,enemyChef/chefFlyHeader,toxin,vanilla,True,30,30,500,850,5,7,7,10,7,8,2,2,1.15,1.15,1.1,1.2,1.15,1.15,10,10,3,3
+183,Fish Head Monster,worker_toxin,fishface/fishface,toxin,vanilla,True,40,11,400,195,7,9,7,8,7,9,3,3,1,1,1.2,1.56,1,1,10,10,2,2
+184,Dr. Mantis Face,worker_toxin,mantisHead/mantisHead,toxin,vanilla,True,30,35,400,555,5,10,7,10,8,11,2,2,1.15,1.2,1.1,1.43,1.15,1.15,10,10,3,3
+185,Mr. ?,worker_toxin,mr/mr,toxin,vanilla,True,20,15,350,250,6,8,5,7,7,9,2,2,1,1,1.2,1.56,1,1,9,9,2,2
+186,Pink Retro Robot,worker_cash,redRobotX/redRobotX,cash,vanilla,True,75000,46000,250,250,3,8,8,10,8,8,1,1,1,1,1.2,1.56,1,1,9,9,4,4
+187,Blue Retro Robot,worker_toxin,robotX/robotX,toxin,vanilla,True,50,35,800,640,3,10,10,13,8,8,2,2,1,1,1.2,1.56,1,1,10,10,4,4
+188,Goblin Chef,playable_chef,enemyChef/goblin,toxin,vanilla,True,50,100,500,1100,5,9,7,16,4,13,2,3,1.2,1.4,1.1,2.2,1.2,1,255,255,6,6
+189,Knight in Armor,worker_cash,knight/knight,cash,vanilla,True,95000,95000,350,500,3,9,7,11,6,7,1,1,1,1,1.3,1.69,1,1,8,8,7,7
+190,Executioner,worker_cash,executioner/executioner,cash,vanilla,True,75000,40000,250,220,4,8,6,10,4,5,2,2,1,1,1.1,1.43,1,1,8,8,8,8
+191,Wizard,worker_toxin,wizard/wizard,toxin,vanilla,True,30,25,400,475,5,9,8,11,3,5,2,2,1,1,1.3,1.69,1,1,8,8,3,3
+192,Mighty King,worker_toxin,king/king,toxin,vanilla,True,40,75,700,990,8,11,7,15,6,8,3,3,1,1,1.1,1.43,1,1,8,8,3,3
+193,Dragon,worker_toxin,dragon/dragon,toxin,vanilla,True,50,85,1000,1600,7,13,10,15,2,4,1,1,1,1,1.3,1.69,1,1.3,8,8,8,8
+194,Evil Queen,worker_toxin,evilqueen/evilqueen,toxin,vanilla,True,40,55,700,830,7,11,9,14,3,6,1,1,1,1,1.1,1.43,1,1,8,8,2,2
+195,Female Captain,worker_toxin,femaleCap/femaleCap,toxin,vanilla,True,35,30,650,500,8,10,6,8,6,9,3,3,1,1,1.1,1.43,1,1,11,11,4,4
+196,Marooner,worker_cash,marooner/marooner,cash,vanilla,True,65000,30000,200,195,3,8,5,9,2,4,1,1,1,1,1.1,1.56,1,1,11,11,3,3
+197,Undead Skeleton Pirate,worker_toxin,undeadPirate/undeadPirate,toxin,vanilla,True,50,45,900,720,8,11,10,13,3,5,1,1,1,1,1.3,1.69,1,1,11,11,3,3
+198,Shipmate,worker_cash,shipmate/shipmate,cash,vanilla,True,90000,80000,350,475,6,9,4,11,3,3,1,1,1,1,1.3,1.69,1,1,11,11,4,4
+199,Conquistador,worker_toxin,conquistador/conquistador,toxin,vanilla,True,40,35,700,555,8,10,7,12,5,7,2,2,1,1,1.2,1.56,1,1,11,11,8,8
+200,Chef Deadbeard,playable_chef,deadbeard/deadbeard,toxin,vanilla,True,70,150,950,1600,8,11,9,20,7,16,2,4,1.2,1.5,1.1,1.35,1.2,1.5,255,255,6,6
+201,Vampire Bride,worker_toxin,undeadBride/undeadBride,toxin,vanilla,True,45,85,700,1065,9,12,9,15,8,10,2,2,1,1,1.3,1.69,1,1,12,12,4,4
+202,Nosferatu,worker_cash,nosferatu/nosferatu,cash,vanilla,True,80000,50000,300,250,3,8,7,10,4,5,1,1,1,1,1.3,1.69,1,1,9,9,6,6
+203,Pure Blood,worker_toxin,pureBlood/pureBlood,toxin,vanilla,True,35,65,650,915,7,12,7,14,8,12,2,2,1,1,1.4,1.82,1,1,10,10,4,4
+204,Vampire Hunter,worker_toxin,vampireHunter/vampireHunter,toxin,vanilla,True,50,40,850,640,10,12,9,12,6,8,1,1,1,1,1.1,1.43,1,1,12,12,5,5
+205,Vampire Ghoul,worker_toxin,worshiper/worshiper,toxin,vanilla,True,60,60,1000,830,9,12,10,14,3,4,1,1,1,1,1.3,1.69,1,1,13,13,1,1
+206,Goth,worker_toxin,gothGirl/gothGirl,toxin,vanilla,True,15,12,300,250,6,8,5,5,9,14,3,3,1,1,1.3,1.69,1,1,6,6,4,4
+207,Chef Dracula,playable_chef,dracula/dracula,toxin,vanilla,True,90,200,1000,2500,10,13,9,24,9,20,3,5,1.2,1.5,1.4,3.0,1.2,1.5,255,255,7,7
+208,Break-fast,worker_toxin,quickfast/quickfast,toxin,vanilla,True,40,8,550,160,10,12,5,3,8,13,2,2,1,1,1.2,1.56,1.2,1.2,12,12,6,6
+209,Shadow Skull,worker_toxin,shadowskull/shadowskull,toxin,vanilla,True,40,30,750,500,6,9,9,11,4,6,1,1,1,1,1.2,1.56,1,1,12,12,4,4
+210,Supper girl,worker_toxin,suppergirl/suppergirl,toxin,vanilla,True,35,36,500,610,9,12,4,9,10,15,3,3,1,1,1.2,1.56,1.2,1.2,6,6,9,9
+211,Zombie Man,worker_toxin,zombieman/zombieman,toxin,vanilla,True,60,100,1000,1550,9,9,9,17,9,5,2,1,1,1,1.3,1.69,1.1,1.1,14,14,10,10
+212,Dr. Hoboken,worker_toxin,drhoboken/drhoboken,toxin,vanilla,True,50,45,950,720,9,11,10,13,4,6,1,1,1,1,1.3,1.69,1,1,13,13,5,5
+213,Galacticus,worker_toxin,galacticus/galacticus,toxin,vanilla,True,50,140,975,1500,10,12,9,14,6,12,1,1,1,1.75,1.3,2.6,1,2,13,13,4,4
+214,Henchman,worker_cash,henchman/henchman,cash,vanilla,True,100000,111111,450,550,5,9,7,11,3,6,1,1,1,1.5,1,1,1,1,10,10,2,2
+215,The Mad Griller,playable_chef,madgriller/madgriller,toxin,vanilla,True,85,200,1100,2000,8,11,9,22,8,18,2,4,1.2,2,1.2,1.4,1.2,1.5,255,255,6,6
+216,Maid,worker_toxin,maidSA/maidSA,toxin,added_by_airyzz(from JP),False,,18,,110,,12,,3,,16,,1,,1,,1,,1,,14,,50
+217,Maid,worker_toxin,maidSB/maidSB,toxin,added_by_airyzz(from JP),False,,18,,110,,12,,3,,16,,1,,1,,1,,1,,14,,50
+218,Lieutenant Colonel,worker_cash,MilitaryWomanK/MilitaryWomanK,cash,added_by_airyzz(from JP),False,,25000,,130,,6,,10,,5,,1,,1,,1,,1,,14,,7

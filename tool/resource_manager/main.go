@@ -33,7 +33,9 @@ func main() {
 	if mode == "unpack" {
 		serialization.DeserializeFiles(in_directory, out_directory, *is_jp)
 	} else if mode == "pack" {
-		serialization.SerializeFiles(in_directory, out_directory)
+		if failed := serialization.SerializeFiles(in_directory, out_directory, *is_jp); failed != 0 {
+			log.Fatalf("Failed to serialize %d file(s)", failed)
+		}
 	} else if mode == "unpack_textures" {
 		serialization.UnpackTextures(in_directory, out_directory)
 	} else if mode == "pack_textures" {

@@ -1,0 +1,235 @@
+﻿source_file,record_index,field,jp_text,english_reference,proposed_english,match_type,confidence,notes
+assets/data/foodData.bin.mid,0,Name,あやしい肉,Mystery Meat,Mystery Meat,direct_english_row,high,ImageID 28 == EN row 0
+assets/data/foodData.bin.mid,1,Name,ゾンビスープ,Hobo Delight,Hobo Delight,direct_english_row,high,ImageID 26 == EN row 1
+assets/data/foodData.bin.mid,2,Name,汚水のスープ,Dishwater Soup,Dishwater Soup,direct_english_row,high,ImageID 50 == EN row 2
+assets/data/foodData.bin.mid,3,Name,あやしい切り落とし,Leftunders,Leftunders,direct_english_row,high,ImageID 33 == EN row 3
+assets/data/foodData.bin.mid,4,Name,変色した卵とハム,Green Eggs & Sam,Green Eggs & Sam,direct_english_row,high,ImageID 19 == EN row 4
+assets/data/foodData.bin.mid,5,Name,指はさんじゃいました,Finger Sandwiches,Finger Sandwiches,direct_english_row,high,ImageID 12 == EN row 5
+assets/data/foodData.bin.mid,6,Name,不気味なゼリー,Gello Mold,Gello Mold,direct_english_row,high,ImageID 17 == EN row 6
+assets/data/foodData.bin.mid,7,Name,足はさんじゃいました,Toe Jam Sandwiches,Toe Jam Sandwiches,direct_english_row,high,ImageID 42 == EN row 7
+assets/data/foodData.bin.mid,8,Name,ゾンビドーナッツ,Dough-Nots,Dough-Nots,direct_english_row,high,ImageID 7 == EN row 8
+assets/data/foodData.bin.mid,9,Name,ハンドバーガーとフライ,Handburgers & Flies,Handburgers & Flies,direct_english_row,high,ImageID 24 == EN row 9
+assets/data/foodData.bin.mid,10,Name,ゾンビサラダ,Green-plate Special,Green-plate Special,direct_english_row,high,ImageID 20 == EN row 10
+assets/data/foodData.bin.mid,11,Name,ニオウニオンリング,Onion Wrongs,Onion Wrongs,direct_english_row,high,ImageID 34 == EN row 11
+assets/data/foodData.bin.mid,12,Name,どろんこバーガー,"Sloppy ""Joe""","Sloppy ""Joe""",direct_english_row,high,ImageID 36 == EN row 12
+assets/data/foodData.bin.mid,13,Name,内臓サンド,Tumor Melts,Tumor Melts,direct_english_row,high,ImageID 43 == EN row 13
+assets/data/foodData.bin.mid,14,Name,ゾンビオムレツ,Zomelets,Zomelets,direct_english_row,high,ImageID 46 == EN row 14
+assets/data/foodData.bin.mid,15,Name,ゾンビピザ,Meat Lover Pizza,Meat Lover Pizza,direct_english_row,high,ImageID 31 == EN row 15
+assets/data/foodData.bin.mid,16,Name,頭と鼻の良くなる前菜,Pork 'n' Brains,Pork 'n' Brains,direct_english_row,high,ImageID 35 == EN row 16
+assets/data/foodData.bin.mid,17,Name,バッチーネ,Fetidccine,Fetidccine,direct_english_row,high,ImageID 11 == EN row 17
+assets/data/foodData.bin.mid,18,Name,ゾンビマカロニ,Mac & Fleas,Mac & Fleas,direct_english_row,high,ImageID 29 == EN row 18
+assets/data/foodData.bin.mid,19,Name,ミズミズしいミミズ,Wormicelli,Wormicelli,direct_english_row,high,ImageID 45 == EN row 19
+assets/data/foodData.bin.mid,20,Name,ニョキニョキニョッキ,Gnasty Gnocchi,Gnasty Gnocchi,direct_english_row,high,ImageID 18 == EN row 20
+assets/data/foodData.bin.mid,21,Name,匂い立つティラミス,Tiramiseeeww,Tiramiseeeww,direct_english_row,high,ImageID 41 == EN row 21
+assets/data/foodData.bin.mid,22,Name,ゾンビチャーハン,Flied Lice,Flied Lice,direct_english_row,high,ImageID 15 == EN row 22
+assets/data/foodData.bin.mid,23,Name,血染めのワンタン,Wonton Goop,Wonton Goop,direct_english_row,high,ImageID 44 == EN row 23
+assets/data/foodData.bin.mid,24,Name,ゾンビカレー,Curry Slurry,Curry Slurry,direct_english_row,high,ImageID 6 == EN row 24
+assets/data/foodData.bin.mid,25,Name,ゾンビプルコギ,Bul-goo-gi,Bul-goo-gi,direct_english_row,high,ImageID 2 == EN row 25
+assets/data/foodData.bin.mid,26,Name,占いクッキー大凶入り,Misfortune Cookies,Misfortune Cookies,direct_english_row,high,ImageID 47 == EN row 26
+assets/data/foodData.bin.mid,27,Name,食べかけのヌードル,Faux Noodles,Faux Noodles,direct_english_row,high,ImageID 10 == EN row 27
+assets/data/foodData.bin.mid,28,Name,ゾンビユッケ,Ground Chuck,Ground Chuck,direct_english_row,high,ImageID 21 == EN row 28
+assets/data/foodData.bin.mid,29,Name,鼻のトルティーヤ巻き,Burro-itos,Burro-itos,direct_english_row,high,ImageID 3 == EN row 29
+assets/data/foodData.bin.mid,30,Name,どろっとチリコンカン,Chili con Carney,Chili con Carney,direct_english_row,high,ImageID 4 == EN row 30
+assets/data/foodData.bin.mid,31,Name,ゾンビタコス,Loco Tacos,Loco Tacos,direct_english_row,high,ImageID 5 == EN row 31
+assets/data/foodData.bin.mid,32,Name,熟成ソーセージ,Entrail-ladas,Entrail-ladas,direct_english_row,high,ImageID 8 == EN row 32
+assets/data/foodData.bin.mid,33,Name,イヤーなアボカドソース,Guck-a-mole,Guck-a-mole,direct_english_row,high,ImageID 22 == EN row 33
+assets/data/foodData.bin.mid,34,Name,プッチンされたプリン,Blood Pudding,Blood Pudding,direct_english_row,high,ImageID 1 == EN row 34
+assets/data/foodData.bin.mid,35,Name,あやしい肉詰め,Hag-Gus,Hag-Gus,direct_english_row,high,ImageID 23 == EN row 35
+assets/data/foodData.bin.mid,36,Name,何かが溢れ出すパイ,Stake & Kidney Pies,Stake & Kidney Pies,direct_english_row,high,ImageID 38 == EN row 36
+assets/data/foodData.bin.mid,37,Name,フィッシュ＆チップス,Fishy Chips,Fishy Chips,direct_english_row,high,ImageID 14 == EN row 37
+assets/data/foodData.bin.mid,38,Name,目玉が飛び出るドッグ,Head Cheesesteak,Head Cheesesteak,direct_english_row,high,ImageID 25 == EN row 38
+assets/data/foodData.bin.mid,39,Name,ソーセージ＆マッシュ,Hunch-Back Roast,Hunch-Back Roast,direct_english_row,high,ImageID 0 == EN row 73
+assets/data/foodData.bin.mid,40,Name,指の切り落とし,Lady Fingers,Lady Fingers,direct_english_row,high,ImageID 27 == EN row 40
+assets/data/foodData.bin.mid,41,Name,ゾンビ特製フォアグラ,Foie Gross,Foie Gross,direct_english_row,high,ImageID 16 == EN row 41
+assets/data/foodData.bin.mid,42,Name,べとべとエスカルゴ,Escargut,Escargut,direct_english_row,high,ImageID 9 == EN row 42
+assets/data/foodData.bin.mid,43,Name,ゾンビタルタル,Stake Tar-Tar,Stake Tar-Tar,direct_english_row,high,ImageID 39 == EN row 43
+assets/data/foodData.bin.mid,44,Name,目玉が飛び出すヒレ肉,Fileted Minion,Fileted Minion,direct_english_row,high,ImageID 13 == EN row 44
+assets/data/foodData.bin.mid,45,Name,ムチムチな芽キャベツ,Muscles Sprouts,Muscles Sprouts,direct_english_row,high,ImageID 32 == EN row 45
+assets/data/foodData.bin.mid,46,Name,世紀末サンド,Anti Hero Sandwich,Anti Hero Sandwich,direct_english_row,high,ImageID 51 == EN row 46
+assets/data/foodData.bin.mid,47,Name,キモ海老のカクテル,Brine Shrimp Cocktail,Brine Shrimp Cocktail,direct_english_row,high,ImageID 52 == EN row 47
+assets/data/foodData.bin.mid,48,Name,頭の良くなる豆腐,Tofu Brain,Tofu Brain,direct_english_row,high,ImageID 53 == EN row 48
+assets/data/foodData.bin.mid,49,Name,軍用ゾンビ弁当,Army Rations,Army Rations,direct_english_row,high,ImageID 54 == EN row 49
+assets/data/foodData.bin.mid,50,Name,ゾンビドッグ,Rot Dogs,Rot Dogs,direct_english_row,high,ImageID 55 == EN row 50
+assets/data/foodData.bin.mid,51,Name,ゾンビケバブ,Keblobs,Keblobs,direct_english_row,high,ImageID 56 == EN row 51
+assets/data/foodData.bin.mid,52,Name,裏通りのピザ,Street Pizza,Street Pizza,direct_english_row,high,ImageID 57 == EN row 52
+assets/data/foodData.bin.mid,53,Name,足の指のアラカルト,Jam on Toes,Jam on Toes,direct_english_row,high,ImageID 58 == EN row 53
+assets/data/foodData.bin.mid,54,Name,車海老の地引き網添え,Net Prawn,Net Prawn,direct_english_row,high,ImageID 59 == EN row 54
+assets/data/foodData.bin.mid,55,Name,ゾンビ餃子,Haggis,Haggis,direct_english_row,high,ImageID 60 == EN row 55
+assets/data/foodData.bin.mid,56,Name,ネズミプリン,Mice Pudding,Mice Pudding,direct_english_row,high,ImageID 61 == EN row 56
+assets/data/foodData.bin.mid,57,Name,サンド・ウィッチ,Sandwitch,Sandwitch,direct_english_row,high,ImageID 62 == EN row 57
+assets/data/foodData.bin.mid,58,Name,アダムの毒リンゴ飴,Caramel Adam's Apple,Caramel Adam's Apple,direct_english_row,high,ImageID 63 == EN row 58
+assets/data/foodData.bin.mid,59,Name,ぐっさりターキー,Roast Turk-key,Roast Turk-key,direct_english_row,high,ImageID 64 == EN row 59
+assets/data/foodData.bin.mid,60,Name,腐リーム・ブリュレ,Cremated Brulee,Cremated Brulee,direct_english_row,high,ImageID 65 == EN row 60
+assets/data/foodData.bin.mid,61,Name,鼻水パン,Snot Cross Buns,Snot Cross Buns,direct_english_row,high,ImageID 66 == EN row 61
+assets/data/foodData.bin.mid,62,Name,ブラッド・シェーキ,Blood Shake,Blood Shake,direct_english_row,high,ImageID 67 == EN row 62
+assets/data/foodData.bin.mid,63,Name,魚のフライ　釣り針入り,Fish Fingers,Fish Fingers,direct_english_row,high,ImageID 68 == EN row 63
+assets/data/foodData.bin.mid,64,Name,カスなカスタードタルト,Cuss-Turd Tart,Cuss-Turd Tart,direct_english_row,high,ImageID 69 == EN row 64
+assets/data/foodData.bin.mid,65,Name,クモの巣フルーツケーキ,Fruit Cake,Fruit Cake,direct_english_row,high,ImageID 70 == EN row 65
+assets/data/foodData.bin.mid,66,Name,摩訶ロン,Puking Duck,Puking Duck,direct_english_row,high,ImageID 71 == EN row 66
+assets/data/foodData.bin.mid,67,Name,暗黒のホワイトシチュー,Leg Rolls,Leg Rolls,direct_english_row,high,ImageID 72 == EN row 67
+assets/data/foodData.bin.mid,68,Name,ゾンビアラモード,Cracked Ribs,Cracked Ribs,direct_english_row,high,ImageID 30 == EN row 109
+assets/data/foodData.bin.mid,69,Name,暴れんタインチョコ,Gruesome Gruel,Gruesome Gruel,direct_english_row,high,ImageID 37 == EN row 110
+assets/data/foodData.bin.mid,70,Name,ユビ天丼,Roe Boat,Roe Boat,direct_english_row,high,ImageID 48 == EN row 121
+assets/data/foodData.bin.mid,71,Name,ムカデロール,Lion's Head Meatballs,Lion's Head Meatballs,direct_english_row,high,ImageID 73 == EN row 68
+assets/data/foodData.bin.mid,72,Name,もぎたてブロークンハート,Torn-Up-Cake,Torn-Up-Cake,direct_english_row,high,ImageID 74 == EN row 69
+assets/data/foodData.bin.mid,73,Name,おさるの指の前菜,Bleeding Hearts,Bleeding Hearts,direct_english_row,high,ImageID 75 == EN row 70
+assets/data/foodData.bin.mid,74,Name,ロイヤルミル苦ティー,Ghoul Cheese Pizza,Ghoul Cheese Pizza,direct_english_row,high,ImageID 49 == EN row 122
+assets/data/foodData.bin.mid,75,Name,オオドロチュードロ,Ape-a-Teaser,Ape-a-Teaser,direct_english_row,high,ImageID 76 == EN row 71
+assets/data/foodData.bin.mid,76,Name,憎団子,Rabid Rabbit,Rabid Rabbit,direct_english_row,high,ImageID 40 == EN row 113
+assets/data/foodData.bin.mid,77,Name,大恨もち,Festering Hot Chocolate,Festering Hot Chocolate,direct_english_row,high,ImageID 77 == EN row 72
+assets/data/foodData.bin.mid,78,Name,毒ラムチャウダー,Leperoni Pizza,Leperoni Pizza,direct_english_row,high,ImageID 78 == EN row 151
+assets/data/foodData.bin.mid,79,Name,謎のせむし焼き,Meatish Sweetballs,Meatish Sweetballs,direct_english_row,high,ImageID 79 == EN row 152
+assets/data/foodData.bin.mid,80,Name,ツィートローフ,Riga Tony,Riga Tony,direct_english_row,high,ImageID 80 == EN row 153
+assets/data/foodData.bin.mid,81,Name,ムシ食いアップルパイ,Bangers & Mush,Bangers & Mush,direct_english_row,high,ImageID 81 == EN row 39
+assets/data/foodData.bin.mid,82,Name,プッキン！ダック,Bread & Brains Spread,Bread & Brains Spread,direct_english_row,high,ImageID 82 == EN row 158
+assets/data/foodData.bin.mid,83,Name,身たらし団子,Beetle in Beetroot Sauce,Beetle in Beetroot Sauce,direct_english_row,high,ImageID 83 == EN row 159
+assets/data/foodData.bin.mid,84,Name,ゾンビ豚のクローバーソース,Spiderello,Spiderello,direct_english_row,high,ImageID 84 == EN row 160
+assets/data/foodData.bin.mid,85,Name,コケ味シェイク,Fried Snakeroll,Fried Snakeroll,direct_english_row,high,ImageID 85 == EN row 161
+assets/data/foodData.bin.mid,86,Name,弔いロールキャベツ,Jumble Eye-ah,Jumble Eye-ah,direct_english_row,high,ImageID 86 == EN row 162
+assets/data/foodData.bin.mid,87,Name,ムズムズサンド,Garden Gnome Salad,Garden Gnome Salad,direct_english_row,high,ImageID 87 == EN row 163
+assets/data/foodData.bin.mid,88,Name,泥水ココア,Fetid Djinni,Fetid Djinni,direct_english_row,high,ImageID 88 == EN row 164
+assets/data/foodData.bin.mid,89,Name,闇討ちソバ,Verminestroni,Verminestroni,direct_english_row,high,ImageID 89 == EN row 165
+assets/data/foodData.bin.mid,90,Name,異星生物カスレ,Wiccan Nuggets,Wiccan Nuggets,direct_english_row,high,ImageID 90 == EN row 166
+assets/data/foodData.bin.mid,91,Name,クェーサーコーヒー,Voodoo Fondue,Voodoo Fondue,direct_english_row,high,ImageID 91 == EN row 167
+assets/data/foodData.bin.mid,92,Name,超ひも状チーズ,Eyestir Sauce Noodles,Eyestir Sauce Noodles,direct_english_row,high,ImageID 92 == EN row 168
+assets/data/foodData.bin.mid,93,Name,ダークマターローフ,Leech Melba,Leech Melba,direct_english_row,high,ImageID 93 == EN row 169
+assets/data/foodData.bin.mid,94,Name,深宇宙のタルト,Nukes'n Puke,Nukes'n Puke,direct_english_row,high,ImageID 94 == EN row 170
+assets/data/foodData.bin.mid,95,Name,エイリアンケバブ,Knuckle Sandwich,Knuckle Sandwich,direct_english_row,high,ImageID 95 == EN row 171
+assets/data/foodData.bin.mid,96,Name,プルトンサイダー,Druid's Juice,Druid's Juice,direct_english_row,high,ImageID 96 == EN row 172
+assets/data/foodData.bin.mid,97,Name,宇宙ウミウシ,Hydrapanic Salad,Hydrapanic Salad,direct_english_row,high,ImageID 97 == EN row 173
+assets/data/foodData.bin.mid,98,Name,混沌のミートボール,Helm & Cheese,Helm & Cheese,direct_english_row,high,ImageID 98 == EN row 174
+assets/data/foodData.bin.mid,99,Name,ミノタウロスフライ,Unicorn Chowder,Unicorn Chowder,direct_english_row,high,ImageID 99 == EN row 175
+assets/data/foodData.bin.mid,100,Name,ハチミツ風味のスパム缶,Dragon Soup,Dragon Soup,direct_english_row,high,ImageID 100 == EN row 176
+assets/data/foodData.bin.mid,101,Name,ゴキブリ入りカルツォーネ,Holy Gauntlet Pottage,Holy Gauntlet Pottage,direct_english_row,high,ImageID 101 == EN row 177
+assets/data/foodData.bin.mid,102,Name,目玉のベーコン巻きピザ,Crimonade Can,Crimonade Can,direct_english_row,high,ImageID 102 == EN row 178
+assets/data/foodData.bin.mid,103,Name,英国ゾンビの朝食ピザ,Orc Steak,Orc Steak,direct_english_row,high,ImageID 103 == EN row 179
+assets/data/foodData.bin.mid,104,Name,怪しい肉のピザ,Mandragora Dip,Mandragora Dip,direct_english_row,high,ImageID 104 == EN row 180
+assets/data/foodData.bin.mid,105,Name,ミートパッションピザ,Eyeberry Jelly,Eyeberry Jelly,direct_english_row,high,ImageID 105 == EN row 181
+assets/data/foodData.bin.mid,106,Name,ムシゼリーピザ,Red Dragon,Red Dragon,direct_english_row,high,ImageID 106 == EN row 182
+assets/data/foodData.bin.mid,107,Name,タイ風ピザ,Plundered Blowfish,Plundered Blowfish,direct_english_row,high,ImageID 107 == EN row 183
+assets/data/foodData.bin.mid,108,Name,ベジタリアンピザ,Oyster Pearls,Oyster Pearls,direct_english_row,high,ImageID 108 == EN row 184
+assets/data/foodData.bin.mid,109,Name,ボイルされたあやしい肉,Jelly Roger Custard,Jelly Roger Custard,direct_english_row,high,ImageID 109 == EN row 185
+assets/data/foodData.bin.mid,110,Name,トゲパン,Molar Breakers,Molar Breakers,direct_english_row,high,ImageID 110 == EN row 186
+assets/data/foodData.bin.mid,111,Name,ロデオ牛のしっぽ,Shark Tooth Dullers,Shark Tooth Dullers,direct_english_row,high,ImageID 111 == EN row 187
+assets/data/foodData.bin.mid,112,Name,足の親指入りベークドビーンズ,Killer Squid,Killer Squid,direct_english_row,high,ImageID 112 == EN row 188
+assets/data/foodData.bin.mid,113,Name,チャコールスロー,Snake-Snacks,Snake-Snacks,direct_english_row,high,ImageID 113 == EN row 189
+assets/data/foodData.bin.mid,114,Name,火あぶりチキン,Greasy Grizzly,Greasy Grizzly,direct_english_row,high,ImageID 114 == EN row 190
+assets/data/foodData.bin.mid,115,Name,悲しみのカタバラ肉,Elephant Toe Jam,Elephant Toe Jam,direct_english_row,high,ImageID 115 == EN row 191
+assets/data/foodData.bin.mid,116,Name,悪臭のポークサンド,Vampire Ash Browns,Vampire Ash Browns,direct_english_row,high,ImageID 116 == EN row 192
+assets/data/foodData.bin.mid,117,Name,最後のスペアリブ,Staked Steak,Staked Steak,direct_english_row,high,ImageID 117 == EN row 193
+assets/data/foodData.bin.mid,118,Name,目玉のおかゆ,Nosfera-Stew,Nosfera-Stew,direct_english_row,high,ImageID 118 == EN row 194
+assets/data/foodData.bin.mid,119,Name,親指ブッチンプリン,Bat BQ,Bat BQ,direct_english_row,high,ImageID 119 == EN row 195
+assets/data/foodData.bin.mid,120,Name,ラクーンティー,Heart Dog on a Stake,Heart Dog on a Stake,direct_english_row,high,ImageID 120 == EN row 196
+assets/data/foodData.bin.mid,121,Name,ジュアヴォの活造り,Garlic Choke,Garlic Choke,direct_english_row,high,ImageID 121 == EN row 197
+assets/data/foodData.bin.mid,122,Name,リッカーの丸焼き,,Whole Roast Licker,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,123,Name,ロケットランチ,,Rocket Lunch,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,124,Name,お下劣なラムチョップ,Crypt Cake,Crypt Cake,direct_english_row,high,ImageID 124 == EN row 200
+assets/data/foodData.bin.mid,125,Name,ラパンのクビ狩り焼き,Crucy Fries,Crucy Fries,direct_english_row,high,ImageID 125 == EN row 198
+assets/data/foodData.bin.mid,126,Name,スパークリング汚染水,Eye Pop Candy,Eye Pop Candy,direct_english_row,high,ImageID 126 == EN row 199
+assets/data/foodData.bin.mid,127,Name,汚染アラモード,Fish Bones & Gold Chips,Fish Bones & Gold Chips,direct_english_row,high,ImageID 127 == EN row 201
+assets/data/foodData.bin.mid,128,Name,恨みのツラミ,Chili Chili Bang Bang,Chili Chili Bang Bang,direct_english_row,high,ImageID 128 == EN row 202
+assets/data/foodData.bin.mid,129,Name,恨ミノサンド,Fireball Spaghetti,Fireball Spaghetti,direct_english_row,high,ImageID 129 == EN row 205
+assets/data/foodData.bin.mid,130,Name,汚水牛のもも肉,Zap Bar,Zap Bar,direct_english_row,high,ImageID 130 == EN row 206
+assets/data/foodData.bin.mid,131,Name,生臭いサンタのケーキ,Super Fruit Punch,Super Fruit Punch,direct_english_row,high,ImageID 131 == EN row 207
+assets/data/foodData.bin.mid,132,Name,目で鯛,Orion Soup,Orion Soup,direct_english_row,high,ImageID 132 == EN row 208
+assets/data/foodData.bin.mid,133,Name,臓物風チョコ,Green Belt Peppers,Green Belt Peppers,direct_english_row,high,ImageID 133 == EN row 209
+assets/data/foodData.bin.mid,134,Name,愛憎いっぱい裏義理キャンディ,Reactor Burger,Reactor Burger,direct_english_row,high,ImageID 134 == EN row 210
+assets/data/foodData.bin.mid,135,Name,ホワイト戯腐兎,Tropical Coco Brain,Tropical Coco Brain,direct_english_row,high,ImageID 135 == EN row 211
+assets/data/foodData.bin.mid,136,Name,鯉臭ジュース,Cali Snail Rolls,Cali Snail Rolls,direct_english_row,high,ImageID 136 == EN row 212
+assets/data/foodData.bin.mid,137,Name,鯉の汚物煮 カブト添え,Croccoli Soup,Croccoli Soup,direct_english_row,high,ImageID 137 == EN row 213
+assets/data/foodData.bin.mid,138,Name,ウイルス味ポップトゥース,Dracooler,Dracooler,direct_english_row,high,ImageID 138 == EN row 204
+assets/data/foodData.bin.mid,139,Name,ウジウジした氷,,Squirmy Maggot Ice,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,140,Name,２周年カラフォーケーキ,Brain Washer Soup,Brain Washer Soup,direct_english_row,high,ImageID 143 == EN row 214
+assets/data/foodData.bin.mid,141,Name,おばけかぼちゃプリン,Nuke Fondue,Nuke Fondue,direct_english_row,high,ImageID 144 == EN row 215
+assets/data/foodData.bin.mid,142,Name,バットBBQ汚ソース添え,,Bat BBQ with Filthy Sauce,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,143,Name,や無茶な目玉,,Reckless Eyeballs,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,144,Name,ティーなふりしたゼリー,,Fake Tea Jelly,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,145,Name,気狂いなデザート盛合せ,,Mad Dessert Platter,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,146,Name,チェッシャムティー,,Cheshire Ham Tea,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,147,Name,大生糸春巻き,,Giant Silkworm Spring Roll,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,148,Name,朝るとモーニング,,Scavenged Morning Set,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,149,Name,ドクロの多種族食べ比べ,,Multi-Species Skull Sampler,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,150,Name,杏仁パール,,Almond Jelly Pearls,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,151,Name,赤龍のかぶと煮,,Red Dragon Head Stew,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,152,Name,ホワイトブレッドマン,,White Bread Man,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,153,Name,レッドゴッドチリペッパー,,Red God Chili Pepper,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,154,Name,タルテノンベリーズ,,Tartenon Berries,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,155,Name,ゾンビのくしゃみピザ,,Zombie Sneeze Pizza,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,156,Name,コウモリの肉づめ,,Stuffed Bat,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,157,Name,ジャンバラEYE,,Jambala-EYE,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,158,Name,アイスカラーべ,,Ice Calavera,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,159,Name,肉のビートルート添え,,Meat with Beetroot,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,160,Name,ツタンカーメンデザート,,Tutankhamun Dessert,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,161,Name,鬼ちくぜん煮,,Oni Chikuzen Stew,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,162,Name,バンブーブレインジュース,,Bamboo Brain Juice,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,163,Name,スーパーフルーツパンチ,,Super Fruit Punch,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,164,Name,ZAPバー,,ZAP Bar,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,165,Name,ヤバ素麺,,Sketchy Somen,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,166,Name,シャークヘッドロック,,Shark Headlock,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,167,Name,３周年キャラ弁,,3rd Anniversary Bento,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,168,Name,ホットフロッグ,,Hot Frog,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,169,Name,爆盛り弁当,,Mega-Heap Bento,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,170,Name,目玉な焼きソバ,,Eyeball Yakisoba,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,171,Name,魔法なオムライス,,Magical Omurice,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,172,Name,アーサータン塩,,Arthur Tongue with Salt,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,173,Name,メロンくーり,,Chilly Melon,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,174,Name,歯壊ステーキ,,Tooth-Breaker Steak,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,175,Name,あやしいＥ缶スープ,,Suspicious E-Tank Soup,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,176,Name,1Up風ステーキ,,1-Up Steak,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,177,Name,ドンキードッグ,,Donkey Dog,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,178,Name,ヴァンパイアバーガー,,Vampire Burger,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,179,Name,ヴァンパイアランチ,,Vampire Lunch,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,180,Name,マンドラゴラディップ,,Mandragora Dip,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,181,Name,ヒュドラのサラダ,,Hydra Salad,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,182,Name,アーサーステーキ,,Arthur Steak,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,183,Name,オークステーキ,,Orc Steak,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,184,Name,オイルシチュー,,Oil Stew,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,185,Name,こびとサラダ,,Gnome Salad,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,186,Name,噛みつきビックフットまん,,Biting Bigfoot Bun,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,187,Name,ヴァンパイアのニンニク詰め,,Garlic-Stuffed Vampire,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,188,Name,ウクレカレー,,Ukule-Curry,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,189,Name,SSSピザ,,SSS Pizza,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,190,Name,トラがらバーガー,,Tiger-Bone Burger,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,191,Name,指団子,,Finger Dango,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,192,Name,イクラの舟盛り,,Salmon Roe Boat,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,193,Name,トロピカル脳ジュース,,Tropical Brain Juice,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,194,Name,Handメイド鍋,,Hand-Made Hotpot,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,195,Name,フィッシュ＆コイン,,Fish & Coins,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,196,Name,４周年ちらし寿司,,4th Anniversary Chirashi Sushi,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,197,Name,ロースト強化ハト,,Roast Bionic Pigeon,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,198,Name,ボーンフレーク,,Bone Flakes,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,199,Name,ハンド・ウィッチ,,Hand-Wich,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,200,Name,ゴーストプディング,,Ghost Pudding,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,201,Name,レイレイの天雷破サラダ,,Hsien-Ko's Tenraiha Salad,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,202,Name,あくしゅ券付きタルト,,Handshake-Ticket Tart,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,203,Name,サンタクロウズ,,Santa Claws,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,204,Name,ブラッドジュース,,Blood Juice,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,205,Name,カガビ餅,,Moldy Mirror Mochi,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,206,Name,深海魚の氷漬,,Deep-Sea Fish on Ice,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,207,Name,ユーズド臭カレー,,Used-Smell Curry,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,208,Name,ジライヤの高野豆腐,,Jiraiya's Koya Tofu,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,209,Name,エレファントバーガー,,Elephant Burger,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,210,Name,スザクスープカリー,,Suzaku Soup Curry,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,211,Name,海王の足ステーキ,,Sea King Leg Steak,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,212,Name,ノーズジュレ,,Nose Gelee,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,213,Name,青虫の包焼,,Baked Caterpillar Wrap,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,214,Name,パンダカクテル,,Panda Cocktail,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,215,Name,ロックまん,,Rockman Bun,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,216,Name,エックスまん,,X Bun,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,217,Name,あやしい舟盛り,,Suspicious Sashimi Boat,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,218,Name,火星人マカロニ,,Martian Macaroni,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,219,Name,腸ワカモレ,,Gut Guacamole,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,220,Name,パイルドライバーステーキ,,Piledriver Steak,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,221,Name,みそパン,,Miso Bread,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,222,Name,天使リング,,Angel Ring,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,223,Name,シカのかぶと焼き,,Roast Deer Head,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,224,Name,アクセルまん,,Axl Bun,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,225,Name,ゼロまん,,Zero Bun,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,226,Name,Over-まん,,Over-1 Bun,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,227,Name,ゾンビパンケーキ,,Zombie Pancakes,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,228,Name,目玉団子,,Eyeball Dango,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,229,Name,ゾンビまん,,Zombie Bun,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,230,Name,無重力ステーキ,,Zero-G Steak,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,231,Name,プルトーンジュース,,Pluto Juice,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,232,Name,ヴァンパイアシチュー,,Vampire Stew,jp_only_event,low,no EN row; proposed carried from TM
+assets/data/foodData.bin.mid,233,Name,アイスコフィン,,Ice Coffin,jp_only_event,low,no EN row; proposed carried from TM
