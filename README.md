@@ -2,42 +2,30 @@
 
 # Zombie Cafe Revival
 
-Android maintenance, balancing, and localization work for *Zombie Cafe*, maintained by [dark-chocolate-enjoyer](https://github.com/dark-chocolate-enjoyer).
+Android maintenance, balancing, bug-fixing work for *Zombie Cafe*.
 
 [Download v1.1.0](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.1.0) | [Project documentation](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/) | [Implementation notes](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/engineering.html)
 
-## Project scope
+## Project
 
-This repository contains a playable Android revival with revised progression, repaired audio behaviour, and compatibility fixes for newer Android environments. It also contains the ongoing restoration of the final Japanese release, including English localization and replacements for services that disappeared when the original servers closed.
+This project is continuing from Airyzz's work to revive an old mobile game developed by Capcom called *Zombie Cafe*.
 
-The work is based on inspection of the game's native ARM code, Smali application layer, packed binary data, and assets. Reproducible tools and technical notes are kept beside the game source instead of treating the APK as an opaque final artifact.
+The latest version v1.1 supports repaired audio behaviour, a compatbility fix to allow the game to run on newer androids, and a complete balance overhaul with almost every dish and character rebalanced to support a less grindy, more interesting progression of the game.
+
+It also contains the ongoing restoration of the final Japanese release - which has much more content compared to the latest English version - including a full translation from Japanese to English, and my option balance changes applied. 
+
+The work is based on inspection of the game's native ARM code, Smali application layer, packed binary data, and assets. 
 
 ## Current release
 
-**v1.1.0 - Balance + Music Fix** includes:
+**v1.1.0 (beta) - Balance + Music Fix** includes:
 
-- corrected cafe music rotation and state recovery after maps, raids, and cafe reloads;
-- a complete character rebalance across cooking, combat, energy, regeneration, cost, and tips;
-- the v1.0 food economy and progression rework;
-- the Android/BlueStacks native-library compatibility repair.
+- Corrected cafe music rotation and state recovery after maps, raids, and cafe reloads
+- A complete character rebalance across cooking, combat, energy, regeneration, cost, and tips
+- Food economy and progression rework from v1.0 with some changes 
+- the Android native-library compatibility repair.
 
-Download the signed APK and read the player-facing changes on the [v1.1.0 release page](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.1.0).
-
-## Engineering work
-
-### Music playback repair
-
-The original audio path could leave stale playback state behind after a track ended or the game changed scenes. The repair updates the native state transitions, restores cafe track rotation, assigns raid-specific themes, and recovers missing OGG assets from the later Japanese build. The exact control-flow changes and relevant C++ snippets are documented in the [implementation notes](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/engineering.html#music).
-
-### Japanese version restoration
-
-The Japanese 1.7.0 build uses different packed layouts for food, furniture, quests, and strings. Dedicated readers and guarded writers were developed to decode those formats and verify byte-identical round trips before edited data is repacked.
-
-The retired premium-currency purchase route has also been replaced with a local cash-to-Toxin exchange. The patch was derived by comparing the working English implementation with the Japanese ARM binary, identifying the purchase branch and the registers carrying the selected cash cost and Toxin reward, then transplanting the equivalent arithmetic while preserving the Japanese function's surrounding control flow. See the [cash-to-Toxin analysis](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/engineering.html#toxin).
-
-### Balance and data tooling
-
-Custom Go and Python tools unpack game data into reviewable structures, validate proposed changes, and serialize it back into the formats expected by the client. Food and character changes are evaluated against progression, profit, experience, combat, unlock, and premium-value data rather than edited as isolated numbers.
+Download: [v1.1.0 release page](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.1.0).
 
 ## Repository map
 
