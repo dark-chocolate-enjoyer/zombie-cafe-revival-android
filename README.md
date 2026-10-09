@@ -2,7 +2,7 @@
 
 # Zombie Cafe Revival
 
-Android maintenance, balancing, bug-fixing work for *Zombie Cafe*.
+Android maintenance, balancing, and bug-fixing for the old Capcom game *Zombie Cafe*.
 
 [Download v1.1.0](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.1.0) | [Project documentation](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/) | [Implementation notes](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/engineering.html)
 
