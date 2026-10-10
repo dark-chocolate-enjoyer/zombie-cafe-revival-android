@@ -6,13 +6,13 @@ Android maintenance, balancing, and bug-fixing for the old Capcom game *Zombie C
 
 [Download v1.1.0](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-android/releases/tag/v1.1.0)
 
+For the JP version, check out [Zombie Cafe JP](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-jp).
+
 ## Project
 
 This project is continuing from Airyzz's work to revive an old mobile game developed by Capcom called *Zombie Cafe*.
 
 The latest version v1.1 supports repaired audio behaviour, a compatbility fix to allow the game to run on newer androids, and a complete balance overhaul with almost every dish and character rebalanced to support a less grindy, more interesting progression of the game.
-
-It also contains the ongoing restoration of the final Japanese release - which has much more content compared to the latest English version - including a full translation from Japanese to English, and my option balance changes applied. 
 
 The work is based on inspection of the game's native ARM code, Smali application layer, packed binary data, and assets. 
 
@@ -50,4 +50,4 @@ Compatibility builds must include the repaired `libZombieCafeAndroid.so`; backgr
 
 ## Project history
 
-The initial reverse-engineering and Android build foundation came from [Airyzz's Zombie Cafe Revival](https://github.com/Airyzz/zombie-cafe-revival). This repository is the independently maintained continuation containing the balance releases, Android compatibility work, music repair, Japanese-version restoration, localization tooling, and current documentation described above.
+The initial reverse-engineering and Android build foundation came from [Airyzz's Zombie Cafe Revival](https://github.com/Airyzz/zombie-cafe-revival). This repository is the independently maintained continuation containing the balance releases, Android compatibility work, music repair, localization tooling, and current documentation described above.
