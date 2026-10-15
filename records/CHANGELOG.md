@@ -207,3 +207,4 @@ Did: pages moved to `site/` as the source (`ai-workflow.md`, `technical-writeup.
 `style.css` build two pages with a menu, light/dark, phone layout, Mermaid diagrams (ASCII loop redrawn; memory diagram restacked);
 `.github/workflows/pages.yml` publishes to GitHub Pages on pushes touching `site/`. READMEs link to the site. Checked locally in Edge.
 Owner set Pages to GitHub Actions; Claude Code committed and pushed both repos on the owner's instruction.
+Result: deployed (`e9640e80`, Actions build + deploy OK); live check found file names breaking in the files table, fixed in CSS.
