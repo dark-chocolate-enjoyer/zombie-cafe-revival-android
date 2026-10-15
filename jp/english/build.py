@@ -15,6 +15,10 @@ Output: jp_english/out/ZombieCafe_JP_English.apk (+ report.txt)
 """
 import csv, json, os, re, shutil, subprocess, sys, textwrap, zipfile
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'stability'))
+import lib_fixes                        # jp/stability: checked native-lib bug fixes
+from make_debug_apk import patched_dex  # apktool decode -> smali patch -> rebuild of classes.dex
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))   # jp/english -> repo root
 WORK = os.path.join(HERE, 'work')
@@ -26,6 +30,13 @@ NON_ASCII = re.compile(r'[^\x00-\x7e]')
 PLACEHOLDERS = ['[NUM]', '[RECIPE]', '[CHARA]', '[GENDER]', '[ITEM]', '#', '\\']
 
 report = []
+
+# Stability work, first in v6 (owner-approved 2026-10-09; jp/stability/README.md):
+#   lib_fixes.FIXES  raid-resume list typo, StringBuffer::toString terminator, device-info terminator
+#   OFFLINE          classes.dex patched so the game believes it has no internet (offline_patch.py):
+#                    no more requests to Capcom's dead servers
+OFFLINE = True
+LIB = 'lib/armeabi/libZombieCafeAndroid.so'
 
 
 def log(msg):
@@ -215,19 +226,30 @@ def main():
     replace = {f'assets/data/{n}': open(os.path.join(OUT, 'bin', n), 'rb').read() for n in os.listdir(os.path.join(OUT, 'bin'))}
     for extra in (load_extra_files()):
         replace[extra[0]] = extra[1]
+    replace[LIB] = lib_fixes.apply(replace[LIB])
+    log(f'  lib fixes: {", ".join(f[0] for f in lib_fixes.FIXES)}')
     src = zipfile.ZipFile(os.path.join(WORK, 'base_v4.apk'))
     unsigned = os.path.join(OUT, 'unsigned.apk')
-    with zipfile.ZipFile(unsigned, 'w') as out:
-        for info in src.infolist():
-            if info.filename.startswith('META-INF/'):
-                continue
-            data = replace.pop(info.filename, None)
-            if data is None:
-                data = src.read(info.filename)
-            zi = zipfile.ZipInfo(info.filename, date_time=info.date_time)
-            zi.compress_type, zi.external_attr = info.compress_type, info.external_attr
-            out.writestr(zi, data)
-    assert not replace, f'files not in base APK: {list(replace)}'
+
+    def write_unsigned(files):
+        files = dict(files)
+        with zipfile.ZipFile(unsigned, 'w') as out:
+            for info in src.infolist():
+                if info.filename.startswith('META-INF/'):
+                    continue
+                data = files.pop(info.filename, None)
+                if data is None:
+                    data = src.read(info.filename)
+                zi = zipfile.ZipInfo(info.filename, date_time=info.date_time)
+                zi.compress_type, zi.external_attr = info.compress_type, info.external_attr
+                out.writestr(zi, data)
+        assert not files, f'files not in base APK: {list(files)}'
+
+    write_unsigned(replace)
+    if OFFLINE:
+        replace['classes.dex'] = patched_dex(unsigned, ['offline_patch.py'])
+        write_unsigned(replace)
+        log('  offline: classes.dex patched (offline_patch.py)')
     aligned = os.path.join(OUT, 'aligned.apk')
     final = os.path.join(OUT, 'ZombieCafe_JP_English.apk')
     subprocess.run([f'{BT}/zipalign', '-p', '-f', '4', unsigned, aligned], check=True)

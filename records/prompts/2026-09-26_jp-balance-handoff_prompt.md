@@ -1,7 +1,7 @@
 # Handoff prompt — JP balance rework (paste into a new Claude Code chat opened in the repo)
 
-> Kept as a record of how this project hands work to an AI session: the owner pasted this
-> on 2026-09-26 to start the JP balance phase. Some files it lists (`jp/research/`,
+> Kept as a record of how this project hands work to an AI session. Written 2026-09-26, updated
+> 2026-10-08 (D-09/D-10 rates, records workflow) before the owner pasted it to start the JP balance phase. Some files it lists (`jp/research/`,
 > `docs/balance/rebalance_*`, `docs/reverse/`) are local working notes, not in the public repo.
 
 ---
@@ -12,7 +12,8 @@ translation and Android 14 compatibility are finished and verified on my phone
 rework**.
 
 Start by reading, in this order (don't read anything else yet):
-1. `jp/START_HERE.md` (status, repo map, build/test commands, balance rules)
+1. `jp/START_HERE.md` (status, repo map, build/test commands, balance rules) and `records/DECISIONS.md`
+   (my binding rulings — e.g. $2,000 per Toxin and 2,000 cash = 1 Toxin when pricing cash vs Toxin characters)
 2. `jp/balance/EN_BALANCE_DIRECTION.md` — **the direction I want.** I already rebalanced the English game from vanilla
    to my v1.1.0 (dishes: cheaper ingredients, more servings, higher profit/min especially early-mid game, XP pace held,
    premium food clearly worth it; chefs: much higher TipRating/TipMultiplier on a smooth cost ladder; workers: stronger
@@ -35,14 +36,16 @@ How I want to work:
   install on my A54 and I play-test.
 - Never change a playable chef without asking me first.
 - Keep token use lean: prefer scripts over reading huge files; don't re-derive what `jp/START_HERE.md` already says.
+- Workbooks go to `Desktop/ZCafeStuff/Japanese APK Restoration/Review/`. At the end of each session follow the
+  record-keeping steps in `CLAUDE.md` (changelog entry, decisions, sync).
 
 First task: don't propose new numbers yet. Build me:
 1. A **review workbook** (foods, playable chefs, workers, furniture economy) of the current JP values,
    side by side with EN vanilla and my EN v1.1 values for shared items, what my EN direction would imply for each
    (as a suggestion column, not applied), and flags for obvious outliers or dominated units.
 2. A short **decision brief** for the open questions that block balancing (roster keep/cut and how each kept
-   character is obtained offline, gacha redesign vs removal, Toxin exchange rate — note my EN docs say $30k/$75k/$375k/$1.5M
-   but the shipped v1.1 still has $20k/$50k/$250k/$1M — and dead online quests),
+   character is obtained offline, gacha redesign vs removal, and dead online quests). The Toxin exchange is decided:
+   $2,000 per Toxin ($20k/$50k/$250k/$1M), same as my EN v1.1,
    with your recommendation for each.
 Then stop and wait for my review.
 

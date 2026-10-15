@@ -1,0 +1,2952 @@
+{
+ "consumed": 11269,
+ "size": 11269,
+ "constants": {
+  "AttackTask_MAX_ATTACK_TIME": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "BonePile_BONE_DURATION": {
+   "size": 4,
+   "int": 10000,
+   "float": 1.401298464324817e-41
+  },
+  "BonePile_BONE_FADE_DURATION": {
+   "size": 4,
+   "int": 3000,
+   "float": 4.203895392974451e-42
+  },
+  "BuyToxinDialog_AMOUNT_COLOR": {
+   "size": 4,
+   "int": -16777216,
+   "float": -1.7014118346046923e+38
+  },
+  "BuyToxinDialog_AMOUNT_X": {
+   "size": 4,
+   "int": 117440864,
+   "float": 9.630053798119274e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_AMOUNT_Y": {
+   "size": 4,
+   "int": 117440896,
+   "float": 9.630090532317738e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_DESC_X": {
+   "size": 4,
+   "int": 117440928,
+   "float": 9.6301272665162e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_DESC_Y": {
+   "size": 4,
+   "int": 117440960,
+   "float": 9.630164000714664e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_DLC_ROW_HEIGHT": {
+   "size": 4,
+   "int": 117441152,
+   "float": 9.630384405905443e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_DLC_ROW_WIDTH": {
+   "size": 4,
+   "int": 117441120,
+   "float": 9.63034767170698e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_FIRST_ROW_BUTTON_Y": {
+   "size": 4,
+   "int": 117441184,
+   "float": 9.630421140103906e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_ICON_X": {
+   "size": 4,
+   "int": 117440800,
+   "float": 9.629980329722348e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_ICON_Y": {
+   "size": 4,
+   "int": 117440832,
+   "float": 9.630017063920811e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_OFFER_WALL_APPNAME_COLOR": {
+   "size": 4,
+   "int": -65536,
+   "float": NaN
+  },
+  "BuyToxinDialog_OFFER_WALL_FREE_TOXIN": {
+   "size": 4,
+   "int": 1,
+   "float": 1.401298464324817e-45
+  },
+  "BuyToxinDialog_OFFER_WALL_PAID_PUBLIC_TOXIN": {
+   "size": 4,
+   "int": 6,
+   "float": 8.407790785948902e-45
+  },
+  "BuyToxinDialog_OFFER_WALL_TOXIN_PER_DOLLAR": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "BuyToxinDialog_PRICE_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "BuyToxinDialog_PRICE_TEXT_OFFSET_X": {
+   "size": 4,
+   "int": 117441056,
+   "float": 9.630274203310054e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_PRICE_TEXT_OFFSET_Y": {
+   "size": 4,
+   "int": 117441088,
+   "float": 9.630310937508517e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_PRICE_X": {
+   "size": 4,
+   "int": 117440992,
+   "float": 9.630200734913127e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_PRICE_Y": {
+   "size": 4,
+   "int": 117441024,
+   "float": 9.63023746911159e-35,
+   "array_ptr": true
+  },
+  "BuyToxinDialog_SHOW_DISCLAIMER": {
+   "size": 1,
+   "int": 1
+  },
+  "BuyToxinDialog_TITLE_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "BuyToxinDialog_VIAL_SEPARATION": {
+   "size": 4,
+   "int": 117440768,
+   "float": 9.629943595523885e-35,
+   "array_ptr": true
+  },
+  "CafeObject_COLOR_SHIFT_COLOR": {
+   "size": 4,
+   "int": -11167403,
+   "float": -2.8392170852635922e+38
+  },
+  "CafeObject_COLOR_SHIFT_TIME": {
+   "size": 4,
+   "int": 500,
+   "float": 7.006492321624085e-43
+  },
+  "CafeTile_TILE_HEIGHT": {
+   "size": 2,
+   "int": 104
+  },
+  "CafeTile_TILE_STRIDE_X": {
+   "size": 2,
+   "int": -4
+  },
+  "CafeTile_TILE_STRIDE_Y": {
+   "size": 2,
+   "int": -4
+  },
+  "CafeTile_TILE_WIDTH": {
+   "size": 2,
+   "int": 164
+  },
+  "CafeTile_TYPE_GRASS": {
+   "size": 4,
+   "int": 117441216,
+   "float": 9.63045787430237e-35,
+   "array_ptr": true
+  },
+  "CafeTile_TYPE_GRASS_COUNT": {
+   "size": 1,
+   "int": 4
+  },
+  "CafeTile_TYPE_LOOSE_TILE": {
+   "size": 2,
+   "int": 37
+  },
+  "CafeTile_TYPE_ROAD": {
+   "size": 2,
+   "int": 118
+  },
+  "CafeTile_TYPE_ROADSTRIPE": {
+   "size": 2,
+   "int": 121
+  },
+  "CafeTile_TYPE_SIDEWALK": {
+   "size": 2,
+   "int": 117
+  },
+  "CafeTile_TYPE_SIDEWALK_CORNER": {
+   "size": 2,
+   "int": 166
+  },
+  "CafeTile_TYPE_SIDEWALK_CURB": {
+   "size": 2,
+   "int": 165
+  },
+  "CafeTile_TYPE_STAINED_TILE": {
+   "size": 2,
+   "int": 24
+  },
+  "CafeTile_TYPE_TILE": {
+   "size": 2,
+   "int": 45
+  },
+  "CafeUIElement_TYPE_CENSOREDSIGN": {
+   "size": 1,
+   "int": 1
+  },
+  "CafeUIElement_TYPE_STATUSNOTE": {
+   "size": 1,
+   "int": 0
+  },
+  "CafeWall_DOOR_CLOSED": {
+   "size": 4,
+   "int": 122,
+   "float": 1.7095841264762768e-43
+  },
+  "CafeWall_DOOR_OPEN": {
+   "size": 4,
+   "int": 123,
+   "float": 1.723597111119525e-43
+  },
+  "CafeWall_DOOR_X": {
+   "size": 4,
+   "int": 8,
+   "float": 1.1210387714598537e-44
+  },
+  "CafeWall_DOOR_Y": {
+   "size": 4,
+   "int": -4,
+   "float": NaN
+  },
+  "CafeWall_EDGE_WIDTH": {
+   "size": 1,
+   "int": 13
+  },
+  "CafeWall_OPEN_DOOR_ADJUST_X": {
+   "size": 2,
+   "int": 113
+  },
+  "CafeWall_OPEN_DOOR_ADJUST_Y": {
+   "size": 2,
+   "int": 51
+  },
+  "CafeWall_WALL_ABOVE_DOOR_HEIGHT_ADJUST_Y1": {
+   "size": 4,
+   "int": 1,
+   "float": 1.401298464324817e-45
+  },
+  "CafeWall_WALL_ABOVE_DOOR_HEIGHT_ADJUST_Y2": {
+   "size": 4,
+   "int": -2,
+   "float": NaN
+  },
+  "Cafe_AVERAGE_CUSTOMERS_HIGH_POPULARITY": {
+   "size": 1,
+   "int": 12
+  },
+  "Cafe_AVERAGE_CUSTOMERS_LOW_POPULARITY": {
+   "size": 1,
+   "int": 2
+  },
+  "Cafe_AVERAGE_CUSTOMER_SERVE_CHANCE": {
+   "size": 1,
+   "int": 3
+  },
+  "Cafe_AVERAGE_CUSTOMER_SERVE_CHANCE_OVER": {
+   "size": 1,
+   "int": 4
+  },
+  "Cafe_AVERAGE_CUSTOMER_VARIANCE": {
+   "size": 1,
+   "int": 1
+  },
+  "Cafe_DOOR_Y": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "Cafe_EDIT_TRANSPARENCY": {
+   "size": 4,
+   "int": 872415231,
+   "float": 1.1920928244535389e-07
+  },
+  "Cafe_INITIAL_CAFE_HEIGHT": {
+   "size": 4,
+   "int": 6,
+   "float": 8.407790785948902e-45
+  },
+  "Cafe_INITIAL_CAFE_WIDTH": {
+   "size": 4,
+   "int": 7,
+   "float": 9.80908925027372e-45
+  },
+  "Cafe_INITIAL_WALL_ITEM": {
+   "size": 2,
+   "int": 28
+  },
+  "Cafe_RAID_SIDEWALK_X": {
+   "size": 4,
+   "int": 9,
+   "float": 1.2611686178923354e-44
+  },
+  "Cafe_RAID_SIDEWALK_Y": {
+   "size": 4,
+   "int": 17,
+   "float": 2.382207389352189e-44
+  },
+  "Cafe_ROAD_WIDTH": {
+   "size": 4,
+   "int": 4,
+   "float": 5.605193857299268e-45
+  },
+  "Cafe_SELECTION_BOUNCE_TIME": {
+   "size": 2,
+   "int": 1000
+  },
+  "Cafe_SIDEWALK_X": {
+   "size": 4,
+   "int": 13,
+   "float": 1.8216880036222622e-44
+  },
+  "Cafe_SIDEWALK_Y": {
+   "size": 4,
+   "int": 21,
+   "float": 2.942726775082116e-44
+  },
+  "Cafe_TILE_COUNT_X": {
+   "size": 4,
+   "int": 35,
+   "float": 4.90454462513686e-44
+  },
+  "Cafe_TILE_COUNT_Y": {
+   "size": 4,
+   "int": 55,
+   "float": 7.707141553786494e-44
+  },
+  "Cafe_UI_FADE_DURATION": {
+   "size": 4,
+   "int": 1500,
+   "float": 2.1019476964872256e-42
+  },
+  "Cafe_UI_FADE_IDLE_TIME": {
+   "size": 4,
+   "int": 5000,
+   "float": 7.006492321624085e-42
+  },
+  "CharacterCommandBar_MENU_STROKE_COLOR": {
+   "size": 4,
+   "int": -3937874,
+   "float": NaN
+  },
+  "CharacterCommandBar_MENU_STROKE_WIDTH": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "CharacterCommandBar_PADDING_MIDDLE": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "CharacterCommandBar_PADDING_TOP": {
+   "size": 4,
+   "int": 117441232,
+   "float": 9.630476241401601e-35,
+   "array_ptr": true
+  },
+  "CharacterCommandBar_TWEEN_EASE": {
+   "size": 4,
+   "int": 65536,
+   "float": 9.183549615799121e-41
+  },
+  "CharacterCommandBar_TWEEN_TIME": {
+   "size": 4,
+   "int": 500,
+   "float": 7.006492321624085e-43
+  },
+  "CharacterDetails_CLOSE_X_OFFSET": {
+   "size": 4,
+   "int": 15,
+   "float": 2.1019476964872256e-44
+  },
+  "CharacterDetails_CLOSE_Y_OFFSET": {
+   "size": 4,
+   "int": 12,
+   "float": 1.6815581571897805e-44
+  },
+  "CharacterDetails_INDEX_COLOR": {
+   "size": 4,
+   "int": -5779630,
+   "float": NaN
+  },
+  "CharacterDetails_INNER_PADDING_LARGE": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "CharacterDetails_INNER_PADDING_SMALL": {
+   "size": 4,
+   "int": 117441264,
+   "float": 9.630512975600064e-35,
+   "array_ptr": true
+  },
+  "CharacterDetails_NAME_BOX_X_PADDING": {
+   "size": 4,
+   "int": 117441296,
+   "float": 9.630549709798528e-35,
+   "array_ptr": true
+  },
+  "CharacterDetails_NAME_COLOR": {
+   "size": 4,
+   "int": -12030707,
+   "float": -2.664118231858883e+38
+  },
+  "CharacterDetails_PADDING_MIDDLE": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "CharacterDetails_PADDING_TOP": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "CharacterDetails_SECONDS_PER_DAY": {
+   "size": 4,
+   "int": 86400,
+   "float": 1.210721873176642e-40
+  },
+  "CharacterDetails_TOTAL_ZOMBIES_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "CharacterDetails_TYPE_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "CharacterStatScreen_MENU_STROKE_COLOR": {
+   "size": 4,
+   "int": -3937874,
+   "float": NaN
+  },
+  "CharacterStatScreen_MENU_STROKE_WIDTH": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "CharacterStatScreen_PADDING_MIDDLE": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "CharacterStatScreen_PADDING_TOP": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "Character_ATTACK_PROBABILITY_PER_MINUTE": {
+   "size": 4,
+   "int": 1016833507,
+   "float": 0.01899999938905239
+  },
+  "Character_DAYDREAM_DURATION": {
+   "size": 4,
+   "int": 10000,
+   "float": 1.401298464324817e-41
+  },
+  "Character_DAYDREAM_INTERVAL_INCREMENT": {
+   "size": 4,
+   "int": 120000,
+   "float": 1.6815581571897805e-40
+  },
+  "Character_DAYDREAM_INTERVAL_VARIANCE": {
+   "size": 4,
+   "int": 30000,
+   "float": 4.203895392974451e-41
+  },
+  "Character_ENERGY_BAR_HEIGHT": {
+   "size": 4,
+   "int": 8,
+   "float": 1.1210387714598537e-44
+  },
+  "Character_ENERGY_BAR_WIDTH": {
+   "size": 4,
+   "int": 100,
+   "float": 1.401298464324817e-43
+  },
+  "Character_ENERGY_DRAIN_PER_MS": {
+   "size": 4,
+   "int": 973279855,
+   "float": 0.0005000000237487257
+  },
+  "Character_FILL_AVAILABLE_THRESHOLD": {
+   "size": 4,
+   "int": 1061997773,
+   "float": 0.800000011920929
+  },
+  "Character_GLOBAL_SCALE": {
+   "size": 4,
+   "int": 1052434760,
+   "float": 0.36500000953674316
+  },
+  "Character_HIT_INTERVAL": {
+   "size": 4,
+   "int": 2000,
+   "float": 2.802596928649634e-42
+  },
+  "Character_LOW_ENERGY_TUTORIAL_TRIGGER": {
+   "size": 4,
+   "int": 1058642330,
+   "float": 0.6000000238418579
+  },
+  "Character_MAX_SPEED_MULTIPLIER": {
+   "size": 4,
+   "int": 1082130432,
+   "float": 4.0
+  },
+  "Character_MIN_SPEED_MULTIPLIER": {
+   "size": 4,
+   "int": 1073741824,
+   "float": 2.0
+  },
+  "Character_RANDOM_NAME_COUNT": {
+   "size": 4,
+   "int": 32,
+   "float": 4.484155085839415e-44
+  },
+  "Character_REANIMATION_DURATION": {
+   "size": 4,
+   "int": 28800000,
+   "float": 6.739003502443593e-38
+  },
+  "Character_SCREAM_INTERVAL": {
+   "size": 4,
+   "int": 8000,
+   "float": 1.1210387714598537e-41
+  },
+  "Character_ZOMBIE_SLOWDOWN_MULTIPLIER": {
+   "size": 4,
+   "int": 1067030938,
+   "float": 1.2000000476837158
+  },
+  "CookCommandBar_MAX_CLOCK_POSITION": {
+   "size": 1,
+   "int": 16
+  },
+  "EatTask_EAT_TIME": {
+   "size": 4,
+   "int": 30000,
+   "float": 4.203895392974451e-41
+  },
+  "EatTask_WAIT_FOR_FOOD_TIME": {
+   "size": 4,
+   "int": 60000,
+   "float": 8.407790785948902e-41
+  },
+  "EatTask_WAIT_WITH_FOOD_TIME": {
+   "size": 4,
+   "int": 2000,
+   "float": 2.802596928649634e-42
+  },
+  "FacebookNagDialog_BUTTON_TEXT_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "FacebookNagDialog_BUTTON_TEXT_OFFSET_X": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "FacebookNagDialog_BUTTON_TEXT_OFFSET_Y": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "FacebookNagDialog_NO_BUTTON_OFFSET_X": {
+   "size": 4,
+   "int": 120,
+   "float": 1.6815581571897805e-43
+  },
+  "FacebookNagDialog_NO_BUTTON_OFFSET_Y": {
+   "size": 4,
+   "int": 105,
+   "float": 1.471363387541058e-43
+  },
+  "FacebookNagDialog_OK_BUTTON_OFFSET_X": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "FacebookNagDialog_OK_BUTTON_OFFSET_Y": {
+   "size": 4,
+   "int": 100,
+   "float": 1.401298464324817e-43
+  },
+  "FacebookNagDialog_TEXT_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "FacebookNagDialog_TEXT_OFFSET_Y": {
+   "size": 4,
+   "int": -50,
+   "float": NaN
+  },
+  "FacebookNagDialog_TEXT_WIDTH": {
+   "size": 4,
+   "int": 400,
+   "float": 5.605193857299268e-43
+  },
+  "FacebookNagDialog_YES_BUTTON_OFFSET_X": {
+   "size": 4,
+   "int": -120,
+   "float": NaN
+  },
+  "FacebookNagDialog_YES_BUTTON_OFFSET_Y": {
+   "size": 4,
+   "int": 95,
+   "float": 1.3312335411085762e-43
+  },
+  "FeastTask_FEAST_TIME_RATE": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "FeastTask_FLESH_ENERGY_BONUS": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "FeastTask_MAX_FEAST_TIME": {
+   "size": 4,
+   "int": 1500,
+   "float": 2.1019476964872256e-42
+  },
+  "FrequentFryerDialog_HR_HEIGHT": {
+   "size": 1,
+   "int": 3
+  },
+  "FrequentFryerDialog_RED": {
+   "size": 4,
+   "int": -48060,
+   "float": NaN
+  },
+  "FrequentFryer_RARE_CHANCE": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "FrequentFryer_RARE_RECIPES": {
+   "size": 4,
+   "int": 117441392,
+   "float": 9.630659912393917e-35,
+   "array_ptr": true
+  },
+  "FrequentFryer_RARE_RECIPE_COUNT": {
+   "size": 1,
+   "int": 1
+  },
+  "FrequentFryer_REWARD10_TOXIN": {
+   "size": 1,
+   "int": 3
+  },
+  "FrequentFryer_REWARD11_DAY": {
+   "size": 1,
+   "int": 1
+  },
+  "FrequentFryer_REWARD1_CASH": {
+   "size": 2,
+   "int": 25
+  },
+  "FrequentFryer_REWARD2_CASH": {
+   "size": 2,
+   "int": 50
+  },
+  "FrequentFryer_REWARD3_MEALS": {
+   "size": 4,
+   "int": 117441328,
+   "float": 9.63058644399699e-35,
+   "array_ptr": true
+  },
+  "FrequentFryer_REWARD3_MEAL_COUNT": {
+   "size": 1,
+   "int": 5
+  },
+  "FrequentFryer_REWARD4_MEALS": {
+   "size": 4,
+   "int": 117441344,
+   "float": 9.630604811096222e-35,
+   "array_ptr": true
+  },
+  "FrequentFryer_REWARD4_MEAL_COUNT": {
+   "size": 1,
+   "int": 4
+  },
+  "FrequentFryer_REWARD5_TOXIN": {
+   "size": 1,
+   "int": 1
+  },
+  "FrequentFryer_REWARD6_CASH": {
+   "size": 2,
+   "int": 250
+  },
+  "FrequentFryer_REWARD7_CASH": {
+   "size": 2,
+   "int": 350
+  },
+  "FrequentFryer_REWARD8_MEALS": {
+   "size": 4,
+   "int": 117441360,
+   "float": 9.630623178195454e-35,
+   "array_ptr": true
+  },
+  "FrequentFryer_REWARD8_MEAL_COUNT": {
+   "size": 1,
+   "int": 3
+  },
+  "FrequentFryer_REWARD9_MEALS": {
+   "size": 4,
+   "int": 117441376,
+   "float": 9.630641545294686e-35,
+   "array_ptr": true
+  },
+  "FrequentFryer_REWARD9_MEAL_COUNT": {
+   "size": 1,
+   "int": 3
+  },
+  "FrequentFryer_SERVER_TIME_CHECK_INTERVAL_SECONDS": {
+   "size": 2,
+   "int": 60
+  },
+  "FridgeDialog_BUTTON_FONT_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "FridgeDialog_BUTTON_SIZE": {
+   "size": 4,
+   "int": 117441520,
+   "float": 9.63080684918777e-35,
+   "array_ptr": true
+  },
+  "FridgeDialog_BUTTON_SIZE2": {
+   "size": 4,
+   "int": 117441536,
+   "float": 9.630825216287002e-35,
+   "array_ptr": true
+  },
+  "FridgeDialog_HEADING_SIZE": {
+   "size": 4,
+   "int": 117441504,
+   "float": 9.630788482088538e-35,
+   "array_ptr": true
+  },
+  "FridgeDialog_PAGE_FLIP_FRAME_TIME": {
+   "size": 4,
+   "int": 30,
+   "float": 4.203895392974451e-44
+  },
+  "FridgeDialog_PAGE_NUMBER_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "FridgeDialog_PLATE_SCALE_X": {
+   "size": 4,
+   "int": 117441408,
+   "float": 9.630678279493149e-35,
+   "array_ptr": true
+  },
+  "FridgeDialog_PLATE_SCALE_Y": {
+   "size": 4,
+   "int": 117441440,
+   "float": 9.630715013691612e-35,
+   "array_ptr": true
+  },
+  "FridgeDialog_RECIPE_DETAIL_COLOR": {
+   "size": 4,
+   "int": -16777216,
+   "float": -1.7014118346046923e+38
+  },
+  "FridgeDialog_RECIPE_DETAIL_SIZE": {
+   "size": 4,
+   "int": 117441488,
+   "float": 9.630770114989307e-35,
+   "array_ptr": true
+  },
+  "FridgeDialog_RECIPE_NAME_COLOR": {
+   "size": 4,
+   "int": -16777216,
+   "float": -1.7014118346046923e+38
+  },
+  "FridgeDialog_RECIPE_NAME_SIZE": {
+   "size": 4,
+   "int": 117441472,
+   "float": 9.630751747890075e-35,
+   "array_ptr": true
+  },
+  "FridgeDialog_RECIPE_PLATE_OFFSET_X": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "FridgeDialog_RECIPE_PLATE_OFFSET_Y": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "FridgeDialog_SELECTED_NONE": {
+   "size": 2,
+   "int": 10000
+  },
+  "Friend_SERIAL_VERSION": {
+   "size": 1,
+   "int": 1
+  },
+  "FurnitureButton_COST_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "FurnitureButton_COST_SIZE": {
+   "size": 4,
+   "int": 117441584,
+   "float": 9.630880317584696e-35,
+   "array_ptr": true
+  },
+  "FurnitureButton_COST_STROKE_COLOR": {
+   "size": 4,
+   "int": -16777216,
+   "float": -1.7014118346046923e+38
+  },
+  "FurnitureButton_COST_STROKE_WIDTH": {
+   "size": 4,
+   "int": 117441552,
+   "float": 9.630843583386233e-35,
+   "array_ptr": true
+  },
+  "Furniture_COUNTER_SLOPE": {
+   "size": 4,
+   "int": 1059481190,
+   "float": 0.6499999761581421
+  },
+  "Furniture_EXCLAIM_BOUNCE_HEIGHT": {
+   "size": 1,
+   "int": 25
+  },
+  "Furniture_FRIDGE_SLOPE": {
+   "size": 4,
+   "int": 1058977874,
+   "float": 0.6200000047683716
+  },
+  "Furniture_MAX_EARNINGS": {
+   "size": 1,
+   "int": -56
+  },
+  "Furniture_MAX_EARNINGSXP": {
+   "size": 1,
+   "int": 10
+  },
+  "Furniture_MAX_RATING_BONUS": {
+   "size": 4,
+   "int": 1039516303,
+   "float": 0.11999999731779099
+  },
+  "Furniture_NO_ATTACHMENT": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "Furniture_SINK_SLOPE": {
+   "size": 4,
+   "int": 1059481190,
+   "float": 0.6499999761581421
+  },
+  "Furniture_STOVE_SLOPE": {
+   "size": 4,
+   "int": 1058306785,
+   "float": 0.5799999833106995
+  },
+  "Furniture_TABLE_SLOPE": {
+   "size": 4,
+   "int": 1059481190,
+   "float": 0.6499999761581421
+  },
+  "GameStateBusy_DIM_COLOR": {
+   "size": 4,
+   "int": -1442840576,
+   "float": -1.1368683772161603e-13
+  },
+  "GameStateCafe_AVERAGE_SERVING_TIME": {
+   "size": 4,
+   "int": 1189765120,
+   "float": 30000.0
+  },
+  "GameStateCafe_BURN_COOK_TIME_THRESHOLD": {
+   "size": 4,
+   "int": 1800,
+   "float": 2.5223372357846707e-42
+  },
+  "GameStateCafe_BURN_NOTIFICATION_WARNING_TIME": {
+   "size": 4,
+   "int": 900,
+   "float": 1.2611686178923354e-42
+  },
+  "GameStateCafe_CASH_PER_TOXIN": {
+   "size": 4,
+   "int": 2000,
+   "float": 2.802596928649634e-42
+  },
+  "GameStateCafe_CASH_PURCHASE_XP_MULTIPLIER": {
+   "size": 4,
+   "int": 1020054733,
+   "float": 0.02500000037252903
+  },
+  "GameStateCafe_CUSTOMER_ENTER_PAUSE": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "GameStateCafe_CUSTOMER_ENTER_PAUSE_VARIANCE": {
+   "size": 4,
+   "int": 800,
+   "float": 1.1210387714598537e-42
+  },
+  "GameStateCafe_CUSTOMER_INTERVAL_VARIANCE": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "GameStateCafe_DECELERATION": {
+   "size": 4,
+   "int": 994352038,
+   "float": 0.003000000026077032
+  },
+  "GameStateCafe_ENEMY_DIALOG_WAIT_TIME": {
+   "size": 4,
+   "int": 30000,
+   "float": 4.203895392974451e-41
+  },
+  "GameStateCafe_EXPANSION_OUTLINE_COLOR1": {
+   "size": 4,
+   "int": -2008765884,
+   "float": -5.918175082718582e-34
+  },
+  "GameStateCafe_EXPANSION_OUTLINE_COLOR2": {
+   "size": 4,
+   "int": -1153106108,
+   "float": -0.003005937673151493
+  },
+  "GameStateCafe_EXPANSION_OUTLINE_WIDTH": {
+   "size": 1,
+   "int": 3
+  },
+  "GameStateCafe_FRIEND_REFERRAL_COUNT": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "GameStateCafe_FRIEND_REFERRAL_REWARD": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "GameStateCafe_FRIEND_TOXIN_LEVELS": {
+   "size": 4,
+   "int": 117441728,
+   "float": 9.63104562147778e-35,
+   "array_ptr": true
+  },
+  "GameStateCafe_FRIEND_TOXIN_NUM_LEVELS": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "GameStateCafe_FRIEND_TOXIN_REWARDS": {
+   "size": 4,
+   "int": 117441744,
+   "float": 9.631063988577012e-35,
+   "array_ptr": true
+  },
+  "GameStateCafe_FURNITURE_PLACEMENT_INVALID": {
+   "size": 4,
+   "int": -1996536764,
+   "float": -1.5363303415644356e-33
+  },
+  "GameStateCafe_FURNITURE_PLACEMENT_PULSE_ALPHA": {
+   "size": 1,
+   "int": -128
+  },
+  "GameStateCafe_FURNITURE_PLACEMENT_PULSE_PERIOD": {
+   "size": 2,
+   "int": 1000
+  },
+  "GameStateCafe_FURNITURE_PLACEMENT_TAKEN": {
+   "size": 4,
+   "int": -2008800734,
+   "float": -5.9021727475130524e-34
+  },
+  "GameStateCafe_FURNITURE_PLACEMENT_VALID": {
+   "size": 4,
+   "int": -2008744124,
+   "float": -5.928166784700572e-34
+  },
+  "GameStateCafe_INITIAL_ZOOM": {
+   "size": 4,
+   "int": 117441616,
+   "float": 9.63091705178316e-35,
+   "array_ptr": true
+  },
+  "GameStateCafe_INSTANT_INFECT": {
+   "size": 1,
+   "int": 1
+  },
+  "GameStateCafe_ITEM_BAR_TWEEN_TIME": {
+   "size": 4,
+   "int": 300,
+   "float": 4.203895392974451e-43
+  },
+  "GameStateCafe_ITEM_SELLBACK_RATE": {
+   "size": 4,
+   "int": 1056964608,
+   "float": 0.5
+  },
+  "GameStateCafe_LONG_TICK_INTERVAL": {
+   "size": 1,
+   "int": 5
+  },
+  "GameStateCafe_LONG_TICK_NEW_CUSTOMER_TIME": {
+   "size": 4,
+   "int": 20000,
+   "float": 2.802596928649634e-41
+  },
+  "GameStateCafe_MAX_CUSTOMER_INTERVAL": {
+   "size": 4,
+   "int": 18000,
+   "float": 2.5223372357846707e-41
+  },
+  "GameStateCafe_MAX_CUSTOMER_VISIT_CHANCE_FP8": {
+   "size": 4,
+   "int": 238,
+   "float": 3.3350903450930646e-43
+  },
+  "GameStateCafe_MAX_RATING_INCREASE": {
+   "size": 4,
+   "int": 1053609165,
+   "float": 0.4000000059604645
+  },
+  "GameStateCafe_MAX_ZOOM": {
+   "size": 4,
+   "int": 117441680,
+   "float": 9.630990520180086e-35,
+   "array_ptr": true
+  },
+  "GameStateCafe_MENU_STROKE_COLOR": {
+   "size": 4,
+   "int": -3937874,
+   "float": NaN
+  },
+  "GameStateCafe_MENU_STROKE_WIDTH": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "GameStateCafe_MIN_CUSTOMER_INTERVAL": {
+   "size": 4,
+   "int": 4500,
+   "float": 6.305843089461677e-42
+  },
+  "GameStateCafe_MIN_CUSTOMER_VISIT_CHANCE_FP8": {
+   "size": 4,
+   "int": 211,
+   "float": 2.956739759725364e-43
+  },
+  "GameStateCafe_MIN_VELOCITY": {
+   "size": 4,
+   "int": 1065353216,
+   "float": 1.0
+  },
+  "GameStateCafe_MIN_ZOOM": {
+   "size": 4,
+   "int": 117441648,
+   "float": 9.630953785981623e-35,
+   "array_ptr": true
+  },
+  "GameStateCafe_MUSIC_INTERVAL": {
+   "size": 4,
+   "int": 5000,
+   "float": 7.006492321624085e-42
+  },
+  "GameStateCafe_POPULARITY_TUTORIAL_TRIGGER": {
+   "size": 4,
+   "int": 1045220557,
+   "float": 0.20000000298023224
+  },
+  "GameStateCafe_RATING_DECREMENT": {
+   "size": 4,
+   "int": 1002740646,
+   "float": 0.006000000052154064
+  },
+  "GameStateCafe_RATING_DECREMENT_ATTACK": {
+   "size": 4,
+   "int": 1036831949,
+   "float": 0.10000000149011612
+  },
+  "GameStateCafe_RATING_DECREMENT_CLOSED": {
+   "size": 4,
+   "int": 849286633,
+   "float": 1.851999975599483e-08
+  },
+  "GameStateCafe_RATING_INCREMENT": {
+   "size": 4,
+   "int": 1000593162,
+   "float": 0.004999999888241291
+  },
+  "GameStateCafe_RECIPE_XP_BONUS_AMOUNTS": {
+   "size": 4,
+   "int": 117442208,
+   "float": 9.631596634454729e-35,
+   "array_ptr": true
+  },
+  "GameStateCafe_RECIPE_XP_BONUS_LEVELS": {
+   "size": 4,
+   "int": 117441760,
+   "float": 9.631082355676244e-35,
+   "array_ptr": true
+  },
+  "GameStateCafe_RECIPE_XP_BONUS_NUM_LEVELS": {
+   "size": 4,
+   "int": 111,
+   "float": 1.555441295400547e-43
+  },
+  "GameStateCafe_ROTATION_CONTROL_FADE_TIME": {
+   "size": 2,
+   "int": 2000
+  },
+  "GameStateCafe_ROTATION_CONTROL_VISIBLE_TIME": {
+   "size": 2,
+   "int": 4000
+  },
+  "GameStateCafe_SAVE_INTERVAL": {
+   "size": 4,
+   "int": 30000,
+   "float": 4.203895392974451e-41
+  },
+  "GameStateCafe_SERVER_GIFT_CHECK_INTERVAL": {
+   "size": 4,
+   "int": 60000,
+   "float": 8.407790785948902e-41
+  },
+  "GameStateCafe_SERVER_SAVE_INTERVAL": {
+   "size": 4,
+   "int": 900000,
+   "float": 1.2611686178923354e-39
+  },
+  "GameStateCafe_SERVE_INSTRUCT_LEVEL_LIMIT": {
+   "size": 1,
+   "int": 3
+  },
+  "GameStateCafe_TABLE_SERVER_MODIFIER": {
+   "size": 4,
+   "int": 1039516303,
+   "float": 0.11999999731779099
+  },
+  "GameStateCafe_TIME_SCALE_FACTOR": {
+   "size": 4,
+   "int": 1048576000,
+   "float": 0.25
+  },
+  "GameStateCafe_TIP_COLOR": {
+   "size": 4,
+   "int": -14711323,
+   "float": -2.12042471483786e+38
+  },
+  "GameStateCafe_TOXIN_PURCHASE_XP_MULTIPLIER": {
+   "size": 4,
+   "int": 1120403456,
+   "float": 100.0
+  },
+  "GameStateCafe_TUTORIAL_CUSTOMER_EAT_TIME": {
+   "size": 4,
+   "int": 10000,
+   "float": 1.401298464324817e-41
+  },
+  "GameStateCafe_WALL_SECTION_INTERVAL": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "GameStateCafe_WORK_REST_SCALE_FACTOR": {
+   "size": 4,
+   "int": 1056964608,
+   "float": 0.5
+  },
+  "GameStateCafe_ZOMBIE_ATTACK_INTERVAL": {
+   "size": 4,
+   "int": 60000,
+   "float": 8.407790785948902e-41
+  },
+  "GameStateCafe_ZOMBIE_ATTACK_WARNING": {
+   "size": 4,
+   "int": 5000,
+   "float": 7.006492321624085e-42
+  },
+  "GameStateCafe_ZOMBIE_IDLE_TIME": {
+   "size": 4,
+   "int": 60000,
+   "float": 8.407790785948902e-41
+  },
+  "GameStateCafe_ZORDER_BUY_TOXIN_DIALOG": {
+   "size": 1,
+   "int": 26
+  },
+  "GameStateCafe_ZORDER_CHARACTER_DETAILS": {
+   "size": 1,
+   "int": 14
+  },
+  "GameStateCafe_ZORDER_COMMAND_BAR": {
+   "size": 1,
+   "int": 6
+  },
+  "GameStateCafe_ZORDER_COOK_COMMAND_BAR": {
+   "size": 1,
+   "int": 8
+  },
+  "GameStateCafe_ZORDER_ENEMY_CAFE_DIALOG": {
+   "size": 1,
+   "int": 24
+  },
+  "GameStateCafe_ZORDER_FREQUENT_FRYER_DIALOG": {
+   "size": 1,
+   "int": 22
+  },
+  "GameStateCafe_ZORDER_FRIDGE_DIALOG": {
+   "size": 1,
+   "int": 12
+  },
+  "GameStateCafe_ZORDER_HUD": {
+   "size": 1,
+   "int": 2
+  },
+  "GameStateCafe_ZORDER_LEVEL_UP_DIALOG": {
+   "size": 1,
+   "int": 18
+  },
+  "GameStateCafe_ZORDER_LOTTERY_DIALOG": {
+   "size": 1,
+   "int": 19
+  },
+  "GameStateCafe_ZORDER_OBJECTIVE_COMPLETE_DIALOG": {
+   "size": 1,
+   "int": 18
+  },
+  "GameStateCafe_ZORDER_OBJECTIVE_DIALOG": {
+   "size": 1,
+   "int": 17
+  },
+  "GameStateCafe_ZORDER_PENDING_ORDER_DIALOG": {
+   "size": 1,
+   "int": 16
+  },
+  "GameStateCafe_ZORDER_RECIPE_BOOK": {
+   "size": 1,
+   "int": 16
+  },
+  "GameStateCafe_ZORDER_RECIPE_UNLOCKED_DIALOG": {
+   "size": 1,
+   "int": 20
+  },
+  "GameStateCafe_ZORDER_STORAGE": {
+   "size": 1,
+   "int": 15
+  },
+  "GameStateCafe_ZORDER_STORE": {
+   "size": 1,
+   "int": 4
+  },
+  "GameStateCafe_ZORDER_TOMBSTONE_COMMAND_BAR": {
+   "size": 1,
+   "int": 9
+  },
+  "GameStateCafe_ZORDER_TUTORIAL_ARROW": {
+   "size": 1,
+   "int": 1
+  },
+  "GameStateChooseChef_ANIMATION_POOL": {
+   "size": 4,
+   "int": 117442752,
+   "float": 9.632221115828603e-35,
+   "array_ptr": true
+  },
+  "GameStateChooseChef_ANIMATION_POOL_SIZE": {
+   "size": 1,
+   "int": 20
+  },
+  "GameStateChooseChef_CHEF_SCALE_LARGE": {
+   "size": 4,
+   "int": 117442720,
+   "float": 9.63218438163014e-35,
+   "array_ptr": true
+  },
+  "GameStateChooseChef_CHEF_SCALE_SMALL": {
+   "size": 4,
+   "int": 1048576000,
+   "float": 0.25
+  },
+  "GameStateChooseChef_SMALL_FONT_SIZE": {
+   "size": 4,
+   "int": 117442688,
+   "float": 9.632147647431677e-35,
+   "array_ptr": true
+  },
+  "GameStateChooseChef_TITLE_FONT_SIZE": {
+   "size": 4,
+   "int": 117442656,
+   "float": 9.632110913233213e-35,
+   "array_ptr": true
+  },
+  "GameStateChooseChef_TITLE_FONT_STROKE_COLOR": {
+   "size": 4,
+   "int": -9693914,
+   "float": -3.138076159708343e+38
+  },
+  "GameStateChooseChef_TITLE_FONT_STROKE_SIZE": {
+   "size": 4,
+   "int": 4,
+   "float": 5.605193857299268e-45
+  },
+  "GameStateFriendCafe_INITIAL_ZOOM": {
+   "size": 4,
+   "int": 1050253722,
+   "float": 0.30000001192092896
+  },
+  "GameStateFriendCafe_MAX_ZOOM": {
+   "size": 4,
+   "int": 1066192077,
+   "float": 1.100000023841858
+  },
+  "GameStateFriendCafe_MAX_ZOOM_DISPLAY": {
+   "size": 4,
+   "int": 1065353216,
+   "float": 1.0
+  },
+  "GameStateFriendCafe_MIN_ZOOM": {
+   "size": 4,
+   "int": 1043878380,
+   "float": 0.18000000715255737
+  },
+  "GameStateFriendCafe_MIN_ZOOM_DISPLAY": {
+   "size": 4,
+   "int": 1045220557,
+   "float": 0.20000000298023224
+  },
+  "GameStateFriendCafe_RAID_DEFENDER_MULTIPLIER": {
+   "size": 4,
+   "int": 1036831949,
+   "float": 0.10000000149011612
+  },
+  "GameStateFriendCafe_RAID_FOOD_MULTIPLIER": {
+   "size": 4,
+   "int": 1073741824,
+   "float": 2.0
+  },
+  "GameStateFriendCafe_RAID_RATING_MULTIPLIER": {
+   "size": 4,
+   "int": 1004173017,
+   "float": 0.006666999775916338
+  },
+  "GameStateFriends_DISABLED_COLOR": {
+   "size": 4,
+   "int": -1431655766,
+   "float": -3.0316488252093987e-13
+  },
+  "GameStateFriends_DOWN_BUTTON_OFFSET_Y": {
+   "size": 4,
+   "int": 110,
+   "float": 1.5414283107572988e-43
+  },
+  "GameStateFriends_ERROR_FONT_SIZE": {
+   "size": 4,
+   "int": 117442816,
+   "float": 9.63229458422553e-35,
+   "array_ptr": true
+  },
+  "GameStateFriends_ERROR_OFFSET_X": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "GameStateFriends_ERROR_OFFSET_Y": {
+   "size": 4,
+   "int": -25,
+   "float": NaN
+  },
+  "GameStateFriends_FRAME_OFFSET_Y": {
+   "size": 4,
+   "int": 50,
+   "float": 7.006492321624085e-44
+  },
+  "GameStateFriends_INVITE_OFFSET_Y": {
+   "size": 4,
+   "int": 175,
+   "float": 2.45227231256843e-43
+  },
+  "GameStateFriends_LEVEL_TEXT_OFFSET_X": {
+   "size": 4,
+   "int": 90,
+   "float": 1.2611686178923354e-43
+  },
+  "GameStateFriends_LEVEL_TEXT_OFFSET_Y": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "GameStateFriends_NAME_TEXT_OFFSET_X": {
+   "size": 4,
+   "int": 130,
+   "float": 1.821688003622262e-43
+  },
+  "GameStateFriends_NAME_TEXT_OFFSET_Y": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "GameStateFriends_OK_BUTTON_OFFSET_X": {
+   "size": 4,
+   "int": 440,
+   "float": 6.165713243029195e-43
+  },
+  "GameStateFriends_OK_BUTTON_OFFSET_Y": {
+   "size": 4,
+   "int": 40,
+   "float": 5.605193857299268e-44
+  },
+  "GameStateFriends_PROFILE_PIC_OFFSET_X": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "GameStateFriends_PROFILE_PIC_OFFSET_Y": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "GameStateFriends_ROW_OFFSET_Y": {
+   "size": 4,
+   "int": 100,
+   "float": 1.401298464324817e-43
+  },
+  "GameStateFriends_SMALL_FONT_SIZE": {
+   "size": 4,
+   "int": 117442848,
+   "float": 9.632331318423993e-35,
+   "array_ptr": true
+  },
+  "GameStateFriends_STAR_OFFSET_X": {
+   "size": 4,
+   "int": 130,
+   "float": 1.821688003622262e-43
+  },
+  "GameStateFriends_STAR_OFFSET_Y": {
+   "size": 4,
+   "int": 45,
+   "float": 6.305843089461677e-44
+  },
+  "GameStateFriends_STAR_SPACING": {
+   "size": 4,
+   "int": 25,
+   "float": 3.5032461608120427e-44
+  },
+  "GameStateFriends_TITLE_FONT_SIZE": {
+   "size": 4,
+   "int": 117442784,
+   "float": 9.632257850027066e-35,
+   "array_ptr": true
+  },
+  "GameStateFriends_TITLE_FONT_STROKE_COLOR": {
+   "size": 4,
+   "int": -9693914,
+   "float": -3.138076159708343e+38
+  },
+  "GameStateFriends_TITLE_FONT_STROKE_SIZE": {
+   "size": 4,
+   "int": 4,
+   "float": 5.605193857299268e-45
+  },
+  "GameStateFriends_UP_BUTTON_OFFSET_Y": {
+   "size": 4,
+   "int": -175,
+   "float": NaN
+  },
+  "GameStateHelp_MEDIUM_FONT_SIZE": {
+   "size": 4,
+   "int": 117442912,
+   "float": 9.63240478682092e-35,
+   "array_ptr": true
+  },
+  "GameStateHelp_SMALL_FONT_SIZE": {
+   "size": 4,
+   "int": 117442896,
+   "float": 9.632386419721687e-35,
+   "array_ptr": true
+  },
+  "GameStateHelp_TITLE_FONT_SIZE": {
+   "size": 4,
+   "int": 117442880,
+   "float": 9.632368052622456e-35,
+   "array_ptr": true
+  },
+  "GameStateHelp_TITLE_FONT_STROKE_COLOR": {
+   "size": 4,
+   "int": -9693914,
+   "float": -3.138076159708343e+38
+  },
+  "GameStateHelp_TITLE_FONT_STROKE_SIZE": {
+   "size": 4,
+   "int": 4,
+   "float": 5.605193857299268e-45
+  },
+  "GameStateMap_BOARDED_OFFSET_BOTTOM": {
+   "size": 4,
+   "int": 21,
+   "float": 2.942726775082116e-44
+  },
+  "GameStateMap_BOARDED_OFFSET_LEFT": {
+   "size": 4,
+   "int": 8,
+   "float": 1.1210387714598537e-44
+  },
+  "GameStateMap_CAFE_LEVEL_OFFSET_X": {
+   "size": 4,
+   "int": 70,
+   "float": 9.80908925027372e-44
+  },
+  "GameStateMap_CAFE_LEVEL_OFFSET_Y": {
+   "size": 4,
+   "int": 185,
+   "float": 2.5924021590009116e-43
+  },
+  "GameStateMap_CAFE_MID_OFFSET_X": {
+   "size": 4,
+   "int": 115,
+   "float": 1.6114932339735396e-43
+  },
+  "GameStateMap_CAFE_MID_OFFSET_Y": {
+   "size": 4,
+   "int": -60,
+   "float": NaN
+  },
+  "GameStateMap_CAFE_NAME_OFFSET_X": {
+   "size": 4,
+   "int": -15,
+   "float": NaN
+  },
+  "GameStateMap_CAFE_NAME_OFFSET_Y": {
+   "size": 4,
+   "int": 135,
+   "float": 1.891752926838503e-43
+  },
+  "GameStateMap_CAFE_PROFILE_OFFSET_X": {
+   "size": 4,
+   "int": -135,
+   "float": NaN
+  },
+  "GameStateMap_CAFE_PROFILE_OFFSET_Y": {
+   "size": 4,
+   "int": 28,
+   "float": 3.923635700109488e-44
+  },
+  "GameStateMap_CHEATER_COLOR": {
+   "size": 4,
+   "int": -10053325,
+   "float": -3.0651789485277627e+38
+  },
+  "GameStateMap_DECELERATION": {
+   "size": 4,
+   "int": 994352038,
+   "float": 0.003000000026077032
+  },
+  "GameStateMap_INVITE_BUTTON_OFFSET_X": {
+   "size": 4,
+   "int": -110,
+   "float": NaN
+  },
+  "GameStateMap_INVITE_BUTTON_OFFSET_Y": {
+   "size": 4,
+   "int": -75,
+   "float": NaN
+  },
+  "GameStateMap_LEVEL_FONT_SIZE": {
+   "size": 4,
+   "int": 117442960,
+   "float": 9.632459888118614e-35,
+   "array_ptr": true
+  },
+  "GameStateMap_MAX_BG_SCREENS": {
+   "size": 4,
+   "int": 16,
+   "float": 2.2420775429197073e-44
+  },
+  "GameStateMap_MIN_VELOCITY": {
+   "size": 4,
+   "int": 1065353216,
+   "float": 1.0
+  },
+  "GameStateMap_NAME_FONT_SIZE": {
+   "size": 4,
+   "int": 117442928,
+   "float": 9.63242315392015e-35,
+   "array_ptr": true
+  },
+  "GameStateMap_NUM_ENEMIES": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "GameStateMap_SMALL_FONT_SIZE": {
+   "size": 4,
+   "int": 117442992,
+   "float": 9.632496622317077e-35,
+   "array_ptr": true
+  },
+  "GameStateOptions_SMALL_FONT_SIZE": {
+   "size": 4,
+   "int": 117443056,
+   "float": 9.632570090714003e-35,
+   "array_ptr": true
+  },
+  "GameStateOptions_TITLE_FONT_SIZE": {
+   "size": 4,
+   "int": 117443024,
+   "float": 9.63253335651554e-35,
+   "array_ptr": true
+  },
+  "GameStateOptions_TITLE_FONT_STROKE_COLOR": {
+   "size": 4,
+   "int": -9693914,
+   "float": -3.138076159708343e+38
+  },
+  "GameStateOptions_TITLE_FONT_STROKE_SIZE": {
+   "size": 4,
+   "int": 4,
+   "float": 5.605193857299268e-45
+  },
+  "GameStateRaid_ATTACK_BUTTON_X": {
+   "size": 4,
+   "int": 750,
+   "float": 1.0509738482436128e-42
+  },
+  "GameStateRaid_ATTACK_BUTTON_Y": {
+   "size": 4,
+   "int": 680,
+   "float": 9.528829557408756e-43
+  },
+  "GameStateRaid_BOSS_CASH": {
+   "size": 4,
+   "int": 117444208,
+   "float": 9.633892521858678e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_BOSS_HP": {
+   "size": 4,
+   "int": 117444480,
+   "float": 9.634204762545616e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_BOSS_SPEED": {
+   "size": 4,
+   "int": 117445840,
+   "float": 9.635765965980301e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_BOSS_STRENGTH": {
+   "size": 4,
+   "int": 117445568,
+   "float": 9.635453725293364e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_BOSS_TOXIN": {
+   "size": 4,
+   "int": 117444752,
+   "float": 9.634517003232553e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_BOSS_TOXIN_CHANCE": {
+   "size": 4,
+   "int": 117445024,
+   "float": 9.63482924391949e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_BOSS_XP": {
+   "size": 4,
+   "int": 117445296,
+   "float": 9.635141484606427e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_CUSTOMER_CASH_AMOUNT": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "GameStateRaid_CUSTOMER_ENTER_PAUSE": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "GameStateRaid_CUSTOMER_ENTER_PAUSE_VARIANCE": {
+   "size": 4,
+   "int": 800,
+   "float": 1.1210387714598537e-42
+  },
+  "GameStateRaid_CUSTOMER_INTERVAL_VARIANCE": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "GameStateRaid_CUSTOMER_PANIC_LOOPS": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "GameStateRaid_CUSTOMER_XP": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "GameStateRaid_DECELERATION": {
+   "size": 4,
+   "int": 994352038,
+   "float": 0.003000000026077032
+  },
+  "GameStateRaid_INITIAL_ZOOM": {
+   "size": 4,
+   "int": 117443088,
+   "float": 9.632606824912467e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_KILL_HEALTH_BOOST": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "GameStateRaid_MAX_CUSTOMER_INTERVAL": {
+   "size": 4,
+   "int": 20000,
+   "float": 2.802596928649634e-41
+  },
+  "GameStateRaid_MAX_CUSTOMER_VISIT_CHANCE_FP8": {
+   "size": 4,
+   "int": 128,
+   "float": 1.793662034335766e-43
+  },
+  "GameStateRaid_MAX_ZOOM": {
+   "size": 4,
+   "int": 1067030938,
+   "float": 1.2000000476837158
+  },
+  "GameStateRaid_MENU_STROKE_COLOR": {
+   "size": 4,
+   "int": -3937874,
+   "float": NaN
+  },
+  "GameStateRaid_MENU_STROKE_WIDTH": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "GameStateRaid_MIN_CUSTOMER_INTERVAL": {
+   "size": 4,
+   "int": 5000,
+   "float": 7.006492321624085e-42
+  },
+  "GameStateRaid_MIN_CUSTOMER_VISIT_CHANCE_FP8": {
+   "size": 4,
+   "int": 85,
+   "float": 1.1911036946760945e-43
+  },
+  "GameStateRaid_MIN_VELOCITY": {
+   "size": 4,
+   "int": 1065353216,
+   "float": 1.0
+  },
+  "GameStateRaid_MIN_ZOOM": {
+   "size": 4,
+   "int": 1043878380,
+   "float": 0.18000000715255737
+  },
+  "GameStateRaid_MIN_ZOOM_DISPLAY": {
+   "size": 4,
+   "int": 1045220557,
+   "float": 0.20000000298023224
+  },
+  "GameStateRaid_NUM_CUSTOMERS": {
+   "size": 4,
+   "int": 117443120,
+   "float": 9.63264355911093e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_NUM_LAYOUTS": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "GameStateRaid_NUM_LEVEL_OPTIONS": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "GameStateRaid_NUM_SERVERS": {
+   "size": 4,
+   "int": 117443392,
+   "float": 9.632955799797867e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_NUM_VARIANTS": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "GameStateRaid_RAID_FOOD_COUNT_MULTIPLIER": {
+   "size": 4,
+   "int": 1048576000,
+   "float": 0.25
+  },
+  "GameStateRaid_RARE_CHANCE": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "GameStateRaid_RARE_RECIPES": {
+   "size": 4,
+   "int": 117446192,
+   "float": 9.636170042163397e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_RARE_RECIPE_COUNT": {
+   "size": 1,
+   "int": 1
+  },
+  "GameStateRaid_RECIPE_LEVEL_CHANCES": {
+   "size": 4,
+   "int": 117446112,
+   "float": 9.636078206667239e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_RECIPE_LEVEL_MINUS_1": {
+   "size": 4,
+   "int": 65,
+   "float": 9.10844001811131e-44
+  },
+  "GameStateRaid_RECIPE_LEVEL_MINUS_2": {
+   "size": 4,
+   "int": 35,
+   "float": 4.90454462513686e-44
+  },
+  "GameStateRaid_RECIPE_LEVEL_MINUS_3": {
+   "size": 4,
+   "int": 15,
+   "float": 2.1019476964872256e-44
+  },
+  "GameStateRaid_RECIPE_LEVEL_PLUS_0": {
+   "size": 4,
+   "int": 95,
+   "float": 1.3312335411085762e-43
+  },
+  "GameStateRaid_RECIPE_LEVEL_PLUS_1": {
+   "size": 4,
+   "int": 100,
+   "float": 1.401298464324817e-43
+  },
+  "GameStateRaid_REWARD_DELAY_DURATION": {
+   "size": 4,
+   "int": 5000,
+   "float": 7.006492321624085e-42
+  },
+  "GameStateRaid_SAVE_INTERVAL": {
+   "size": 4,
+   "int": 10000,
+   "float": 1.401298464324817e-41
+  },
+  "GameStateRaid_SERVER_SPEED": {
+   "size": 4,
+   "int": 117443936,
+   "float": 9.633580281171741e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_SERVER_STRENGTH": {
+   "size": 4,
+   "int": 117443664,
+   "float": 9.633268040484804e-35,
+   "array_ptr": true
+  },
+  "GameStateRaid_VARIANT_CHANCES": {
+   "size": 4,
+   "int": 117446144,
+   "float": 9.636114940865702e-35,
+   "array_ptr": true
+  },
+  "InfectTask_ZOMBIE_START_ENERGY": {
+   "size": 2,
+   "int": 200
+  },
+  "LevelUpDialog_INNER_PADDING": {
+   "size": 4,
+   "int": 30,
+   "float": 4.203895392974451e-44
+  },
+  "LevelUpDialog_PADDING_MIDDLE": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "LevelUpDialog_PADDING_TOP": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "LevelUpDialog_PAPER_H": {
+   "size": 4,
+   "int": 180,
+   "float": 2.5223372357846707e-43
+  },
+  "LevelUpDialog_PAPER_W": {
+   "size": 4,
+   "int": 160,
+   "float": 2.2420775429197073e-43
+  },
+  "LevelUpDialog_PAPER_X": {
+   "size": 4,
+   "int": 13,
+   "float": 1.8216880036222622e-44
+  },
+  "LevelUpDialog_PAPER_Y": {
+   "size": 4,
+   "int": 17,
+   "float": 2.382207389352189e-44
+  },
+  "LevelUpDialog_TEXT_COLOR_GREEN": {
+   "size": 4,
+   "int": -5779889,
+   "float": NaN
+  },
+  "MapDialog_CAFE_WIDTH": {
+   "size": 4,
+   "int": 50,
+   "float": 7.006492321624085e-44
+  },
+  "MapDialog_CLOSE_X_OFFSET": {
+   "size": 4,
+   "int": 15,
+   "float": 2.1019476964872256e-44
+  },
+  "MapDialog_CLOSE_Y_OFFSET": {
+   "size": 4,
+   "int": 12,
+   "float": 1.6815581571897805e-44
+  },
+  "MapDialog_PADDING_INNER": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "MapDialog_PADDING_SIDE": {
+   "size": 4,
+   "int": 30,
+   "float": 4.203895392974451e-44
+  },
+  "MapDialog_PADDING_TOP": {
+   "size": 4,
+   "int": 30,
+   "float": 4.203895392974451e-44
+  },
+  "MapTile_TILE_HEIGHT": {
+   "size": 4,
+   "int": 40,
+   "float": 5.605193857299268e-44
+  },
+  "MapTile_TILE_STRIDE_X": {
+   "size": 4,
+   "int": -2,
+   "float": NaN
+  },
+  "MapTile_TILE_STRIDE_Y": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "MapTile_TILE_TYPES": {
+   "size": 4,
+   "int": 6,
+   "float": 8.407790785948902e-45
+  },
+  "MapTile_TILE_WIDTH": {
+   "size": 4,
+   "int": 63,
+   "float": 8.828180325246348e-44
+  },
+  "MessageElement_BG_COLOR": {
+   "size": 4,
+   "int": 1610612736,
+   "float": 3.6893488147419103e+19
+  },
+  "MessageElement_BG_FADE_TIME": {
+   "size": 2,
+   "int": 500
+  },
+  "MessageElement_LABEL_COLOR": {
+   "size": 4,
+   "int": -5779887,
+   "float": NaN
+  },
+  "MessageElement_MIN_MESSAGE_TIME": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "MessageElement_MIN_MESSAGE_TIME_PAGES": {
+   "size": 4,
+   "int": 400,
+   "float": 5.605193857299268e-43
+  },
+  "ObjectiveSystem_BONUS_TIME_THRESHOLD": {
+   "size": 4,
+   "int": 28800000,
+   "float": 6.739003502443593e-38
+  },
+  "ObjectiveSystem_COMPLETION_TIMES": {
+   "size": 4,
+   "int": 117446208,
+   "float": 9.636188409262628e-35,
+   "array_ptr": true
+  },
+  "ObjectiveSystem_CUSTOMERS_PER_LEVEL": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "ObjectiveSystem_MAX_BONUS_TIME": {
+   "size": 4,
+   "int": 604800000,
+   "float": 3.046946917863169e-17
+  },
+  "ObjectiveSystem_MAX_RECIPE_OBJECTIVE": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "ObjectiveSystem_MAX_RECIPE_TIME": {
+   "size": 4,
+   "int": 43200,
+   "float": 6.05360936588321e-41
+  },
+  "ObjectiveSystem_RATING_PER_COMPLETION": {
+   "size": 4,
+   "int": 1045220557,
+   "float": 0.20000000298023224
+  },
+  "ObjectiveSystem_SPEND_CASH_PER_LEVEL": {
+   "size": 4,
+   "int": 100,
+   "float": 1.401298464324817e-43
+  },
+  "ObjectiveSystem_TIME_BUFFER": {
+   "size": 4,
+   "int": 10800,
+   "float": 1.5134023414708024e-41
+  },
+  "ObjectiveSystem_TOXIN_PER_COMPLETION": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "ProgressBar_PROGRESS_BAR_BLUE": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "ProgressBar_PROGRESS_BAR_PADDING": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "ProgressBar_PROGRESS_BAR_RED": {
+   "size": 4,
+   "int": 1,
+   "float": 1.401298464324817e-45
+  },
+  "ProgressBar_TEXT_MARGIN": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "RaidRewardScreen_CLOSE_X_OFFSET": {
+   "size": 4,
+   "int": 15,
+   "float": 2.1019476964872256e-44
+  },
+  "RaidRewardScreen_CLOSE_Y_OFFSET": {
+   "size": 4,
+   "int": 12,
+   "float": 1.6815581571897805e-44
+  },
+  "RaidRewardScreen_PADDING_INNER": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "RaidRewardScreen_PADDING_TOP": {
+   "size": 4,
+   "int": 30,
+   "float": 4.203895392974451e-44
+  },
+  "RaidRewardScreen_TWEEN_EASE": {
+   "size": 4,
+   "int": 65536,
+   "float": 9.183549615799121e-41
+  },
+  "RaidRewardScreen_TWEEN_TIME": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "RecipeBook_HEADING_COLOR": {
+   "size": 4,
+   "int": -16777216,
+   "float": -1.7014118346046923e+38
+  },
+  "RecipeBook_HEADING_SIZE": {
+   "size": 4,
+   "int": 117446352,
+   "float": 9.636353713155713e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_LEVEL_SIZE": {
+   "size": 4,
+   "int": 117446384,
+   "float": 9.636390447354176e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_PAGE_FLIP_FRAME_TIME": {
+   "size": 4,
+   "int": 30,
+   "float": 4.203895392974451e-44
+  },
+  "RecipeBook_PAGE_NUMBER_COLOR": {
+   "size": 4,
+   "int": -1,
+   "float": NaN
+  },
+  "RecipeBook_PAGE_NUMBER_SIZE": {
+   "size": 4,
+   "int": 117446336,
+   "float": 9.63633534605648e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_PLATE_SCALE_X": {
+   "size": 4,
+   "int": 117446240,
+   "float": 9.636225143461091e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_PLATE_SCALE_Y": {
+   "size": 4,
+   "int": 117446272,
+   "float": 9.636261877659555e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_PRICE_COLOR": {
+   "size": 4,
+   "int": -16777216,
+   "float": -1.7014118346046923e+38
+  },
+  "RecipeBook_PRICE_SIZE": {
+   "size": 4,
+   "int": 117446368,
+   "float": 9.636372080254944e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_RECIPE_COST_OFFSET_Y": {
+   "size": 4,
+   "int": -20,
+   "float": NaN
+  },
+  "RecipeBook_RECIPE_DETAIL_COLOR": {
+   "size": 4,
+   "int": -10284511,
+   "float": -3.0182888570614645e+38
+  },
+  "RecipeBook_RECIPE_DETAIL_SIZE": {
+   "size": 4,
+   "int": 117446320,
+   "float": 9.63631697895725e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_RECIPE_NAME_COLOR": {
+   "size": 4,
+   "int": -5618586,
+   "float": NaN
+  },
+  "RecipeBook_RECIPE_NAME_SIZE": {
+   "size": 4,
+   "int": 117446304,
+   "float": 9.636298611858018e-35,
+   "array_ptr": true
+  },
+  "RecipeBook_RECIPE_PLATE_OFFSET_X": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "RecipeBook_RECIPE_PLATE_OFFSET_Y": {
+   "size": 4,
+   "int": -10,
+   "float": NaN
+  },
+  "RecipeBook_VARIANT_TEXT_COLOR": {
+   "size": 4,
+   "int": -16777216,
+   "float": -1.7014118346046923e+38
+  },
+  "RecipeUnlockedDialog_INNER_PADDING": {
+   "size": 4,
+   "int": 30,
+   "float": 4.203895392974451e-44
+  },
+  "RecipeUnlockedDialog_PADDING_MIDDLE": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "RecipeUnlockedDialog_PADDING_TOP": {
+   "size": 4,
+   "int": 117446400,
+   "float": 9.636408814453407e-35,
+   "array_ptr": true
+  },
+  "RecipeUnlockedDialog_TEXT_COLOR_GREEN": {
+   "size": 4,
+   "int": -5779889,
+   "float": NaN
+  },
+  "Resources_ITEM_BOARDED_WINDOW": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "Resources_ITEM_CHAIR": {
+   "size": 4,
+   "int": 4,
+   "float": 5.605193857299268e-45
+  },
+  "Resources_ITEM_COUNTER": {
+   "size": 4,
+   "int": 16,
+   "float": 2.2420775429197073e-44
+  },
+  "Resources_ITEM_DEAD_PLANT": {
+   "size": 4,
+   "int": 6,
+   "float": 8.407790785948902e-45
+  },
+  "Resources_ITEM_DIRTY_FLOOR_START": {
+   "size": 1,
+   "int": -111
+  },
+  "Resources_ITEM_DIRTY_FRIDGE": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "Resources_ITEM_DIRTY_PLATE": {
+   "size": 4,
+   "int": 193,
+   "float": 2.704506036146897e-43
+  },
+  "Resources_ITEM_DIRTY_POT": {
+   "size": 4,
+   "int": 197,
+   "float": 2.7605579747198896e-43
+  },
+  "Resources_ITEM_DIRTY_SINK": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "Resources_ITEM_DIRTY_STOVE": {
+   "size": 4,
+   "int": 1,
+   "float": 1.401298464324817e-45
+  },
+  "Resources_ITEM_DIRTY_WALL_START": {
+   "size": 1,
+   "int": -118
+  },
+  "Resources_ITEM_LOOSE_TILE": {
+   "size": 4,
+   "int": 181,
+   "float": 2.536350220427919e-43
+  },
+  "Resources_ITEM_PLATE": {
+   "size": 4,
+   "int": 187,
+   "float": 2.620428128287408e-43
+  },
+  "Resources_ITEM_POT": {
+   "size": 4,
+   "int": 186,
+   "float": 2.6064151436441598e-43
+  },
+  "Resources_ITEM_STAINED_TILE": {
+   "size": 4,
+   "int": 180,
+   "float": 2.5223372357846707e-43
+  },
+  "Resources_ITEM_STOVE": {
+   "size": 4,
+   "int": 15,
+   "float": 2.1019476964872256e-44
+  },
+  "Resources_ITEM_TABLE": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "Resources_ITEM_TILE_COVER": {
+   "size": 4,
+   "int": 194,
+   "float": 2.718519020790145e-43
+  },
+  "Resources_ITEM_WHITE_WALL": {
+   "size": 4,
+   "int": 27,
+   "float": 3.783505853677006e-44
+  },
+  "RestTask_ZZZ_INTERVAL": {
+   "size": 4,
+   "int": 20000,
+   "float": 2.802596928649634e-41
+  },
+  "ServeTask_SERVE_TIME": {
+   "size": 2,
+   "int": 350
+  },
+  "StatusNote_ALPHA_VALUE": {
+   "size": 4,
+   "int": 170,
+   "float": 2.382207389352189e-43
+  },
+  "StatusNote_DEFAULT_VISIBLE_DURATION": {
+   "size": 4,
+   "int": 3000,
+   "float": 4.203895392974451e-42
+  },
+  "StatusNote_END_ALPHA_VALUE": {
+   "size": 4,
+   "int": 51,
+   "float": 7.146622168056567e-44
+  },
+  "StatusNote_MAX_OFFSET": {
+   "size": 4,
+   "int": 100,
+   "float": 1.401298464324817e-43
+  },
+  "StatusNote_START_ALPHA_VALUE": {
+   "size": 4,
+   "int": 51,
+   "float": 7.146622168056567e-44
+  },
+  "StatusNote_THOUGHTBUBBLE_BOTTOM_OFFSET": {
+   "size": 4,
+   "int": 78,
+   "float": 1.0930128021733573e-43
+  },
+  "StatusNote_THOUGHTBUBBLE_LEFT_OFFSET": {
+   "size": 4,
+   "int": 78,
+   "float": 1.0930128021733573e-43
+  },
+  "StealFoodTask_STEAL_TIME": {
+   "size": 4,
+   "int": 2000,
+   "float": 2.802596928649634e-42
+  },
+  "Store_COST_DIGIT_WIDTH": {
+   "size": 4,
+   "int": 117446432,
+   "float": 9.63644554865187e-35,
+   "array_ptr": true
+  },
+  "Store_DECELERATION": {
+   "size": 4,
+   "int": 994352038,
+   "float": 0.003000000026077032
+  },
+  "Store_MAX_EARNING_VALUE": {
+   "size": 1,
+   "int": 10
+  },
+  "Store_MAX_STAR_RATING": {
+   "size": 1,
+   "int": 10
+  },
+  "Store_MIN_VELOCITY": {
+   "size": 4,
+   "int": 1065353216,
+   "float": 1.0
+  },
+  "Store_TWEEN_EASE": {
+   "size": 4,
+   "int": 65536,
+   "float": 9.183549615799121e-41
+  },
+  "Store_TWEEN_TIME": {
+   "size": 4,
+   "int": 500,
+   "float": 7.006492321624085e-43
+  },
+  "Stove_ACTIVE_COOK_BURN_GRACE_SECONDS": {
+   "size": 2,
+   "int": 120
+  },
+  "TutorialArrow_ARROW_BOUNCE_TIME": {
+   "size": 2,
+   "int": 1000
+  },
+  "Tutorial_DELAY_DURATION": {
+   "size": 4,
+   "int": 1000,
+   "float": 1.401298464324817e-42
+  },
+  "ZombieCafeGameState_NO_INPUT_TICKS": {
+   "size": 1,
+   "int": 15
+  },
+  "ZombieCafe_BASE_COST_PER_MS_HUMAN": {
+   "size": 4,
+   "int": 1085905306,
+   "float": 5.800000190734863
+  },
+  "ZombieCafe_BASE_COST_PER_MS_ZOMBIE": {
+   "size": 4,
+   "int": 1085905306,
+   "float": 5.800000190734863
+  },
+  "ZombieCafe_BEGIN_SIMULATE_TIME": {
+   "size": 4,
+   "int": 7000,
+   "float": 9.80908925027372e-42
+  },
+  "ZombieCafe_BOSS_APPEARANCE_PROBABILITY": {
+   "size": 4,
+   "int": 117447824,
+   "float": 9.63804348628502e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_BOSS_CHEF": {
+   "size": 4,
+   "int": 127,
+   "float": 1.7796490496925177e-43
+  },
+  "ZombieCafe_BOSS_MINIONS": {
+   "size": 4,
+   "int": 117447792,
+   "float": 9.638006752086556e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_BOSS_MINIONS_TOTAL": {
+   "size": 4,
+   "int": 4,
+   "float": 5.605193857299268e-45
+  },
+  "ZombieCafe_BOSS_MULTIPLIER": {
+   "size": 4,
+   "int": 117448112,
+   "float": 9.638374094071188e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_BOSS_THEME": {
+   "size": 4,
+   "int": 8,
+   "float": 1.1210387714598537e-44
+  },
+  "ZombieCafe_CAFE_REOPEN_COST": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "ZombieCafe_CHARACTER_FORM_HUMAN": {
+   "size": 4,
+   "int": 0,
+   "float": 0.0
+  },
+  "ZombieCafe_CHARACTER_FORM_ZOMBIE": {
+   "size": 4,
+   "int": 1,
+   "float": 1.401298464324817e-45
+  },
+  "ZombieCafe_CHARACTER_HEAD_INDEX_BACK": {
+   "size": 1,
+   "int": 3
+  },
+  "ZombieCafe_CHARACTER_HEAD_INDEX_FRONT": {
+   "size": 1,
+   "int": 16
+  },
+  "ZombieCafe_DAYS_BETWEEN_TAKEOVER_ADS": {
+   "size": 4,
+   "int": 7,
+   "float": 9.80908925027372e-45
+  },
+  "ZombieCafe_ENEMY_BOSS_CAFES": {
+   "size": 1,
+   "int": 1
+  },
+  "ZombieCafe_ENEMY_BOSS_CHARACTER": {
+   "size": 1,
+   "int": -128
+  },
+  "ZombieCafe_ENEMY_BOSS_COOLDOWN": {
+   "size": 4,
+   "int": 14400000,
+   "float": 2.0178697886277366e-38
+  },
+  "ZombieCafe_ENEMY_CHEF_CHARACTER": {
+   "size": 1,
+   "int": 54
+  },
+  "ZombieCafe_ENEMY_NOTIFIER_DURATION": {
+   "size": 4,
+   "int": 86400000,
+   "float": 7.82218022075306e-36
+  },
+  "ZombieCafe_ENEMY_RATING_MODIFIER": {
+   "size": 4,
+   "int": -1110651699,
+   "float": -0.10000000149011612
+  },
+  "ZombieCafe_EXPLOIT_BUFFER_MS": {
+   "size": 4,
+   "int": 300000,
+   "float": 4.203895392974451e-40
+  },
+  "ZombieCafe_EXPLOIT_GRACE_PERIOD_HOURS": {
+   "size": 1,
+   "int": 24
+  },
+  "ZombieCafe_EXPLOIT_MAX_PUNISH_HOURS": {
+   "size": 2,
+   "int": 336
+  },
+  "ZombieCafe_EXPLOIT_MIN_PUNISH_HOURS": {
+   "size": 2,
+   "int": 24
+  },
+  "ZombieCafe_EXPLOIT_PAROLE_GRACE_PERIOD_HOURS": {
+   "size": 1,
+   "int": 2
+  },
+  "ZombieCafe_EXPLOIT_TIME_MULTIPLIER": {
+   "size": 4,
+   "int": 1092616192,
+   "float": 10.0
+  },
+  "ZombieCafe_FB_CAMERA_DAILY_BONUS": {
+   "size": 4,
+   "int": 117450240,
+   "float": 9.64081691826899e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_FEATURED_ITEMS": {
+   "size": 4,
+   "int": 117449504,
+   "float": 9.639972031704337e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_FEATURED_ITEM_COUNT": {
+   "size": 4,
+   "int": 18,
+   "float": 2.5223372357846707e-44
+  },
+  "ZombieCafe_FEMALE_NAME_COUNT": {
+   "size": 4,
+   "int": 32,
+   "float": 4.484155085839415e-44
+  },
+  "ZombieCafe_FLASH_COLOR": {
+   "size": 4,
+   "int": -1146421334,
+   "float": -0.0052184658125042915
+  },
+  "ZombieCafe_FREQUENT_PURCHASE_DURATION": {
+   "size": 4,
+   "int": 900,
+   "float": 1.2611686178923354e-42
+  },
+  "ZombieCafe_FREQUENT_PURCHASE_LIMIT": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "ZombieCafe_HIGH_SCORE_TIME_SPAN": {
+   "size": 4,
+   "int": 7,
+   "float": 9.80908925027372e-45
+  },
+  "ZombieCafe_INITIAL_CASH": {
+   "size": 4,
+   "int": 10000,
+   "float": 1.401298464324817e-41
+  },
+  "ZombieCafe_INITIAL_POPULARITY": {
+   "size": 4,
+   "int": 1044213924,
+   "float": 0.1850000023841858
+  },
+  "ZombieCafe_INITIAL_TOXIN": {
+   "size": 1,
+   "int": 20
+  },
+  "ZombieCafe_MAGIC_FRIDGE_INDEX": {
+   "size": 4,
+   "int": 248,
+   "float": 3.4752201915255463e-43
+  },
+  "ZombieCafe_MAGIC_FRIDGE_MAX_MULTIPLIER": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "ZombieCafe_MALE_NAME_COUNT": {
+   "size": 4,
+   "int": 189,
+   "float": 2.6484540975739043e-43
+  },
+  "ZombieCafe_MAX_AWARDED_TOXIN_PER_MONTH": {
+   "size": 4,
+   "int": 100,
+   "float": 1.401298464324817e-43
+  },
+  "ZombieCafe_MAX_CHARACTER_LEVEL": {
+   "size": 4,
+   "int": 99,
+   "float": 1.3872854796815689e-43
+  },
+  "ZombieCafe_MAX_DATA_ENTRY_LEVEL": {
+   "size": 4,
+   "int": 66,
+   "float": 9.248569864543793e-44
+  },
+  "ZombieCafe_MAX_ENEMY_CAFES": {
+   "size": 1,
+   "int": 5
+  },
+  "ZombieCafe_MAX_FRIENDS": {
+   "size": 4,
+   "int": 20,
+   "float": 2.802596928649634e-44
+  },
+  "ZombieCafe_MAX_LEVEL": {
+   "size": 1,
+   "int": 66
+  },
+  "ZombieCafe_MEETLOCKER_EXTEND_COST": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "ZombieCafe_MEETLOCKER_INITIAL_SIZE": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "ZombieCafe_MIN_LEVEL_THEME_AVAILABLE": {
+   "size": 4,
+   "int": 117447056,
+   "float": 9.637161865521903e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_MUSIC_CHANNELS": {
+   "size": 1,
+   "int": 2
+  },
+  "ZombieCafe_NUM_ENEMY_THEMES": {
+   "size": 4,
+   "int": 180,
+   "float": 2.5223372357846707e-43
+  },
+  "ZombieCafe_OBJECTIVE_COUNT": {
+   "size": 4,
+   "int": 44,
+   "float": 6.165713243029195e-44
+  },
+  "ZombieCafe_OBJECTIVE_TASK_COUNTS": {
+   "size": 4,
+   "int": 117449584,
+   "float": 9.640063867200495e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_OBJECTIVE_TASK_GOALS": {
+   "size": 4,
+   "int": 117449792,
+   "float": 9.640302639490506e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_OBJECTIVE_TASK_TYPES": {
+   "size": 4,
+   "int": 117449632,
+   "float": 9.64011896849819e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_ORDER_LIFE_SECONDS": {
+   "size": 4,
+   "int": 86400,
+   "float": 1.210721873176642e-40
+  },
+  "ZombieCafe_PRE_105_RECIPE_COUNT": {
+   "size": 4,
+   "int": 46,
+   "float": 6.445972935894159e-44
+  },
+  "ZombieCafe_QUERY_SAVE_DATA_TIMEOUT": {
+   "size": 4,
+   "int": 3000,
+   "float": 4.203895392974451e-42
+  },
+  "ZombieCafe_RARE_VALUE_COLOR": {
+   "size": 4,
+   "int": 117450224,
+   "float": 9.64079855116976e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_RARE_VALUE_MAX": {
+   "size": 4,
+   "int": 6,
+   "float": 8.407790785948902e-45
+  },
+  "ZombieCafe_RATE_ME_LEVEL": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "ZombieCafe_RATE_ME_STARS": {
+   "size": 4,
+   "int": 1050253722,
+   "float": 0.30000001192092896
+  },
+  "ZombieCafe_RECIPE_COST": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "ZombieCafe_RECIPE_RANK_COUNT": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "ZombieCafe_RECIPE_RARE_COST": {
+   "size": 4,
+   "int": 10,
+   "float": 1.401298464324817e-44
+  },
+  "ZombieCafe_RECIPE_SCALE": {
+   "size": 4,
+   "int": 1060605264,
+   "float": 0.7170000076293945
+  },
+  "ZombieCafe_RECIPE_VARIANT_COST": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "ZombieCafe_REMINDER_NOTIFICATION_TIMER": {
+   "size": 4,
+   "int": 1209600,
+   "float": 1.6950106224472987e-39
+  },
+  "ZombieCafe_RIPPLE_TIME": {
+   "size": 4,
+   "int": 200,
+   "float": 2.802596928649634e-43
+  },
+  "ZombieCafe_SERVING_EXPERIENCE": {
+   "size": 4,
+   "int": 1,
+   "float": 1.401298464324817e-45
+  },
+  "ZombieCafe_SOUND_CHANNELS": {
+   "size": 1,
+   "int": 4
+  },
+  "ZombieCafe_STAFF_EXPERIENCE_LEVELS": {
+   "size": 4,
+   "int": 117449360,
+   "float": 9.639806727811253e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_STARTING_TILE_INDEX": {
+   "size": 1,
+   "int": 34
+  },
+  "ZombieCafe_TOMBSTONE_BOMB_INDEX": {
+   "size": 4,
+   "int": 460,
+   "float": 6.4459729358941585e-43
+  },
+  "ZombieCafe_TOMBSTONE_HEALTH_2_INDEX": {
+   "size": 4,
+   "int": 319,
+   "float": 4.4701421011961665e-43
+  },
+  "ZombieCafe_TOMBSTONE_HEALTH_3_INDEX": {
+   "size": 4,
+   "int": 459,
+   "float": 6.43195995125091e-43
+  },
+  "ZombieCafe_TOMBSTONE_HEALTH_INDEX": {
+   "size": 4,
+   "int": 286,
+   "float": 4.007713607968977e-43
+  },
+  "ZombieCafe_TOMBSTONE_POWER_2_INDEX": {
+   "size": 4,
+   "int": 318,
+   "float": 4.456129116552918e-43
+  },
+  "ZombieCafe_TOMBSTONE_POWER_3_INDEX": {
+   "size": 4,
+   "int": 458,
+   "float": 6.417946966607662e-43
+  },
+  "ZombieCafe_TOMBSTONE_POWER_INDEX": {
+   "size": 4,
+   "int": 285,
+   "float": 3.993700623325729e-43
+  },
+  "ZombieCafe_TOMBSTONE_RECHARGE_COST": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "ZombieCafe_TOUCH_LONG_TIME": {
+   "size": 4,
+   "int": 350,
+   "float": 4.90454462513686e-43
+  },
+  "ZombieCafe_TOUCH_SCROLL_DISTANCE": {
+   "size": 2,
+   "int": 40
+  },
+  "ZombieCafe_UNLOCKABLE_ENEMY_CHEFS": {
+   "size": 4,
+   "int": 117448608,
+   "float": 9.638943474147368e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_XP_SCALER": {
+   "size": 4,
+   "int": 117449952,
+   "float": 9.640486310482822e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_ZOMBIE_LEVEL_ENERGY_MULTIPLIER": {
+   "size": 4,
+   "int": 1065604874,
+   "float": 1.0299999713897705
+  },
+  "ZombieCafe_enemyReopenDurations": {
+   "size": 4,
+   "int": 117447008,
+   "float": 9.637106764224208e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_experienceLevels": {
+   "size": 4,
+   "int": 117446448,
+   "float": 9.636463915751102e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_recipeUnlocks": {
+   "size": 4,
+   "int": 117446720,
+   "float": 9.63677615643804e-35,
+   "array_ptr": true
+  },
+  "ZombieCafe_zombieCaps": {
+   "size": 4,
+   "int": 117446864,
+   "float": 9.636941460331124e-35,
+   "array_ptr": true
+  },
+  "tombstone_BOMB_DAMAGE": {
+   "size": 4,
+   "int": 1148846080,
+   "float": 1000.0
+  },
+  "tombstone_BOMB_USES": {
+   "size": 4,
+   "int": 3,
+   "float": 4.203895392974451e-45
+  },
+  "tombstone_POWER_DURATION": {
+   "size": 4,
+   "int": 1167867904,
+   "float": 5000.0
+  },
+  "tombstone_POWER_HEALTH": {
+   "size": 4,
+   "int": 1148846080,
+   "float": 1000.0
+  },
+  "tombstone_POWER_LEVEL_3_HEALTH_RATIO": {
+   "size": 4,
+   "int": 1077936128,
+   "float": 3.0
+  },
+  "tombstone_POWER_LEVEL_3_STRENGTH_RATIO": {
+   "size": 4,
+   "int": 1067030938,
+   "float": 1.2000000476837158
+  },
+  "tombstone_POWER_STRENGTH": {
+   "size": 4,
+   "int": 2,
+   "float": 2.802596928649634e-45
+  },
+  "tombstone_RESURRECTION_USES": {
+   "size": 4,
+   "int": 1,
+   "float": 1.401298464324817e-45
+  },
+  "tombstone_USES": {
+   "size": 4,
+   "int": 5,
+   "float": 7.006492321624085e-45
+  },
+  "tombstone_USES_LEVEL_2": {
+   "size": 4,
+   "int": 7,
+   "float": 9.80908925027372e-45
+  }
+ }
+}

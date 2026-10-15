@@ -16,9 +16,9 @@ taken in the same direction as their English v1.1.0.**
 Airyzz's only data edits before the owner's work: 3 characters appended (2 Maids + Lieutenant
 Colonel, EN idx 216–218, ported from JP), 3 Cost tweaks, and the cash→Toxin shop rows. Food untouched.
 
-**Discrepancy to raise with the owner:** `v1.0_balance_summary.md` says Stage I raised the Toxin
-exchange 1.5× ($30k/$75k/$375k/$1.5M), but the shipped v1.1.0 APK and current repo still use
-Airyzz's $20k/$50k/$250k/$1M. Stage I was applied at one point but did not survive into the release.
+**Toxin exchange (owner-confirmed 2026-10-08):** v1.0 raised it 1.5× ($30k/$75k/$375k/$1.5M,
+"Stage I"); v1.1 **deliberately reverted** it to $20k/$50k/$250k/$1M = **$2,000 per Toxin**. That is
+the cash→Toxin conversion to use for the JP build too (JP already ships these prices).
 
 ## 2. Direction — dishes (164 of 216 changed)
 
@@ -52,7 +52,7 @@ and mid game).
 | --- | --- | --- |
 | **Playable chefs** (81) | 80 | TipRating ~×1.8 (range 1–10 → 5–20); TipMultiplier ~×2 (max 5 → 6); Speed ×1.4; CookXP ×1.2; Cost smoothed into a ladder (26 up/12 down, max $5k → $12k cash). Energy/Attack/Regen also rose but are **inert on chefs**. CookSpeed kept near vanilla (chefs are "set": ask before touching). |
 | **Toxin workers** (67) | 66 | Cost curve re-spread (32 cheaper, 21 dearer; max 60 → 140 toxin); Speed ×1.33, Attack ×1.33, TipRating ×1.45, Regen ×1.3; Energy re-balanced both ways with a floor (few under 100). Anchors: Maid, Governor (tip king TR25), Godfather, Zombie Man (combat king). |
-| **Cash workers** (38) | 38 | Mostly cheaper (14 down / 8 up) and stronger: Speed ×1.55, Attack ×1.6, TipRating ×1.2; priced at **3,000 cash ≈ 1 toxin**. |
+| **Cash workers** (38) | 38 | Mostly cheaper (14 down / 8 up) and stronger: Speed ×1.55, Attack ×1.6, TipRating ×1.2; priced at **3,000 cash ≈ 1 toxin** in EN v1.1 (for JP the owner set **2,000 : 1**, D-10). |
 | Free / enemy (30) | 0 | untouched |
 
 Rules behind it (owner-confirmed): chef CookSpeed/TipMultiplier are **global** (buff every
