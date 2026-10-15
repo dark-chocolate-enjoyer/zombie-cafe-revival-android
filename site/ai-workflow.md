@@ -52,21 +52,13 @@ The rules every agent session reads first (`AGENTS.md` and a register of my deci
 
 ### How the repo keeps its memory
 
-Every agent session starts with a blank memory, and I use more than one tool, so anything that
-isn't written down gets re-derived (or gotten wrong) next time. Early on I relied on each tool's own
-notes. Since October 2026 the project's memory lives in the repo itself, where any AI or person can
-read the same thing.
+AI agents start every session with a blank memory, and I use more than one tool, so the project's
+memory lives in the repo, where every agent reads the same thing. That lets me give each task its own
+fresh session instead of one long chat that gets slower, costlier and less reliable as it's summarised:
+a new session reads four files and is up to speed.
 
-I give each objective its own fresh session instead of running one long chat. A long chat re-reads
-the whole conversation on every message, so each reply costs more than the last, and when it fills
-up it gets summarised automatically, and I don't choose what the summary keeps. A fresh session is
-cheap to start as long as the repo carries the context: it reads four files (about 28 KB of text)
-and it's up to speed, without me catching it up. The exception is one tight investigation, like a
-crash hunt, where the working notes are too much to write down halfway; that stays in one session.
-
-Instructions in a file are only suggestions: an agent can skip a step or forget the checklist at the
-end. So the steps that matter most are run by Claude Code itself, as *hooks*: small scripts that fire
-at fixed points in every session, whatever the agent decides.
+Instructions in a file can still be skipped, so the steps that matter most run as hooks: scripts Claude
+Code itself fires at fixed points in every session.
 
 ```mermaid
 flowchart TD

@@ -213,3 +213,7 @@ Result: deployed (`e9640e80`, Actions build + deploy OK); live check found file 
 Ask: the site is too narrow with a lot of empty space; make it more compact without ruining the look.
 Did: layout up to 76rem: sticky "On this page" menu (highlights the current section) beside a 56rem text column; one column with an
 inline menu below 64rem; slightly tighter type and spacing. Checked at 1920, 1440, 900 and 500 px, light and dark.
+
+**2026-10-15 · L-28 · AI workflow page: memory section shortened — Owner + Claude Code (Opus 5.5)**
+Ask: "How the repo keeps its memory" says too much; tighten it. Did: three paragraphs (215 words) → two (95): blank memory →
+memory in the repo → fresh sessions; hooks for steps that can't be skipped. Published on the owner's go.
