@@ -61,11 +61,11 @@ function render(page) {
   // The first paragraph under the title is the page's lead; the rule after it only separates it in Markdown.
   body = body.replace(/(<\/h1>\n)<p>/, '$1<p class="lead">').replace(/(<p class="lead">[\s\S]*?<\/p>\n)<hr>\n/, '$1');
   const lead = strip(body.match(/<p class="lead">([\s\S]*?)<\/p>/)?.[1] ?? '').replace(/\s+/g, ' ').trim();
-  if (page.toc) {
-    const items = headings.filter(h => h.level <= 3)
-      .map(h => `<li class="l${h.level}"><a href="#${h.id}">${esc(h.text)}</a></li>`).join('');
-    body = body.replace(/(<p class="lead">[\s\S]*?<\/p>\n)/, `$1<nav class="toc" aria-label="On this page"><p>On this page</p><ul>${items}</ul></nav>\n`);
-  }
+  // "On this page": a sticky side menu on wide screens; long pages also get it inline on narrow ones.
+  const items = headings.filter(h => h.level <= 3)
+    .map(h => `<li class="l${h.level}"><a href="#${h.id}">${esc(h.text)}</a></li>`).join('');
+  const toc = `<nav class="toc" aria-label="On this page"><p>On this page</p><ul>${items}</ul></nav>`;
+  if (page.toc) body = body.replace(/(<p class="lead">[\s\S]*?<\/p>\n)/, `$1<div class="toc-inline">${toc}</div>\n`);
   const nav = pages.map(p => `<a href="${p.out}"${p === page ? ' aria-current="page"' : ''}>${p.nav}</a>`).join('');
   return `<!doctype html>
 <html lang="en-AU">
@@ -86,13 +86,30 @@ function render(page) {
     <nav>${nav}<a href="${REPO}" rel="noopener">GitHub</a></nav>
   </div>
 </header>
+<div class="layout">
+<aside class="toc-side">${toc}</aside>
 <main>
 ${body}
 </main>
+</div>
 <footer class="site">
   <p><a href="${REPO}" rel="noopener">Source on GitHub</a>. These pages are built from Markdown by GitHub Actions on every push.</p>
   <p><i>Zombie Cafe</i> © Capcom / Beeline Interactive. Fan preservation project, not affiliated with Capcom.</p>
 </footer>
+<script>
+// Highlight the side menu entry for the section being read.
+const links = new Map([...document.querySelectorAll('.toc-side a')].map(a => [a.hash.slice(1), a]));
+let current;
+const observer = new IntersectionObserver(entries => {
+  for (const e of entries) {
+    if (!e.isIntersecting || !links.has(e.target.id)) continue;
+    current?.classList.remove('active');
+    current = links.get(e.target.id);
+    current.classList.add('active');
+  }
+}, { rootMargin: '-72px 0px -70% 0px' });
+document.querySelectorAll('main h2[id], main h3[id]').forEach(h => observer.observe(h));
+</script>
 ${usesMermaid ? `<script type="module">
 import mermaid from '${MERMAID}';
 const dark = matchMedia('(prefers-color-scheme: dark)').matches;

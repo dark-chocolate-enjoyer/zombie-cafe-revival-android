@@ -208,3 +208,8 @@ Did: pages moved to `site/` as the source (`ai-workflow.md`, `technical-writeup.
 `.github/workflows/pages.yml` publishes to GitHub Pages on pushes touching `site/`. READMEs link to the site. Checked locally in Edge.
 Owner set Pages to GitHub Actions; Claude Code committed and pushed both repos on the owner's instruction.
 Result: deployed (`e9640e80`, Actions build + deploy OK); live check found file names breaking in the files table, fixed in CSS.
+
+**2026-10-15 · L-27 · Website widened, side menu added — Owner + Claude Code (Opus 5.5)**
+Ask: the site is too narrow with a lot of empty space; make it more compact without ruining the look.
+Did: layout up to 76rem: sticky "On this page" menu (highlights the current section) beside a 56rem text column; one column with an
+inline menu below 64rem; slightly tighter type and spacing. Checked at 1920, 1440, 900 and 500 px, light and dark.
