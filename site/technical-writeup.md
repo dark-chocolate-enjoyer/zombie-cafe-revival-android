@@ -1,7 +1,7 @@
 # Technical write-up
 
 What was changed in the game, and how each problem was found. How I ran the AI agents that did the
-work is in [AI workflow](AI_WORKFLOW.md).
+work is in [AI workflow](ai-workflow.md).
 
 ---
 

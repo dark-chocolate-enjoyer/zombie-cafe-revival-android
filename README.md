@@ -8,7 +8,7 @@ Android maintenance, balancing, and bug-fixing for the old Capcom game *Zombie C
 
 For the JP version, check out [Zombie Cafe JP](https://github.com/dark-chocolate-enjoyer/zombie-cafe-revival-jp).
 
-How it was made: [AI workflow](AI_WORKFLOW.md) · [Technical write-up](TECHNICAL_WRITEUP.md)
+How it was made: [AI workflow](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/) · [Technical write-up](https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/technical-writeup.html)
 
 ## Project
 

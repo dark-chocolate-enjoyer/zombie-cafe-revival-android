@@ -193,3 +193,17 @@ line, plain rule bullets. TECHNICAL_WRITEUP 2,813 → 1,881 words; crash attempt
 (both read from the APK manifests). JP crash section rebuilt around the cafe → map crash (Scudo background now sits with
 that bug; raid and string bugs moved to "found along the way"). Credits sections dropped (README already credits Airyzz).
 Pages copied into the repo root for the owner's push.
+
+**2026-10-15 · L-25 · Pages, JP code and records published; push simplified — Owner + Claude Code (Opus 5.5)**
+Ask: push everything; make the credential fix permanent if it won't disrupt anything; check the git state.
+Did: owner pushed `47b470a0` (pages, README link, old site removed) + `22290a1a` (43 files: JP v0.1 code, records, AGENTS.md,
+hooks) and JP `9f59361` (README link). Checked: both repos clean, local = origin, no attribution lines, contributors Airyzz + owner,
+files live, old Pages URLs 404. WSL `credential.helper` changed from `store` (empty file) to Windows GCM; traced dry-run pushes OK.
+Open: optional cleanup of local-only branches, 3 old Codex worktrees and 1 stash; 4 old commits carry a personal Gmail (leave).
+
+**2026-10-15 · L-26 · Portfolio pages moved to a website — Owner + Claude Code (Opus 5.5)**
+Ask: the pages open in GitHub's file viewer (file tree, buttons); make them proper website pages instead (option 1).
+Did: pages moved to `site/` as the source (`ai-workflow.md`, `technical-writeup.md`); `site/build.mjs` (marked 12.0.2, pinned) +
+`style.css` build two pages with a menu, light/dark, phone layout, Mermaid diagrams (ASCII loop redrawn; memory diagram restacked);
+`.github/workflows/pages.yml` publishes to GitHub Pages on pushes touching `site/`. READMEs link to the site. Checked locally in Edge.
+Owner set Pages to GitHub Actions; Claude Code committed and pushed both repos on the owner's instruction.

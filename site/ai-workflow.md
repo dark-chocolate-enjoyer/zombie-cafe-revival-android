@@ -26,26 +26,15 @@ The commits in this repository are under my name. This page is where I set out w
 
 ## How I work with the agents
 
-```
-   Goal or spec (me)
-        |
-        v
-   Agent investigates  ->  written report, no changes made
-        |
-        v
-   I review it (sometimes a second AI reviews it too)
-        |
-        +-- not convinced -> more evidence, or a different approach --+
-        |                                                             |
-        v approved                                                    |
-   Scripted change: checks the value it expects to replace,           |
-   refuses half-applied patches, keeps a rollback                     |
-        |                                                             |
-        v                                                             |
-   Build -> test on my phone (with a control build when it matters) --+
-        |
-        v
-   Decision recorded -> release
+```mermaid
+flowchart TD
+    goal(["Goal or spec (me)"]) --> inv["Agent investigates:<br/>written report, no changes made"]
+    inv --> rev["I review it<br/>(sometimes a second AI reviews it too)"]
+    rev -->|approved| change["Scripted change: checks the value it expects to replace,<br/>refuses half-applied patches, keeps a rollback"]
+    change --> test["Build → test on my phone<br/>(with a control build when it matters)"]
+    test --> done(["Decision recorded → release"])
+    rev -.->|"not convinced: more evidence,<br/>or a different approach"| inv
+    test -.->|not convinced| inv
 ```
 
 The rules every agent session reads first (`AGENTS.md` and a register of my decisions):
@@ -115,6 +104,8 @@ flowchart TD
         apk["<b>VERSIONS.md</b><br/>new APK + SHA-256;<br/>START_HERE Now refreshed"]
         handoff["<b>records/prompts/</b><br/>handoff prompt,<br/>word for word"]
         review["<b>review folder</b><br/>anything for me<br/>to check"]
+        log ~~~ apk ~~~ review
+        rule ~~~ handoff
     end
 
     work -.-> s3
@@ -153,4 +144,4 @@ records it as an entry from me.
 ---
 
 What was actually changed in the game, and how each problem was found, is in the
-[technical write-up](TECHNICAL_WRITEUP.md).
+[technical write-up](technical-writeup.md).

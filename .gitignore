@@ -47,3 +47,7 @@ src/assets/Music/*.ogg
 # Python caches
 __pycache__/
 *.pyc
+
+# Website build (site/build.mjs)
+site/node_modules/
+site/_build/

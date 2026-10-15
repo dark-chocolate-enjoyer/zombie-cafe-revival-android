@@ -14,8 +14,10 @@ the others instead of repeating them.
   automated rounds passed; the control without the fix crashed 10/20 (`jp/stability/DEVICEINFO_BUG.md`). The
   owner left it open in the background for 24+ hours with no crash (L-22); a hand play-test with cafe → map trips
   isn't logged yet.
-- **In progress (not balance):** portfolio pages `AI_WORKFLOW.md` + `TECHNICAL_WRITEUP.md` (drafts outside the
-  repo, not published) and the agent workflow upgrade (AGENTS.md, hooks; L-21, D-21).
+- **Published 2026-10-15 (not balance):** the JP v0.1 code and records, and the agent workflow (AGENTS.md, hooks;
+  L-21 to L-25, D-21). The portfolio pages are a website (L-26): https://dark-chocolate-enjoyer.github.io/zombie-cafe-revival-android/,
+  built from the Markdown in `site/` and published to GitHub Pages by `.github/workflows/pages.yml` on every push
+  that touches `site/`. Both READMEs link to it.
 - **Next (balance):** the owner is reviewing the dish proposal `jp/balance/proposals/dishes_proposal_v2.xlsx`
   (Desktop: `Review/JP Dishes - Proposal v2 (2026-10-08).xlsx`; generator `balance/propose_dishes.py`; v1
   superseded). Event-dish rows wait on the §8 unlock decision (JP-only event dishes earn ~1.4× classic ones).
@@ -95,6 +97,8 @@ jp/
 records/                   project record (master copy, mirrored to Desktop/ZCafeStuff/Records):
                            CHANGELOG.md, DECISIONS.md, VERSIONS.md, EN_ARCHIVE.md, prompts/, sync_to_desktop.sh
 AGENTS.md, CLAUDE.md       rules for AI agents (CLAUDE.md imports AGENTS.md for Claude Code)
+site/                      portfolio website: ai-workflow.md + technical-writeup.md (the source), build.mjs, style.css;
+                           .github/workflows/pages.yml builds and publishes it on every push that touches site/
 .claude/settings.json      Claude Code hooks (scripts in .claude/hooks/): state at session start,
                            changelog check before finishing, Desktop sync at session end
 docs/jp-revival/           roadmap.md, toxin-exchange.md (public-facing notes)
@@ -204,6 +208,6 @@ Moved to the Now block ("Waiting on the owner"), so they're updated in one place
   pointers repointed (`english/lib_refs.py` → `lib_patch.py`). Re-run `lib_refs.py` if the base lib changes.
 - EN food reuses image IDs for premium variants: join JP↔EN dishes on the **first** EN row per ImageID.
 - JP TipRating is capped at 100 in the tip formula (EN is uncapped, /10): never port EN TipRating ×10 above 100.
-- Git push from WSL needs the Windows credential manager:
-  `git -c credential.helper= -c 'credential.helper=!"/mnt/c/Program Files/Git/mingw64/bin/git-credential-manager.exe"' push …`.
+- Git push from WSL uses the Windows credential manager, set globally in `~/.gitconfig` since 2026-10-15, so a
+  plain `git push origin main` works (old config backed up as `~/.gitconfig.bak-2026-10-15`).
   Never `git fetch --tags --force` (would clobber the corrected local tags).
